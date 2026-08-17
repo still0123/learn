@@ -9,6 +9,9 @@
 | AdsQA 硕士论文研究 | [`adsqa-thesis-research/`](adsqa-thesis-research/) |
 | 视频问答专利研究 | [`patent-research/`](patent-research/) |
 | 软件著作权最终材料 | [`软件著作权最终提交材料-20260729/`](软件著作权最终提交材料-20260729/) |
+| AgentSkill-Eval 秋招资料 | [`agent-skill-eval-career/`](agent-skill-eval-career/) |
+| LLM Wiki 详解 | [`llm-wiki/`](llm-wiki/) |
+| DSH 生态调研 | [`dsh-ecosystem-research/`](dsh-ecosystem-research/) |
 | DSH 面试笔记 | [`dsh-interview-notes.md`](dsh-interview-notes.md) |
 | MemoryForge 面试笔记 | [`MemoryForge-Interview-Notes.md`](MemoryForge-Interview-Notes.md) |
 | Claude Code 学习笔记 | [`learn-claude-code-学习笔记.md`](learn-claude-code-学习笔记.md) |
