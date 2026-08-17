@@ -1,0 +1,102 @@
+TY  - JOUR
+TI  - Q-Zoom: Query-Aware Adaptive Perception for Efficient Multimodal Large Language Models
+AU  - Shi, Yuheng
+AU  - Pei, Xiaohuan
+AU  - Wen, Linfeng
+AU  - Dong, Minjing
+AU  - Xu, Chang
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2604.06912
+UR  - https://arxiv.org/abs/2604.06912
+ER  -
+
+TY  - JOUR
+TI  - Entropy-Gradient Grounding: Training-Free Evidence Retrieval in Vision-Language Models
+AU  - Gropl, Marcel
+AU  - Jung, Jaewoo
+AU  - Kim, Seungryong
+AU  - Pollefeys, Marc
+AU  - Hong, Sunghwan
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2604.08456
+UR  - https://arxiv.org/abs/2604.08456
+ER  -
+
+TY  - JOUR
+TI  - TikArt: Stabilizing Aperture-Guided Fine-Grained Visual Reasoning with Reinforcement Learning
+AU  - Ding, Hao
+AU  - Yang, Zhichuan
+AU  - Ge, Weijie
+AU  - Gao, Ziqin
+AU  - Lu, Chaoyi
+AU  - Zhao, Lei
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2602.14482
+UR  - https://arxiv.org/abs/2602.14482
+ER  -
+
+TY  - CONF
+TI  - Focus, Don't Prune: Identifying Instruction-Relevant Regions for Information-Rich Image Understanding
+AU  - Kwon, Mincheol
+AU  - Lee, Minseung
+AU  - Choi, Seonga
+AU  - Choi, Miso
+AU  - Oh, Kyeongjin
+AU  - Lee, Hyunyoung
+AU  - Park, Cheonyoung
+AU  - Song, Yongho
+AU  - Park, Seunghyun
+AU  - Kim, Jinkyu
+PY  - 2026
+T2  - IEEE/CVF Conference on Computer Vision and Pattern Recognition
+SP  - 31900
+EP  - 31909
+UR  - https://arxiv.org/abs/2603.22815
+ER  -
+
+TY  - JOUR
+TI  - Learning to Focus and Precise Cropping: A Reinforcement Learning Framework with Information Gaps and Grounding Loss for MLLMs
+AU  - Zhao, Xuanpu
+AU  - Tan, Zhentao
+AU  - Sheng, Dianmo
+AU  - Chen, Tianxiang
+AU  - Liu, Yao
+AU  - Wu, Yue
+AU  - Gong, Tao
+AU  - Chu, Qi
+AU  - Yu, Nenghai
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2603.27494
+UR  - https://arxiv.org/abs/2603.27494
+ER  -
+
+TY  - JOUR
+TI  - Head-Aware Visual Cropping: Enhancing Fine-Grained VQA with Attention-Guided Subimage
+AU  - Xie, Junfei
+AU  - Pan, Peng
+AU  - Zhang, Xulong
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2601.22483
+UR  - https://arxiv.org/abs/2601.22483
+ER  -
+
+TY  - JOUR
+TI  - Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs
+AU  - Shabtay, Nimrod
+AU  - Kimhi, Moshe
+AU  - Spector, Artem
+AU  - Haray, Sivan
+AU  - Rivlin, Ehud
+AU  - Baskin, Chaim
+AU  - Giryes, Raja
+AU  - Schwartz, Eli
+PY  - 2026
+JO  - arXiv
+DO  - 10.48550/arXiv.2603.16932
+UR  - https://arxiv.org/abs/2603.16932
+ER  -

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="880" viewBox="0 0 1400 880">
+<rect width="1400" height="880" fill="#FFFFFF"/>
+
+<style>
+  .title { font: 700 22px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #17365D; }
+  .subtitle { font: 500 14px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #4F5B66; }
+  .zone1 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #2F75B5; }
+  .zone2 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #C55A11; }
+  .box { fill: #EAF3F8; stroke: #2F75B5; stroke-width: 1.6; }
+  .box2 { fill: #FCE4D6; stroke: #C55A11; stroke-width: 1.6; }
+  .box3 { fill: #E2F0D9; stroke: #548235; stroke-width: 1.6; }
+  .box4 { fill: #E4DFEC; stroke: #7030A0; stroke-width: 1.6; }
+  .box5 { fill: #FFF2CC; stroke: #BF9000; stroke-width: 1.6; }
+  .small { font: 13px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .tiny { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .label { font: 700 15px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .note { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .arrow { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#ah); }
+  .dash { stroke: #777; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; marker-end: url(#ah); }
+</style>
+<defs>
+  <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+  </marker>
+</defs>
+
+<text x="700" y="34" text-anchor="middle" class="title">创新点一：问题驱动的视听证据选择与证据锚点定位</text>
+<text x="700" y="58" text-anchor="middle" class="subtitle">目标：在受控视觉预算下定位最小且可靠的多模态证据集合（论文第3章）</text>
+<text x="200" y="105" text-anchor="middle" class="zone1">① 候选证据池 Candidate pool</text>
+<rect x="30" y="120" width="340" height="210" rx="10" class="box"/>
+
+<text x="200" y="148" text-anchor="middle" class="small">64 candidate frames（帧号+时间戳）</text>
+<text x="200" y="170" text-anchor="middle" class="small">视觉相关性：#0 0.00 · #1 0.95 · #3 2.85 · #63 59.05</text>
+<text x="200" y="192" text-anchor="middle" class="small">分段ASR：00:00-00:05 欢迎来到Fresh Cola！</text>
+<text x="200" y="214" text-anchor="middle" class="small">　　　　　　00:12-00:18 现在购买，第二件半价！</text>
+<text x="200" y="236" text-anchor="middle" class="small">OCR+框：第二件半价 [x1,y1,w1,h1]</text>
+<text x="200" y="258" text-anchor="middle" class="small">　　　　　仅限本周末 [x2,y2,w2,h2]</text>
+<text x="200" y="318" text-anchor="middle" class="tiny">跨帧出现次数与置信度构成OCR事件可靠性</text>
+<path d="M370,225 L410,225" class="arrow"/>
+<text x="565" y="105" text-anchor="middle" class="zone1">② 模态条件化响应融合 Question-conditioned fusion</text>
+<rect x="410" y="120" width="310" height="210" rx="10" class="box"/>
+
+<text x="565" y="148" text-anchor="middle" class="small">按问题逻辑叶条件化（非固定权重）：</text>
+<text x="565" y="174" text-anchor="middle" class="small">文字/标识类问题 → OCR响应主导</text>
+<text x="565" y="200" text-anchor="middle" class="small">时序/语音类问题 → ASR响应主导</text>
+<text x="565" y="226" text-anchor="middle" class="small">对象/动作/场景类 → 视觉响应主导</text>
+<text x="565" y="252" text-anchor="middle" class="small">融合得分 S(t)；候选峰值如图</text>
+<text x="565" y="278" text-anchor="middle" class="small">去冗余：多样性抑制（抑制冗余峰值）</text>
+<path d="M720,225 L760,225" class="arrow"/>
+<text x="930" y="105" text-anchor="middle" class="zone1">③ 证据时刻定位 Temporal anchors</text>
+<rect x="760" y="120" width="340" height="210" rx="10" class="box"/>
+
+<text x="930" y="148" text-anchor="middle" class="small">融合得分候选峰值 → 选中两个锚点：</text>
+<text x="930" y="172" text-anchor="middle" class="small">Anchor 1：#13，12.4s（OCR+视觉驱动）</text>
+<text x="930" y="196" text-anchor="middle" class="small">Anchor 2：#46，43.7s（ASR驱动）</text>
+<text x="930" y="220" text-anchor="middle" class="small">约束：时间分散 · 不复用MMR8已选帧 · 来源互补</text>
+<text x="930" y="244" text-anchor="middle" class="small">不确定性 u(t)：0.24 / 0.28</text>
+<text x="930" y="268" text-anchor="middle" class="small">响应峰=空间中心；熵高→保全局，熵低→给细节</text>
+<path d="M600,330 L600,380" class="arrow"/>
+<text x="370" y="408" text-anchor="middle" class="zone1">④ 预算分配 Budget allocation（二选一，不叠加）</text>
+<rect x="30" y="425" width="640" height="190" rx="10" class="box5"/>
+
+<text x="350" y="455" text-anchor="middle" class="small">高支持（A0，创新点一初始证据）：8全局视图 = 1,024 视觉Token</text>
+<text x="350" y="483" text-anchor="middle" class="small">触发补看（A2，供创新点二）：12视图 = 3,104 视觉Token（全帧+裁剪并存）</text>
+<text x="350" y="511" text-anchor="middle" class="small">自适应多尺度裁剪：候选框{0.4,0.6,0.8,1.0}，D(B)=ΣH/Area^ρ 选最佳锚框</text>
+<text x="350" y="539" text-anchor="middle" class="small">Crop+上采样得局部细节视图；完整帧保留全局语境（响应熵调节尺度）</text>
+<text x="350" y="567" text-anchor="middle" class="small">仅触发题使用额外预算；不二次采样；每题Token台账（两预算二选一）</text>
+<path d="M700,520 L740,520" class="arrow"/>
+<text x="1010" y="408" text-anchor="middle" class="zone1">⑤ 可审计证据包 Auditable evidence package</text>
+<rect x="740" y="425" width="360" height="190" rx="10" class="box3"/>
+
+<text x="920" y="455" text-anchor="middle" class="small">帧索引 + 时间戳（frame, t）</text>
+<text x="920" y="483" text-anchor="middle" class="small">OCR text + box；ASR segment + 时间段</text>
+<text x="920" y="511" text-anchor="middle" class="small">响应来源（visual / OCR / ASR）</text>
+<text x="920" y="539" text-anchor="middle" class="small">视图数 / 实际视觉Token / 二次采样状态</text>
+<text x="920" y="567" text-anchor="middle" class="small">→ 交由创新点二做缺口诊断与补看决策</text>
+<text x="700" y="660" text-anchor="middle" class="zone1">MMR 冗余受控选择准则（初始证据 S0，λ=0.70）</text>
+<rect x="30" y="675" width="1070" height="90" rx="10" class="box"/>
+
+<text x="565" y="705" text-anchor="middle" class="small">f^(k) = argmax_{f∈F\S} [ λ·r(q,f) − (1−λ)·max_{f'∈S} sim(f,f') ]，λ=0.70，K=8，时间排序输出</text>
+<text x="565" y="733" text-anchor="middle" class="small">同预算对照（补充分区2,525题）：Uniform8 30.85/48.26 · CLIP TopK8 32.08/49.68 · MMR8 36.32/54.06（Strict/Relaxed %）</text>
+<text x="700" y="800" text-anchor="middle" class="note">组件归因（GroupCV-500）：固定中心26.80/43.90 → 响应中心27.00/44.00 → +自适应尺度27.20/44.40；4胜/496平/0负。</text>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840">
+<rect width="1400" height="840" fill="#FFFFFF"/>
+
+<style>
+  .title { font: 700 22px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #17365D; }
+  .subtitle { font: 500 14px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #4F5B66; }
+  .zone1 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #2F75B5; }
+  .zone2 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #C55A11; }
+  .box { fill: #EAF3F8; stroke: #2F75B5; stroke-width: 1.6; }
+  .box2 { fill: #FCE4D6; stroke: #C55A11; stroke-width: 1.6; }
+  .box3 { fill: #E2F0D9; stroke: #548235; stroke-width: 1.6; }
+  .box4 { fill: #E4DFEC; stroke: #7030A0; stroke-width: 1.6; }
+  .box5 { fill: #FFF2CC; stroke: #BF9000; stroke-width: 1.6; }
+  .small { font: 13px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .tiny { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .label { font: 700 15px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .note { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .arrow { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#ah); }
+  .dash { stroke: #777; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; marker-end: url(#ah); }
+</style>
+<defs>
+  <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+  </marker>
+</defs>
+
+<text x="700" y="34" text-anchor="middle" class="title">方法总体框架：问题驱动的证据选择 — 证据缺口驱动的主动补看</text>
+<text x="700" y="58" text-anchor="middle" class="subtitle">题目不变：基于视觉特征压缩与链式反思的广告视频问答方法（“压缩”=预算约束下的证据组织，“反思”=选择性补看与保守决策）</text>
+<rect x="30" y="130" width="170" height="120" rx="10" class="box"/>
+<text x="115.0" y="154" text-anchor="middle" class="label">输入 Inputs</text>
+<text x="115.0" y="173" text-anchor="middle" class="small">广告视频 V</text>
+<text x="115.0" y="191" text-anchor="middle" class="small">问题 q</text>
+<text x="115.0" y="209" text-anchor="middle" class="small">OCR事件 / 分段ASR索引</text>
+<path d="M200,190 L250,190" class="arrow"/>
+<text x="430" y="105" text-anchor="middle" class="zone1">创新点一：问题驱动的视听证据选择（第3章）</text>
+<rect x="250" y="118" width="470" height="330" rx="14" fill="none" stroke="#2F75B5" stroke-width="1.2" stroke-dasharray="8 5"/>
+<rect x="260" y="130" width="200" height="86" rx="10" class="box"/>
+<text x="360.0" y="154" text-anchor="middle" class="label">64帧候选池</text>
+<text x="360.0" y="173" text-anchor="middle" class="small">帧号+时间戳</text>
+<text x="360.0" y="191" text-anchor="middle" class="small">OCR置信度/跨帧次数</text>
+<path d="M460,173 L500,173" class="arrow"/>
+<rect x="500" y="130" width="200" height="86" rx="10" class="box"/>
+<text x="600.0" y="154" text-anchor="middle" class="label">问题相关视觉评分</text>
+<text x="600.0" y="173" text-anchor="middle" class="small">r(q, f)（冻结对齐模型）</text>
+<text x="600.0" y="191" text-anchor="middle" class="small">ASR/OCR时间索引</text>
+<path d="M700,173 L715,173" class="arrow"/>
+<rect x="270" y="250" width="210" height="100" rx="10" class="box"/>
+<text x="375.0" y="274" text-anchor="middle" class="label">MMR 冗余受控选择</text>
+<text x="375.0" y="293" text-anchor="middle" class="small">λ=0.70</text>
+<text x="375.0" y="311" text-anchor="middle" class="small">相关性最大 + 帧间冗余最小</text>
+<text x="375.0" y="329" text-anchor="middle" class="small">→ 8帧时间排序初始证据</text>
+<rect x="510" y="250" width="190" height="100" rx="10" class="box"/>
+<text x="605.0" y="274" text-anchor="middle" class="label">MMR8 初始证据 S0</text>
+<text x="605.0" y="293" text-anchor="middle" class="small">8视图 / 1,024视觉Token</text>
+<text x="605.0" y="311" text-anchor="middle" class="small">关闭二次采样</text>
+<path d="M375,216 L375,250" class="arrow"/>
+<path d="M480,300 L510,300" class="arrow"/>
+<path d="M605,350 L605,390" class="arrow"/>
+<rect x="400" y="390" width="210" height="86" rx="10" class="box3"/>
+<text x="505.0" y="414" text-anchor="middle" class="label">基座模型生成初答 A0</text>
+<text x="505.0" y="433" text-anchor="middle" class="small">Qwen3-VL / ReAd-R / Qwen2.5</text>
+<text x="505.0" y="451" text-anchor="middle" class="small">ASR相关段落随文本提供</text>
+<text x="1035" y="105" text-anchor="middle" class="zone1">创新点二：主动补看与保守答案决策（第4章）</text>
+<rect x="760" y="118" width="560" height="560" rx="14" fill="none" stroke="#C55A11" stroke-width="1.2" stroke-dasharray="8 5"/>
+<path d="M610,433 L770,433" class="arrow"/>
+<rect x="770" y="390" width="180" height="86" rx="10" class="box2"/>
+<text x="860.0" y="414" text-anchor="middle" class="label">声明—证据验证器</text>
+<text x="860.0" y="433" text-anchor="middle" class="small">正反声明+E+/E−对比校准训练</text>
+<text x="860.0" y="451" text-anchor="middle" class="small">φ(A0) 支持度评分</text>
+<path d="M950,433 L990,433" class="arrow"/>
+<rect x="990" y="360" width="150" height="60" rx="10" class="box3"/>
+<text x="1065.0" y="384" text-anchor="middle" class="label">高支持 φ(A0)≥τt</text>
+<text x="1065.0" y="403" text-anchor="middle" class="small">直接输出 A0</text>
+<rect x="990" y="445" width="150" height="60" rx="10" class="box5"/>
+<text x="1065.0" y="469" text-anchor="middle" class="label">低支持 φ(A0)&lt;τt</text>
+<text x="1065.0" y="488" text-anchor="middle" class="small">进入缺口诊断</text>
+<path d="M1140,505 L1140,540" class="arrow"/>
+<rect x="900" y="540" width="250" height="74" rx="10" class="box5"/>
+<text x="1025.0" y="564" text-anchor="middle" class="label">证据缺口诊断（answer-free）</text>
+<text x="1025.0" y="583" text-anchor="middle" class="small">问题逻辑树 × 初始证据覆盖</text>
+<text x="1025.0" y="601" text-anchor="middle" class="small">missing_leaf / gap_reason</text>
+<path d="M1000,577 L960,640" class="arrow"/>
+<path d="M1065,614 L1065,640" class="arrow"/>
+<path d="M1130,577 L1170,640" class="arrow"/>
+<rect x="790" y="640" width="180" height="76" rx="10" class="box2"/>
+<text x="880.0" y="664" text-anchor="middle" class="label">LOOK_TIME</text>
+<text x="880.0" y="683" text-anchor="middle" class="small">补看新时间位置</text>
+<text x="880.0" y="701" text-anchor="middle" class="small">ASR段界/锚点邻域新帧</text>
+<rect x="975" y="640" width="180" height="76" rx="10" class="box2"/>
+<text x="1065.0" y="664" text-anchor="middle" class="label">LOOK_REGION</text>
+<text x="1065.0" y="683" text-anchor="middle" class="small">补看证据锚点区域</text>
+<text x="1065.0" y="701" text-anchor="middle" class="small">全帧+高分辨率视图</text>
+<rect x="1160" y="640" width="150" height="76" rx="10" class="box3"/>
+<text x="1235.0" y="664" text-anchor="middle" class="label">DIRECT</text>
+<text x="1235.0" y="683" text-anchor="middle" class="small">无可定位缺口</text>
+<text x="1235.0" y="701" text-anchor="middle" class="small">保留 A0</text>
+<path d="M880,678 L880,692" class="arrow"/>
+<path d="M1065,716 L1065,700" class="arrow"/>
+<rect x="770" y="692" width="260" height="74" rx="10" class="box2"/>
+<text x="900.0" y="716" text-anchor="middle" class="label">12视图证据增强（3,104 Token）</text>
+<text x="900.0" y="735" text-anchor="middle" class="small">锚点全帧 + 自适应多尺度裁剪</text>
+<text x="900.0" y="753" text-anchor="middle" class="small">预算审计，超预算生成前拦截</text>
+<path d="M1030,712 L1080,712" class="arrow"/>
+<rect x="1080" y="690" width="230" height="46" rx="10" class="box2"/>
+<text x="1195.0" y="714" text-anchor="middle" class="label">独立候选生成 A2（第4.6节）</text>
+<path d="M1195,690 L1195,660" class="arrow"/>
+<path d="M1300,433 L1340,433" class="arrow"/>
+<rect x="1230" y="260" width="150" height="100" rx="10" class="box3"/>
+<text x="1305.0" y="284" text-anchor="middle" class="label">输出 Outputs</text>
+<text x="1305.0" y="303" text-anchor="middle" class="small">最终答案 A*</text>
+<text x="1305.0" y="321" text-anchor="middle" class="small">审计轨迹</text>
+<text x="1305.0" y="339" text-anchor="middle" class="small">（帧/时刻/动作/支持度）</text>
+<path d="M1305,360 L1305,390" class="arrow"/>
+<rect x="880" y="250" width="320" height="100" rx="10" class="box4"/>
+<text x="1040.0" y="274" text-anchor="middle" class="label">充分性门控（保守替换）</text>
+<text x="1040.0" y="293" text-anchor="middle" class="small">φ(A2)≥τ 且 φ(A2)−φ(A0)≥margin</text>
+<text x="1040.0" y="311" text-anchor="middle" class="small">通过→替换A2；未通过/格式失败→回退A0</text>
+<text x="1040.0" y="329" text-anchor="middle" class="small">冻结参数按基座独立校准</text>
+<path d="M1195,690 C1300,690 1300,400 1305,360" class="dash"/>
+<text x="1332" y="520" text-anchor="middle" class="tiny">门控后输出</text>
+<text x="700" y="730" text-anchor="middle" class="note">训练仅限轻量验证器（真实声明数据），答案生成模型全程冻结；每题单轮最多一个补看动作，全部帧号/时间戳/OCR/ASR回指与支持度决策进入审计轨迹。</text>
+<text x="700" y="754" text-anchor="middle" class="note">冻结工作点示例：Qwen3 τ=0.960292（OOF-500校准）；ReAd-R τ=0.924142, margin=0；Qwen2.5 τ=0.392437, margin=0.25。</text>
+<text x="700" y="778" text-anchor="middle" class="note">主结果（Full-7844，机器裁判口径）：Uniform8 29.70/45.86 → MMR8 33.31/49.75 → 完整方法 40.31/59.87（Strict/Relaxed %）。</text>
+</svg>
