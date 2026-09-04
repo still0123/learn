@@ -8,6 +8,7 @@
 |---|---|
 | AdsQA 硕士论文研究 | [`adsqa-thesis-research/`](adsqa-thesis-research/) |
 | 视频问答专利研究 | [`patent-research/`](patent-research/) |
+| 专利复审最终材料（视听协同感知专利） | [`专利复审最终材料-20260826/`](专利复审最终材料-20260826/) |
 | 软件著作权最终材料 | [`软件著作权最终提交材料-20260729/`](软件著作权最终提交材料-20260729/) |
 | AgentSkill-Eval 秋招资料 | [`agent-skill-eval-career/`](agent-skill-eval-career/) |
 | LLM Wiki 详解 | [`llm-wiki/`](llm-wiki/) |
