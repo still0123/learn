@@ -1,0 +1,111 @@
+diff --git a/demo/run_source_lifecycle_benchmark.py b/demo/run_source_lifecycle_benchmark.py
+index 2550797..ea2ceed 100644
+--- a/demo/run_source_lifecycle_benchmark.py
++++ b/demo/run_source_lifecycle_benchmark.py
+@@ -56,7 +56,11 @@ def _validate_suite(suite: dict[str, Any]) -> list[dict[str, str]]:
+         raise ValueError("source lifecycle case IDs must be unique")
+     for case in cases:
+         node = case.get("pytest_node")
+-        if not isinstance(node, str) or "::" not in node or not node.startswith("tests/test_"):
++        if (
++            not isinstance(node, str)
++            or "::" not in node
++            or not node.startswith("tests/test_")
++        ):
+             raise ValueError("source lifecycle cases require local pytest nodes")
+     return cases
+ 
+diff --git a/demo/summarize_benchmark_taxonomy.py b/demo/summarize_benchmark_taxonomy.py
+index 127e4df..237675a 100644
+--- a/demo/summarize_benchmark_taxonomy.py
++++ b/demo/summarize_benchmark_taxonomy.py
+@@ -102,7 +102,9 @@ def build_summary(results: dict[str, Path]) -> dict[str, Any]:
+         "evaluated_case_count": total_cases,
+         "failed_case_count": len(failures),
+         "macro_metrics": macro,
+-        "macro_metric_suite_counts": {name: len(values) for name, values in macro_values.items()},
++        "macro_metric_suite_counts": {
++            name: len(values) for name, values in macro_values.items()
++        },
+         "error_classification_counts": dict(sorted(classification_counts.items())),
+         "per_suite": per_suite,
+         "failures": failures,
+diff --git a/demo/validate_benchmark_registry.py b/demo/validate_benchmark_registry.py
+index 50eadd9..b889f81 100644
+--- a/demo/validate_benchmark_registry.py
++++ b/demo/validate_benchmark_registry.py
+@@ -927,7 +927,8 @@ def _suite_cases(split: dict[str, Any]) -> tuple[int, set[str], set[str]]:
+         )
+     repositories = artifact.get("repositories")
+     if isinstance(repositories, list) and all(
+-        isinstance(repository.get("expected_source_count"), int) for repository in repositories
++        isinstance(repository.get("expected_source_count"), int)
++        for repository in repositories
+     ):
+         return (
+             sum(int(repository["expected_source_count"]) for repository in repositories),
+diff --git a/tests/test_benchmark_taxonomy.py b/tests/test_benchmark_taxonomy.py
+index 6b90b32..1ca451c 100644
+--- a/tests/test_benchmark_taxonomy.py
++++ b/tests/test_benchmark_taxonomy.py
+@@ -23,7 +23,10 @@ def test_benchmark_taxonomy_retains_every_failure_classification() -> None:
+     }
+     assert all(failure["error_classification"] != "none" for failure in evidence["failures"])
+     assert len(
+-        {(failure["suite_id"], failure["split"], failure["id"]) for failure in evidence["failures"]}
++        {
++            (failure["suite_id"], failure["split"], failure["id"])
++            for failure in evidence["failures"]
++        }
+     ) == len(evidence["failures"])
+     assert evidence["macro_metric_suite_counts"]["repository_path_isolation_accuracy"] == 6
+     assert evidence["unrun_frozen_split"]["status"] == "not_run"
+diff --git a/tests/test_query_workflow.py b/tests/test_query_workflow.py
+index 73be132..7243ca8 100644
+--- a/tests/test_query_workflow.py
++++ b/tests/test_query_workflow.py
+@@ -1411,6 +1411,44 @@ def test_terms_match_camel_case_identifier_suffixes() -> None:
+     assert "runneradapter" in question_terms & fact_terms
+ 
+ 
++def test_terms_preserve_complete_snake_case_identifiers() -> None:
++    question_terms = query_module._terms("s03_permission.code.check_permission")
++    exact_terms = query_module._terms("s03_permission.code.check_permission")
++    competing_terms = query_module._terms("s03_permission.code.check_deny_list")
++
++    assert "check_permission" in question_terms & exact_terms
++    assert "check_permission" not in competing_terms
++
++
++def test_code_wiki_ignores_kind_words_when_no_specific_fact_matches(tmp_path: Path) -> None:
++    page = tmp_path / "wiki/pages/code/repository/agent-loop.md"
++    page.parent.mkdir(parents=True)
++    (tmp_path / "wiki/INDEX.md").write_text(
++        "# Knowledge Index\n\n"
++        "- [Agent loop](pages/code/repository/agent-loop.md) — agent function reference\n",
++        encoding="utf-8",
++    )
++    page.write_text(
++        "---\n"
++        "generated: code_wiki\n"
++        "type: concept\n"
++        "---\n"
++        "# Agent loop\n\n"
++        "## Verified symbols\n\n"
++        "- `agent_loop.run_bash` (function): `def run_bash(command: str) -> str:` [^code-1]\n\n"
++        "## Sources\n\n"
++        f"[^code-1]: source `{'a' * 64}` · revision `1` · `chars:0-10`\n",
++        encoding="utf-8",
++    )
++
++    result = query_module.answer_question(
++        tmp_path,
++        "Which function stores agent embeddings in a vector database?",
++    )
++
++    assert result["status"] == "unknown"
++
++
+ def test_ask_prefers_a_camel_case_identifier_over_project_background(
+     tmp_path: Path,
+     monkeypatch,
