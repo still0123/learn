@@ -9,7 +9,10 @@
 | AdsQA 硕士论文研究 | [`adsqa-thesis-research/`](adsqa-thesis-research/) |
 | 视频问答专利研究 | [`patent-research/`](patent-research/) |
 | 专利复审最终材料（视听协同感知专利） | [`专利复审最终材料-20260826/`](专利复审最终材料-20260826/) |
+| 专利审查阶段意见陈述（驳回前答复） | [`专利审查阶段意见陈述-20260824/`](专利审查阶段意见陈述-20260824/) |
 | 软件著作权最终材料 | [`软件著作权最终提交材料-20260729/`](软件著作权最终提交材料-20260729/) |
+| 个人简历 | [`个人简历/`](个人简历/) |
+| MemoryForge 学习资料与流程图 | [`memoryforge-学习资料/`](memoryforge-学习资料/) |
 | AgentSkill-Eval 秋招资料 | [`agent-skill-eval-career/`](agent-skill-eval-career/) |
 | LLM Wiki 详解 | [`llm-wiki/`](llm-wiki/) |
 | DSH 生态调研 | [`dsh-ecosystem-research/`](dsh-ecosystem-research/) |

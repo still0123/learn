@@ -1,0 +1,92 @@
+[
+  {
+    "name": "01-memoryforge-hero",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 174978,
+        "sha256": "4a336d5bea1a8f6df932cfcdff2177f7a6d2f79f25f91e628d03f6dc281faa39"
+      },
+      "svg": {
+        "bytes": 22158,
+        "sha256": "987ef2f5d9615532e77bf69e9399d76b464c2b631ccd4503e0700c8c4878bfd7"
+      }
+    }
+  },
+  {
+    "name": "02-memoryforge-portal-home",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 151912,
+        "sha256": "7f1d012cbb21220b678d373c1975d06f5a5a30aa65fb7cd9ff23eddc2d2b601d"
+      },
+      "svg": {
+        "bytes": 28042,
+        "sha256": "5ec7401df8f4c8d727fdc57a2225e24bd4f22d4563b8eee0582410318120bfc7"
+      }
+    }
+  },
+  {
+    "name": "03-memoryforge-changeset-review",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 127965,
+        "sha256": "2649ad730fbe4f038286dc73a8dc476439933233962faa025f4a96af4b465d77"
+      },
+      "svg": {
+        "bytes": 27680,
+        "sha256": "f0b8ce1cc1202c81d0290409da368beb63ff77bf584fe7c53b37a66875689d93"
+      }
+    }
+  },
+  {
+    "name": "04-memoryforge-publish-pipeline",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 133767,
+        "sha256": "8163b45745c54db326e6402aa1b8e1971bc366cd5a63e250bcc4705e7f8c0c19"
+      },
+      "svg": {
+        "bytes": 16985,
+        "sha256": "1b00f09059e7686546d625ca0277af28889bc3c0832682f2d058c4a24ba16693"
+      }
+    }
+  },
+  {
+    "name": "05-memoryforge-query-pipeline",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 152624,
+        "sha256": "ce63b340a5d22715291889d2e985306bede9cf0baa4423a5791e565952d830cb"
+      },
+      "svg": {
+        "bytes": 14225,
+        "sha256": "bc3d19319d496be5d6e37372d2fb68acb291b07191a4f00e9a50869d1959be6b"
+      }
+    }
+  },
+  {
+    "name": "06-memoryforge-vs-rag",
+    "width": 1600,
+    "height": 900,
+    "files": {
+      "png": {
+        "bytes": 150634,
+        "sha256": "34f7b4578eef11761242bc9078ee601e566a4de4fbcc8fac50f073441ae99337"
+      },
+      "svg": {
+        "bytes": 13471,
+        "sha256": "d95b9a995cdbdc4127ee7a9f7997d4f548c137fe1c41cf5f3b0fe1495a6d9ce3"
+      }
+    }
+  }
+]
