@@ -1,0 +1,52 @@
+{
+  "schema_version": "evads_qzoom_roi_common_a0_protocol_v1",
+  "frozen_at_utc": "2026-08-06T15:39:45Z",
+  "analysis_role": "Generate one common frozen MMR8 initial answer per Q-Zoom Screen question",
+  "inputs": {
+    "questions_sha256": "e30a9d0e44c1bd18382e27d5a326789cce4daec03dda4cf6e86c47f5c79441e1",
+    "mmr8_manifest_sha256": "3fabd094dbdcf6a3a2c221c6807b3e0c483dd51c818d38ca4b0081180110f32f",
+    "question_count": 100,
+    "video_count": 20,
+    "fold_question_count": 20,
+    "reference_answers_present": false,
+    "judge_scores_present": false
+  },
+  "answer_model": {
+    "model_dir": "/data1/qky/Model/Qwen3Vl-8B",
+    "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "model_index_sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+    "inference_script_sha256": "d7ff5ef98cfca5ba6e0bcdac60cebbecdcf04436fd1525af3155cc56bc440e4f"
+  },
+  "generation": {
+    "method": "SigLIPMMR64_8_lambda070",
+    "official_evads_prompt_used": true,
+    "metadata_ocr_asr_given_to_a0": false,
+    "views": 8,
+    "unified_size": 512,
+    "visual_tokens": 1024,
+    "secondary_frame_sampling": false,
+    "do_sample": false,
+    "max_new_tokens": 512,
+    "automatic_retry": false
+  },
+  "gpu_schedule": {
+    "fold_0": "2",
+    "fold_1": "3",
+    "fold_2": "4",
+    "fold_3": "5",
+    "fold_4_after_fold_0": "2"
+  },
+  "completion_gate": {
+    "required_prediction_count": 100,
+    "required_evidence_count": 100,
+    "required_errors": 0,
+    "required_views_per_question": 8,
+    "required_visual_tokens_per_question": 1024
+  },
+  "reuse_invariant": "The exact frozen A0 prediction, eight frame indices, OCR, and ASR must be shared by AnchorGlobal10 and QZoomROI10.",
+  "label_policy": {
+    "groundtruth_read": false,
+    "testset_answers_read": false,
+    "future_effect_scores_used": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "evads_hide_policy_timestamp_disposition_v1",
+  "recorded_at_utc": "2026-08-06T14:30:26Z",
+  "artifact": "POLICY_PROTOCOL_FROZEN.json",
+  "artifact_sha256": "c19b983bc1db51b98f0bf9e2ef7d11374f9a57f2acff8632af2b0ed3ea59a2c6",
+  "declared_frozen_at_utc": "2026-08-06T14:38:00Z",
+  "filesystem_mtime": "2026-08-06 22:19:07.051150231 +0800",
+  "filesystem_mtime_utc": "2026-08-06T14:19:07.051150231Z",
+  "first_policy_run_config_mtime": "2026-08-06 22:19:33.267363446 +0800",
+  "last_policy_run_summary_mtime": "2026-08-06 22:21:20.908162413 +0800",
+  "disposition": "The declared timestamp is a clerical future-time error. Preserve the original artifact and hash; use NTP-synchronized filesystem times as ordering evidence.",
+  "protocol_frozen_before_policy_inference": true,
+  "policy_or_effect_semantics_changed": false,
+  "references_or_judge_scores_read": false
+}

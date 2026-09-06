@@ -1,0 +1,44 @@
+{
+  "schema_version": "evads_qzoom_roi_screen_dataset_selection_protocol_v1",
+  "frozen_at_utc": "2026-08-06T15:31:26Z",
+  "candidate": "qzoom_roi10",
+  "analysis_role": "New answer-free, video-isolated SFT development Screen",
+  "source": {
+    "sft_parquet": "/data1/rmx/projectb/AdsQA-main/data/external/evads_v1/annotations/EVAds_SFT.parquet",
+    "sft_parquet_sha256": "75226332ce231976527102d31e57bf7caf8ed487e12a14b8dfe03b3ac317572f",
+    "test_parquet": "/data1/rmx/projectb/AdsQA-main/data/external/evads_v1/annotations/EVAds_TEST.parquet",
+    "test_parquet_sha256": "d41425518c30ca53fe1f1c42dbf1f7f1ca4213e1b22a79ac2fbe6b0ae6425cd6",
+    "video_index_dir": "/data1/rmx/projectb/AdsQA-main/data/external/evads_v1/cache/video_index64_v1"
+  },
+  "exclusion": {
+    "answer_free_questions_sha256": "5a525a2783754fcd5e83ee4a7f35589d79e3e28e6c389dfd489dd7305e058e4c",
+    "question_count": 1300,
+    "video_count": 260,
+    "includes_hide_screen_without_label_read": true
+  },
+  "selection": {
+    "selected_video_count": 20,
+    "questions_per_video": 5,
+    "selected_question_count": 100,
+    "selection_seed": "qwen3-qzoom-roi-sftscreen100-v1",
+    "category_stratified": true,
+    "fold_count": 5,
+    "dev_stage": "screen",
+    "split_name": "qwen3_qzoom_roi_sftscreen100_v1"
+  },
+  "builder": {
+    "path": "/data1/rmx/projectb/AdsQA-main/evaluation/tools/build_evads_sft_dev100_answer_free_v1.py",
+    "sha256": "5b5fb26bc6f50232b7777baf3d06dabf963a2deadf3ff4a41b4d41a1578e8490"
+  },
+  "isolation_requirements": {
+    "excluded_candidate_question_overlap": 0,
+    "excluded_candidate_video_overlap": 0,
+    "E_VAds_Test_video_overlap": 0
+  },
+  "label_policy": {
+    "answer_column_read": false,
+    "test_labels_read": false,
+    "judge_scores_read": false,
+    "selection_uses_only_answer_free_fields": true
+  }
+}

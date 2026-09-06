@@ -1,0 +1,15 @@
+{
+  "schema_version": "evads_qzoom_anchor_path_recovery_v1",
+  "failure_stage": "SigLIP manifest construction before first output row",
+  "error": "Video path /data1/rmx/projectb/AdsQA-main/data/external/evads_v1/videos/1192.mp4 did not exist.",
+  "failed_output_rows": 0,
+  "replacement_video_root": "/data1/rmx/projectb/AdsQA-main/data/external/evads_v1/videos_unpacked/videos",
+  "protocol_semantics_changed": false,
+  "labels_or_scores_read": false,
+  "rerun_result": {
+    "mmr8_rows": 100,
+    "spatial_rows": 100,
+    "avfunnel_rows": 100,
+    "errors": 0
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "scanned_at_utc": "2026-09-06T14:51:39.220665+00:00",
+  "source_origin_main_commit": "30d5974a0bca7eed0daaf467b976067a02c9bb47",
+  "candidate_file_count": 706,
+  "environment_or_placeholder_references": [
+    [
+      ".remote_diverse_work/audit_uncertainty_gate_paired_judge_v1.py",
+      "line:208:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_full_work/judge_adsqa_full5320_v1.py",
+      "line:377:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_overnight_work/judge_adsqa_full5320_v1_reference.py",
+      "line:377:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_overnight_work/judge_adsqa_supplement2526_v1.py",
+      "line:258:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_and_learn_threshold_calibration500_v1.py",
+      "line:438:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_extra_global_vs_adaptive_v1.py",
+      "line:166:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_noasr_vs_adaptive_v1.py",
+      "line:166:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_noocr_vs_adaptive_v1.py",
+      "line:166:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_qwen3_mmr_selectrescue_v1.py",
+      "line:255:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_responsecenter68_vs_adaptive_v1.py",
+      "line:166:environment_or_placeholder_reference"
+    ],
+    [
+      ".remote_threshold_work/judge_threshold_full5320_v1.py",
+      "line:255:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_adsqa_sft_lora_adaptive12_groupcv500_v1.py",
+      "line:658:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_adsqa_sft_lora_mmr8_512_v1.py",
+      "line:322:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_adsqa_sft_lora_mmr8_v1.py",
+      "line:303:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_ocr_crop_factorial_smoke_v1.py",
+      "line:148:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_qwen25_evidence_minimal_edit_smoke50_v1.py",
+      "line:296:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_crop_or_full_confirm600_v1.py",
+      "line:195:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_increment_confirm600_v1.py",
+      "line:377:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_increment_pilot300_v1.py",
+      "line:377:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_ocrbox_routed_confirm35_v1.py",
+      "line:156:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_residual_gate_calibration100_v1.py",
+      "line:54:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_patch/judge_readr_residual_mid_confirm600_v1.py",
+      "line:189:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/judge_qwen25_active_evidence_smoke2_v1.py",
+      "line:90:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/judge_qwen3_selected8_baselines_oof_v1.py",
+      "line:292:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/judge_qwen3_selective_rewrite_ablation_v1.py",
+      "line:195:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/judge_qwen3_selective_rewrite_random30_incremental_v1.py",
+      "line:234:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/recover_finalize_evads_deepeyes_screen_v1.py",
+      "line:167:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_tools/recover_finalize_evads_vlmr3_confirmation_v1.py",
+      "line:167:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_worktree/evaluation/eval/evaluate_compare_new.py",
+      "line:71:environment_or_placeholder_reference"
+    ],
+    [
+      "remote_worktree/evaluation/tools/build_claim_support_conflict_smoke_v23.py",
+      "line:172:environment_or_placeholder_reference"
+    ]
+  ],
+  "company_indicator_findings": [],
+  "blocked_literal_credential_findings": [],
+  "blocked_video_files": [],
+  "private_reference_files_retained_locally": {
+    "local_review/evidence300_batch01/queue5.jsonl": [
+      "reference_answer"
+    ],
+    "local_review/evidence300_batch02/queue5.jsonl": [
+      "reference_answer"
+    ],
+    "local_review/evidence300_batch03/queue5.jsonl": [
+      "reference_answer"
+    ],
+    "local_review/evidence300_batch04/queue5.jsonl": [
+      "reference_answer"
+    ]
+  }
+}

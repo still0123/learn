@@ -1,0 +1,54 @@
+{
+  "schema_version": "evads_qzoom_roi10_screen_branch_decision_v1",
+  "decided_at_utc": "2026-08-06T17:27:28Z",
+  "candidate": "qzoom_roi10",
+  "baseline": "anchor_global10",
+  "analysis_role": "SFT development Screen only",
+  "result": "screen_failed",
+  "question_count": 96,
+  "video_count": 20,
+  "metrics": {
+    "R5_delta": -0.0078125,
+    "R5_video_cluster_bootstrap_ci95": [
+      -0.029891304347826088,
+      0.010752688172043012
+    ],
+    "R3_delta": -0.005208333333333333,
+    "R3_video_cluster_bootstrap_ci95": [
+      -0.021505376344086023,
+      0.010752688172043012
+    ],
+    "R2_delta": -0.010416666666666666,
+    "R2_video_cluster_bootstrap_ci95": [
+      -0.031914893617021274,
+      0.0
+    ],
+    "wins_ties_losses": [
+      2,
+      90,
+      4
+    ],
+    "wrong_to_right": 0,
+    "right_to_wrong": 1
+  },
+  "screen_gate": {
+    "rule": "(R5 delta > 0 and R2 delta >= 0) or (R2 delta > 0 and R5 delta >= 0), and wrong_to_right >= right_to_wrong",
+    "passed": false,
+    "confidence_interval_required": false
+  },
+  "decision": {
+    "development_confirmation_authorized": false,
+    "fresh_test_authorized": false,
+    "success_claim_authorized": false,
+    "manual_success_spot_check_started": false,
+    "manual_success_spot_check_reason": "QZoomROI10 decreased both primary metrics and right-to-wrong exceeded wrong-to-right."
+  },
+  "claim_boundary": "QZoomROI10 is a negative development Screen result. It does not support a stable crop advantage over same-anchor high-resolution global views.",
+  "prohibited_followups": [
+    "Do not tune ROI confidence, area thresholds, prompts, gate behavior, or fallback rules on these scored questions.",
+    "Do not remove tiny, large, no-ROI, or fallback cases after observing scores.",
+    "Do not run QZoomROI10 Confirmation or Fresh.",
+    "Do not claim benefit from isolated wins."
+  ],
+  "next_action": "Seal this negative result. Continue the preregistered literature-derived sequence with EntropyGradientCompact10 on a new video-isolated answer-free Screen after a Qwen3 interface Smoke passes."
+}

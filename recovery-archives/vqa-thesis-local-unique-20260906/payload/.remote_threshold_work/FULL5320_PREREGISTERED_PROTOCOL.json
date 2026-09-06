@@ -1,0 +1,21 @@
+{
+  "schema_version": "qwen3_threshold_full5320_preregistered_protocol_v1",
+  "purpose": "Apply the independently frozen OOF-500 support threshold once to Full-5320.",
+  "frozen_threshold": 0.9602926671504974,
+  "trigger_rule": "A0 support_probability < frozen_threshold",
+  "expected_triggered_questions": 4905,
+  "expected_non_triggered_questions": 415,
+  "expected_existing_a2_reuse": 530,
+  "expected_new_a2_inference": 4375,
+  "base_method": "CLIPMMR64_8_lambda070",
+  "a2_method": "Qwen3_adaptive_scale_AVEvidenceRewrite12_A2",
+  "a0_views": 8,
+  "a0_visual_tokens": 1024,
+  "a2_views": 12,
+  "a2_visual_tokens": 3104,
+  "secondary_frame_sampling": false,
+  "full_valid5320_labels_used_for_selection": false,
+  "groundtruth_read_during_generation": false,
+  "judge_scores_read_during_generation": false,
+  "deepseek_requires_separate_exact_call_count_and_user_authorization": true
+}

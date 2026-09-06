@@ -1,0 +1,47 @@
+{
+  "schema_version": "evads_qzoom_roi_screen_dataset_preregistered_v1",
+  "frozen_at_utc": "2026-08-06T15:32:47Z",
+  "analysis_role": "New answer-free SFT development Screen; not Confirmation or Fresh evidence",
+  "candidate": "qzoom_roi10",
+  "selection": {
+    "source_question_count": 1880,
+    "source_video_count": 376,
+    "excluded_candidate_question_count": 1300,
+    "excluded_candidate_video_count": 260,
+    "eligible_video_count": 116,
+    "selected_video_count": 20,
+    "selected_question_count": 100,
+    "questions_per_video": 5,
+    "selection_seed": "qwen3-qzoom-roi-sftscreen100-v1",
+    "category_stratified": true,
+    "fold_count": 5,
+    "questions_per_fold": 20
+  },
+  "isolation": {
+    "prior_candidate_question_overlap": 0,
+    "prior_candidate_video_overlap": 0,
+    "E_VAds_Test_video_overlap": 0,
+    "future_confirmation_or_fresh_references_read": false
+  },
+  "hashes": {
+    "selection_protocol_sha256": "631153c1233fb690534d1ad9a49f67aa1f45171df67527623d5b902030eaf61b",
+    "excluded_questions_sha256": "5a525a2783754fcd5e83ee4a7f35589d79e3e28e6c389dfd489dd7305e058e4c",
+    "questions_sha256": "e30a9d0e44c1bd18382e27d5a326789cce4daec03dda4cf6e86c47f5c79441e1",
+    "selection_sha256": "ba3939b4c0bfa72124944e7c306122968cd6b07ffa4ceeec427f78f2b0a78db5",
+    "audit_sha256": "d07be1f55fa6723d3292e066384eb2b1348eca33233d5d77a1026ecda3c40234",
+    "manifest_sha256": "e6b8fa5c1d53e109ac0df150cdfd6525456045b982840079334216dece364a71",
+    "builder_sha256": "5b5fb26bc6f50232b7777baf3d06dabf963a2deadf3ff4a41b4d41a1578e8490"
+  },
+  "columns_read": [
+    "data_source",
+    "videos",
+    "prompt",
+    "ability",
+    "extra_info"
+  ],
+  "test_columns_read": [
+    "videos"
+  ],
+  "answer_or_outcome_fields_used": false,
+  "test_labels_used_for_selection": false
+}

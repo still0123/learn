@@ -1,0 +1,20 @@
+{
+  "schema_version": "evads_qzoom_roi_screen_judge_authorization_v1",
+  "authorized_at_utc": "2026-08-06T17:17:50Z",
+  "stage": "screen",
+  "variants": [
+    "anchor_global10",
+    "qzoom_roi10"
+  ],
+  "candidate_slot_count": 192,
+  "authorized_unique_calls": 125,
+  "preflight_audit_sha256": "55dec267c6e0e4e71ecd41b513c440e3cbc7879a33ccf1aa4dde93fefdff73c0",
+  "pending_sha256": "68948a5e9d3bdda2a224bee82894cfbc2b0f30072fad06c134abd173c3032ef3",
+  "slots_sha256": "8130f5ed9c6c1292766080d08331b16ab519b9c7be6347a3ba96334aa907ae8d",
+  "model": "deepseek-chat",
+  "temperature": 0,
+  "automatic_retries": 0,
+  "format_recovery_requires_new_authorization": true,
+  "private_references_may_be_loaded_after_this_authorization": true,
+  "E_VAds_Test_references_authorized": false
+}

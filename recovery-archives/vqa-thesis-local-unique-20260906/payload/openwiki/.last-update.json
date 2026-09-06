@@ -1,0 +1,6 @@
+{
+  "updatedAt": "2026-07-23T07:34:49.642Z",
+  "command": "init",
+  "gitHead": "fatal: not a git repository (or any of the parent directories): .git",
+  "model": "deepseek-chat"
+}

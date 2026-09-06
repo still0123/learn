@@ -1,0 +1,85 @@
+{
+  "schema_version": "evads_qzoom_roi_screen_policy_protocol_v1",
+  "frozen_at_utc": "2026-08-06T17:02:52Z",
+  "analysis_role": "Answer-free Q-Zoom ROI policy inference before paired Effect freeze",
+  "candidate": "qzoom_roi10",
+  "dataset_preregistration_sha256": "c5b224f1e5eada380aa6cbcdc1bc309ecaebd78a252d2cccaedc5c456752a75b",
+  "inputs": {
+    "question_count": 100,
+    "video_count": 20,
+    "anchor_request_count": 200,
+    "requests_sha256": "8a811689da31d78ac9684a6b76d15fca0a77d3f901304a07b8efb6f15290ed41",
+    "anchor_image_hashes_sha256": "016e1e1fc963d81127c88d3e7435e28845d8352572ae9804525b69aecddc604d",
+    "fold_shards_sha256": {
+      "fold_0.jsonl": "fdf3358d7b7cd9cd377e96bcf03f2dc9714cf1ac421a8a9940b24ceba2a9f639",
+      "fold_1.jsonl": "b51e46e5a522b897773774146b30e3d7893f3d703a0f3f9957f688f6cb72388f",
+      "fold_2.jsonl": "82a8e043289f343fa3ce39e4566b58be9aacca03e4bdbdec8aa87b4dc872e9e7",
+      "fold_3.jsonl": "053b1de408ef18756fc6d2c20b182103abc2110fd5d97c00227e4ae14546ca42",
+      "fold_4.jsonl": "91dbe405a36ca90eccefdb666a5c3301f0473a8e0be3b2aa6934f02d1ef2ae64"
+    }
+  },
+  "policy": {
+    "paper": "https://arxiv.org/abs/2604.06912",
+    "source_repository": "https://github.com/YuHengsss/Q-Zoom",
+    "source_commit": "f062af77ac598c2ca48ef90a58c9973c9b227421",
+    "source_model_sha256": "acd570c499a1a89a7c7a667c44d078359c2458d0d58438cd88a92e05f719ec22",
+    "source_roi_utils_sha256": "57b2f6906f7dceef67d07adf6fe7fcc2f0c4a0edc0a23cbeaf33bfb6241b735c",
+    "adapted_analysis_utils_sha256": "9e28fb840d67e62b611e7d5a2b037ed0ec13ec53d6a1739b8155883e68281244",
+    "model_repository": "YuhengSSS/Q-Zoom-Qwen3VL-4B",
+    "model_revision": "75ad1edb070c04d2a4e40a93235c4a1d904eec16",
+    "model_snapshot_audit_sha256": "26e2e485ccbd44eab9fbc894803c555eb00e67e6f0469144107fd52034b1c82c",
+    "model_config_sha256": "bc91cf6a9f5a49e48445707ddd74721dec3adb4c5b9e41d7d66a8cce360f212f",
+    "model_index_sha256": "05f62c61b385cc68c7e6bd8cff6293d72de3e74f32d9f2b0d81b201a86129d68",
+    "inference_script_sha256": "708ee114b56914d39ff5d5c207bc68fa9328de47abdb8b3e9e02735d329555bf",
+    "roi_confidence": 0.1,
+    "min_pixels": 524288,
+    "max_pixels": 4194304,
+    "attention_implementation": "sdpa",
+    "policy_prompt_suffix": "Answer the question using a single word or phrase.",
+    "dynamic_gate_ignored": true,
+    "sd_rpn_forced": true,
+    "maximum_roi_count_per_anchor": 1,
+    "answer_generation_executed": false,
+    "automatic_retry": false
+  },
+  "declared_adaptations": {
+    "flash_attention_2_to_sdpa": "The official repository provides an SDPA evaluation path; the installed FlashAttention binary requires unavailable GLIBC_2.32.",
+    "skimage_to_scipy": "The sole skimage.measure.label call is replaced by scipy.ndimage.label with an all-ones 3x3 structure, preserving 8-connected components.",
+    "gate_bypass": "The learned dynamic gate is ignored so every frozen trigger question receives two policy views and the paired trigger set remains identical.",
+    "answer_head_bypass": "Only one model forward is run to materialize the SD-RPN ROI; Q-Zoom answer generation is never executed."
+  },
+  "selection_and_fallback": {
+    "question_trigger": "At least one of the two frozen anchors produces a valid official ROI.",
+    "roi_anchor_view": "Use the exact persisted official ROI PNG as one 896 detail view at the same anchor time.",
+    "no_roi_anchor": "Use the frozen AVFunnel-mid bbox at the same anchor.",
+    "structural_or_runtime_error": "Hard policy failure; no retry and no Effect protocol.",
+    "area_threshold": null,
+    "bbox_filter": null,
+    "threshold_search": false
+  },
+  "smoke_gate": {
+    "single_anchor_v1_result": "failed_before_model_load_missing_skimage",
+    "single_anchor_v2_summary_sha256": "3cf5517d0bf4297076970552fc581b771a340601d7a4b2b3a04dd6c24bd31bdf",
+    "single_anchor_v2_result_sha256": "b2b96535b19c0e9a2debe50613a612fe82be5e318a9af077fb9bc9defb09524e",
+    "ten_anchor_summary_sha256": "2f4f329cdd4a9a7d54597c4a9d59037afae25be5f8e5ea301bec95ace96166d0",
+    "ten_anchor_results_sha256": "a25d793d75c171b27d676c98c8ca821aa68401756a3992060bb960c16a3d9cab",
+    "ten_anchor_roi_count": 10,
+    "ten_anchor_distinct_roi_hashes": 10,
+    "ten_anchor_bbox_area_median": 0.09620370370370372,
+    "errors": 0,
+    "passed": true
+  },
+  "gpu_schedule": {
+    "fold_0": "2",
+    "fold_1": "3",
+    "fold_2": "4",
+    "fold_3": "5",
+    "fold_4_after_fold_0": "2"
+  },
+  "label_policy": {
+    "reference_answers_used": false,
+    "judge_scores_used": false,
+    "test_labels_used_for_tuning": false
+  },
+  "next_freeze": "After 200 policy requests complete, merge without filtering, freeze exact triggered paired inputs and fairness invariants, then authorize Clean Qwen3 A2 before loading Screen references."
+}

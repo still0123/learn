@@ -1,0 +1,164 @@
+{
+  "schema_version": "evads_qzoom_roi10_screen_preregistered_protocol_v1",
+  "frozen_at_utc": "2026-08-06T17:07:09Z",
+  "analysis_role": "Answer-free, video-isolated SFT development Screen; not Confirmation or Fresh evidence",
+  "candidate": "qzoom_roi10",
+  "baseline": "anchor_global10",
+  "search_budget": {
+    "candidate_count": 1,
+    "candidate_names": [
+      "qzoom_roi10"
+    ],
+    "roi_threshold_candidates": 0,
+    "area_threshold_candidates": 0,
+    "additional_prompt_or_crop_variants_after_scoring": 0
+  },
+  "dataset": {
+    "preregistered_dataset_sha256": "c5b224f1e5eada380aa6cbcdc1bc309ecaebd78a252d2cccaedc5c456752a75b",
+    "questions_sha256": "e30a9d0e44c1bd18382e27d5a326789cce4daec03dda4cf6e86c47f5c79441e1",
+    "source_question_count": 100,
+    "source_video_count": 20,
+    "questions_per_video": 5,
+    "prior_candidate_question_overlap": 0,
+    "prior_candidate_video_overlap": 0,
+    "E_VAds_Test_video_overlap": 0
+  },
+  "policy": {
+    "policy_protocol_sha256": "4e3fe2ee77d5644b95e9789873bc9a33c5eabe98407b2c6e29111cad2e90f831",
+    "merged_audit_sha256": "be5d12608d75dfedbef2f31c4d91f8d927e3305383a6bcd58ecbc0b19d931999",
+    "merged_results_sha256": "909a7c445bd6f84ff2ab434939279d5fbd96b047cfcdc987bdeeee5d8705f765",
+    "anchor_calls": 200,
+    "roi_anchors": 168,
+    "no_roi_anchors": 32,
+    "trigger_questions": 96,
+    "trigger_videos": 20,
+    "fallback_anchors_within_trigger_set": 24,
+    "bbox_area_ratio_median": 0.0961284722222222,
+    "bbox_area_ratio_minimum": 0.001111111111111111,
+    "bbox_area_ratio_maximum": 0.8638888888888889,
+    "roi_confidence": 0.1,
+    "area_threshold": null,
+    "bbox_filter": null,
+    "automatic_retry": false,
+    "parse_failures": 0,
+    "runtime_errors": 0,
+    "answer_generation_executed": false,
+    "reference_answers_read": false,
+    "judge_scores_read": false,
+    "policy_latency_seconds_total": 183.41007590293884
+  },
+  "frozen_inputs": {
+    "builder_sha256": "75e6963737f23415a2e59ba68c2a73070b543a6b2a7d0e2d068776d63e04f228",
+    "audit_sha256": "e271c1296b06bdabbbf04e1955c562693830ee85ce5a21f2657aa17703f4f58e",
+    "trigger_manifest_sha256": "535b03b15988ef44e3ac3ae33df73a293f23c6f7c53ea637c37dd7e7bbe64ff9",
+    "fold_shards_sha256": {
+      "fold_0.jsonl": "0f88c095b312bdb03f4b4348fbe8b217199b802a3e4dbbef4c09265b36db1fe5",
+      "fold_1.jsonl": "e191e16f70850d44a30b1a9d5beeccb4732d676bd23ee21374d3e82b2efee1fd",
+      "fold_2.jsonl": "124bb77b5f4f79f2c31c875622a876b6b99ba1e2c122dc1ec8541b1177779cd6",
+      "fold_3.jsonl": "ae1e6beab160d019341ba98ac2c0af92dc8eefa5f5ff29a58642940a862f7d61",
+      "fold_4.jsonl": "2dfd2dcdc32ca7b02c3ff203fde6baa4bd58a0846a72e9c210cbe782cd8dad4f"
+    },
+    "paired_rows_per_fold": {
+      "0": 40,
+      "1": 34,
+      "2": 40,
+      "3": 40,
+      "4": 38
+    }
+  },
+  "fairness_invariants": {
+    "same_mmr8_initial_answer": true,
+    "same_trigger_questions": true,
+    "same_two_anchor_times": true,
+    "same_ocr": true,
+    "same_asr": true,
+    "same_answer_prompt": true,
+    "same_answer_model": true,
+    "same_view_count": 10,
+    "same_visual_tokens": 2592,
+    "same_base_views": "8 x 512",
+    "same_extra_view_count": 2,
+    "same_extra_view_size": "2 x 896",
+    "secondary_frame_sampling": false,
+    "candidate_extra_views": "Exact persisted Q-Zoom official ROI or frozen AVFunnel-mid fallback per anchor",
+    "baseline_extra_views": "Two full panoramas at the same anchor times"
+  },
+  "answer_inference": {
+    "model_dir": "/data1/qky/Model/Qwen3Vl-8B",
+    "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "model_index_sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+    "python_executable": "/data1/rmx/ana3/envs/ReadR/bin/python",
+    "torch_version": "2.8.0+cu128",
+    "transformers_version": "4.57.1",
+    "script_sha256": "383c146d04430b259551916351b3e2be8492c4184b27ae7c4da3d7204f587c96",
+    "skip_a1": true,
+    "do_sample": false,
+    "max_new_tokens": 192,
+    "automatic_retry": false,
+    "planned_a2_calls": 192,
+    "gpu_schedule": {
+      "fold_0": "2",
+      "fold_1": "3",
+      "fold_2": "4",
+      "fold_3": "5",
+      "fold_4_after_fold_0": "2"
+    }
+  },
+  "inference_audit": {
+    "script_sha256": "6562c5a49d491a731fba23b2cba2aadee5006d8c87cb71bafe588d78f80ed7c6",
+    "required_per_variant": 96,
+    "required_views": 10,
+    "required_visual_tokens": 2592,
+    "required_pair_fields": [
+      "base_source_frame_indices",
+      "anchor_source_frame_indices",
+      "prompt_sha256"
+    ],
+    "roi_image_sha256_reverified_during_inference": true
+  },
+  "judge": {
+    "model": "deepseek-chat",
+    "script_sha256": "847f3f8e803268abb87e3da09661cbaea50c33e1832259ff8ac52fb589704844",
+    "score_levels": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "primary_metrics": {
+      "R5": "mean five-level score; relaxed",
+      "R2": "fraction scored exactly 1; strict"
+    },
+    "secondary_metric": "R3",
+    "video_cluster_bootstrap_draws": 10000,
+    "maximum_unique_api_calls": 192,
+    "automatic_retries": 0,
+    "format_recovery_requires_new_authorization": true,
+    "private_references_loaded_only_after_answer_free_preflight": true
+  },
+  "screen_gate": {
+    "rule": "(R5 delta > 0 and R2 delta >= 0) or (R2 delta > 0 and R5 delta >= 0)",
+    "error_flow_rule": "wrong_to_right >= right_to_wrong",
+    "confidence_interval_required": false,
+    "on_fail": "Reject QZoomROI10; do not run Confirmation or Fresh for this candidate.",
+    "on_pass": "Create a new answer-free, video-isolated SFT Confirmation before loading its references."
+  },
+  "stop_budget": "One QZoomROI10 Screen, at most one independent video-isolated SFT Confirmation, then at most one newly frozen video-isolated Fresh test.",
+  "later_success_gate": {
+    "development_confirmation": "At least one of R5/R2 video-cluster bootstrap 95% CI lower bounds > 0 and the other point delta >= 0.",
+    "fresh_test": "Repeat the same gate on a newly frozen, video-isolated Fresh set.",
+    "required_final_audits": [
+      "wrong_to_right and right_to_wrong",
+      "Q-Zoom policy plus Qwen and judge cost",
+      "manual success spot-check",
+      "full-directory SHA256 verification"
+    ],
+    "success_claim_before_all_requirements": false
+  },
+  "label_policy": {
+    "test_labels_used_for_tuning": false,
+    "screen_references_read_before_preregistration": false,
+    "future_confirmation_or_fresh_references_used_for_selection": false
+  }
+}

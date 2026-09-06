@@ -1,0 +1,28 @@
+{
+  "schema_version": "evads_hide_pre_effect_implementation_recovery_v1",
+  "frozen_at_utc": "2026-08-06T14:34:30Z",
+  "original_preregistered_protocol_sha256": "7dde7645be225c0abe4b9618341af075d33f10d36f8f98d7439470a8d369ed7c",
+  "failed_script_sha256": "2f380f59f30365fc8dc5952dd04da94a6c2f611ff9b295dd4c5bf0e12b01a2fd",
+  "replacement_script_sha256": "cce8b3f5d31ac1e923a05000144e10fea4482dc8a2d91a9100ae8fbea5f62e24",
+  "failure": {
+    "stage": "paired Qwen inference before reference loading",
+    "error": "RuntimeError('frozen anchor source frame changed')",
+    "attempted_rows": 200,
+    "completed_rows": 50,
+    "failed_rows": 150,
+    "completed_rows_reused": 0,
+    "failed_output_directory": "inference_failed_frozen_anchor_recompute_v1"
+  },
+  "root_cause": "The runner recomputed the 32-frame index with Python round(), while the frozen anchor manifest already contained the authoritative source_frame_index. Some recomputed indices differed by one frame.",
+  "replacement": "Read source_frame_index directly from each frozen evidence anchor and validate that it is inside the source video.",
+  "fairness_effect": "The replacement restores the preregistered same-anchor invariant for both arms. It does not change trigger questions, MMR8 A0, OCR, ASR, answer prompt, model, view count, image size, visual tokens, decoding, or candidate layout bytes.",
+  "restart_authorization": {
+    "discard_all_partial_predictions": true,
+    "rerun_all_200_rows_once": true,
+    "resume_partial_outputs": false,
+    "additional_candidate_or_hyperparameter_search": false
+  },
+  "reference_answers_read": false,
+  "judge_scores_read": false,
+  "test_labels_read": false
+}

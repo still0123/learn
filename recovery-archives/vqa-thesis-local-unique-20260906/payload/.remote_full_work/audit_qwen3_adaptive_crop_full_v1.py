@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+"""Audit the AdaptiveScale-only full-set smoke or full inference."""
+
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+import hashlib
+import json
+from pathlib import Path
+from typing import Any
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dataset-root", type=Path, required=True)
+    parser.add_argument("--run-root", type=Path, required=True)
+    parser.add_argument(
+        "--split", choices=("smoke10", "full530"), required=True
+    )
+    parser.add_argument("--output", type=Path, required=True)
+    return parser.parse_args()
+
+
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    return [
+        json.loads(line)
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def main() -> None:
+    args = parse_args()
+    expected_per_fold = 2 if args.split == "smoke10" else 106
+    records = []
+    failures = []
+    files = {}
+    for fold in range(5):
+        input_path = (
+            args.dataset_root / args.split / "adaptive_scale" / "shards"
+            / f"fold_{fold}.jsonl"
+        )
+        rows = load_jsonl(input_path)
+        if len(rows) != expected_per_fold:
+            failures.append(f"fold_{fold}: input count")
+        output = (
+            args.run_root / args.split / "adaptive_scale" / f"fold_{fold}"
+        )
+        summary_path = output / "run_summary.json"
+        if not summary_path.is_file():
+            failures.append(f"fold_{fold}: missing summary")
+            continue
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        if (
+            summary.get("complete") is not True
+            or int(summary.get("stats", {}).get("processed", -1))
+            != expected_per_fold
+            or int(summary.get("stats", {}).get("errors", -1)) != 0
+        ):
+            failures.append(f"fold_{fold}: incomplete")
+        files[str(summary_path)] = sha256_file(summary_path)
+        for row in rows:
+            qid = str(row["question_id"])
+            trace_path = output / qid / "a2_trace.json"
+            prediction_path = output / qid / "a2_prediction.json"
+            if not trace_path.is_file() or not prediction_path.is_file():
+                failures.append(f"{qid}: missing output")
+                continue
+            trace = json.loads(trace_path.read_text(encoding="utf-8"))
+            prediction = json.loads(
+                prediction_path.read_text(encoding="utf-8")
+            )
+            processor = trace.get("processor_trace", {})
+            checks = {
+                "views12": int(processor.get("represented_views", -1)) == 12,
+                "base8": (
+                    int(processor.get("represented_video_frames", -1)) == 8
+                ),
+                "extra4": (
+                    int(processor.get("represented_extra_images", -1)) == 4
+                ),
+                "tokens3104": (
+                    int(processor.get("visual_tokens", -1)) == 3104
+                ),
+                "secondary_sampling_off": (
+                    processor.get("secondary_frame_sampling") is False
+                ),
+                "variant_matches": (
+                    str(trace.get("crop_ablation_variant"))
+                    == "adaptive_scale"
+                ),
+                "method_matches": (
+                    "adaptive_scale"
+                    in str(prediction.get("method", "")).lower()
+                ),
+                "four_planned_views": (
+                    len(trace.get("extra_view_plan", [])) == 4
+                ),
+            }
+            if not all(checks.values()):
+                failures.append(f"{qid}: {checks}")
+            records.append(
+                {
+                    "fold": fold,
+                    "question_id": qid,
+                    "visual_tokens": int(
+                        processor.get("visual_tokens", -1)
+                    ),
+                    "checks": checks,
+                }
+            )
+            files[str(trace_path)] = sha256_file(trace_path)
+            files[str(prediction_path)] = sha256_file(prediction_path)
+    audit = {
+        "schema_version": "qwen3_adaptive_scale_full_protocol_audit_v1",
+        "passed": not failures,
+        "split": args.split,
+        "expected_records": expected_per_fold * 5,
+        "record_count": len(records),
+        "visual_token_counts": dict(
+            Counter(str(row["visual_tokens"]) for row in records)
+        ),
+        "failures": failures,
+        "groundtruth_read": False,
+        "judge_scores_read": False,
+        "records": records,
+        "files_sha256": files,
+    }
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(
+        json.dumps(audit, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(
+        json.dumps(
+            {
+                key: value
+                for key, value in audit.items()
+                if key not in {"records", "files_sha256"}
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
+    if failures:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

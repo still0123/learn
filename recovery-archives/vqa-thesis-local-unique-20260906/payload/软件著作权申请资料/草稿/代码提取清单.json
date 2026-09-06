@@ -1,0 +1,184 @@
+{
+  "software_name": "广告视频内容检索分析系统",
+  "version": "V1.0",
+  "project_root": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system",
+  "file_count": 16,
+  "material_line_count": 2981,
+  "source_line_count": 3338,
+  "selected_source_line_count": 2965,
+  "lines_per_page": 50,
+  "total_pages": 60,
+  "target_pages": 60,
+  "available_candidate_line_count": 3563,
+  "available_candidate_pages": 72,
+  "supplement_status": "候选源码可达到前30页/后30页要求",
+  "mode": "front30_back30",
+  "selection_file": "软件著作权申请资料/草稿/代码文件选择.json",
+  "outputs": [
+    "代码-前30页.md",
+    "代码-后30页.md"
+  ],
+  "files": [
+    {
+      "path": "static/app.js",
+      "source_line_count": 542,
+      "blank_line_count": 34,
+      "selected_line_start": 1,
+      "selected_line_end": 542,
+      "selected_line_count": 508,
+      "material_line_start": 1,
+      "material_line_end": 509
+    },
+    {
+      "path": "static/index.html",
+      "source_line_count": 240,
+      "blank_line_count": 7,
+      "selected_line_start": 1,
+      "selected_line_end": 240,
+      "selected_line_count": 233,
+      "material_line_start": 510,
+      "material_line_end": 743
+    },
+    {
+      "path": "static/styles.css",
+      "source_line_count": 831,
+      "blank_line_count": 122,
+      "selected_line_start": 1,
+      "selected_line_end": 831,
+      "selected_line_count": 709,
+      "material_line_start": 744,
+      "material_line_end": 1453
+    },
+    {
+      "path": "app/__init__.py",
+      "source_line_count": 3,
+      "blank_line_count": 1,
+      "selected_line_start": 1,
+      "selected_line_end": 3,
+      "selected_line_count": 2,
+      "material_line_start": 1454,
+      "material_line_end": 1456
+    },
+    {
+      "path": "app/config.py",
+      "source_line_count": 9,
+      "blank_line_count": 2,
+      "selected_line_start": 1,
+      "selected_line_end": 9,
+      "selected_line_count": 7,
+      "material_line_start": 1457,
+      "material_line_end": 1464
+    },
+    {
+      "path": "app/engine.py",
+      "source_line_count": 339,
+      "blank_line_count": 43,
+      "selected_line_start": 1,
+      "selected_line_end": 339,
+      "selected_line_count": 296,
+      "material_line_start": 1465,
+      "material_line_end": 1761
+    },
+    {
+      "path": "app/llm_client.py",
+      "source_line_count": 128,
+      "blank_line_count": 14,
+      "selected_line_start": 1,
+      "selected_line_end": 128,
+      "selected_line_count": 114,
+      "material_line_start": 1762,
+      "material_line_end": 1876
+    },
+    {
+      "path": "app/models.py",
+      "source_line_count": 172,
+      "blank_line_count": 27,
+      "selected_line_start": 1,
+      "selected_line_end": 172,
+      "selected_line_count": 145,
+      "material_line_start": 1877,
+      "material_line_end": 2022
+    },
+    {
+      "path": "app/seed.py",
+      "source_line_count": 89,
+      "blank_line_count": 7,
+      "selected_line_start": 1,
+      "selected_line_end": 89,
+      "selected_line_count": 82,
+      "material_line_start": 2023,
+      "material_line_end": 2105
+    },
+    {
+      "path": "app/server.py",
+      "source_line_count": 156,
+      "blank_line_count": 27,
+      "selected_line_start": 1,
+      "selected_line_end": 156,
+      "selected_line_count": 129,
+      "material_line_start": 2106,
+      "material_line_end": 2235
+    },
+    {
+      "path": "app/storage.py",
+      "source_line_count": 397,
+      "blank_line_count": 34,
+      "selected_line_start": 1,
+      "selected_line_end": 397,
+      "selected_line_count": 363,
+      "material_line_start": 2236,
+      "material_line_end": 2599
+    },
+    {
+      "path": "config.example.json",
+      "source_line_count": 17,
+      "blank_line_count": 0,
+      "selected_line_start": 1,
+      "selected_line_end": 17,
+      "selected_line_count": 17,
+      "material_line_start": 2600,
+      "material_line_end": 2617
+    },
+    {
+      "path": "run.py",
+      "source_line_count": 7,
+      "blank_line_count": 3,
+      "selected_line_start": 1,
+      "selected_line_end": 7,
+      "selected_line_count": 4,
+      "material_line_start": 2618,
+      "material_line_end": 2622
+    },
+    {
+      "path": "scripts/export_code_material.py",
+      "source_line_count": 107,
+      "blank_line_count": 18,
+      "selected_line_start": 1,
+      "selected_line_end": 107,
+      "selected_line_count": 89,
+      "material_line_start": 2623,
+      "material_line_end": 2712
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "source_line_count": 115,
+      "blank_line_count": 14,
+      "selected_line_start": 1,
+      "selected_line_end": 115,
+      "selected_line_count": 101,
+      "material_line_start": 2713,
+      "material_line_end": 2814
+    },
+    {
+      "path": "scripts/source_audit.py",
+      "source_line_count": 186,
+      "blank_line_count": 20,
+      "selected_line_start": 1,
+      "selected_line_end": 186,
+      "selected_line_count": 166,
+      "material_line_start": 2815,
+      "material_line_end": 2981
+    }
+  ],
+  "safe_software_filename": "广告视频内容检索分析系统"
+}

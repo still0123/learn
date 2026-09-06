@@ -1,0 +1,51 @@
+{
+  "schema_version": "evads_qzoom_roi_anchor_build_protocol_v1",
+  "frozen_at_utc": "2026-08-06T15:32:47Z",
+  "analysis_role": "Answer-free deterministic MMR8 and two-anchor construction before Q-Zoom policy inference",
+  "dataset": {
+    "questions_sha256": "e30a9d0e44c1bd18382e27d5a326789cce4daec03dda4cf6e86c47f5c79441e1",
+    "question_count": 100,
+    "video_count": 20,
+    "fold_count": 5
+  },
+  "model": {
+    "repository": "google/siglip-so400m-patch14-384",
+    "model_dir": "/data1/rmx/projectb/models/siglip-so400m-patch14-384",
+    "config_sha256": "adc04928d8fd19a61822584fe0cf2e813e5ebac17f3e49fb1ea096860ae6457b",
+    "local_files_only": true,
+    "dtype": "bfloat16",
+    "image_processor_use_fast": false
+  },
+  "mmr8": {
+    "script_sha256": "173413405a01a984c6f0e9b6edc7979cb6477f5a1cc5ac7a4ed6ff7355e12c19",
+    "candidate_frames": 64,
+    "selected_views": 8,
+    "lambda": 0.7,
+    "chronological_model_input": true,
+    "gpu_id": "2"
+  },
+  "spatial_manifest": {
+    "script_sha256": "2d6ac7f913eb51e271e5de287e20b765c78f4be2e191ee07aad099920c787353",
+    "candidate_frames": 64,
+    "raw_global_frames": 32,
+    "crop_grid_per_raw_frame": 9,
+    "selected_local_specs": 8,
+    "gpu_id": "3"
+  },
+  "anchor_fusion": {
+    "script_sha256": "25d3098bd5eae04dcfbd4a0d7bd759e53ba9fb640dbe836e47bcfe048cca3331",
+    "rule": "siglip_local_rank055_segmented_asr030_official_ocr015_v1",
+    "visual_weight": 0.55,
+    "asr_weight": 0.3,
+    "ocr_weight": 0.15,
+    "anchor_count_per_question": 2,
+    "temporal_min_raw_rank_gap": 4,
+    "policy_bbox_fallback": "Frozen AVFunnel-mid crop at the same anchor"
+  },
+  "label_policy": {
+    "reference_answers_used": false,
+    "judge_scores_used": false,
+    "test_labels_used": false,
+    "automatic_retry": false
+  }
+}

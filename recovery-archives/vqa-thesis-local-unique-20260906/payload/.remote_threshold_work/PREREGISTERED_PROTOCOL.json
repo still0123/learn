@@ -1,0 +1,46 @@
+{
+  "schema_version": "qwen3_threshold_calibration500_preregistered_protocol_v1",
+  "purpose": "Replace the fixed bottom-10-percent trigger with a single independently calibrated A0-support threshold.",
+  "calibration_set": {
+    "name": "AdsQA GroupCV OOF-500",
+    "questions": 500,
+    "videos": 100,
+    "folds": 5,
+    "questions_per_fold": 100,
+    "video_overlap_with_full_valid5320": 0
+  },
+  "frozen_generation_protocol": {
+    "base_method": "Clean Qwen3-VL CLIPMMR64_8_lambda070",
+    "a0_views": 8,
+    "a0_visual_tokens": 1024,
+    "a2_views": 12,
+    "a2_visual_tokens": 3104,
+    "a2_method": "Qwen3_AVEvidenceRewrite12_A2",
+    "base_size": 512,
+    "crop_size": 896,
+    "secondary_frame_sampling": false,
+    "prompt_frozen_from": "qwen3_mmr_selectrescue_oof500_v1"
+  },
+  "threshold_learning": {
+    "trigger_rule": "trigger A2 if A0 support_probability < tau",
+    "primary_objective": "maximize DeepSeek Relaxed score on calibration data",
+    "secondary_objective": "maximize Strict score",
+    "safety_tiebreaker": "minimize right-to-wrong",
+    "efficiency_tiebreaker": "minimize trigger rate",
+    "validation": "five-fold nested threshold selection: learn on four video folds and evaluate on the held-out fold",
+    "final_freeze": "fit once on all 500 only after nested validation is non-negative; never use Full-5320 labels",
+    "sensitivity": "report neighboring threshold operating points without selecting on Full-5320"
+  },
+  "full_valid5320_policy": {
+    "threshold_frozen_before_test_scoring": true,
+    "reuse_existing_a2_predictions": true,
+    "infer_only_missing_triggered_a2": true,
+    "test_labels_used_for_threshold": false
+  },
+  "api_policy": {
+    "generation_uses_api": false,
+    "deepseek_requires_separate_exact_call_count_and_user_authorization": true
+  },
+  "groundtruth_read_during_generation": false,
+  "judge_scores_read_during_generation": false
+}

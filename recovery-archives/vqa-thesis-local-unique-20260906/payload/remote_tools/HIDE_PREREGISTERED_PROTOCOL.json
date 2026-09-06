@@ -1,0 +1,171 @@
+{
+  "schema_version": "evads_hide_layout10_screen_preregistered_protocol_v1",
+  "frozen_at_utc": "2026-08-06T14:31:07Z",
+  "analysis_role": "Answer-free, video-isolated SFT development Screen; not Confirmation or Fresh evidence",
+  "candidate": "hide_layout10",
+  "baseline": "anchor_global10",
+  "search_budget": {
+    "candidate_count": 1,
+    "candidate_names": [
+      "hide_layout10"
+    ],
+    "attention_threshold_candidates": 0,
+    "layout_filter_candidates": 0,
+    "additional_prompt_or_crop_variants_after_scoring": 0
+  },
+  "dataset": {
+    "preregistered_dataset_sha256": "c149d221061bbf1f2a8b3c4b8e24971369cbbc857565e56ee042eb7c169d29a2",
+    "questions_sha256": "603dd427b3a40747571af94c14dd7da7821de37f19c92ebf4c7d2af29690ba4b",
+    "source_question_count": 100,
+    "source_video_count": 20,
+    "questions_per_video": 5,
+    "all_prior_1200_scored_sft_question_overlap": 0,
+    "all_prior_240_scored_sft_video_overlap": 0,
+    "E_VAds_Test_video_overlap": 0
+  },
+  "policy": {
+    "paper": "https://arxiv.org/abs/2510.00054",
+    "source_repository": "https://github.com/Tennine2077/HiDe",
+    "source_commit": "c7d211641ecb9e2824fdc50f6c574e8cb5813f08",
+    "policy_protocol_sha256": "c19b983bc1db51b98f0bf9e2ef7d11374f9a57f2acff8632af2b0ed3ea59a2c6",
+    "timestamp_disposition_sha256": "e997314b3ec71e985b0612886d3b68f452a69129dbcbfcc0ec18c5e12d27f2dd",
+    "merge_script_sha256": "22af9e820a4891369b908bb642f945302b6dfab3e950f649de3fcfef10e7daeb",
+    "merged_audit_sha256": "71ae70c71ad14152eedc7de53c834370fa761e4153f3fda2a33bb3b984055f61",
+    "merged_results_sha256": "c315f7e1cdd86eadc67e624a14b3d831c60c13c0a2c6aba75e3ddd3fe1f3ab3e",
+    "anchor_calls": 200,
+    "layout_anchors": 200,
+    "distinct_layout_hashes": 200,
+    "selected_source_regions": 675,
+    "trigger_questions": 100,
+    "trigger_videos": 20,
+    "fallback_anchors_within_trigger_set": 0,
+    "gaussian_sigma": 3,
+    "attention_threshold": 0.7,
+    "attention_implementation": "eager",
+    "connected_components": "scipy_ndimage_8_connected",
+    "layout_rule": "Official layout-preserving compact reconstruction of all thresholded connected source regions",
+    "no_region_fallback": "Frozen AVFunnel-mid crop at the same anchor",
+    "area_threshold": null,
+    "layout_filter": null,
+    "automatic_retry": false,
+    "parse_failures": 0,
+    "runtime_errors": 0,
+    "reference_answers_read": false,
+    "judge_scores_read": false,
+    "policy_latency_seconds_total": 461.5258345603943
+  },
+  "frozen_inputs": {
+    "builder_sha256": "3d7006651a8030401e07c9ed02c141768cf3300b403dcc2951101b813ea3e70f",
+    "audit_sha256": "80bb3e8403b77021a5c2b164f06859a68f570237e74e0dde2c3521f19eff44d1",
+    "trigger_manifest_sha256": "ff972041b7ea0976410a1aab2ff4d38cbe31d10c1d7997c0ecf56f1d731887ba",
+    "fold_shards_sha256": {
+      "fold_0.jsonl": "78be47e4c45646324cb9ad8606faca7c31b8149b765e3606a1a6d3915b032e58",
+      "fold_1.jsonl": "23c140a5c007fe61e4aed63eb16c4303fe0a260e8c28569ee8adda7a0144a3bd",
+      "fold_2.jsonl": "e87f1a2dbb1acf134719d6132be2fd05b7ce39a33178b21ea4dc10ef9542587c",
+      "fold_3.jsonl": "29016f96e6a32f4fd1e50364a86329e5001efa249121f9e38fb6503a16f9ee08",
+      "fold_4.jsonl": "8844b1a2bfa588449b1a56c4e0e706a92477ce602e5e0570c86825c3bdd7142f"
+    },
+    "paired_rows_per_fold": {
+      "0": 40,
+      "1": 40,
+      "2": 40,
+      "3": 40,
+      "4": 40
+    }
+  },
+  "fairness_invariants": {
+    "same_mmr8_initial_answer": true,
+    "same_trigger_questions": true,
+    "same_two_anchor_times": true,
+    "same_ocr": true,
+    "same_asr": true,
+    "same_answer_prompt": true,
+    "same_answer_model": true,
+    "same_view_count": 10,
+    "same_visual_tokens": 2592,
+    "same_base_views": "8 x 512",
+    "same_extra_view_count": 2,
+    "same_extra_view_size": "2 x 896",
+    "secondary_frame_sampling": false,
+    "candidate_extra_views": "Exact persisted HiDe compact layout per anchor, resized to 896 x 896 with bicubic interpolation",
+    "baseline_extra_views": "Two full panoramas at the same anchor times, resized to 896 x 896 with bicubic interpolation"
+  },
+  "answer_inference": {
+    "model_dir": "/data1/qky/Model/Qwen3Vl-8B",
+    "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "model_index_sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+    "python_executable": "/data1/rmx/ana3/envs/ReadR/bin/python",
+    "torch_version": "2.8.0+cu128",
+    "transformers_version": "4.57.1",
+    "script_sha256": "2f380f59f30365fc8dc5952dd04da94a6c2f611ff9b295dd4c5bf0e12b01a2fd",
+    "skip_a1": true,
+    "do_sample": false,
+    "max_new_tokens": 192,
+    "automatic_retry": false,
+    "planned_a2_calls": 200,
+    "gpu_by_fold": {
+      "0": "0",
+      "1": "2",
+      "2": "3",
+      "3": "4",
+      "4": "5"
+    }
+  },
+  "inference_audit": {
+    "script_sha256": "c78127b177a58fa941fb21b016a0f8358c19528a373e86088e16aa5d285cc715",
+    "required_per_variant": 100,
+    "required_views": 10,
+    "required_visual_tokens": 2592,
+    "required_pair_fields": [
+      "base_source_frame_indices",
+      "anchor_source_frame_indices",
+      "prompt_sha256"
+    ],
+    "compact_image_sha256_reverified_during_inference": true
+  },
+  "judge": {
+    "model": "deepseek-chat",
+    "script_sha256": "3f43490c0a03a4c75a9e17d3bf383b7f1a0055216b499320b80465f95ac25642",
+    "score_levels": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "primary_metrics": {
+      "R5": "mean five-level score; relaxed",
+      "R2": "fraction scored exactly 1; strict"
+    },
+    "secondary_metric": "R3",
+    "video_cluster_bootstrap_draws": 10000,
+    "maximum_unique_api_calls": 200,
+    "automatic_retries": 0,
+    "format_recovery_requires_new_authorization": true,
+    "private_references_loaded_only_after_answer_free_preflight": true
+  },
+  "screen_gate": {
+    "rule": "(R5 delta > 0 and R2 delta >= 0) or (R2 delta > 0 and R5 delta >= 0)",
+    "error_flow_rule": "wrong_to_right >= right_to_wrong",
+    "confidence_interval_required": false,
+    "on_fail": "Reject HiDeLayout10; do not run Confirmation or Fresh for this candidate.",
+    "on_pass": "Create a new answer-free, video-isolated SFT Confirmation before loading its references."
+  },
+  "stop_budget": "One HiDeLayout10 Screen, at most one independent video-isolated SFT Confirmation, then at most one newly frozen video-isolated Fresh test.",
+  "later_success_gate": {
+    "development_confirmation": "At least one of R5/R2 video-cluster bootstrap 95% CI lower bounds > 0 and the other point delta >= 0.",
+    "fresh_test": "Repeat the same gate on a newly frozen, video-isolated Fresh set.",
+    "required_final_audits": [
+      "wrong_to_right and right_to_wrong",
+      "HiDe policy plus Qwen and judge cost",
+      "manual success spot-check",
+      "full-directory SHA256 verification"
+    ],
+    "success_claim_before_all_requirements": false
+  },
+  "label_policy": {
+    "test_labels_used_for_tuning": false,
+    "screen_references_read_before_preregistration": false,
+    "future_confirmation_or_fresh_references_used_for_selection": false
+  }
+}
