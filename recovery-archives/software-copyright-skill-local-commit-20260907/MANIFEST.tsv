@@ -1,0 +1,3 @@
+path	bytes	sha256
+payload/patch/local-change.patch	4398	d255c5b5f01099f5949953214377fb6c90648a013f17f6c243e0bbdf6e18828c
+payload/software-copyright-materials/scripts/build_docx_from_md.py	37667	29add1ecdf6b42b56bcfd8d6269807421e7758ffa46b218aa146bbb38d58f174
