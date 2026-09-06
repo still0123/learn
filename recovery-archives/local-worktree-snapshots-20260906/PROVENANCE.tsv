@@ -1,0 +1,8 @@
+snapshot	source_root	origin	branch	baseline_commit	archive_mode
+skill-learning-engine	/Users/bytedance/Documents/Codex/2026-08-30/gen/work/skill-learning-engine	https://github.com/still0123/skill-learning-engine.git	main	b8993aa02ae4e9993875c162589e6a0df9f55858	full-current-files-plus-diff
+dshagent	/Users/bytedance/Documents/Codex/2026-08-15/new-chat/work/dshagent	https://github.com/still0123/dshagent.git	main	f266d98b57cbeba0fce8beea6c67f49c7f799056	full-current-files-plus-diff
+qmemory-local-fix	/Users/bytedance/Documents/Codex/2026-08-31/ban/work/QMemory	https://github.com/zwh1213/QMemory.git	master	7a9079f1993417578175859379bc929a6e932a6f	diff-only
+memoryforge-dev	/Users/bytedance/Documents/Codex/2026-08-13/kan-2/work/MemoryForge-dev	https://github.com/still0123/MemoryForge.git	main	6dad7beef34210ae6539ec53524d9e30e4640253	full-current-files-plus-diff
+memoryforge-feishu-worktree	/Users/bytedance/Documents/Codex/2026-08-14/kan/work/MemoryForge	https://github.com/still0123/MemoryForge.git	main	a5b6f7b7f6ea3638e4f9903b82dd500a830389bc	filtered-current-files-plus-diff
+memoryforge-wiki-refactor	/Users/bytedance/Documents/Codex/2026-08-14/memoryforge-wiki-refactor-agent	/Users/bytedance/Documents/Codex/2026-08-13/kan-2/work/MemoryForge-dev	main	33e5f29395b61fb3f01e5f55d7d8b8b619fbc9f7	full-current-files-plus-diff
+memoryforge-legacy-git-adapter	/Users/bytedance/Documents/Codex/2026-08-14/.legacy-patch/repo	/tmp/MemoryForge-dev-work	main	33e5f29395b61fb3f01e5f55d7d8b8b619fbc9f7	full-current-files-plus-diff

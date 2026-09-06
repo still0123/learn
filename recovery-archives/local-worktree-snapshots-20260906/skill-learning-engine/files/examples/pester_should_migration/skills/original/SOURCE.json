@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "source_type": "public-github-skill",
+  "repository": "https://github.com/github/awesome-copilot",
+  "commit": "32f32c9809efca35d54c9c5b37210e307aa8645f",
+  "path": "skills/pester-should-migration/SKILL.md",
+  "license": "MIT",
+  "upstream_sha256": "d80c47ed3cda083f6411da12d0251a136608eada05c846eeba361e3168c9f14f",
+  "variant_sha256": "d80c47ed3cda083f6411da12d0251a136608eada05c846eeba361e3168c9f14f",
+  "variant": "upstream-original",
+  "modifications": []
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_type": "public-github-skill-controlled-ablation",
+  "repository": "https://github.com/github/awesome-copilot",
+  "commit": "32f32c9809efca35d54c9c5b37210e307aa8645f",
+  "path": "skills/pester-should-migration/SKILL.md",
+  "license": "MIT",
+  "upstream_sha256": "d80c47ed3cda083f6411da12d0251a136608eada05c846eeba361e3168c9f14f",
+  "variant_sha256": "39bbb32ee7f12008a57bc7fb3074ce31e4a67e7cafe7b13b57df71de6a1aee15",
+  "variant": "controlled-ablation-semantic-gotchas-v1",
+  "modifications": [
+    "Removed guidance for truthy versus strict boolean behavior.",
+    "Removed intent-specific migration guidance for BeNullOrEmpty.",
+    "Removed collection migration and pipeline-unwrapping guidance.",
+    "Removed the Should -BeIn operand-direction guidance."
+  ]
+}

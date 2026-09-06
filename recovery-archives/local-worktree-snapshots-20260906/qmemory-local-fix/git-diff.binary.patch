@@ -1,0 +1,67 @@
+diff --git a/app/repository.py b/app/repository.py
+index 615678a..542af2a 100644
+--- a/app/repository.py
++++ b/app/repository.py
+@@ -116,6 +116,47 @@ class ArchiveRepository:
+                     old["text"] = text
+             else:
+                 posts.append(post)
++        # ``emotion_cgi_msglist_v6`` returns the archive owner's original moods,
++        # while the PC feed can return only interaction cards for a small, recent
++        # slice of them.  Keep the detail payload as a post source too; otherwise
++        # old moods without a matching PC card are silently absent from the viewer.
++        details = {}
++        for dp in (self.root / "output" / "details.json", self.root / "diag" / "details.json"):
++            if dp.exists():
++                try:
++                    details = json.loads(dp.read_text(encoding="utf-8"))
++                    break
++                except (OSError, ValueError, TypeError):
++                    continue
++        target_uin = str(cfgj.get("target_uin") or my_uin)
++        mood_author = {"uin": target_uin, "nickname": target_uin, "avatar": ""}
++        for post in posts:
++            author = post.get("author") or {}
++            if str(author.get("uin") or "") == target_uin:
++                mood_author.update({
++                    "nickname": author.get("nickname") or target_uin,
++                    "avatar": author.get("avatar") or "",
++                })
++                break
++        existing_ids = {str(post.get("id") or "") for post in posts}
++        for tid, detail in details.items():
++            tid = str(tid or "")
++            if not tid or tid in existing_ids or not isinstance(detail, dict):
++                continue
++            posts.append({
++                "id": tid,
++                "type": "mood",
++                "time": detail.get("time") or 0,
++                "author": dict(mood_author),
++                "is_mine": target_uin == my_uin,
++                "text": detail.get("text") or "",
++                "images": detail.get("images") or [],
++                "videos": detail.get("videos") or [],
++                "comments": detail.get("comments") or [],
++                "likes": [],
++                "mentions": [],
++                "reshare": detail.get("reshare"),
++            })
+         photo_map, video_map = {}, {}
+         for folder in (cfgj.get("data_dir", "output/datas"), cfgj.get("media_dir", "media")):
+             try:
+@@ -148,14 +189,6 @@ class ArchiveRepository:
+                 continue
+             seen.add(key)
+             normalized.append(item)
+-        details = {}
+-        for dp in (self.root / "output" / "details.json", self.root / "diag" / "details.json"):
+-            if dp.exists():
+-                try:
+-                    details = json.loads(dp.read_text(encoding="utf-8"))
+-                    break
+-                except (OSError, ValueError, TypeError):
+-                    continue
+         for item in normalized:
+             d = details.get(str(item.get("id") or ""))
+             if not d:

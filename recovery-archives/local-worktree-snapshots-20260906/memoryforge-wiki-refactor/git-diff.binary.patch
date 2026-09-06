@@ -1,0 +1,67 @@
+diff --git a/src/memoryforge/query/retrieval_v2.py b/src/memoryforge/query/retrieval_v2.py
+index 5cd7a17..32d4f38 100644
+--- a/src/memoryforge/query/retrieval_v2.py
++++ b/src/memoryforge/query/retrieval_v2.py
+@@ -43,6 +43,26 @@ _FEISHU_OPERATION_MARKERS = (
+     "configure",
+     "setup",
+ )
++_QUESTION_ROUTE_MARKERS = {
++    "architecture": ("架构", "模块", "子系统", "依赖", "architecture", "module", "subsystem"),
++    "symbol": ("符号", "类", "方法", "函数", "字段", "symbol", "class", "method", "function"),
++    "call": ("调用", "调用链", "谁调用", "call", "caller", "callee"),
++    "change": ("改动", "变更", "影响", "change", "impact", "affected"),
++    "history": ("历史", "为什么修改", "提交", "history", "why changed", "commit", "blame"),
++    "cross_repository": ("跨仓库", "跨项目", "cross repository", "cross-repository"),
++}
++_MAX_WORKSET_PAGES = 3
++_MAX_WORKSET_EVIDENCE = 5
++
++
++def question_routes(question: str) -> tuple[str, ...]:
++    """Classify a question before retrieval so callers can route follow-up tools."""
++    lowered = question.lower()
++    return tuple(
++        route
++        for route, markers in _QUESTION_ROUTE_MARKERS.items()
++        if any(marker in lowered for marker in markers)
++    )
+ 
+ 
+ def retrieve_candidates(
+@@ -69,7 +89,7 @@ def retrieve_candidates(
+         else [f for f in wiki_facts if f.get("repository_id") in (None, repository_id)]
+     )
+ 
+-    routes: list[str] = []
++    routes = list(question_routes(question))
+     preferred_source_kind = _preferred_source_kind(question)
+     if preferred_source_kind is not None:
+         routes.append(f"source_{preferred_source_kind}")
+@@ -207,21 +227,21 @@ def retrieve_candidates(
+ 
+     seen_pages: set[str] = set()
+     page_count = 0
+-    max_candidates = max_pages * 6
++    page_limit = min(max_pages, _MAX_WORKSET_PAGES)
+     final: list[RetrievalCandidate] = []
+     for cand in candidates:
+-        if len(final) >= max_candidates:
++        if len(final) >= _MAX_WORKSET_EVIDENCE:
+             break
+         if cand.page_path not in seen_pages:
++            if page_count >= page_limit:
++                continue
+             seen_pages.add(cand.page_path)
+             page_count += 1
+-            if page_count > max_pages:
+-                continue
+         final.append(cand)
+ 
+     return RetrievalResult(
+         candidates=tuple(final),
+-        routes=tuple(routes),
++        routes=tuple(dict.fromkeys(routes)),
+     )
+ 
+ 

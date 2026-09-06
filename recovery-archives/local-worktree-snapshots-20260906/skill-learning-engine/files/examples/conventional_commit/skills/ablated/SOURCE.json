@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source_type": "public-github-skill-controlled-ablation",
+  "repository": "https://github.com/github/awesome-copilot",
+  "commit": "32f32c9809efca35d54c9c5b37210e307aa8645f",
+  "path": "skills/conventional-commit/SKILL.md",
+  "license": "MIT",
+  "upstream_sha256": "250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73",
+  "variant_sha256": "8034735d087c02555ed3f3ca86221e31625c092cb5b12fdb0891f39b8e2b5bf9",
+  "variant": "controlled-ablation-breaking-footer-v1",
+  "modifications": [
+    "Removed footer from the commit-message structure.",
+    "Removed the breaking-change example.",
+    "Removed footer guidance from validation and the final note."
+  ]
+}

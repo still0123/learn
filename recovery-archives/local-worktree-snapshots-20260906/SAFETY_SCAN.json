@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-09-06",
+  "payload_files": 65,
+  "content_scan": {
+    "secret_markers": 0,
+    "company_markers": 0,
+    "forbidden_filename_markers": 0
+  },
+  "excluded_after_scan": [
+    {
+      "source": "/Users/bytedance/Documents/Codex/2026-08-14/kan/work/MemoryForge/tests/test_feishu_bot.py",
+      "reason": "contains explicit efs-mgr and filenas-mgr company-repository test fixtures"
+    },
+    {
+      "source": "/Users/bytedance/Documents/Codex/2026-08-13/kan-2/work/MemoryForge-dev/.dbg/",
+      "reason": "debug/runtime data"
+    },
+    {
+      "source": "/Users/bytedance/Documents/Codex/2026-08-13/kan-2/work/MemoryForge-dev/debug-background-import-stuck.md",
+      "reason": "debug record"
+    }
+  ],
+  "scanner_patterns": {
+    "secret": "private keys, GitHub/GitLab tokens, AWS/Google keys, OpenAI-style tokens, populated api_key/secret/token/password assignments",
+    "company": "code.byted, bytedance, byteintern, adsqa, efs-mgr, bytenas, filenas-mgr",
+    "forbidden_filenames": ".env, key/certificate formats, identity/recovery/reference_answer names"
+  }
+}

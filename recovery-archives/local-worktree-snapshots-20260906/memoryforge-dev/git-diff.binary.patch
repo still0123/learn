@@ -1,0 +1,243 @@
+diff --git a/src/memoryforge/adapters/feishu_adapter.py b/src/memoryforge/adapters/feishu_adapter.py
+index 6ad9b52..c5b88fe 100644
+--- a/src/memoryforge/adapters/feishu_adapter.py
++++ b/src/memoryforge/adapters/feishu_adapter.py
+@@ -7,10 +7,12 @@ import json
+ import re
+ import subprocess
+ import unicodedata
++from contextlib import suppress
+ from dataclasses import dataclass
+ from pathlib import Path
+ from typing import Any
+ from urllib.parse import urlparse
++from urllib.request import Request, urlopen
+ 
+ from memoryforge.adapters.importer import import_local_document
+ from memoryforge.core.errors import MemoryForgeError
+@@ -87,7 +89,47 @@ def _import_feishu_document(
+     content = _document_content(raw_content)
+     normalized_tags = tuple(sorted({"feishu", *(tag.strip() for tag in tags if tag.strip())}))
+     opened = Workspace.open(workspace)
++    # #region debug-point C:inner-lock-wait
++    with suppress(Exception):
++        urlopen(
++            Request(
++                "http://127.0.0.1:7777/event",
++                data=json.dumps(
++                    {
++                        "sessionId": "background-import-stuck",
++                        "runId": "post-fix",
++                        "hypothesisId": "C",
++                        "location": "feishu_adapter.py:_import_feishu_document",
++                        "msg": "[DEBUG] Waiting for inner Workspace lock",
++                        "data": {"document_id": document_id, "workspace": str(workspace)},
++                    }
++                ).encode(),
++                headers={"Content-Type": "application/json"},
++            ),
++            timeout=0.2,
++        ).read()
++    # #endregion
+     with opened.exclusive_lock():
++        # #region debug-point C:inner-lock-acquired
++        with suppress(Exception):
++            urlopen(
++                Request(
++                    "http://127.0.0.1:7777/event",
++                    data=json.dumps(
++                        {
++                            "sessionId": "background-import-stuck",
++                            "runId": "post-fix",
++                            "hypothesisId": "C",
++                            "location": "feishu_adapter.py:_import_feishu_document",
++                            "msg": "[DEBUG] Acquired inner Workspace lock",
++                            "data": {"document_id": document_id, "workspace": str(workspace)},
++                        }
++                    ).encode(),
++                    headers={"Content-Type": "application/json"},
++                ),
++                timeout=0.2,
++            ).read()
++        # #endregion
+         results: list[ImportResult] = []
+         for part_id, part_title, part_content in _document_parts(title, content):
+             source_key = (
+diff --git a/src/memoryforge/portal/portal_jobs.py b/src/memoryforge/portal/portal_jobs.py
+index d68bd68..46956a7 100644
+--- a/src/memoryforge/portal/portal_jobs.py
++++ b/src/memoryforge/portal/portal_jobs.py
+@@ -16,11 +16,13 @@ import subprocess
+ import sys
+ import threading
+ from collections.abc import Callable
++from contextlib import suppress
+ from datetime import UTC, datetime, timedelta
+ from functools import partial
+ from pathlib import Path
+ from typing import Any
+ from urllib.parse import urlsplit, urlunsplit
++from urllib.request import Request, urlopen
+ 
+ from memoryforge.adapters.codex_adapter import CodexImportError, import_codex_rollout
+ from memoryforge.adapters.feishu_adapter import (
+@@ -458,6 +460,7 @@ def _execute_import(
+     sensitivity = Sensitivity.PUBLIC if bool(payload.get("public")) else Sensitivity.LOCAL_ONLY
+     source_ids: list[str] = []
+     changed = False
++    imported: tuple[ImportResult, ...]
+     progress("导入来源", 25, "正在写入不可变 SourceVersion。")
+ 
+     if kind in {"repository", "repository_url"}:
+@@ -501,10 +504,56 @@ def _execute_import(
+         changed = any(
+             document.status in {"created", "updated"} for document in folder_sync.documents
+         ) or bool(folder_sync.deleted)
++    elif kind == "feishu":
++        imported = import_feishu_document(
++            workspace,
++            _required_string(payload, "document"),
++        )
++        source_ids.extend(item.source_id for item in imported)
++        changed = any(item.status != "unchanged" for item in imported)
+     else:
+         opened = Workspace.open(workspace)
++        # #region debug-point C:outer-lock-wait
++        with suppress(Exception):
++            urlopen(
++                Request(
++                    "http://127.0.0.1:7777/event",
++                    data=json.dumps(
++                        {
++                            "sessionId": "background-import-stuck",
++                            "runId": "post-fix",
++                            "hypothesisId": "C",
++                            "location": "portal_jobs.py:_execute_import",
++                            "msg": "[DEBUG] Waiting for outer Workspace lock",
++                            "data": {"kind": kind, "workspace": str(workspace)},
++                        }
++                    ).encode(),
++                    headers={"Content-Type": "application/json"},
++                ),
++                timeout=0.2,
++            ).read()
++        # #endregion
+         with opened.exclusive_lock():
+-            imported: tuple[ImportResult, ...]
++            # #region debug-point C:outer-lock-acquired
++            with suppress(Exception):
++                urlopen(
++                    Request(
++                        "http://127.0.0.1:7777/event",
++                        data=json.dumps(
++                            {
++                                "sessionId": "background-import-stuck",
++                                "runId": "post-fix",
++                                "hypothesisId": "C",
++                                "location": "portal_jobs.py:_execute_import",
++                                "msg": "[DEBUG] Acquired outer Workspace lock",
++                                "data": {"kind": kind, "workspace": str(workspace)},
++                            }
++                        ).encode(),
++                        headers={"Content-Type": "application/json"},
++                    ),
++                    timeout=0.2,
++                ).read()
++            # #endregion
+             if kind == "file":
+                 path = Path(_required_string(payload, "path")).expanduser()
+                 imported = (
+@@ -535,11 +584,6 @@ def _execute_import(
+                             sensitivity=Sensitivity.LOCAL_ONLY,
+                         ),
+                     )
+-            elif kind == "feishu":
+-                imported = import_feishu_document(
+-                    workspace,
+-                    _required_string(payload, "document"),
+-                )
+             elif kind == "web":
+                 imported = (
+                     import_web_page(
+@@ -603,12 +647,12 @@ def _execute_refresh(
+         parts = Path(source_path).parts
+         if len(parts) >= 2 and parts[0] == "feishu":
+             document_id = parts[1].removesuffix(".md")
++            imported = import_feishu_document(workspace, document_id)
++            changed_ids = tuple(item.source_id for item in imported)
++            changed = any(item.status in {"created", "updated"} for item in imported)
++            _stage_progress(progress, provider)
+             opened = Workspace.open(workspace)
+             with opened.exclusive_lock():
+-                imported = import_feishu_document(workspace, document_id)
+-                changed_ids = tuple(item.source_id for item in imported)
+-                changed = any(item.status in {"created", "updated"} for item in imported)
+-                _stage_progress(progress, provider)
+                 changesets = _stage_pending(
+                     opened,
+                     changed_ids,
+diff --git a/tests/test_portal_control.py b/tests/test_portal_control.py
+index 5fed888..8beced3 100644
+--- a/tests/test_portal_control.py
++++ b/tests/test_portal_control.py
+@@ -5,11 +5,13 @@ import json
+ import sqlite3
+ import subprocess
+ import threading
++from contextlib import contextmanager
+ from pathlib import Path
+ 
+ import pytest
+ from typer.testing import CliRunner
+ 
++import memoryforge.adapters.feishu_adapter as feishu_adapter
+ import memoryforge.interface.cli as cli_module
+ import memoryforge.portal.portal_jobs as portal_jobs
+ from memoryforge.interface.cli import app
+@@ -430,6 +432,46 @@ def test_uploaded_file_uses_controlled_temporary_storage(tmp_path: Path) -> None
+         manager.close()
+ 
+ 
++def test_portal_feishu_import_does_not_reenter_workspace_lock(
++    tmp_path: Path,
++    monkeypatch: pytest.MonkeyPatch,
++) -> None:
++    workspace = Workspace.initialize(tmp_path / "workspace").root
++    monkeypatch.setattr(
++        feishu_adapter,
++        "_fetch_document",
++        lambda _reference: {
++            "document_id": "debugdocument",
++            "title": "Debug document",
++            "content": "# Debug document\n\nBody.",
++        },
++    )
++    original_lock = Workspace.exclusive_lock
++    lock_depth = 0
++
++    @contextmanager
++    def reject_reentry(opened: Workspace):
++        nonlocal lock_depth
++        assert lock_depth == 0, "Workspace lock must not be re-entered"
++        with original_lock(opened):
++            lock_depth += 1
++            try:
++                yield
++            finally:
++                lock_depth -= 1
++
++    monkeypatch.setattr(Workspace, "exclusive_lock", reject_reentry)
++
++    result = portal_jobs._execute_import(
++        workspace,
++        {"kind": "feishu", "document": "debugdocument", "public": False},
++        lambda *_args: None,
++    )
++
++    assert result["message"] == "来源处理完成。"
++    assert result["changeset_ids"]
++
++
+ def test_running_job_becomes_retryable_failure_after_restart(tmp_path: Path) -> None:
+     workspace = Workspace.initialize(tmp_path / "workspace").root
+     source = tmp_path / "note.md"

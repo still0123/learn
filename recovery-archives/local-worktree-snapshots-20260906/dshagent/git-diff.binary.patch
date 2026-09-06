@@ -1,0 +1,144 @@
+diff --git a/src/domain.ts b/src/domain.ts
+index bdb2920..99a7672 100644
+--- a/src/domain.ts
++++ b/src/domain.ts
+@@ -1,9 +1,54 @@
+ import { createHash } from 'node:crypto'
+ 
+ export const DEFAULT_TIMEOUT_MS = 120_000
++export const MAX_ERROR_SUMMARY_CHARS = 2_000
+ export const MAX_OUTPUT_BYTES = 256 * 1024
+ export const MAX_OUTPUT_TAIL_CHARS = 4_000
+ 
++export function summarizeError(error: unknown, maxChars = MAX_ERROR_SUMMARY_CHARS): string {
++  if (!Number.isInteger(maxChars) || maxChars < 0) {
++    throw new RangeError('maxChars must be a non-negative integer')
++  }
++  const stack = new Set<object>()
++  const safeString = (value: unknown): string => {
++    try {
++      return String(value)
++    } catch {
++      return 'unknown error'
++    }
++  }
++  const format = (value: unknown, budget: number): string => {
++    if (budget <= 0) return ''
++    if (typeof value !== 'object' || value === null) return safeString(value).slice(0, budget)
++    if (stack.has(value)) return '[circular error]'.slice(0, budget)
++    stack.add(value)
++    try {
++      const errorValue = value instanceof Error ? value : undefined
++      let output = (errorValue?.message || errorValue?.name || safeString(value)).slice(0, budget)
++      const append = (prefix: string, nested: unknown): void => {
++        const remaining = budget - output.length - prefix.length
++        if (remaining <= 0) return
++        const detail = format(nested, remaining)
++        if (detail.length > 0) output += prefix + detail
++      }
++      if (value instanceof AggregateError) {
++        try {
++          for (const nested of value.errors) append('; ', nested)
++        } catch {}
++      }
++      if (errorValue && 'cause' in errorValue) {
++        try {
++          if (errorValue.cause !== undefined) append('; caused by: ', errorValue.cause)
++        } catch {}
++      }
++      return output.slice(0, budget)
++    } finally {
++      stack.delete(value)
++    }
++  }
++  return format(error, maxChars)
++}
++
+ export interface ExitExpectation {
+   exitCodes?: number[]
+   outputIncludes?: string[]
+diff --git a/src/repair.ts b/src/repair.ts
+index accefcf..8a610b1 100644
+--- a/src/repair.ts
++++ b/src/repair.ts
+@@ -6,6 +6,7 @@ import {
+   isTerminalRunState,
+   matchesFailure,
+   matchesSuccess,
++  summarizeError,
+   type CommandEvidence,
+   type Diagnosis,
+   type NormalizedRepairFailureInput,
+@@ -277,7 +278,7 @@ export async function executeRepairFailure(input: {
+           round,
+           stopReason: 'error',
+           agentsStarted: 0,
+-          error: error instanceof Error ? error.message : String(error),
++          error: summarizeError(error),
+         })
+         return finish(signal.aborted ? 'cancelled' : 'repair_failed')
+       }
+@@ -285,7 +286,7 @@ export async function executeRepairFailure(input: {
+         round,
+         stopReason: attempt.stopReason,
+         agentsStarted: attempt.agentsStarted,
+-        ...(attempt.error === undefined ? {} : { error: attempt.error }),
++        ...(attempt.error === undefined ? {} : { error: summarizeError(attempt.error) }),
+       })
+       if (signal.aborted || attempt.stopReason === 'cancelled') return finish('cancelled')
+       if (attempt.stopReason !== 'completed' || !attempt.writer || attempt.writer.outcome !== 'patched') {
+diff --git a/src/runner.ts b/src/runner.ts
+index d2cfe8d..0848545 100644
+--- a/src/runner.ts
++++ b/src/runner.ts
+@@ -8,6 +8,7 @@ import {
+   calculatePatchScore,
+   isManifestFile,
+   summarizeCommandOutput,
++  summarizeError,
+   type CommandEvidence,
+   type PatchSummary,
+ } from './domain.js'
+@@ -51,7 +52,7 @@ export function createCommandRunner(ctx: Context): CommandRunner {
+         }
+       } catch (error: unknown) {
+         const finished = now()
+-        const message = (error instanceof Error ? error.message : String(error)).slice(0, 2_000)
++        const message = summarizeError(error)
+         const output = summarizeCommandOutput('', message, input.maxOutputBytes)
+         return {
+           command: input.command,
+diff --git a/src/workflow.ts b/src/workflow.ts
+index 492aea2..6b0a878 100644
+--- a/src/workflow.ts
++++ b/src/workflow.ts
+@@ -1,7 +1,7 @@
+ import type { Context } from '@deepseek-ai/cordis'
+ import type { Agent } from '@deepseek-ai/dsh-agent'
+ import type { WorkflowMeta } from '@deepseek-ai/dsh-workflow'
+-import type { CommandEvidence, Diagnosis, PatchSummary } from './domain.js'
++import { summarizeError, type CommandEvidence, type Diagnosis, type PatchSummary } from './domain.js'
+ 
+ const WRITER_SCHEMA = {
+   type: 'object',
+@@ -122,7 +122,7 @@ export async function runWriterWorkflow(input: {
+     const base: WorkflowAttempt = {
+       stopReason: result.stopReason,
+       agentsStarted: result.agentsStarted,
+-      ...(result.error === undefined ? {} : { error: result.error }),
++      ...(result.error === undefined ? {} : { error: summarizeError(result.error) }),
+     }
+     if (result.stopReason !== 'completed') return base
+     if (!isWriterResult(result.value)) return { ...base, error: 'workflow returned invalid writer output' }
+diff --git a/test/domain.test.ts b/test/domain.test.ts
+index 85a3c1f..e7e5499 100644
+--- a/test/domain.test.ts
++++ b/test/domain.test.ts
+@@ -12,6 +12,7 @@ import {
+   sha256Digest,
+   stableCanonicalJson,
+   summarizeCommandOutput,
++  summarizeError,
+   validateRepairFailureInput,
+   type CommandEvidence,
+   type RepairFailureInput,

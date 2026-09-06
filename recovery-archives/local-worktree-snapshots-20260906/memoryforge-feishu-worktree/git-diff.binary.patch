@@ -1,0 +1,296 @@
+diff --git a/src/memoryforge/adapters/feishu_bot.py b/src/memoryforge/adapters/feishu_bot.py
+index 04e5fee..908e169 100644
+--- a/src/memoryforge/adapters/feishu_bot.py
++++ b/src/memoryforge/adapters/feishu_bot.py
+@@ -10,6 +10,7 @@ from typing import Any
+ 
+ from memoryforge.adapters.importer import SourceValidationError
+ from memoryforge.core.errors import MemoryForgeError
++from memoryforge.query.agent import AgentPayload, run_agent
+ from memoryforge.query.contracts import AskPayload
+ from memoryforge.query.provider import OpenAICompatibleProvider
+ from memoryforge.query.query import answer_question
+@@ -41,8 +42,9 @@ def reply_to_feishu_text(
+     provider: OpenAICompatibleProvider | None = None,
+     allow_local: bool = False,
+     session_id: str | None = None,
++    use_agent: bool = False,
+ ) -> dict[str, Any]:
+-    """Answer one Feishu text message, optionally summarizing explicitly allowed evidence."""
++    """Answer one Feishu text message, optionally via the MiniClaude agent loop."""
+     control_reply = _control_reply(workspace, text, session_id)
+     if control_reply is not None:
+         return control_reply
+@@ -53,6 +55,7 @@ def reply_to_feishu_text(
+         provider=provider,
+         allow_local=allow_local,
+         session_id=session_id,
++        use_agent=use_agent,
+     )
+     return _text_reply(workspace, result)
+ 
+@@ -65,6 +68,7 @@ def _session_answer(
+     provider: OpenAICompatibleProvider | None,
+     allow_local: bool,
+     session_id: str | None,
++    use_agent: bool,
+ ) -> AskPayload:
+     current_store = SessionStore(workspace, session_id) if session_id else None
+     context_store = current_store
+@@ -80,24 +84,37 @@ def _session_answer(
+         turns = [turn for turn in turns if turn["model_safe"] or turn["citations"]]
+         turns = turns[-3:]
+     result = _module_scope_answer(workspace, text, repository_id)
++    agent_used = False
+     if result is None:
+-        result = answer_question(
++        if use_agent and provider is not None:
++            result = _run_agent_answer(
++                workspace,
++                text,
++                provider=provider,
++                allow_local=allow_local,
++                repository_id=repository_id,
++                session_id=session_id,
++            )
++            agent_used = True
++        else:
++            result = answer_question(
++                workspace,
++                rewrite_query(text, turns),
++                max_pages=max_pages,
++                provider=provider,
++                allow_local=allow_local,
++                repository_id=repository_id,
++                conversation_context=render_context(turns),
++            )
++    if not agent_used:
++        save_turn(
+             workspace,
+-            rewrite_query(text, turns),
+-            max_pages=max_pages,
+-            provider=provider,
+-            allow_local=allow_local,
+-            repository_id=repository_id,
+-            conversation_context=render_context(turns),
++            session_id,
++            question=text,
++            answer=result["answer"],
++            citations=[dict(citation) for citation in result["citations"]],
++            wiki_pages=result["wiki_pages"],
+         )
+-    save_turn(
+-        workspace,
+-        session_id,
+-        question=text,
+-        answer=result["answer"],
+-        citations=[dict(citation) for citation in result["citations"]],
+-        wiki_pages=result["wiki_pages"],
+-    )
+     if current_store is not None and current_store.auto_memory_enabled():
+         with suppress(MemoryForgeError, SourceValidationError, OSError):
+             remember_session(workspace, current_store.session_id)
+@@ -131,6 +148,61 @@ def _module_scope_answer(
+     }
+ 
+ 
++def _run_agent_answer(
++    workspace: Path,
++    text: str,
++    *,
++    provider: OpenAICompatibleProvider,
++    allow_local: bool,
++    repository_id: str | None,
++    session_id: str | None,
++) -> AskPayload:
++    """Answer one Feishu message through the bounded MiniClaude agent loop."""
++    payload = run_agent(
++        workspace,
++        text,
++        provider=provider,
++        allow_local=allow_local,
++        repository_id=repository_id,
++        session_id=session_id,
++    )
++    return _agent_payload_to_ask(payload)
++
++
++def _agent_payload_to_ask(payload: AgentPayload) -> AskPayload:
++    """Map the agent loop result onto the shared AskPayload reply shape."""
++    citations = payload["citations"]
++    first = citations[0] if citations else None
++    status = payload["status"]
++    if status == "max_steps" or status == "provider_error":
++        return {
++            "status": "unknown",
++            "evidence_status": "no_local_evidence",
++            "answer": payload["answer"],
++            "supported_claims": [],
++            "unsupported_aspects": [],
++            "citations": [],
++            "wiki_pages": payload["wiki_pages"],
++            "source_id": None,
++            "source_version": None,
++            "locator": None,
++            "quote": None,
++        }
++    return {
++        "status": status,
++        "evidence_status": "grounded" if citations else "no_local_evidence",
++        "answer": payload["answer"],
++        "supported_claims": [],
++        "unsupported_aspects": [],
++        "citations": citations,
++        "wiki_pages": payload["wiki_pages"],
++        "source_id": first["source_id"] if first else None,
++        "source_version": first["source_version"] if first else None,
++        "locator": first["locator"] if first else None,
++        "quote": first["quote"] if first else None,
++    }
++
++
+ def _control_reply(
+     workspace: Path,
+     text: str,
+@@ -218,6 +290,7 @@ def handle_feishu_event(
+     max_pages: int = 3,
+     provider: OpenAICompatibleProvider | None = None,
+     allow_local: bool = False,
++    use_agent: bool = False,
+ ) -> dict[str, Any]:
+     """Turn a Feishu URL-verification or text-message event into a reply payload.
+ 
+@@ -249,6 +322,7 @@ def handle_feishu_event(
+             provider=provider,
+             allow_local=allow_local,
+             session_id=session_id,
++            use_agent=use_agent,
+         ),
+     }
+ 
+@@ -260,6 +334,7 @@ def handle_lark_cli_event(
+     max_pages: int = 3,
+     provider: OpenAICompatibleProvider | None = None,
+     allow_local: bool = False,
++    use_agent: bool = False,
+ ) -> dict[str, Any] | None:
+     """Turn one flattened ``lark-cli event consume`` record into a reply payload."""
+     if event.get("sender_type") != "user" or event.get("message_type") != "text":
+@@ -284,6 +359,7 @@ def handle_lark_cli_event(
+             provider=provider,
+             allow_local=allow_local,
+             session_id=session_id,
++            use_agent=use_agent,
+         ),
+     }
+ 
+diff --git a/src/memoryforge/adapters/feishu_service.py b/src/memoryforge/adapters/feishu_service.py
+index 73ac361..ed5f4bf 100644
+--- a/src/memoryforge/adapters/feishu_service.py
++++ b/src/memoryforge/adapters/feishu_service.py
+@@ -24,6 +24,7 @@ def serve_feishu_bot(
+     max_pages: int = 3,
+     provider: OpenAICompatibleProvider | None = None,
+     allow_local: bool = False,
++    use_agent: bool = False,
+ ) -> None:
+     """Listen for bot messages and reply with the existing Wiki answer path."""
+     listener = _start_listener()
+@@ -32,7 +33,12 @@ def serve_feishu_bot(
+         assert listener.stdout is not None
+         for line in listener.stdout:
+             _handle_event_line(
+-                workspace, line, max_pages=max_pages, provider=provider, allow_local=allow_local
++                workspace,
++                line,
++                max_pages=max_pages,
++                provider=provider,
++                allow_local=allow_local,
++                use_agent=use_agent,
+             )
+     finally:
+         if listener.poll() is None:
+@@ -67,6 +73,7 @@ def _handle_event_line(
+     max_pages: int,
+     provider: OpenAICompatibleProvider | None,
+     allow_local: bool,
++    use_agent: bool,
+ ) -> None:
+     started_at = time.monotonic()
+     try:
+@@ -79,6 +86,7 @@ def _handle_event_line(
+             max_pages=max_pages,
+             provider=provider,
+             allow_local=allow_local,
++            use_agent=use_agent,
+         )
+         if handled is None:
+             print("Feishu event skipped", file=sys.stderr)
+diff --git a/src/memoryforge/interface/cli.py b/src/memoryforge/interface/cli.py
+index f2b0622..07b53a4 100644
+--- a/src/memoryforge/interface/cli.py
++++ b/src/memoryforge/interface/cli.py
+@@ -1109,6 +1109,13 @@ def feishu_reply(
+         bool,
+         typer.Option("--llm", help="Summarize matched Wiki evidence with the configured model."),
+     ] = False,
++    agent: Annotated[
++        bool,
++        typer.Option(
++            "--agent",
++            help="Answer with the MiniClaude multi-step agent loop (requires a configured model).",
++        ),
++    ] = False,
+     allow_local_llm: Annotated[
+         bool,
+         typer.Option(
+@@ -1127,7 +1134,9 @@ def feishu_reply(
+         opened = (
+             Workspace.open(workspace) if session is not None else Workspace.open_readonly(workspace)
+         )
+-        provider = OpenAICompatibleProvider(ProviderConfig.from_environment()) if llm else None
++        provider = (
++            OpenAICompatibleProvider(ProviderConfig.from_environment()) if (llm or agent) else None
++        )
+         reply = reply_to_feishu_text(
+             opened.root,
+             question,
+@@ -1135,6 +1144,7 @@ def feishu_reply(
+             provider=provider,
+             allow_local=allow_local_llm,
+             session_id=session,
++            use_agent=agent,
+         )
+     except (
+         FeishuBotError,
+@@ -1160,6 +1170,13 @@ def feishu_serve(
+         bool,
+         typer.Option("--llm", help="Summarize matched Wiki evidence with the configured model."),
+     ] = False,
++    agent: Annotated[
++        bool,
++        typer.Option(
++            "--agent",
++            help="Answer with the MiniClaude multi-step agent loop (requires a configured model).",
++        ),
++    ] = False,
+     allow_local_llm: Annotated[
+         bool,
+         typer.Option(
+@@ -1173,12 +1190,15 @@ def feishu_serve(
+     try:
+         opened = Workspace.open(workspace)
+         typer.echo("Listening for Feishu bot messages. Press Ctrl+C to stop.")
+-        provider = OpenAICompatibleProvider(ProviderConfig.from_environment()) if llm else None
++        provider = (
++            OpenAICompatibleProvider(ProviderConfig.from_environment()) if (llm or agent) else None
++        )
+         serve_feishu_bot(
+             opened.root,
+             max_pages=max_pages,
+             provider=provider,
+             allow_local=allow_local_llm,
++            use_agent=agent,
+         )
+     except KeyboardInterrupt:
+         typer.echo("Feishu listener stopped.")

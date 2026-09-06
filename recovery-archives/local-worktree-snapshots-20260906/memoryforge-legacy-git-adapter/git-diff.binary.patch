@@ -1,0 +1,19 @@
+diff --git a/src/memoryforge/adapters/git_adapter.py b/src/memoryforge/adapters/git_adapter.py
+index 0216661..c64ea74 100644
+--- a/src/memoryforge/adapters/git_adapter.py
++++ b/src/memoryforge/adapters/git_adapter.py
+@@ -122,14 +122,6 @@ def scan_git_snapshot_code(
+                 tags=("code", suffix.removeprefix("."), CODE_WIKI_VERSION),
+             )
+         )
+-    if documents:
+-        documents.extend(
+-            _code_module_documents(
+-                snapshot,
+-                tuple(documents),
+-                sensitivity=sensitivity,
+-            )
+-        )
+     return tuple(documents)
+ 
+ 

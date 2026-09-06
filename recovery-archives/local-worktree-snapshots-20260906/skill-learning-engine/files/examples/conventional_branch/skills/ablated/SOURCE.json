@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_type": "public-github-skill-controlled-ablation",
+  "repository": "https://github.com/github/awesome-copilot",
+  "commit": "c956566a35c3c2e635f019e7a1bfa59d9497e8b1",
+  "path": "skills/conventional-branch/SKILL.md",
+  "license": "MIT",
+  "upstream_sha256": "94b962ff93ac639c8b760a29465ca48f51d6af1ad1b4bdd242d52f1260959b07",
+  "variant_sha256": "34f814525a7cef0ef0a84592a2c575f349575cce90ca87986e367dcf776973fe",
+  "variant": "controlled-ablation-branch-name-normalization-v1",
+  "modifications": [
+    "Removed the Naming Rules, valid/invalid examples, and description guidelines.",
+    "Replaced Step 2's concrete normalization actions with a generic clarity check."
+  ]
+}

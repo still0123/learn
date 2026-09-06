@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "source_type": "public-github-skill",
+  "repository": "https://github.com/github/awesome-copilot",
+  "commit": "32f32c9809efca35d54c9c5b37210e307aa8645f",
+  "path": "skills/conventional-commit/SKILL.md",
+  "license": "MIT",
+  "upstream_sha256": "250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73",
+  "variant_sha256": "250235f71b8c501a7744ded911281292324bcd1a2d014e34b25041e2d2c8bf73",
+  "variant": "upstream-original",
+  "modifications": []
+}
