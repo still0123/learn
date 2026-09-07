@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#000"/></marker>
+    <style>
+      text { font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 18px; fill: #000; }
+      .small { font-size: 16px; }
+      .box { fill: #fff; stroke: #000; stroke-width: 1.7; }
+      .dash { fill: #fff; stroke: #000; stroke-width: 1.7; stroke-dasharray: 8 6; }
+      .line { fill: none; stroke: #000; stroke-width: 1.7; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #000; stroke-width: 1.7; }
+      .dashed-line { fill: none; stroke: #000; stroke-width: 1.7; stroke-dasharray: 7 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1500" height="820" fill="#fff"/><rect class="box" x="60" y="80" width="340" height="86" rx="3"/><text text-anchor="middle"><tspan x="230" y="129">201 原始视频时间轴</tspan></text><rect class="box" x="60" y="240" width="340" height="86" rx="3"/><text text-anchor="middle"><tspan x="230" y="289">202 E0 已覆盖片段</tspan></text><rect class="box" x="60" y="430" width="340" height="86" rx="3"/><text text-anchor="middle"><tspan x="230" y="479">203 E0 未覆盖片段</tspan></text><rect class="box" x="500" y="210" width="360" height="105" rx="3"/><text text-anchor="middle"><tspan x="680" y="256.5">204 初始证据集合 E0</tspan><tspan x="680" y="280.5">帧、OCR、ASR及位置</tspan></text><rect class="box" x="500" y="410" width="360" height="105" rx="3"/><text text-anchor="middle"><tspan x="680" y="456.5">207 增量视频证据 ΔE</tspan><tspan x="680" y="480.5">帧、区域或语音时间段</tspan></text><rect class="box" x="950" y="300" width="430" height="120" rx="3"/><text text-anchor="middle"><tspan x="1165" y="354">208 不可变扩展证据快照</tspan><tspan x="1165" y="378">E+ = E0 ∪ ΔE</tspan></text><rect class="box" x="950" y="570" width="430" height="115" rx="3"/><text text-anchor="middle"><tspan x="1165" y="621.5">209 A0 与 A2 使用同一 E+</tspan><tspan x="1165" y="645.5">及同一核验配置</tspan></text><rect class="box" x="500" y="40" width="360" height="92" rx="3"/><text text-anchor="middle"><tspan x="680" y="92">205 A0及其原子声明</tspan></text><rect class="box" x="950" y="65" width="430" height="92" rx="3"/><text text-anchor="middle"><tspan x="1165" y="117">206 声明支持缺口与取证需求</tspan></text><path class="line" d="M230,166 L230,240"/><path class="line" d="M230,166 L230,430"/><path class="line" d="M400,283 L500,263"/><path class="line" d="M400,473 L500,463"/><path class="line" d="M680,210 L680,132"/><path class="line" d="M860,86 L950,111"/><path class="line" d="M1165,157 L1440,157 L1440,740 L230,740 L230,516"/><text class="small" x="1190" y="728">限定未覆盖位置</text><path class="line" d="M860,263 L950,340"/><path class="line" d="M860,463 L950,380"/><path class="line" d="M1165,420 L1165,570"/></svg>

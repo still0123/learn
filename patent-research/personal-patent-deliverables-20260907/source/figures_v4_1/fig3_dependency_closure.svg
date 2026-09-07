@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#000"/></marker>
+    <style>
+      text { font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 18px; fill: #000; }
+      .small { font-size: 16px; }
+      .box { fill: #fff; stroke: #000; stroke-width: 1.7; }
+      .dash { fill: #fff; stroke: #000; stroke-width: 1.7; stroke-dasharray: 8 6; }
+      .line { fill: none; stroke: #000; stroke-width: 1.7; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #000; stroke-width: 1.7; }
+      .dashed-line { fill: none; stroke: #000; stroke-width: 1.7; stroke-dasharray: 7 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1500" height="900" fill="#fff"/><rect class="dash" x="55" y="70" width="420" height="700" rx="8"/><text x="265" y="110" text-anchor="middle">307 上游只读证明上下文</text><rect class="dash" x="690" y="70" width="730" height="700" rx="8"/><text x="1055" y="110" text-anchor="middle">308 下游事务写入闭包</text><rect class="box" x="115" y="190" width="300" height="100" rx="3"/><text text-anchor="middle"><tspan x="265" y="246">301 商品身份前提</tspan></text><rect class="box" x="115" y="450" width="300" height="100" rx="3"/><text text-anchor="middle"><tspan x="265" y="506">303 促销时间前提</tspan></text><rect class="box" x="760" y="250" width="300" height="110" rx="3"/><text text-anchor="middle"><tspan x="910" y="299">302 实质变化声明</tspan><tspan x="910" y="323">价格槽</tspan></text><rect class="box" x="1080" y="250" width="270" height="110" rx="3"/><text text-anchor="middle"><tspan x="1215" y="299">304 下游声明</tspan><tspan x="1215" y="323">优惠条件</tspan></text><rect class="box" x="1080" y="500" width="270" height="110" rx="3"/><text text-anchor="middle"><tspan x="1215" y="549">305 下游声明</tspan><tspan x="1215" y="573">最终结论</tspan></text><rect class="box" x="560" y="690" width="420" height="105" rx="3"/><text text-anchor="middle"><tspan x="770" y="736.5">306 迁移记录</tspan><tspan x="770" y="760.5">事实槽—必要差异槽—ΔE见证ID—目标状态</tspan></text><path class="line" d="M415,240 L760,285"/><path class="line" d="M415,500 L760,325"/><path class="line" d="M1060,305 L1080,305"/><path class="line" d="M1215,360 L1215,500"/><path class="dashed-line" d="M770,690 L770,560 L910,360"/><text class="small" x="778" y="553">见证约束</text><path class="dashed-line" d="M850,690 L1050,650 L1215,610"/><text class="small" x="1058" y="643">见证约束</text></svg>
