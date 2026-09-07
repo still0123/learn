@@ -1,0 +1,3158 @@
+[
+    {
+        "trigger_features": [
+            "快节奏剪辑",
+            "肢体动作表达",
+            "引发怀旧共鸣的听觉符号",
+            "数字化工具界面展示"
+        ],
+        "marketing_logic": "IF 使用快节奏剪辑与肢体动作表达的组合，配合引发怀旧共鸣的听觉符号，THEN 通过多巴胺刺激与身份认同，将服务效率转化为情感共鸣，降低用户对等待时间的感知焦虑。",
+        "dimension": "服务效率感知",
+        "industry_context": "所有强调即时交付或时间敏感的服务行业",
+        "source_seed_id": "b850d75633fa4d3abe8041d6d4402b4c_4"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "符号化视觉元素",
+            "情感化叙事",
+            "社群归属感暗示"
+        ],
+        "marketing_logic": "IF a brand associates its product with a pre-existing, emotionally charged cultural symbol (e.g., sports team colors), THEN it can trigger identity reinforcement and aspirational transformation in the target audience, leveraging their existing loyalty to foster a desire for personal change through the product.",
+        "dimension": "Content and Digital media",
+        "industry_context": "所有依赖社群认同和生活方式转变的行业",
+        "source_seed_id": "9f80178a39a04ae57ff1c4c021b0cf3e_5"
+    },
+    {
+        "trigger_features": [
+            "权威人物符号",
+            "重复性安全符号",
+            "多通道服务符号",
+            "幽默化威胁消解"
+        ],
+        "marketing_logic": "IF an advertisement uses an authoritative figure (e.g., a captain) to deliver a message, combined with repeated visual or auditory cues of safety measures (e.g., gloves, masks, sanitizing sounds), and presents multiple convenient service options (e.g., drive-through, delivery), THEN it triggers a psychological response of trust and reduced anxiety in consumers by leveraging authority bias, scarcity of safety concerns, and convenience-driven decision-making, leading to increased brand loyalty and purchase intent.",
+        "dimension": "Safety and Convenience",
+        "industry_context": "所有涉及消费者信任和风险缓解的行业，如食品服务、医疗保健、金融服务、旅游和零售。",
+        "source_seed_id": "82b1bbddd7b02d2b6302b89e262690af_1"
+    },
+    {
+        "trigger_features": [
+            "历史叙事对比",
+            "符号再定义",
+            "集体成就展示",
+            "情感化面部特写"
+        ],
+        "marketing_logic": "IF a brand associates itself with a historically marginalized or contested cultural symbol (e.g., a practice or identity), AND redefines that symbol positively through contemporary achievements and emotional expressions (e.g., effort, satisfaction), THEN it can leverage the contrast between past oppression and present empowerment to foster brand identification with resilience, progress, and community values, thereby enhancing brand loyalty and social relevance.",
+        "dimension": "社会文化维度",
+        "industry_context": "所有涉及社会变革、身份认同或历史传承的行业，如体育、时尚、科技、教育、非营利组织",
+        "source_seed_id": "5c26bba17a7d5be4c811c683b0beccd7_8"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF an ad uses relatable everyday scenarios combined with explicit expressions of a cultural spirit, THEN it triggers identity reinforcement and empowerment by linking the brand's actions to the audience's inherent values, fostering a sense of shared capability and possibility.",
+        "dimension": "Cultural Resonance",
+        "industry_context": "所有强调赋能和解决方案的行业",
+        "source_seed_id": "7d14e6acb441b1c935249fe2b89bf693_9"
+    },
+    {
+        "trigger_features": [
+            "第一人称叙事视角",
+            "跨物种情感映射",
+            "日常互动场景的微观特写",
+            "温情舒缓的听觉符号"
+        ],
+        "marketing_logic": "IF 使用第一人称叙事视角与跨物种情感映射的组合，THEN 通过引发观众对普遍情感纽带（如亲情、陪伴）的共鸣，触发身份认同与情感归属感，从而增强品牌与积极情感体验的关联。",
+        "dimension": "情感共鸣",
+        "industry_context": "所有强调情感连接与关系价值的行业，如奢侈品、家庭服务、宠物用品、健康护理等。",
+        "source_seed_id": "5be764d6a88ed068ae1653a04ba754e4_6"
+    },
+    {
+        "trigger_features": [
+            "非典型创作者形象",
+            "感官体验创作过程",
+            "多媒介同步发布"
+        ],
+        "marketing_logic": "IF 品牌使用非典型创作者（如：感官体验创作者）来生成核心视觉符号，THEN 该符号能激发受众的共情与好奇心，通过打破常规创作模式来强化品牌的人文关怀和创新形象，从而提升品牌好感度和话题传播性。",
+        "dimension": "Digital, Experiential, and OOH Outdoor",
+        "industry_context": "所有强调情感连接和差异化营销的行业",
+        "source_seed_id": "6bbd9e07bd35ddb80a219d22609fe271_1"
+    },
+    {
+        "trigger_features": [
+            "感官替代性创作过程展示",
+            "创作者身份与产品主题的隐喻性关联",
+            "非传统主角形象呈现"
+        ],
+        "marketing_logic": "IF a campaign showcases a creator using alternative sensory or physical means to produce an artwork that metaphorically aligns with the product's core theme (e.g., overcoming limitations to perceive unseen elements), THEN it triggers empathy and curiosity in viewers by highlighting human resilience and the universal desire to transcend barriers, fostering a deeper emotional connection and perceived authenticity for the brand.",
+        "dimension": "Experiential",
+        "industry_context": "所有强调情感共鸣、创新表达或社会价值的行业",
+        "source_seed_id": "6bbd9e07bd35ddb80a219d22609fe271_5"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of innocence and toxicity",
+            "direct address to the viewer",
+            "symbolic representation of intergenerational transmission"
+        ],
+        "marketing_logic": "IF a campaign juxtaposes the innocence of children with the toxicity of adult behaviors, THEN it triggers cognitive dissonance and moral reflection in the viewer, leveraging guilt and responsibility to drive behavioral change.",
+        "dimension": "Social Impact",
+        "industry_context": "all sectors promoting ethical behavior or social change, such as non-profits, education, or corporate social responsibility initiatives",
+        "source_seed_id": "39ba11697f3573e55f7c09fc10f76a46_10"
+    },
+    {
+        "trigger_features": [
+            "fast-forwarded reverse motion",
+            "choreographed assembly sequence",
+            "custom-built functional structure",
+            "volumetric projection of obstacles"
+        ],
+        "marketing_logic": "IF a product is shown performing an impossible-seeming task through a meticulously engineered and visually accelerated process, THEN it triggers awe and perceived capability by leveraging cognitive dissonance resolution and mastery demonstration.",
+        "dimension": "Performance and Engineering",
+        "industry_context": "所有强调耐用性、精确性或创新解决方案的行业",
+        "source_seed_id": "4cd22af9913aa77d787a593b0c1a10f0_8"
+    },
+    {
+        "trigger_features": [
+            "模仿性视觉符号",
+            "讽刺性听觉符号",
+            "欺骗性界面交互"
+        ],
+        "marketing_logic": "IF a brand creates a deceptive experience that mimics the expected content but introduces subtle, humorous distortions, THEN it triggers cognitive dissonance and surprise in the audience, leading to increased engagement and a memorable lesson about the risks of the alternative behavior.",
+        "dimension": "品牌安全与消费者教育",
+        "industry_context": "所有面临非法替代品威胁的行业，如数字内容、奢侈品、软件服务",
+        "source_seed_id": "92e33c20e4c02634a16f06ac6e6a9cc7_8"
+    },
+    {
+        "trigger_features": [
+            "仪式化日常物品的符号反转",
+            "高对比度色彩包装",
+            "数字化交互中的预期颠覆"
+        ],
+        "marketing_logic": "IF 将具有负面仪式意义的日常物品重新包装为教育工具，THEN 通过符号反转激活认知失调，引发对传统观念的批判性反思，并利用预期颠覆（如购物车重定向）强化信息冲击力，从而建立品牌的社会变革立场认同。",
+        "dimension": "社会议题营销",
+        "industry_context": "所有涉及挑战传统观念、推动社会变革的行业（如公益组织、社会企业、倡导性品牌）",
+        "source_seed_id": "795bef29ebfa6a0df302608560598616_8"
+    },
+    {
+        "trigger_features": [
+            "极端化产品属性展示",
+            "幽默化品牌声明",
+            "社群争议符号化"
+        ],
+        "marketing_logic": "IF 品牌将现有产品谱系中的某个属性推向极端化呈现，并采用幽默化、仪式化的方式宣布其为“革命性突破”，THEN 该符号会激活社群内部的认同竞争心理，使原本持有不同偏好的消费者在戏谑中强化对品牌作为该领域权威的认知，并刺激极端偏好者产生“专属产品”的拥有欲。",
+        "dimension": "产品创新与社群营销",
+        "industry_context": "所有存在细分偏好或轻度社群争议的消费品行业",
+        "source_seed_id": "e0f7c8095d8978a7d88b36d21ffba9b6_9"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙的互动邀请",
+            "角色扮演式任务框架",
+            "实验性内容系列",
+            "公开选拔仪式"
+        ],
+        "marketing_logic": "IF 品牌将消费行为转化为公开表演角色（如'个人浏览者'），并赋予其探索边缘文化内容的使命，THEN 能激发受众的窥探欲与替代性参与感，同时通过公开选拔仪式强化品牌作为文化策展人的权威地位。",
+        "dimension": "品牌叙事与用户参与",
+        "industry_context": "所有需要将日常使用行为转化为文化现象的行业（如数字工具、娱乐平台、生活方式品牌）",
+        "source_seed_id": "f74588368548fc60b4066ea8ffece18e_10"
+    },
+    {
+        "trigger_features": [
+            "vast aerial landscape shots",
+            "slow-motion natural movement",
+            "contrasting environmental textures",
+            "minimal human presence in expansive settings",
+            "ambient natural soundscapes"
+        ],
+        "marketing_logic": "IF the ad juxtaposes vast, untouched natural environments with minimal human presence, THEN it triggers a psychological response of awe and perceived scarcity of connection, which THEN positions the product as a bridge to overcome isolation and access a wider community.",
+        "dimension": "Emotional Connection and Belonging",
+        "industry_context": "all industries offering connectivity, communication, or access solutions in geographically dispersed or underserved markets",
+        "source_seed_id": "721b7a867d849fa90923f256ab4fa82f_9"
+    },
+    {
+        "trigger_features": [
+            "精密机械特写",
+            "专业级光影对比",
+            "创作者专注表情特写",
+            "成品与创作过程的并置展示"
+        ],
+        "marketing_logic": "IF 展示专业级工具在创造日常消费品完美形象中的不可替代性，THEN 通过对比效应激活受众对专业技艺的敬畏感与价值认同，从而强化专业工具在消费决策中的权威地位。",
+        "dimension": "专业技艺与大众消费的对比维度",
+        "industry_context": "所有存在专业工具与大众消费品交叉的领域（如专业厨房设备与预制食品、专业音响设备与消费级耳机、专业运动装备与大众健身产品）",
+        "source_seed_id": "2bdf317d4b0d6d4ebd44530a5758f185_5"
+    },
+    {
+        "trigger_features": [
+            "文本悬念构建",
+            "历史事件锚点",
+            "权威来源引用",
+            "跨平台叙事转移"
+        ],
+        "marketing_logic": "IF a brand anchors its message to a widely recognized historical event or cultural moment (e.g., the closure of a digital platform), THEN it can create a sense of urgency and curiosity by framing an unanswered question related to the event. This leverages scarcity anxiety (due to the event's finality) and social proof (through the event's historical significance), redirecting attention from the digital space to the brand's physical or proprietary channels, thereby enhancing perceived exclusivity and driving engagement.",
+        "dimension": "跨渠道叙事与稀缺性营销",
+        "industry_context": "所有依赖实体体验或独家信息的行业，如餐饮、零售、娱乐、教育",
+        "source_seed_id": "e3b9febcdeae2486e05c7ee9e75b0380_5"
+    },
+    {
+        "trigger_features": [
+            "数字化工具界面交互",
+            "社会公益符号视觉化",
+            "实时数据展示"
+        ],
+        "marketing_logic": "IF a brand integrates a social cause into a transactional process through a digital tool, THEN it triggers empathy and altruistic joy by making charitable actions convenient and measurable, leveraging the psychological principles of prosocial behavior and instant gratification.",
+        "dimension": "Emotional",
+        "industry_context": "所有涉及消费者参与和社会责任的行业",
+        "source_seed_id": "eeae7972503556dab696e7b9984c9df0_4"
+    },
+    {
+        "trigger_features": [
+            "情感化叙事框架",
+            "抽象化行动号召",
+            "多模态品牌触点"
+        ],
+        "marketing_logic": "IF a brand uses an abstract, aspirational theme (e.g., 'Embrace the IF in Life') that frames its services as enablers of personal betterment, THEN it triggers psychological mechanisms of hope and future-oriented identity, reducing perceived transactional friction and fostering emotional loyalty.",
+        "dimension": "Brand Positioning",
+        "industry_context": "所有提供复杂或抽象服务的行业，如金融服务、教育、健康保健、咨询",
+        "source_seed_id": "782d208779a10deb0ba96ee375e96a4d_6"
+    },
+    {
+        "trigger_features": [
+            "immersive multi-sensory environment",
+            "sequential challenge-based progression",
+            "collaborative group dynamics",
+            "digital interface for access control"
+        ],
+        "marketing_logic": "IF an experience combines immersive sensory stimuli with sequential challenges requiring collaborative problem-solving, THEN it triggers a sense of collective achievement and future-oriented aspiration, leveraging social validation and scarcity (through limited access codes) to enhance perceived exclusivity and desirability.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "所有强调创新、技术领先或高端定位的行业，如奢侈品、科技产品、汽车、金融服务等。",
+        "source_seed_id": "287c1cc7b2627c2445a935b66917ab54_1"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "动作演示",
+            "对比展示"
+        ],
+        "marketing_logic": "IF a visual element uses a close-up shot combined with an action demonstration (e.g., bending over) to highlight a product feature (e.g., coverage), THEN it triggers cognitive salience and problem-solution framing, leading to enhanced perceived utility and trust in the product's effectiveness.",
+        "dimension": "Visual",
+        "industry_context": "所有强调功能性和解决特定问题的行业",
+        "source_seed_id": "e39ee1bd867f9172a3a773d3667c5a58_3"
+    },
+    {
+        "trigger_features": [
+            "可扫描的数字化接口",
+            "动态内容更新机制",
+            "环境效益量化展示"
+        ],
+        "marketing_logic": "IF a marketing communication uses a digital interface that enables dynamic content updates without physical reprints, THEN it triggers a sense of environmental responsibility and efficiency in the audience, leveraging scarcity anxiety related to natural resources and fostering identity alignment with sustainability values.",
+        "dimension": "Environmental Impact and Resource Efficiency",
+        "industry_context": "所有涉及物理材料消耗和数字转型的行业，如出版、零售、教育、制造业",
+        "source_seed_id": "e422fc38350d83cb3938686376fb7aba_7"
+    },
+    {
+        "trigger_features": [
+            "抽象符号化视觉元素",
+            "系统性信息组织框架",
+            "认知锚定图形"
+        ],
+        "marketing_logic": "IF a campaign uses abstract symbols (e.g., letters shaped like symptoms) to represent complex or overlooked information, THEN it leverages cognitive anchoring and pattern recognition to simplify understanding, reduce mental load, and enhance memorability by creating a structured, visual mnemonic system.",
+        "dimension": "信息传播与教育",
+        "industry_context": "所有需要简化复杂信息、提高公众认知或改变行为的行业，如公共卫生、教育、金融、科技、环保",
+        "source_seed_id": "0f26dda2c17d4583ecb76e8c409ac429_7"
+    },
+    {
+        "trigger_features": [
+            "前置式强制曝光界面",
+            "幽默化日常行为符号",
+            "社交关系可视化提醒"
+        ],
+        "marketing_logic": "IF 在用户启动核心功能前插入不可跳过的轻度内容（前置式强制曝光界面），并使用幽默化日常行为符号（如荒诞借口）将用户痛点转化为可分享的社交货币，THEN 会触发认知失调缓解（用户意识到自身行为矛盾）和社交义务唤醒（可视化提醒未维护的关系），从而在低干扰场景中完成品牌价值观植入。",
+        "dimension": "行为干预与社交强化",
+        "industry_context": "所有依赖用户主动互动频率的数字化社交平台、通讯工具及关系维护类服务",
+        "source_seed_id": "54b3f4f2577fb86089d62561d848cb55_2"
+    },
+    {
+        "trigger_features": [
+            "沉浸式环境交互",
+            "空间媒介转换",
+            "感官体验模拟"
+        ],
+        "marketing_logic": "IF a campaign transforms a mundane physical space into an immersive representation of a fictional world, THEN it triggers cognitive dissonance resolution and anticipatory excitement by allowing the audience to physically engage with the narrative environment, thereby bridging the gap between imagination and reality.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "所有需要构建沉浸式品牌体验的行业，如娱乐、旅游、奢侈品、科技产品发布",
+        "source_seed_id": "4befadccca96f42861f03a284e33508e_5"
+    },
+    {
+        "trigger_features": [
+            "poetic imagery",
+            "slow deliberate pacing",
+            "emotional narrative",
+            "minimalist aesthetic"
+        ],
+        "marketing_logic": "IF an advertisement employs poetic imagery and slow deliberate pacing to craft an emotional narrative, THEN it can evoke deep emotional resonance and foster a sense of mindfulness in the audience, counteracting information overload by emphasizing human connection over technological complexity.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "All industries seeking to build brand loyalty through emotional storytelling, particularly in saturated markets where consumers experience sensory or informational fatigue.",
+        "source_seed_id": "37d1867868059c7a6d21bd351134155c_7"
+    },
+    {
+        "trigger_features": [
+            "知名公众人物出镜",
+            "生活化场景构建",
+            "产品与人物肢体动作的融合展示",
+            "柔和光线与舒缓色调",
+            "叙事性旁白"
+        ],
+        "marketing_logic": "IF 使用知名公众人物在生活化场景中与产品进行肢体动作融合展示，并辅以柔和光线与舒缓色调及叙事性旁白，THEN 触发受众的信任转移与情感共鸣，通过视觉与听觉的舒缓刺激，引导受众将产品与个人幸福感及放松需求关联，从而增强品牌亲和力与购买意愿。",
+        "dimension": "情感连接与品牌亲和力",
+        "industry_context": "所有强调个人舒适、幸福感或生活品质提升的行业",
+        "source_seed_id": "bbfc938a35f40159917abb8d3743bf08_5"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙",
+            "讽刺性对比",
+            "公开征集参与",
+            "实体媒介展示"
+        ],
+        "marketing_logic": "IF a brand publicly critiques an industry practice (e.g., creating content solely for symbolic recognition) by offering a tangible alternative (e.g., real-world exposure), THEN it leverages cognitive dissonance to position itself as a pragmatic solution, fostering trust and engagement through participatory action.",
+        "dimension": "批判性参与",
+        "industry_context": "所有存在象征性实践与实用价值脱节的行业",
+        "source_seed_id": "e798ecd35a3fa03c70ed6e79ac9144db_3"
+    },
+    {
+        "trigger_features": [
+            "olfactory suggestion through text",
+            "geographic naming",
+            "limited edition labeling",
+            "sensory substitution imagery"
+        ],
+        "marketing_logic": "IF a product is associated with a specific sensory cue (e.g., scent) that evokes a desirable or nostalgic location, THEN it triggers escapism and emotional connection, reducing psychological distance and enhancing perceived value through sensory substitution.",
+        "dimension": "Sensory Marketing",
+        "industry_context": "all industries where products can be linked to experiential or emotional benefits, such as fashion, hospitality, food and beverage, and wellness",
+        "source_seed_id": "64e75c4dd16988b77eff84e3277759a9_3"
+    },
+    {
+        "trigger_features": [
+            "家庭日常场景的戏剧化再现",
+            "情感共鸣的听觉符号（如音乐、对话）",
+            "温馨与幽默交织的视觉叙事",
+            "品牌标语在关键时刻的呈现"
+        ],
+        "marketing_logic": "IF 广告展示家庭在共同经历中（如娱乐活动或技能展示）投入情感和努力以维持联系，THEN 通过对比这些努力与品牌提供的便利（如经济节省），触发观众对家庭价值的认同感和对简化生活方式的渴望，从而增强品牌作为情感支持者和实用解决方案提供者的形象。",
+        "dimension": "情感连接与实用价值",
+        "industry_context": "所有提供家庭或团体服务的行业，如电信、保险、教育、娱乐和零售",
+        "source_seed_id": "5c7eee28f11b42511982850fcb106295_4"
+    },
+    {
+        "trigger_features": [
+            "空旷公共空间视觉符号",
+            "社会性集体活动缺席的听觉暗示",
+            "个体与群体行为的对比蒙太奇"
+        ],
+        "marketing_logic": "IF 广告展示个体在通常拥挤的公共空间中享受独处或自由活动，THEN 这会激发观众对稀缺性体验的渴望，通过对比强化个人自主权与集体约束的张力，从而将产品与突破常规的愉悦感关联起来。",
+        "dimension": "情感共鸣与行为激励",
+        "industry_context": "所有提供个人化体验或强调差异化消费的行业",
+        "source_seed_id": "e07270138c816358105dc6ecebf05cf0_1"
+    },
+    {
+        "trigger_features": [
+            "情感化叙事旁白",
+            "社会议题符号化",
+            "集体行动号召",
+            "数字化参与界面"
+        ],
+        "marketing_logic": "IF a campaign uses emotional narrative to highlight a social disparity (e.g., contrasting 'shelter' with 'lack of home') and provides a symbolic collective action (e.g., a music marathon) as a solution, THEN it triggers empathy and guilt in viewers, motivating them to participate and donate to alleviate the perceived injustice.",
+        "dimension": "Public Interest",
+        "industry_context": "所有涉及社会公益、危机响应或社区支持的行业",
+        "source_seed_id": "9b0b8cedefdd543708c1050fedd430e2_9"
+    },
+    {
+        "trigger_features": [
+            "生活片段叙事",
+            "情感共鸣场景",
+            "社会压力符号",
+            "替代性解决方案展示"
+        ],
+        "marketing_logic": "IF an ad uses relatable life-stage scenarios combined with societal pressure symbols, THEN it can trigger identity validation and reduce decision anxiety by offering a low-commitment alternative, leading to emotional engagement and behavioral nudges.",
+        "dimension": "情感与行为驱动",
+        "industry_context": "所有涉及生活方式转变或社会期望管理的行业",
+        "source_seed_id": "07fdf6fab5bb0e677fcff3ad2bcf8420_6"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "重复性动作展示",
+            "环境对比",
+            "非语言叙事"
+        ],
+        "marketing_logic": "IF an advertisement uses close-up shots of repetitive actions in contrasting environments to tell a story without words, THEN it triggers empathy and social identity reinforcement by highlighting the unseen labor that supports daily life, fostering a sense of collective gratitude and connection.",
+        "dimension": "情感与社会认同",
+        "industry_context": "所有依赖人力服务或强调社会责任的行业",
+        "source_seed_id": "aae60e7083aa64347cf079c69e98f1bc_1"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "慢动作镜头",
+            "高对比度光影",
+            "象征性肢体动作"
+        ],
+        "marketing_logic": "IF an ad uses close-up shots of symbolic body parts (e.g., hands) in a slow-motion, high-contrast visual style, THEN it triggers psychological associations with resilience, dedication, and collective effort, leveraging empathy and social identity to foster emotional connection and brand loyalty.",
+        "dimension": "情感共鸣与社会价值",
+        "industry_context": "所有强调社会责任、员工价值或集体贡献的行业",
+        "source_seed_id": "aae60e7083aa64347cf079c69e98f1bc_9"
+    },
+    {
+        "trigger_features": [
+            "aerial shots of unexplored terrains",
+            "scenes of advanced medical procedures",
+            "high-contrast visual juxtaposition",
+            "fast-paced transitions"
+        ],
+        "marketing_logic": "IF visual symbols of uncharted natural landscapes are juxtaposed with symbols of advanced technological procedures, THEN this creates a cognitive link between the thrill of discovery and the promise of innovation, leveraging curiosity and aspiration to position the service as a unique, cutting-edge solution.",
+        "dimension": "Visual and thematic juxtaposition",
+        "industry_context": "All industries that aim to position their offerings as novel, transformative, or bridging traditional and modern elements, such as tourism, technology, education, and wellness services.",
+        "source_seed_id": "21c327a46ea17b24fc06d177ebbfe5e4_3"
+    },
+    {
+        "trigger_features": [
+            "快速切换的现代生活场景蒙太奇",
+            "对比性视觉符号（传统方式 vs. 数字化方式）",
+            "动态节奏剪辑",
+            "积极向上的背景音乐"
+        ],
+        "marketing_logic": "IF 广告使用快速切换的现代生活场景蒙太奇与对比性视觉符号（传统方式 vs. 数字化方式），THEN 它通过展示从低效到高效的转变，激发观众对便捷性和可能性的多巴胺刺激，从而创造对变革的积极情感共鸣。",
+        "dimension": "Transport",
+        "industry_context": "所有强调效率、便捷性和数字化转型的行业",
+        "source_seed_id": "4e9afdb8833de901b802fd6af3af0e2b_5"
+    },
+    {
+        "trigger_features": [
+            "microscopic close-ups of application",
+            "geometric abstraction of surfaces",
+            "gradual convergence of disparate elements",
+            "high-contrast color saturation",
+            "single continuous shot"
+        ],
+        "marketing_logic": "IF an advertisement presents a visual sequence where fragmented, abstract applications of a product gradually converge into a cohesive, iconic form, THEN it triggers cognitive closure and aesthetic satisfaction in the viewer, leveraging Gestalt principles to subconsciously associate the product with precision, versatility, and transformative potential.",
+        "dimension": "Visual storytelling and sensory engagement",
+        "industry_context": "All industries emphasizing craftsmanship, customization, or seamless integration, such as luxury goods, technology interfaces, or experiential services.",
+        "source_seed_id": "c427188848ca2d86e0475a9b7266a15b_5"
+    },
+    {
+        "trigger_features": [
+            "角色扮演的视觉符号",
+            "非工作场景的助人行为展示",
+            "服务者与被服务者的积极互动表情",
+            "突发性助人场景的戏剧化呈现"
+        ],
+        "marketing_logic": "IF 品牌展示其服务人员在非工作场景中依然主动进行角色扮演式助人行为，THEN 会触发观众对品牌服务文化的深层信任感，因为这种超越常规职责的助人行为暗示了服务人员的内在动机一致性，从而建立品牌在服务可靠性维度的差异化认知。",
+        "dimension": "服务文化可信度",
+        "industry_context": "所有依赖人际服务质量建立品牌差异化的行业",
+        "source_seed_id": "dba25d2ba3f848dc199ed8764e929eec_3"
+    },
+    {
+        "trigger_features": [
+            "场景快速切换",
+            "社会仪式符号的并置",
+            "非侵入式穿戴设备特写"
+        ],
+        "marketing_logic": "IF a product is presented as being usable in a wide range of socially obligatory or mundane contexts, THEN it triggers a psychological response of perceived versatility and liberation from situational constraints, leveraging cognitive dissonance reduction and identity reinforcement for users who prioritize personal interests over social norms.",
+        "dimension": "场景适应性",
+        "industry_context": "所有提供便携式、沉浸式或个性化体验的消费电子、娱乐或生活方式产品行业",
+        "source_seed_id": "20d8f028a0e2d51f289d6617c6e9ba8f_6"
+    },
+    {
+        "trigger_features": [
+            "连续运动视觉流",
+            "短暂中断符号",
+            "无缝衔接剪辑",
+            "动态视角跟随"
+        ],
+        "marketing_logic": "IF a visual sequence combines continuous motion with a brief, purpose-driven interruption, THEN it triggers a psychological contrast that reinforces the value of efficiency and minimizes perceived friction, leveraging the human tendency to seek flow states and avoid disruption anxiety.",
+        "dimension": "Temporal Efficiency",
+        "industry_context": "所有强调流程连续性、减少中断或提升用户体验的行业",
+        "source_seed_id": "812bb06f7762902f758e4b7d998afc46_2"
+    },
+    {
+        "trigger_features": [
+            "群体权威人物互动",
+            "仪式化行为展示",
+            "竞争性游戏场景",
+            "非正式社交氛围营造"
+        ],
+        "marketing_logic": "IF 展示权威人物在非正式场景中参与竞争性游戏，THEN 通过降低权威距离感与激活观众对群体归属的渴望，增强品牌的情感连接与参与感。",
+        "dimension": "情感连接与社区构建",
+        "industry_context": "所有依赖社群忠诚度与仪式化参与的行业",
+        "source_seed_id": "760b5d4c86384f533dadad5892e785a9_8"
+    },
+    {
+        "trigger_features": [
+            "rapid motion blur",
+            "secondary object displacement",
+            "exaggerated bystander reaction",
+            "high-contrast urban environment",
+            "dynamic low-angle tracking shot"
+        ],
+        "marketing_logic": "IF the ad uses rapid motion blur combined with secondary object displacement (e.g., newspapers flying) and exaggerated bystander reactions in a high-contrast environment, THEN it triggers a psychological response of perceived velocity and disruption, leveraging the 'halo effect' to associate the product with exceptional performance and energy, thereby enhancing aspirational identity and urgency in the viewer.",
+        "dimension": "Visual and kinetic",
+        "industry_context": "All performance-driven or innovation-focused industries, such as technology, automotive, and consumer electronics, where speed and impact are key selling points.",
+        "source_seed_id": "e85bf3a25c800369be1b4bad221be684_2"
+    },
+    {
+        "trigger_features": [
+            "iconic landmark transformation",
+            "color palette shift from monochrome to diverse spectrum",
+            "symbolic representation of collective identity"
+        ],
+        "marketing_logic": "IF a brand transforms a widely recognized cultural symbol from a uniform state to a diverse representation, THEN it triggers psychological effects of social belonging and challenges exclusionary norms, leveraging identity politics to foster emotional resonance and brand alignment with progressive values.",
+        "dimension": "Visual Symbolism and Cultural Commentary",
+        "industry_context": "all industries emphasizing social responsibility, diversity, and community engagement",
+        "source_seed_id": "1632ab19b5848f0f91b37d6b52e56e48_6"
+    },
+    {
+        "trigger_features": [
+            "实物化解决方案展示",
+            "废弃物转化过程可视化",
+            "社会问题与解决方案的并置呈现",
+            "权威机构认证符号"
+        ],
+        "marketing_logic": "IF 将抽象的社会问题（如资源短缺、环境危机）通过废弃物转化为实用产品的过程可视化，并展示其被权威机构（如医疗机构）采纳，THEN 能激发受众的危机感与解决方案的信任感，同时通过‘实用优先于展示’的叙事强化品牌的社会责任形象与行动有效性认知。",
+        "dimension": "社会价值与实用性维度",
+        "industry_context": "所有涉及资源回收、可持续性、公共健康或社会公益的行业",
+        "source_seed_id": "4b1204aaa500f0f6b1c2e7ee496a1fb7_5"
+    },
+    {
+        "trigger_features": [
+            "familiar domestic/workspace settings",
+            "effortless human interaction with objects",
+            "warm ambient lighting",
+            "naturalistic human postures and expressions"
+        ],
+        "marketing_logic": "IF technology is depicted as being used effortlessly by humans in familiar, everyday environments, THEN it triggers psychological associations of comfort, accessibility, and seamless integration, reducing perceived barriers to adoption and fostering a sense of optimism about the future.",
+        "dimension": "Visual",
+        "industry_context": "All industries promoting products or services that aim to blend into daily routines, such as consumer electronics, smart home devices, software applications, and lifestyle brands.",
+        "source_seed_id": "44fc9616fccdc38ae75b6c8d1862c040_3"
+    },
+    {
+        "trigger_features": [
+            "1:1比例复制品",
+            "微观细节特写",
+            "材质纹理对比",
+            "文化符号具象化"
+        ],
+        "marketing_logic": "IF 使用文化符号的1:1比例具象化呈现 + 强调微观细节与材质纹理的对比，THEN 触发受众对符号真实性的感知强化 + 唤起对文化符号的情感投射 + 建立产品作为文化载体的权威地位",
+        "dimension": "Experiential",
+        "industry_context": "所有依赖文化符号或IP进行价值传递的行业",
+        "source_seed_id": "517c08c284b6c9c202fb0562cae0fc0d_5"
+    },
+    {
+        "trigger_features": [
+            "引发怀旧共鸣的听觉符号",
+            "情感化叙事剪辑",
+            "感官体验特写"
+        ],
+        "marketing_logic": "IF an advertisement combines a nostalgic auditory symbol (e.g., a cover of a classic song) with visual cues of sensory experiences (e.g., taste or touch) in an emotional narrative, THEN it triggers memory recall and emotional resonance, linking the product to positive personal experiences and enhancing perceived value through association with universal themes like love or affection.",
+        "dimension": "情感连接与怀旧营销",
+        "industry_context": "所有依赖情感驱动消费的行业，如食品饮料、个人护理、礼品、娱乐服务",
+        "source_seed_id": "cd96d977de377467bb9e3cf0049b2f48_5"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF the ad uses high-saturation colors and fast-paced editing to create a visually stimulating environment, combined with micro-close-ups of the product and breaking the fourth wall to engage the audience directly, THEN it triggers dopamine release through sensory overload and fosters a sense of exclusivity and identity by immersing viewers in a playful, elegant world.",
+        "dimension": "Sensory Appeal",
+        "industry_context": "所有强调感官体验和身份认同的行业",
+        "source_seed_id": "592d244a2f3b58f8ec389d005fda5b6a_4"
+    },
+    {
+        "trigger_features": [
+            "历史/神话角色符号的颠覆性运用",
+            "职业身份与奇幻场景的并置",
+            "权威历史人物作为叙事载体"
+        ],
+        "marketing_logic": "IF 将目标职业群体（如会计师）与具有普遍认知度的历史/神话角色（如女王、英雄）进行并置，THEN 会触发强烈的身份认同与职业尊严感，通过将日常职业活动提升至史诗叙事层面，缓解职业倦怠并增强专业工具的价值感知。",
+        "dimension": "叙事维度",
+        "industry_context": "所有面临职业形象固化或社会认可度不足的专业服务行业（如法律、医疗、教育、工程等）",
+        "source_seed_id": "1646e570bed4d4c37b3460cb79248328_5"
+    },
+    {
+        "trigger_features": [
+            "unexpected character juxtaposition",
+            "mythological and historical visual archetypes",
+            "narrative voiceover with authoritative tone",
+            "high-contrast lighting to emphasize importance"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes mundane professional roles with unexpected, culturally resonant archetypes (e.g., mythological or historical figures), THEN it triggers cognitive dissonance that is resolved by elevating the professional's status, thereby fostering identity reinforcement and emotional resonance, which increases perceived product value as an enabler of this elevated role.",
+        "dimension": "narrative and symbolic positioning",
+        "industry_context": "all service-based industries where professionals are perceived as background or support roles, such as consulting, IT support, legal services, or healthcare administration",
+        "source_seed_id": "1646e570bed4d4c37b3460cb79248328_7"
+    },
+    {
+        "trigger_features": [
+            "群体肢体动作表达",
+            "象征性视觉符号",
+            "户外自然光线场景"
+        ],
+        "marketing_logic": "IF a visual sequence shows individuals engaging in coordinated physical movement under a shared symbolic object in an open, natural setting, THEN it triggers psychological mechanisms of social belonging and collective purpose, reducing perceived isolation and fostering emotional connection to a cause.",
+        "dimension": "Social Connection",
+        "industry_context": "所有依赖社区参与和情感支持的行业，如非营利组织、健康倡导团体、社会运动或品牌忠诚度计划",
+        "source_seed_id": "3055471c4a0aad42dd5044774fbad910_3"
+    },
+    {
+        "trigger_features": [
+            "物理空间再现",
+            "微观场景重构",
+            "手工制作痕迹",
+            "定制化生产流程"
+        ],
+        "marketing_logic": "IF a product is presented as a physical recreation of an original artistic/experiential space, AND its production involves visible handcrafting and customization, THEN it triggers a psychological association with authenticity, exclusivity, and personal connection, leveraging scarcity and craftsmanship to enhance perceived value and emotional attachment.",
+        "dimension": "产品定制化与稀缺性营销",
+        "industry_context": "所有强调个性化、艺术性、或情感连接的行业，如高端消费品、艺术品、纪念品、奢侈品、体验式服务",
+        "source_seed_id": "8bc4a64e07c98d74cc1a65802ef83bea_8"
+    },
+    {
+        "trigger_features": [
+            "iconic landmark imagery",
+            "rapid montage of diverse locations",
+            "contrast between central and peripheral visuals",
+            "expansive aerial shots",
+            "dynamic transitions"
+        ],
+        "marketing_logic": "IF iconic landmark imagery is contrasted with rapid montage of diverse peripheral locations, THEN it triggers cognitive dissonance by challenging preconceived notions of value, leading to curiosity and a desire for exploration beyond the familiar.",
+        "dimension": "Hospitality, Tourism",
+        "industry_context": "all industries promoting discovery, expansion, or alternative experiences beyond mainstream offerings",
+        "source_seed_id": "902ed4a7a61356c67a053c374c54fd35_1"
+    },
+    {
+        "trigger_features": [
+            "relatable life moments depiction",
+            "nuanced personal narrative voiceover",
+            "omnichannel media presence",
+            "trust-building visual cues"
+        ],
+        "marketing_logic": "IF a campaign depicts relatable life moments and uses nuanced personal narratives, THEN it triggers emotional resonance and identity alignment, reducing decision anxiety by framing the product as a solution to personal challenges.",
+        "dimension": "Emotional Resonance and Trust Building",
+        "industry_context": "All industries where products or services are tied to personal life stages or complex decision-making processes, such as real estate, education, healthcare, or financial planning.",
+        "source_seed_id": "35af23d0618e999c277c2e1606241a4e_6"
+    },
+    {
+        "trigger_features": [
+            "拟人化品牌符号",
+            "生命周期仪式化呈现",
+            "具象化品牌承诺"
+        ],
+        "marketing_logic": "IF 品牌将自身核心产品符号（如：珍贵自然材质、数字化工具）转化为可穿戴或可互动的仪式性物品，并嵌入目标受众的关键生命周期事件（如：肢体动作表达、引发怀旧共鸣的听觉符号）中，THEN 该符号会触发情感锚定效应，通过将品牌承诺与个人身份形成早期绑定，从而建立长期忠诚度和身份认同，减少未来决策成本。",
+        "dimension": "品牌忠诚度与生命周期营销",
+        "industry_context": "所有依赖重复消费或长期客户关系的行业，如：快速消费品、金融服务、教育服务、健康护理、娱乐订阅服务。",
+        "source_seed_id": "e22c655df819b0237ebacff366c691f2_2"
+    },
+    {
+        "trigger_features": [
+            "超现实尺度视觉符号",
+            "标志性自然景观背景",
+            "数字化光影投射",
+            "创作者个人叙事元素"
+        ],
+        "marketing_logic": "IF 将产品与创作者的起源地或个人历史符号结合，THEN 通过增强叙事的真实性和情感深度，触发观众的身份认同与怀旧共鸣，从而提升品牌可信度和记忆点。",
+        "dimension": "情感连接与真实性构建",
+        "industry_context": "所有依赖创作者或品牌故事驱动的行业，如娱乐、奢侈品、文化产品",
+        "source_seed_id": "12457e9accbc2da36099624b82c3a78b_4"
+    },
+    {
+        "trigger_features": [
+            "oversized holographic projection",
+            "iconic natural backdrop",
+            "creator personal connection",
+            "immersive scale"
+        ],
+        "marketing_logic": "IF a brand combines a technologically advanced display with a universally recognized natural landmark, THEN it leverages awe and novelty to create a memorable, shareable experience that taps into human fascination with scale and innovation, enhancing brand prestige and emotional resonance.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "all industries seeking to generate buzz and emotional engagement through large-scale public activations",
+        "source_seed_id": "12457e9accbc2da36099624b82c3a78b_9"
+    },
+    {
+        "trigger_features": [
+            "plain-speaking dialogue",
+            "contrast between expectation and reality",
+            "deadpan facial expressions",
+            "everyday social setting"
+        ],
+        "marketing_logic": "IF a narrative presents a relatable social scenario where a character's straightforward communication style creates a humorous contrast between high expectation and mundane reality, THEN it triggers cognitive dissonance resolution through laughter, fostering audience identification with the 'no-nonsense' archetype and enhancing brand association with authenticity and approachability.",
+        "dimension": "Communication Style & Social Dynamics",
+        "industry_context": "All industries targeting audiences valuing authenticity, humor, and relatability in consumer interactions, such as retail, services, and lifestyle brands.",
+        "source_seed_id": "8dff1cd43b9314bb9654c56dd1edd029_8"
+    },
+    {
+        "trigger_features": [
+            "实体象征物递送",
+            "权威机构互动",
+            "仪式化呈现"
+        ],
+        "marketing_logic": "IF a brand uses a tangible symbolic object to engage with a high-authority institution in a public and ritualized manner, THEN it can bypass conventional barriers and generate symbolic endorsement, leveraging social proof and authority transfer to enhance brand credibility and visibility.",
+        "dimension": "Ambient",
+        "industry_context": "所有依赖权威背书或需要突破传统渠道限制的行业",
+        "source_seed_id": "f78429d33c08de5783f2a95e66151e85_9"
+    },
+    {
+        "trigger_features": [
+            "隐喻性视觉符号",
+            "公共事件关联",
+            "实体道具介入",
+            "权威机构互动"
+        ],
+        "marketing_logic": "IF a brand uses a metaphorical visual symbol (e.g., 'tree' as a standoff) tied to a current public event, and THEN physically intervenes with a relevant product (e.g., 'ladder' as a solution), it leverages cognitive dissonance reduction and social proof by aligning the brand with a shared societal concern, thereby enhancing brand relevance and trust through perceived utility and authority validation.",
+        "dimension": "Ambient",
+        "industry_context": "所有涉及解决冲突或僵局的行业，如咨询、调解服务、技术解决方案提供商",
+        "source_seed_id": "f78429d33c08de5783f2a95e66151e85_6"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "打破第四面墙",
+            "微观特写"
+        ],
+        "marketing_logic": "IF a brand identifies a target audience with shared resistance to a conventional system, AND THEN creates a specialized offering that aligns with their specific interests or events, THEN it can bypass initial skepticism and attract new customers by demonstrating relevance and utility within their context.",
+        "dimension": "Audience Engagement and Product Innovation",
+        "industry_context": "所有面向具有特定文化或社会抵抗力的年轻受众的行业",
+        "source_seed_id": "572c989c4de61a481f1890f72e90edf1_9"
+    },
+    {
+        "trigger_features": [
+            "对比性视觉呈现",
+            "信息缺失符号",
+            "权威来源引用标记"
+        ],
+        "marketing_logic": "IF a brand creates a direct visual comparison between a standard information source and a version where its contributions are removed, THEN it triggers cognitive dissonance and scarcity anxiety in the viewer, leading to an enhanced perception of the brand's indispensable value and authority.",
+        "dimension": "Digital",
+        "industry_context": "所有依赖信息权威性和可信度的行业",
+        "source_seed_id": "18fb0711dafbf841cdefbf1e886e8157_3"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a campaign combines accessible digital tools with a high-stakes preservation narrative, THEN it triggers a sense of collective empowerment and urgency, leveraging identity reinforcement and scarcity anxiety to drive user participation.",
+        "dimension": "Empowerment through Technology",
+        "industry_context": "所有强调集体行动、危机应对或文化遗产保护的行业",
+        "source_seed_id": "7a3b3c58f276a9a33288592425b7b261_2"
+    },
+    {
+        "trigger_features": [
+            "语义转换界面",
+            "实时内容干预",
+            "平台语境反差"
+        ],
+        "marketing_logic": "IF a brand operates in a context perceived as negative or stressful by the target audience, THEN by introducing a tool that actively transforms negative content into positive messages in real-time, it can create a cognitive dissonance that highlights the brand's core value proposition, leveraging contrast to foster emotional relief and hope, thereby enhancing brand differentiation and trust.",
+        "dimension": "Emotional Connection",
+        "industry_context": "所有在负面或高风险感知环境中运营的行业，如金融、医疗、法律、心理健康服务",
+        "source_seed_id": "badaa0bc335db17eae469b7b7a88045f_2"
+    },
+    {
+        "trigger_features": [
+            "情感化叙事框架",
+            "社区归属符号",
+            "用户生成内容（UGC）激励",
+            "可传播的视觉/文本标签"
+        ],
+        "marketing_logic": "IF a brand leverages a crisis context to frame a community support narrative, and THEN provides a simple, shareable digital tool (e.g., a hashtag) that enables individuals to publicly express care and solidarity through user-generated content, THEN it triggers social identity reinforcement and altruistic motivation, leading to increased visibility and engagement for marginalized entities.",
+        "dimension": "Social Impact & Community Engagement",
+        "industry_context": "所有依赖本地网络或面临信任/可见性挑战的行业，如小型企业、非营利组织、公共服务",
+        "source_seed_id": "a94a31f1759ca48a4e1c664d9c56b37e_2"
+    },
+    {
+        "trigger_features": [
+            "性别化听觉符号",
+            "缺陷特征列举",
+            "社会议题旁白"
+        ],
+        "marketing_logic": "IF a product uses a gender-specific auditory symbol (e.g., a voice assistant with a male or female voice) combined with explicit listing of flaws (e.g., incompetence, arrogance) and a narrative that critiques social norms (e.g., structural inequality), THEN it triggers cognitive dissonance and social identity reflection in the audience, leading to heightened engagement and brand association with progressive values.",
+        "dimension": "Social Identity and Norm Disruption",
+        "industry_context": "所有涉及自动化服务、客户交互或品牌形象塑造的行业，如科技、金融、零售、教育",
+        "source_seed_id": "672dd4d86cc7234b8bf3ca4ab9c7df9a_7"
+    },
+    {
+        "trigger_features": [
+            "权威人物符号",
+            "日常场景颠覆",
+            "高反差叙事结构",
+            "纪实性视觉风格"
+        ],
+        "marketing_logic": "IF a message is delivered by an authority figure in a familiar context, THEN it triggers heightened attention and credibility through social proof and cognitive dissonance, bypassing habitual inattention.",
+        "dimension": "Attention and Credibility",
+        "industry_context": "所有需要提高信息遵从性或打破用户习惯性忽视的行业",
+        "source_seed_id": "cacb26a4b0082315a0a55c058ccc87ea_10"
+    },
+    {
+        "trigger_features": [
+            "抽象化视觉符号（如棋盘格图案、代码式图形）",
+            "互动式界面元素（如可点击/可解码的视觉单元）",
+            "渐进式难度提示（如视觉复杂度递增）"
+        ],
+        "marketing_logic": "IF 使用抽象化视觉符号（如棋盘格图案、代码式图形）与互动式界面元素（如可点击/可解码的视觉单元）的组合，并引入渐进式难度提示（如视觉复杂度递增），THEN 触发目标受众的认知挑战与解决欲望，通过奖励机制（如虚拟资源获取）强化参与行为，从而促进跨社群融合与品牌忠诚度提升。",
+        "dimension": "跨平台互动营销",
+        "industry_context": "所有依赖用户参与和社群建设的行业（如娱乐、教育、科技服务）",
+        "source_seed_id": "696338032e706d7a9b15ef4f86bb2300_1"
+    },
+    {
+        "trigger_features": [
+            "visual metaphor of fluctuating gauge",
+            "juxtaposition of high-stress and supportive interactions",
+            "close-up facial expressions conveying emotional transition"
+        ],
+        "marketing_logic": "IF a visual metaphor (e.g., a fluctuating gauge) is used to represent an abstract emotional state (e.g., hope) in a narrative context, THEN it creates a tangible proxy for audience empathy, leveraging emotional investment to drive engagement with the support mechanism presented.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all sectors involving social support, advocacy, or service provision where demonstrating impact on well-being is key",
+        "source_seed_id": "4f5e8cda6e17b0565cd1aa3ed7911e50_4"
+    },
+    {
+        "trigger_features": [
+            "语义反转符号",
+            "矛盾修辞法",
+            "重复性口头禅",
+            "产品功能可视化"
+        ],
+        "marketing_logic": "IF a target audience expresses a common, ambiguous, or self-denying desire (e.g., 'NOTHING'), THEN by redefining that desire as a specific, tangible benefit and visually associating it with high-value offerings, the strategy creates cognitive dissonance resolution, enhances perceived relevance, and triggers a sense of discovery and urgency to fulfill the unspoken need.",
+        "dimension": "情感与认知",
+        "industry_context": "所有面临消费者需求模糊化、自我抑制或社会期望压力的行业，如礼品零售、家居用品、个人护理、科技产品等。",
+        "source_seed_id": "2008723bdcc342208f3b83008f91aeaa_5"
+    },
+    {
+        "trigger_features": [
+            "简化图形符号",
+            "负空间构图",
+            "单色或低饱和度色彩",
+            "具象轮廓剪影"
+        ],
+        "marketing_logic": "IF 使用简化图形符号（如具象轮廓剪影）与负空间构图，THEN 通过视觉隐喻直接传达目标受众身份（如儿童），引发身份认同与归属感，降低心理距离与焦虑。",
+        "dimension": "视觉设计",
+        "industry_context": "所有面向特定人群（如儿童、老年人、专业人士）的服务行业，强调亲和力与信任建立。",
+        "source_seed_id": "bb2fad757903001d061293210db27851_3"
+    },
+    {
+        "trigger_features": [
+            "3D动画叙事",
+            "日常场景设定",
+            "二元对立视觉符号",
+            "幽默夸张表现"
+        ],
+        "marketing_logic": "IF 使用二元对立视觉符号（如SMARTY/not SMARTY）与日常场景设定结合，THEN 通过对比强化品牌核心价值（如简单与诚实），引发观众对自身选择的反思与认同，从而提升品牌记忆度和好感度。",
+        "dimension": "品牌价值传达",
+        "industry_context": "所有强调简化、透明或对比优势的行业",
+        "source_seed_id": "44ce7138118984d8085ccab15d60557a_1"
+    },
+    {
+        "trigger_features": [
+            "historical figure symbolism",
+            "temporal juxtaposition",
+            "ethical value association",
+            "visual contrast between past and present"
+        ],
+        "marketing_logic": "IF an ad uses a revered historical figure as a symbol of core values (e.g., integrity, prosperity) and juxtaposes it with a contemporary crisis or negative industry context, THEN it triggers psychological mechanisms of nostalgia, trust transfer, and moral contrast, leading to enhanced brand identity and consumer alignment with the promoted values.",
+        "dimension": "Ethical Branding",
+        "industry_context": "all industries facing trust deficits or seeking to differentiate based on ethical principles, such as finance, healthcare, or environmental services",
+        "source_seed_id": "535a432bcfdf6495848da71e2089feda_7"
+    },
+    {
+        "trigger_features": [
+            "mockumentary_interview_format",
+            "social_activity_backdrop",
+            "contrast_between_public_activity_and_private_action",
+            "humorous_exaggeration_of_discomfort"
+        ],
+        "marketing_logic": "IF a product enables a discreet action that avoids social discomfort or interruption, THEN using a mockumentary format with exaggerated scenarios of discomfort in social settings can highlight the product's value by creating a contrast that triggers relief and social acceptance desires in the viewer.",
+        "dimension": "Social Integration",
+        "industry_context": "all industries where products or services aim to integrate personal or private actions seamlessly into public or social contexts without drawing attention, such as health monitoring, personal care, or digital communication tools.",
+        "source_seed_id": "b90a263fdb9b43e96b3ef47c07b1af15_1"
+    },
+    {
+        "trigger_features": [
+            "confident human locomotion towards a vehicle",
+            "visual juxtaposition of personal space and mobility tool",
+            "non-verbal assertion of autonomy"
+        ],
+        "marketing_logic": "IF a visual sequence depicts a human figure moving with confidence towards a mobility-enabling tool, THEN it triggers psychological associations of autonomy and liberation, leveraging the innate human desire for control over personal space and movement to reduce perceived barriers to service adoption.",
+        "dimension": "Emotional",
+        "industry_context": "all industries offering access-based or temporary ownership services that emphasize personal empowerment and flexibility",
+        "source_seed_id": "d86d9b1d1afac95334abd09c94f178eb_3"
+    },
+    {
+        "trigger_features": [
+            "rhythmic vocal delivery",
+            "anthropomorphic brand symbols",
+            "high-energy auditory backdrop",
+            "visual narrative with symbolic characters"
+        ],
+        "marketing_logic": "IF a brand uses rhythmic vocal delivery combined with anthropomorphic brand symbols in a high-energy auditory backdrop, THEN it triggers cognitive ease and emotional engagement through pattern recognition and novelty, leading to enhanced memorability and differentiation in crowded markets.",
+        "dimension": "Auditory and Visual",
+        "industry_context": "all industries requiring complex information simplification and brand personality enhancement, such as technology, finance, and professional services",
+        "source_seed_id": "6890592f687b2a0d8cad44afd4accac3_6"
+    },
+    {
+        "trigger_features": [
+            "live-action performance footage",
+            "animated symbolic objects",
+            "juxtaposition of tangible and symbolic elements",
+            "dynamic visual layering"
+        ],
+        "marketing_logic": "IF a brand juxtaposes live-action scenes of authentic human experiences with animated symbolic objects representing rewards or benefits, THEN it creates a cognitive link between the brand's offerings and the emotional fulfillment of those experiences, leveraging associative memory and aspirational desire to enhance perceived value and relevance.",
+        "dimension": "Visual and narrative integration",
+        "industry_context": "All industries that aim to connect functional products or services with emotional or experiential outcomes, such as lifestyle, entertainment, hospitality, and consumer goods.",
+        "source_seed_id": "acf7a1d1088b86492311019464c0ea0f_2"
+    },
+    {
+        "trigger_features": [
+            "环境光效同步",
+            "视听信号联动",
+            "物理空间反馈",
+            "多模式反应机制"
+        ],
+        "marketing_logic": "IF a product synchronizes its physical output with external media signals, THEN it triggers heightened emotional immersion and sensory engagement by bridging digital content and real-world environments, leveraging the psychological principles of presence and associative conditioning.",
+        "dimension": "Experiential",
+        "industry_context": "所有依赖沉浸式体验和情感共鸣的行业，如娱乐、教育、零售和健康领域。",
+        "source_seed_id": "18b5737a4dd559c6e98836a898172ccc_8"
+    },
+    {
+        "trigger_features": [
+            "数字化工具界面交互",
+            "快速响应机制",
+            "视觉识别符号"
+        ],
+        "marketing_logic": "IF a service uses a visual recognition symbol (e.g., QR code) integrated with a digital tool interface, THEN it reduces cognitive load and perceived effort for users, leveraging instant gratification and convenience to lower adoption barriers and enhance accessibility.",
+        "dimension": "Accessibility and Convenience",
+        "industry_context": "所有提供按需或共享服务的行业，如交通、住宿、娱乐和工具租赁",
+        "source_seed_id": "ae18cc0a431a7bd30cbdc9e5a7409939_3"
+    },
+    {
+        "trigger_features": [
+            "体验式环境转换",
+            "服务化包装",
+            "沉浸式时间延伸"
+        ],
+        "marketing_logic": "IF 将决策过程从短暂观察转换为沉浸式体验，THEN 降低认知失调风险并增强决策信心，通过延长接触时间减少信息不对称引发的焦虑。",
+        "dimension": "体验营销",
+        "industry_context": "所有涉及高价值、高承诺决策的行业（如：汽车、教育、金融服务）",
+        "source_seed_id": "07dabbd84ce3c5c2afa16689d4caf66d_2"
+    },
+    {
+        "trigger_features": [
+            "沉浸式体验环境",
+            "服务化道具组合",
+            "时间延伸式互动"
+        ],
+        "marketing_logic": "IF a service is typically associated with high-stakes, time-limited decision-making, THEN extending the interaction into a prolonged, low-pressure, and sensory-rich experience can reduce anxiety, foster emotional attachment, and increase perceived value by simulating ownership before commitment.",
+        "dimension": "体验式营销",
+        "industry_context": "所有涉及重大、长期承诺的消费决策行业",
+        "source_seed_id": "07dabbd84ce3c5c2afa16689d4caf66d_6"
+    },
+    {
+        "trigger_features": [
+            "情感共鸣的视觉叙事",
+            "用户生成内容符号",
+            "数字化互动平台入口"
+        ],
+        "marketing_logic": "IF a brand uses emotional visual narratives combined with user-generated content symbols and a digital interaction platform entry, THEN it triggers identity reinforcement and social validation, leading to increased engagement and brand loyalty by allowing audiences to project their personal experiences onto the brand's story.",
+        "dimension": "情感连接与社区构建",
+        "industry_context": "所有依赖个人里程碑或情感体验的行业",
+        "source_seed_id": "88a93d4fc89a8acb903529fb7fc42044_9"
+    },
+    {
+        "trigger_features": [
+            "权威机构背书",
+            "高价值符号化",
+            "专业术语引用",
+            "社会地位对比"
+        ],
+        "marketing_logic": "IF a brand associates a non-traditional activity with established high-status symbols (e.g., professional athlete treatment, financial valuation of specialized body parts), THEN it triggers cognitive dissonance reduction and status transfer, leading to enhanced perceived legitimacy and emotional investment in the activity among target audiences.",
+        "dimension": "社会认同与地位提升",
+        "industry_context": "所有新兴或边缘化领域寻求主流认可和差异化定位的行业",
+        "source_seed_id": "764bb23bbc8ab76a85c96c7bbd4f3faa_10"
+    },
+    {
+        "trigger_features": [
+            "minimalist typographic transformation",
+            "auditory homophone juxtaposition",
+            "high-contrast emotional text overlay",
+            "subtitle-based semantic shift"
+        ],
+        "marketing_logic": "IF a message uses a single symbolic element (e.g., a letter or word) to create a stark contrast between a neutral or positive state and a negative or urgent one, leveraging auditory or visual similarity, THEN it triggers cognitive dissonance and heightened emotional engagement by subverting expectations, leading to increased memorability and social sharing due to the psychological impact of surprise and empathy.",
+        "dimension": "Social Impact",
+        "industry_context": "all sectors involving crisis intervention, public health awareness, or social advocacy campaigns",
+        "source_seed_id": "c2b7953ce9939ad9b35518bd6a21db68_3"
+    },
+    {
+        "trigger_features": [
+            "单色符号替换",
+            "对比性视觉焦点",
+            "隐喻性旁白",
+            "产品细节特写"
+        ],
+        "marketing_logic": "IF a brand replaces a traditional visual symbol with a monochromatic variant (e.g., from gold to black) and frames it as a metaphor for an internal human trait (e.g., authenticity or daring), THEN it triggers identity resonance by allowing consumers to project their own perceived 'shadow self' onto the product, fostering a sense of individuality and deeper emotional connection.",
+        "dimension": "品牌标识与消费者心理认同",
+        "industry_context": "所有寻求差异化或重塑品牌形象的行业，如时尚、科技、奢侈品、汽车、娱乐",
+        "source_seed_id": "ee0fa1378ba415714cdfbf9b946c5774_4"
+    },
+    {
+        "trigger_features": [
+            "拟人化行为展示",
+            "数字化内容创作过程可视化",
+            "高互动性场景设置",
+            "多模态内容呈现"
+        ],
+        "marketing_logic": "IF 将非人类实体（如动物、产品、抽象概念）置于人类专属的数字化内容创作场景中，并展示其自主生成多模态传播内容的过程，THEN 会触发观众的认知反差与情感投射，通过赋予非人类实体拟人化智能与创造力，降低受众对推广信息的防御心理，同时增强信息的可信度与传播力。",
+        "dimension": "情感共鸣与可信度建立",
+        "industry_context": "所有需要建立情感连接、降低说服阻力或展示产品智能化的行业（如公益倡导、科技产品、金融服务、教育服务）",
+        "source_seed_id": "1240dc09fa9a2f8d17a66dbefaca574e_1"
+    },
+    {
+        "trigger_features": [
+            "代际符号对比",
+            "讽刺性视觉模仿",
+            "互动式揭露机制",
+            "社会议题关联"
+        ],
+        "marketing_logic": "IF a target demographic exhibits a specific behavioral pattern (e.g., high engagement with misinformation) that contrasts with other groups, THEN using a symbolic representation of that pattern (e.g., a parody of the behavior) in an interactive format can create cognitive dissonance and facilitate educational engagement by directly confronting the behavior in a controlled, humorous context.",
+        "dimension": "社会行为矫正",
+        "industry_context": "所有涉及公共教育、行为改变或风险管理的行业，如健康宣传、金融素养、环境倡导",
+        "source_seed_id": "09f9559ccd086d4ea42785b845291aaf_9"
+    },
+    {
+        "trigger_features": [
+            "情感化品牌口号",
+            "多感官体验暗示",
+            "生活场景符号化"
+        ],
+        "marketing_logic": "IF a brand associates its core offerings with a universal positive emotional state (e.g., happiness, contentment) through symbolic messaging, THEN it triggers emotional resonance and identity alignment in consumers, leading to enhanced brand loyalty and differentiation in competitive markets.",
+        "dimension": "Emotional Branding",
+        "industry_context": "所有面向个人生活改善和情感连接的行业",
+        "source_seed_id": "e4bee4e11bbd0f0f9f49417c28979d7a_10"
+    },
+    {
+        "trigger_features": [
+            "rapid-fire pace editing",
+            "close-up shots of body parts",
+            "high-contrast lighting",
+            "natural soundscapes"
+        ],
+        "marketing_logic": "IF an advertisement uses rapid-fire editing combined with close-up shots of body parts (e.g., hands touching water, faces expressing intense emotions) and natural soundscapes, THEN it triggers a psychological response by simulating sensory immersion, which enhances emotional engagement and fosters a sense of connection to the product as a facilitator of heightened human experiences.",
+        "dimension": "Emotional and Sensory Engagement",
+        "industry_context": "All industries emphasizing experiential or emotional benefits, such as wellness, technology, luxury goods, and entertainment.",
+        "source_seed_id": "46bc802ed3f4a79669ff97d7cf64e444_3"
+    },
+    {
+        "trigger_features": [
+            "rapid-fire pace editing",
+            "close-up shots of facial expressions",
+            "natural element imagery",
+            "text overlay with rhetorical questions"
+        ],
+        "marketing_logic": "IF an advertisement combines rapid-fire editing and close-up shots of human expressions with natural element imagery, THEN it triggers emotional resonance and a sense of authenticity by leveraging primal sensory associations, leading to enhanced brand connection through perceived purity and emotional depth.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all industries emphasizing emotional connection or authenticity, such as wellness, luxury goods, or technology services",
+        "source_seed_id": "46bc802ed3f4a79669ff97d7cf64e444_5"
+    },
+    {
+        "trigger_features": [
+            "权威性人声符号",
+            "公共广播系统音效",
+            "跨代际发言人组合"
+        ],
+        "marketing_logic": "IF an ad uses a familiar and authoritative auditory symbol (e.g., a voice associated with public systems) combined with a contrasting auditory symbol (e.g., a voice representing younger generations), THEN it leverages nostalgia and trust from the familiar symbol to establish credibility, while the contrast creates inclusivity and urgency, activating psychological mechanisms of social identity and collective responsibility.",
+        "dimension": "Auditory",
+        "industry_context": "所有需要建立公众信任和推动集体行动的行业，如公共服务、环保倡议、社会运动",
+        "source_seed_id": "0a09f137d8808b18ca1d264d6e969e36_6"
+    },
+    {
+        "trigger_features": [
+            "拟人化国家符号",
+            "象征性沟通工具",
+            "情感宣泄渠道",
+            "集体表达仪式"
+        ],
+        "marketing_logic": "IF 品牌提供象征性沟通工具（如：拟人化国家符号的物理载体），允许消费者通过仪式化行为表达长期压抑的情感，THEN 该工具成为情感宣泄的安全渠道，触发集体疗愈与身份重构，最终将品牌定位为情感共鸣平台而非单纯产品。",
+        "dimension": "情感连接与集体身份认同",
+        "industry_context": "所有面临消费者情感疏离、需要重建信任或促进社群凝聚的行业（如：社会企业、文化产品、社群平台）",
+        "source_seed_id": "58af91ea27f1ebbd8d71c51317039568_3"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a brand associates its service location with a universally recognized emotional event (e.g., Valentine's Day) through visual and auditory symbols that evoke daily emotional experiences, THEN it triggers identity reinforcement and emotional resonance in the audience by positioning the location as a constant source of that emotion, thereby enhancing brand loyalty and perceived value.",
+        "dimension": "Emotional Connection",
+        "industry_context": "所有强调情感体验和日常互动的服务行业",
+        "source_seed_id": "33cb61db36f42ae429e8b4086a2a1532_9"
+    },
+    {
+        "trigger_features": [
+            "cinematic visual style",
+            "futuristic aesthetic",
+            "stylized character transformation",
+            "heroic archetype symbolism",
+            "dynamic visual progression"
+        ],
+        "marketing_logic": "IF visual symbols depict individuals undergoing a transformation into heroic archetypes within a futuristic or cinematic context, THEN it triggers psychological mechanisms of aspiration, self-efficacy, and identity projection, leading to increased engagement and perceived value of the offering.",
+        "dimension": "Visual and Narrative",
+        "industry_context": "All industries targeting youth or career development, such as education, training programs, recruitment, and personal growth services.",
+        "source_seed_id": "a6a1d4a2e5934a9e2e15066a8f8a17ae_6"
+    },
+    {
+        "trigger_features": [
+            "快节奏剪辑",
+            "动态视觉符号",
+            "数字化界面特写",
+            "积极肢体动作表达"
+        ],
+        "marketing_logic": "IF an advertisement uses fast-paced editing and dynamic visual symbols to depict users engaging with a digital tool, THEN it triggers a psychological association between speed of interaction and cognitive competence, leveraging the user's desire for efficiency and social validation as a 'smart decision-maker'.",
+        "dimension": "Cognitive and Social",
+        "industry_context": "所有强调效率、便捷性和用户赋能的行业，如在线零售、数字服务、金融科技和共享经济平台。",
+        "source_seed_id": "8dfa5c4abf2045337716a7941f3439d6_10"
+    },
+    {
+        "trigger_features": [
+            "带有创伤痕迹的物理载体",
+            "灾难事件的视觉符号",
+            "限量编号的稀缺性标识",
+            "集体记忆的具象化呈现"
+        ],
+        "marketing_logic": "IF 将灾难事件的物理痕迹（如：泥土、破损）附着于具有文化价值的载体上，THEN 能触发观众对集体创伤的共情，并将这种情感能量转化为对稀缺性产品的价值认同与购买行为，实现从灾难叙事到品牌叙事的转换。",
+        "dimension": "情感营销与稀缺性营销的交叉维度",
+        "industry_context": "所有依赖文化叙事、历史价值或情感共鸣的行业（如：艺术品、收藏品、文化遗产产品、高端消费品）",
+        "source_seed_id": "471bb531159df99ef49f2e9b3015c9d1_1"
+    },
+    {
+        "trigger_features": [
+            "文本叠加于动态背景",
+            "重复性短语结构",
+            "高对比度字体呈现"
+        ],
+        "marketing_logic": "IF a brand uses repetitive textual overlays with a rhythmic cadence on dynamic visuals, THEN it triggers cognitive anchoring and perceived reliability in the viewer's mind, leveraging pattern recognition to reinforce brand consistency and availability.",
+        "dimension": "视觉与文本整合",
+        "industry_context": "所有强调持续服务或可及性的行业",
+        "source_seed_id": "d110a05a13ebeb188da27fb62988e51c_3"
+    },
+    {
+        "trigger_features": [
+            "perspective-dependent visual transformation",
+            "minimalist sound design",
+            "slow-motion camera movement around a central object"
+        ],
+        "marketing_logic": "IF a visual element is designed to transform based on viewer perspective, THEN it triggers cognitive engagement and emotional resonance by symbolizing a journey from a negative state to a positive outcome, leveraging the psychological principles of narrative immersion and hope induction.",
+        "dimension": "Visual and Auditory",
+        "industry_context": "All industries emphasizing transformation, recovery, or personal growth, such as healthcare, wellness, education, and social services.",
+        "source_seed_id": "bef6c8d2420085c036c0e5755347c3ed_1"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF the advertisement uses visual and auditory symbols that highlight diverse individuals engaging in daily activities with the product, THEN it triggers psychological mechanisms of identity affirmation and social belonging, leading to increased consumer engagement and purchase intent.",
+        "dimension": "Social Identity and Inclusivity",
+        "industry_context": "所有强调可及性和多样性的行业，如零售、时尚、科技、教育",
+        "source_seed_id": "b6b4cc9b159fcbe9f08079283a2d0c7a_1"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "对比性视觉元素",
+            "打破第四面墙",
+            "互动式体验"
+        ],
+        "marketing_logic": "IF a brand uses a physical or digital tool to reveal hidden information (e.g., small text, obscured conditions) in a competitor's communication, THEN it triggers cognitive dissonance and distrust in the competitor, while positioning the brand as transparent and trustworthy, leveraging social proof and ethical appeal to drive consumer action.",
+        "dimension": "Ethical Transparency and Competitive Disruption",
+        "industry_context": "所有涉及复杂定价、条款或承诺的行业，如金融服务、电信、保险、零售和医疗保健，特别是那些消费者可能面临信息不对称或隐藏成本的领域。",
+        "source_seed_id": "0d871315314f4ce9c046dc9f88f715be_10"
+    },
+    {
+        "trigger_features": [
+            "多感官沉浸式体验暗示",
+            "时空灵活性符号",
+            "个性化内容矩阵展示",
+            "社会连接性视觉隐喻"
+        ],
+        "marketing_logic": "IF 广告展示听觉内容如何无缝融入日常生活的多个场景（如工作、通勤、休闲），THEN 触发受众对多功能陪伴型产品的心理依赖，通过展示内容多样性（新闻、音乐、体育等）满足不同情境下的情感需求（信息获取、娱乐放松、社群归属），从而建立品牌作为全天候解决方案的认知。",
+        "dimension": "情感连接与场景适配",
+        "industry_context": "所有提供按需服务或内容订阅的行业（如流媒体平台、在线教育、远程协作工具）",
+        "source_seed_id": "5889d22728ca15d506615ea803ffa74b_5"
+    },
+    {
+        "trigger_features": [
+            "周期性时间锚点",
+            "同步化数字互动",
+            "权威声音叙事",
+            "即时反馈机制"
+        ],
+        "marketing_logic": "IF a brand establishes a recurring temporal anchor (e.g., end-of-workweek timing) combined with synchronous digital interaction (e.g., live Q&A sessions) and authoritative narration, THEN it leverages anticipation and social proof to foster habitual engagement and reduce decision fatigue, as the structured timing cues relaxation transitions and the interactive element provides immediate validation and community connection.",
+        "dimension": "Temporal and Interactive Engagement",
+        "industry_context": "所有强调生活方式转换或周期性消费的行业",
+        "source_seed_id": "85b3bc5260dad5bdab4f1ad2f1b9dd5c_10"
+    },
+    {
+        "trigger_features": [
+            "temporal montage",
+            "persistent visual bombardment",
+            "contrast between foreground action and background stimuli",
+            "character as a constant through changing environments"
+        ],
+        "marketing_logic": "IF a brand uses a temporal montage where a character is exposed to persistent visual bombardment of a primary product's promotional stimuli across different eras, THEN it creates a cognitive dissonance that highlights the character's consistent preference for an alternative product, thereby leveraging contrast to emphasize the alternative's inherent appeal and authenticity through minimal promotion.",
+        "dimension": "Narrative and Temporal",
+        "industry_context": "All industries where brands have a flagship product but seek to promote an underdog or alternative offering, such as consumer goods, technology, or services.",
+        "source_seed_id": "de8a13a763d7a8c4b95ca61f1056620c_6"
+    },
+    {
+        "trigger_features": [
+            "环境音效对比",
+            "社会凝视符号",
+            "非语言叙事",
+            "场景切换"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes a disruptive action within a shared social space with the negative social feedback it generates, THEN it triggers the audience's fear of social disapproval and activates their desire for social conformity, leveraging the psychological principle of normative social influence to promote behavioral compliance.",
+        "dimension": "Behavioral Influence",
+        "industry_context": "所有涉及公共行为规范或共享空间使用的行业",
+        "source_seed_id": "40503e06472a6d051a9c20294e18be82_6"
+    },
+    {
+        "trigger_features": [
+            "触觉交互式户外装置",
+            "动态液体模拟",
+            "近距离物理接触点",
+            "拟真材质表现"
+        ],
+        "marketing_logic": "IF 营销方将传统单向视觉媒介转化为多感官交互装置，并置于受众可物理接触的近距离空间，THEN 能突破被动观看模式，通过触觉反馈与拟真体验直接激活受众的感官记忆与情感共鸣，从而强化品牌信息的沉浸式内化。",
+        "dimension": "感官营销",
+        "industry_context": "所有依赖体验驱动或情感联结的行业（如娱乐、奢侈品、体验式零售）",
+        "source_seed_id": "e5375ba198be325d1b9b48536f998fde_2"
+    },
+    {
+        "trigger_features": [
+            "空间重构符号",
+            "理想化生活场景符号",
+            "沉浸式体验符号"
+        ],
+        "marketing_logic": "IF a commercial space is visually and conceptually transformed into an idealized personal environment (e.g., a dream home), THEN it triggers aspirational identity projection and reduces psychological barriers to purchase by associating mundane transactions with emotional fulfillment and belonging.",
+        "dimension": "Spatial and Experiential",
+        "industry_context": "所有涉及实体或虚拟零售、服务体验的行业，特别是那些需要将功能性消费转化为情感性连接的领域。",
+        "source_seed_id": "49bafd5ab107f7bd6dc55d21339381aa_1"
+    },
+    {
+        "trigger_features": [
+            "温馨的室内环境照明",
+            "舒适的家庭空间布置"
+        ],
+        "marketing_logic": "IF 广告使用温馨的室内环境照明和舒适的家庭空间布置，THEN 它通过唤起安全感和归属感，降低消费者的焦虑和压力，从而促进对产品或服务的信任和接受。",
+        "dimension": "情感与体验维度",
+        "industry_context": "所有涉及复杂决策或高压力购买过程的行业",
+        "source_seed_id": "c9b246475c80903421ff6f18839b026a_8"
+    },
+    {
+        "trigger_features": [
+            "pastoral natural landscapes",
+            "low-stress animal behavior visuals",
+            "contrast between confined and open environments",
+            "warm, natural lighting"
+        ],
+        "marketing_logic": "IF the advertisement juxtaposes constrained conditions with expansive, natural settings, THEN it triggers a psychological association between ethical treatment and superior quality, leveraging consumer empathy and health-consciousness to foster brand trust and preference.",
+        "dimension": "Ethical and Quality Association",
+        "industry_context": "all industries emphasizing ethical sourcing, natural origins, or premium quality, such as food and beverage, cosmetics, fashion, and sustainable products",
+        "source_seed_id": "d045dc0e5a1fc291b5c3cf43b522be1f_7"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙",
+            "意外性叙事转折",
+            "沉浸式视听体验"
+        ],
+        "marketing_logic": "IF an advertisement employs unexpected narrative breaks and immersive sensory cues, THEN it triggers cognitive dissonance and curiosity, leading to heightened engagement and a desire for enhanced experience fulfillment.",
+        "dimension": "Content, Digital, and Film media",
+        "industry_context": "所有提供沉浸式体验或强调体验升级的行业",
+        "source_seed_id": "b984051b3349b0d405fe2e571ae41214_1"
+    },
+    {
+        "trigger_features": [
+            "破碎材质上的视觉符号创作",
+            "历史事件的物质化再现",
+            "集体创伤的具象化表达"
+        ],
+        "marketing_logic": "IF 将集体创伤事件中的物理残留物转化为承载受害者肖像的视觉符号，THEN 通过物质与记忆的融合，激发观众对正义的强烈情感共鸣与身份认同，强化群体坚韧性的叙事。",
+        "dimension": "情感共鸣与身份认同",
+        "industry_context": "所有涉及社会倡导、公益营销或需要强化群体凝聚力的领域",
+        "source_seed_id": "8391ed6d13b58003f322e0ca9d810bdd_6"
+    },
+    {
+        "trigger_features": [
+            "情感化叙事焦点转移",
+            "群体性仪式化场景",
+            "非商业主角符号"
+        ],
+        "marketing_logic": "IF a brand shifts the narrative focus from the primary achiever (e.g., athlete) to an unsung supporting figure (e.g., mother), THEN it triggers emotional resonance (e.g., gratitude, empathy) and fosters brand association with authentic human connections, bypassing direct product promotion.",
+        "dimension": "情感共鸣与品牌人性化",
+        "industry_context": "所有依赖社群或关系驱动的行业，如体育、教育、家庭服务、非营利组织",
+        "source_seed_id": "9ead2ed6d848d6c765819544227842cb_7"
+    },
+    {
+        "trigger_features": [
+            "包容性语言符号",
+            "矛盾性视觉对比",
+            "直接对受众说话"
+        ],
+        "marketing_logic": "IF a brand uses inclusive language and acknowledges a common consumer behavior that contradicts its core values, THEN it reduces cognitive dissonance and guilt, fostering a sense of permission and belonging, which increases adoption likelihood by lowering psychological barriers.",
+        "dimension": "情感与行为维度",
+        "industry_context": "所有倡导生活方式改变或道德消费的行业，如健康食品、可持续产品、环保服务",
+        "source_seed_id": "2beac2c2568db1757fda10807d7a78b8_1"
+    },
+    {
+        "trigger_features": [
+            "直接文本声明",
+            "矛盾性语言结构",
+            "包容性语气"
+        ],
+        "marketing_logic": "IF a brand uses direct text statements combined with contradictory language structures (e.g., 'we are X, but you don't have to be') in an inclusive tone, THEN it reduces cognitive dissonance and guilt in the audience by acknowledging their existing habits while reinforcing the brand's core values, thereby fostering brand loyalty and broadening appeal without alienating potential customers.",
+        "dimension": "品牌定位与消费者心理",
+        "industry_context": "所有涉及生活方式选择、道德消费或存在潜在消费者内疚感的行业",
+        "source_seed_id": "2beac2c2568db1757fda10807d7a78b8_5"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙",
+            "口语化叙事",
+            "幽默元素",
+            "真实场景模拟"
+        ],
+        "marketing_logic": "IF an advertisement uses direct address and relatable scenarios with a candid, humorous tone to depict overcoming common professional obstacles, THEN it triggers cognitive resonance and reduces psychological distance, fostering a sense of optimism and trust in the solution's efficacy.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "所有涉及复杂问题解决或效率提升的行业",
+        "source_seed_id": "94292f6091611cd730f88fa77932bd39_4"
+    },
+    {
+        "trigger_features": [
+            "clean visual aesthetic",
+            "modern architectural lines",
+            "minimalist color palette",
+            "uncluttered spatial composition"
+        ],
+        "marketing_logic": "IF the ad presents a visual environment characterized by cleanliness and modernity, THEN it triggers psychological associations with efficiency, innovation, and reliability, leveraging cognitive heuristics that link aesthetic order to functional competence, thereby reducing perceived risk and enhancing trust in the brand's ability to solve complex problems.",
+        "dimension": "Visual",
+        "industry_context": "all industries emphasizing efficiency, innovation, and problem-solving, such as technology, consulting, finance, and professional services",
+        "source_seed_id": "94292f6091611cd730f88fa77932bd39_10"
+    },
+    {
+        "trigger_features": [
+            "数字化环境复刻",
+            "游戏化互动界面",
+            "虚拟空间访问",
+            "奖励触发机制"
+        ],
+        "marketing_logic": "IF a physical access barrier exists (e.g., lockdown, distance, scarcity) AND a brand creates a virtual replica in a popular digital environment, THEN it leverages escapism and gamification to maintain engagement, reduce perceived loss, and stimulate reward-seeking behavior through virtual-to-real incentives.",
+        "dimension": "Experience",
+        "industry_context": "所有依赖实体访问或面临访问限制的行业，如零售、餐饮、旅游、娱乐",
+        "source_seed_id": "dcc31d1383e05efe03a29186dd31b06e_4"
+    },
+    {
+        "trigger_features": [
+            "怀旧文化符号的现代化改编",
+            "免费可获取的创意资源包",
+            "经济支持与专业指导的组合提供"
+        ],
+        "marketing_logic": "IF 品牌将具有广泛文化共鸣的经典叙事转化为可参与的现代艺术形式，并提供免费资源与资金支持，THEN 能激发受众的怀旧情感与参与热情，同时建立品牌作为文化守护者与社区支持者的形象，增强品牌亲和力与社会责任感感知。",
+        "dimension": "情感共鸣与社会责任",
+        "industry_context": "所有需要建立长期品牌忠诚度、增强社区联系或提升企业社会形象的行业",
+        "source_seed_id": "6bc695b457dbda13fd67e2cfb5ed856a_5"
+    },
+    {
+        "trigger_features": [
+            "symbolic object transformation",
+            "metaphorical visual representation",
+            "contrast between cessation and continuity",
+            "collective identity marker"
+        ],
+        "marketing_logic": "IF a symbolic object is transformed to represent a collective cause (e.g., using a common item altered with personal attributes like hair), THEN it triggers identity reinforcement and urgency by contrasting a temporary event (e.g., a sports match ending) with an ongoing struggle, leveraging emotional resonance and shared values to motivate sustained action.",
+        "dimension": "Social Advocacy",
+        "industry_context": "all cause-driven or social movement campaigns",
+        "source_seed_id": "47b4a902ef924727fb41497f35a9384c_9"
+    },
+    {
+        "trigger_features": [
+            "anthropomorphic object with organic texture",
+            "slow-motion rolling motion",
+            "contrast between static background and dynamic foreground",
+            "close-up on tactile surface details"
+        ],
+        "marketing_logic": "IF an object is imbued with human-like attributes (e.g., hair representing personal identity) and shown in perpetual motion against a contrasting environment, THEN it triggers psychological associations of resilience, continuity, and collective struggle, leveraging emotional engagement and identity reinforcement to foster a sense of urgency and shared purpose.",
+        "dimension": "Social Advocacy",
+        "industry_context": "All sectors promoting social causes, human rights initiatives, or community-driven movements where sustained momentum and visibility are critical.",
+        "source_seed_id": "47b4a902ef924727fb41497f35a9384c_10"
+    },
+    {
+        "trigger_features": [
+            "symbolic facial coverings with textual imperatives",
+            "high-contrast visual juxtaposition of personal identity and collective cause",
+            "direct-to-camera address"
+        ],
+        "marketing_logic": "IF a campaign uses symbolic facial coverings with textual imperatives (e.g., 'equality', 'reproductive justice', 'planet earth') in a high-contrast visual juxtaposition of personal identity and collective cause, combined with direct-to-camera address, THEN it triggers identity projection and urgency amplification by visually merging individual expression with societal stakes, leveraging social proof and scarcity anxiety through time-bound engagement.",
+        "dimension": "Social Impact and Civic Engagement",
+        "industry_context": "all industries promoting social causes, community-driven initiatives, or time-sensitive advocacy campaigns",
+        "source_seed_id": "a4bc36ce165ca35b1dc5331a2fb5bbae_3"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of contrasting visual environments",
+            "seamless transitions between opposing states",
+            "symbolic representation of duality through motion"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes contrasting visual elements (e.g., harsh vs. serene environments) and shows seamless transitions between them, THEN it triggers cognitive dissonance resolution in the viewer, leading to enhanced perceived innovation and value through the synthesis of opposing qualities.",
+        "dimension": "Visual and conceptual",
+        "industry_context": "All industries promoting products that integrate conflicting attributes or dual-functionality, such as technology, healthcare, and consumer goods.",
+        "source_seed_id": "b5ba7a08b57dd7967c0cc69ce178725c_2"
+    },
+    {
+        "trigger_features": [
+            "象征性位置置换",
+            "社会贡献者符号",
+            "集体仪式感场景"
+        ],
+        "marketing_logic": "IF 将象征高价值/稀缺性的社会符号（如：优先位置、专属权利）赋予特定社会贡献群体，THEN 会激活受众的集体认同感与道德满足感，通过符号转移建立品牌的社会价值关联。",
+        "dimension": "情感共鸣与社会价值维度",
+        "industry_context": "所有依赖公众信任与社区参与的行业（如：公共服务、文化娱乐、社会企业）",
+        "source_seed_id": "6707de8ef70e7aabdf55772afcd9c670_10"
+    },
+    {
+        "trigger_features": [
+            "视觉对比（资源消耗/保护）",
+            "日常行为符号（饮品制作）",
+            "集体行动号召（加入运动）"
+        ],
+        "marketing_logic": "IF 将产品使用与日常微小行为（如饮品制作）关联，并对比展示其宏观积极影响（如资源保护），THEN 通过降低行为门槛（简单改变）和强化集体归属感（加入运动），激发消费者的自我效能感和道德认同，从而促进采纳。",
+        "dimension": "可持续消费",
+        "industry_context": "所有强调个人行为对集体或环境产生积极影响的行业（如环保产品、社会责任品牌、健康生活方式）",
+        "source_seed_id": "2a37c9b442379d6b1a96155486446760_9"
+    },
+    {
+        "trigger_features": [
+            "权威信息源暗示",
+            "社会传播符号",
+            "视觉舒适性展示"
+        ],
+        "marketing_logic": "IF an advertisement presents a widely circulated but unverified claim that aligns with the brand's core value proposition, THEN it leverages social proof and cognitive ease to bypass critical evaluation and foster belief, thereby enhancing brand identity and perceived accessibility.",
+        "dimension": "House, Garden and Retail Services",
+        "industry_context": "所有强调可及性、社会认同和情感共鸣的行业",
+        "source_seed_id": "c4aa05f0211f47c8c5f02914c86dff5d_10"
+    },
+    {
+        "trigger_features": [
+            "象征性文化符号的物理化重构",
+            "安全距离的可视化具象",
+            "集体仪式行为的适应性改造"
+        ],
+        "marketing_logic": "IF 将具有强烈集体认同感的传统仪式符号（如节日装饰、集体舞蹈）进行物理尺寸或形态的改造，使其直观体现安全规范（如社交距离），THEN 该符号会同时激活两种心理机制：1）通过熟悉的仪式符号触发归属感与怀旧情绪，降低对变革的抵触；2）通过物理改造将抽象限制（如安全要求）转化为可参与、甚至具有趣味性的新仪式，从而将‘限制’重构为‘特色’，增强参与意愿与品牌关联度。",
+        "dimension": "文化符号创新",
+        "industry_context": "所有面临外部限制（如法规、安全要求、环境变化）但需维持用户参与度的行业，特别是依赖传统、仪式或集体行为的领域（如节日庆典、体育赛事、社区活动、教育体验）。",
+        "source_seed_id": "44477ad942c244bbda99675aef13f72e_1"
+    },
+    {
+        "trigger_features": [
+            "数字化交互界面",
+            "色彩选择机制",
+            "社交分享符号",
+            "时间同步事件"
+        ],
+        "marketing_logic": "IF a campaign combines a digital tool for personal expression (e.g., color selection) with social sharing mechanisms (e.g., hashtags) and a synchronized event, THEN it leverages collective participation and identity reinforcement to drive engagement and support, tapping into social proof and community belonging.",
+        "dimension": "Digital Engagement and Social Impact",
+        "industry_context": "所有需要促进集体行动、增强品牌忠诚度或支持社会事业的行业，如非营利组织、科技公司、消费品和娱乐业。",
+        "source_seed_id": "354d1380f9497b09aa59c38c4a02f9bc_7"
+    },
+    {
+        "trigger_features": [
+            "同步化数字界面参与",
+            "集体可视化符号选择",
+            "时间锚定仪式感营造"
+        ],
+        "marketing_logic": "IF 提供数字化工具让分散个体在指定时间点执行相同符号化动作（如选择色彩、设定虚拟路径），THEN 通过同步行为创造临时性集体身份认同，激活归属感与仪式参与感，将物理隔离转化为心理联结。",
+        "dimension": "社会运动与公益营销",
+        "industry_context": "所有需要构建虚拟社区或在线集体行动的领域（如远程团队建设、线上教育协作、分布式品牌活动）",
+        "source_seed_id": "354d1380f9497b09aa59c38c4a02f9bc_5"
+    },
+    {
+        "trigger_features": [
+            "数据可视化界面",
+            "无障碍符号",
+            "舒缓旁白",
+            "对比蒙太奇"
+        ],
+        "marketing_logic": "IF a brand uses real-time data aggregation and filtering to create a personalized accessibility map, THEN it triggers a psychological shift from perceived vulnerability to empowered independence, leveraging the 'safety-as-freedom' heuristic where security enables autonomy.",
+        "dimension": "Empowerment",
+        "industry_context": "所有提供安全、健康或辅助服务的行业",
+        "source_seed_id": "6ad6d84a0cd73ccd27ce4fcc484c994e_2"
+    },
+    {
+        "trigger_features": [
+            "公共空间改造",
+            "日常物体拟人化",
+            "视觉符号置换",
+            "环境叙事融合"
+        ],
+        "marketing_logic": "IF a brand transforms a mundane, functional object in a public space into a humanized, expressive form through visual art, THEN it triggers cognitive dissonance and curiosity in viewers, leading to increased attention and emotional engagement by leveraging the psychological principles of pareidolia (the tendency to perceive faces in inanimate objects) and environmental priming, which associates the brand with immediate, accessible solutions in the viewer's daily context.",
+        "dimension": "OOH Outdoor",
+        "industry_context": "所有依赖冲动消费或即时满足的行业，如快餐、零售、便利服务",
+        "source_seed_id": "04cc438d8c226ebb560a4c9a99d57dbe_9"
+    },
+    {
+        "trigger_features": [
+            "文本符号的突出展示",
+            "地理标识的强调",
+            "情感化词汇的嵌入"
+        ],
+        "marketing_logic": "IF a visual element combines a text-based claim (e.g., 'Handmade with love') with a specific geographic identifier (e.g., 'in Los Angeles'), THEN it triggers psychological effects of authenticity and emotional connection, leveraging human tendencies to associate localized craftsmanship with trust and quality, thereby enhancing product differentiation and consumer appeal.",
+        "dimension": "Authenticity and Emotional Connection",
+        "industry_context": "所有强调手工制作、本地化或情感价值的行业，如手工艺品、食品饮料、时尚和家居装饰。",
+        "source_seed_id": "76a5bdfc88b09608b84b91e8e231e843_3"
+    },
+    {
+        "trigger_features": [
+            "celebrity endorsement",
+            "voice-activated interface demonstration",
+            "unified content aggregation visualization",
+            "high-energy auditory cues"
+        ],
+        "marketing_logic": "IF a brand combines celebrity endorsement with a demonstration of a voice-activated interface that aggregates diverse content into a single accessible platform, THEN it triggers joy and excitement by leveraging social proof to reduce perceived complexity and cognitive load, thereby enhancing the appeal of simplification in decision-making processes.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all industries offering complex or fragmented services that require user navigation, such as technology, media, finance, and healthcare, where simplifying choices can drive adoption and satisfaction.",
+        "source_seed_id": "a8b74fe46c2b81e784ff2978ef1dc2f7_7"
+    },
+    {
+        "trigger_features": [
+            "collage-style mixed media",
+            "powerful images of activism",
+            "bold graphics",
+            "fast-paced montage",
+            "staggering statistical presentation"
+        ],
+        "marketing_logic": "IF a campaign combines powerful images of activism with bold graphics and a fast-paced montage to present staggering statistical inequities, THEN it triggers scarcity anxiety and moral urgency in the audience, leveraging identity alignment with social causes to inspire action.",
+        "dimension": "Social Impact and Advocacy",
+        "industry_context": "All sectors emphasizing social justice, equality, or cause-based initiatives, such as non-profits, advocacy groups, and corporate social responsibility programs.",
+        "source_seed_id": "38a9be4e56834f81015b9978c7a79a5c_10"
+    },
+    {
+        "trigger_features": [
+            "CGI生物拟人化",
+            "专业场景与奇幻元素的并置",
+            "高反差视觉对比"
+        ],
+        "marketing_logic": "IF a brand combines a mundane professional setting with a fantastical CGI creature, THEN it triggers cognitive dissonance and curiosity, leveraging novelty to enhance memorability and brand association through surprise and humor.",
+        "dimension": "品牌合作与内容整合",
+        "industry_context": "所有寻求突破常规、增强品牌趣味性和记忆点的行业",
+        "source_seed_id": "aad677b998d1b2213076ee215dda41bf_1"
+    },
+    {
+        "trigger_features": [
+            "跨领域符号嫁接",
+            "超现实场景构建",
+            "CGI视觉奇观",
+            "权威机构背书"
+        ],
+        "marketing_logic": "IF 将产品与一个高知名度、高冲击力的文化符号（如：引发恐惧或敬畏的自然力量）进行超现实嫁接，THEN 通过符号的极端性放大产品的必要性，触发观众的普遍性焦虑（如：对基本需求的忽视风险）和记忆锚定效应，从而强化品牌在品类中的权威地位。",
+        "dimension": "恐惧营销与权威强化",
+        "industry_context": "所有提供基础或必需服务的行业（如：健康、安全、金融、教育）",
+        "source_seed_id": "aad677b998d1b2213076ee215dda41bf_9"
+    },
+    {
+        "trigger_features": [
+            "slow-motion cinematography",
+            "solemn voiceover",
+            "minimalist color palette",
+            "symbolic imagery of closure and continuity"
+        ],
+        "marketing_logic": "IF a brand uses visual and auditory cues that evoke a sense of pause and collective experience, THEN it can trigger emotional resonance and reinforce brand loyalty by framing adversity as a temporary setback that strengthens community bonds and promises future engagement.",
+        "dimension": "Emotional Connection and Brand Resilience",
+        "industry_context": "all service-based industries facing disruptions or crises",
+        "source_seed_id": "3fab57556d7f354e4283ac03eb27304b_10"
+    },
+    {
+        "trigger_features": [
+            "静态视觉叙事",
+            "生活空间场景化",
+            "符号化物品暗示",
+            "高细节度构图"
+        ],
+        "marketing_logic": "IF a marketing campaign uses static visual narratives set in familiar personal spaces with symbolic objects that imply prior experiences, THEN it triggers curiosity and personal reconstruction of events in the viewer's mind, leveraging psychological engagement through narrative gaps and relatable contexts to foster emotional connection and desire for the product.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "所有提供虚拟体验或服务的行业",
+        "source_seed_id": "02608beab7b85f39c07d107c3e225bc9_1"
+    },
+    {
+        "trigger_features": [
+            "curated auditory collections",
+            "spoken-word narrative overlays",
+            "platform for personal storytelling",
+            "collaborative brand partnerships"
+        ],
+        "marketing_logic": "IF a brand combines curated auditory collections with spoken-word narrative overlays on a platform for personal storytelling, THEN it leverages social identity theory and parasocial connection to foster community belonging and amplify underrepresented voices, thereby enhancing brand authenticity and emotional engagement.",
+        "dimension": "Auditory and Narrative",
+        "industry_context": "All industries aiming to build community, promote diversity, or enhance brand authenticity through storytelling and collaborative content.",
+        "source_seed_id": "16a38e95c690d18c36162e5ee8e924b9_10"
+    },
+    {
+        "trigger_features": [
+            "情感叙事镜头",
+            "对比性视觉符号",
+            "个性化解决方案展示"
+        ],
+        "marketing_logic": "IF the ad uses emotional storytelling combined with visual contrasts (e.g., depicting a transition from uncertainty to security) to evoke empathy and aspiration, THEN it triggers a psychological response of hope and trust, leading viewers to perceive the brand as a facilitator of personal ambitions, thereby increasing engagement and conversion through identity alignment and solution-oriented messaging.",
+        "dimension": "情感共鸣与解决方案导向",
+        "industry_context": "所有提供定制化服务或解决重大生活决策的行业",
+        "source_seed_id": "e8fb000e71842b06105d3d0edd2c1467_1"
+    },
+    {
+        "trigger_features": [
+            "情感叙事镜头",
+            "生活场景对比",
+            "权威角色介入",
+            "解决方案呈现"
+        ],
+        "marketing_logic": "IF an ad uses relatable emotional narratives combined with a threat to stability (e.g., loss of a valued environment) and introduces an authoritative solution provider, THEN it triggers anxiety about scarcity and uncertainty, followed by relief and trust, leveraging psychological principles of loss aversion and authority bias to drive action towards a goal.",
+        "dimension": "情感与信任构建",
+        "industry_context": "所有涉及重大生活决策或长期承诺的行业，如金融服务、房地产、教育、医疗保健、保险等。",
+        "source_seed_id": "e8fb000e71842b06105d3d0edd2c1467_9"
+    },
+    {
+        "trigger_features": [
+            "集体肖像定格",
+            "成就庆祝氛围",
+            "亲密空间构图"
+        ],
+        "marketing_logic": "IF a narrative showcases a transformation or achievement through a guided process, THEN concluding with a collective portrait in a celebratory setting leverages social proof and emotional closure to reinforce the value of the guiding entity, fostering trust and aspirational identification.",
+        "dimension": "情感共鸣与信任建立",
+        "industry_context": "所有涉及指导、教育或服务导向的行业",
+        "source_seed_id": "6c6435f0770a9338cb64de5c0752201f_10"
+    },
+    {
+        "trigger_features": [
+            "数字化工具界面交互",
+            "实时内容流",
+            "社群平台整合",
+            "创作者形象展示"
+        ],
+        "marketing_logic": "IF 品牌提供解决创作者资源稀缺问题的数字化工具，并嵌入高流量内容平台，THEN 能激发目标受众对创作者困境的共情，同时建立品牌作为赋能者的身份认同，通过降低使用门槛创造大规模传播机会。",
+        "dimension": "情感共鸣与社群赋能",
+        "industry_context": "所有依赖创作者经济或面临资源分配不均的行业",
+        "source_seed_id": "6706b363006e8422a9c7dd2f19ad85a6_7"
+    },
+    {
+        "trigger_features": [
+            "数字化工具集成",
+            "实时内容流",
+            "社群平台嵌入",
+            "用户生成内容赋能"
+        ],
+        "marketing_logic": "IF a brand provides a frictionless, value-adding digital resource (e.g., royalty-free content) within a high-traffic social ecosystem (e.g., Discord), THEN it leverages scarcity alleviation (reducing barriers like copyright issues) and social proof (via influencer endorsement) to foster user adoption, thereby creating brand association with empowerment and community support.",
+        "dimension": "Integrated medium campaign",
+        "industry_context": "所有依赖用户生成内容或社群互动的行业，如娱乐、科技、教育、零售",
+        "source_seed_id": "6706b363006e8422a9c7dd2f19ad85a6_3"
+    },
+    {
+        "trigger_features": [
+            "量化数据可视化对比",
+            "互动式奖励机制",
+            "社交媒体平台整合"
+        ],
+        "marketing_logic": "IF a product possesses a quantifiable advantage over competitors, THEN make the abstract advantage tangible by offering a compensatory reward that directly addresses the competitor's deficit, thereby creating a sense of urgency and engagement through digital participation.",
+        "dimension": "Comparative Advantage",
+        "industry_context": "所有强调性能或容量优势的行业",
+        "source_seed_id": "885a01d10c37ac02d5be37594dd2774a_9"
+    },
+    {
+        "trigger_features": [
+            "公共空间视觉符号植入",
+            "多创作者风格融合",
+            "跨地域符号复现"
+        ],
+        "marketing_logic": "IF a brand uses a collaboration with diverse creators to reinterpret a core visual symbol in public spaces across multiple locations, THEN it leverages collective creativity to enhance brand relevance and foster cultural engagement, triggering social validation and novelty-seeking behaviors in audiences.",
+        "dimension": "品牌符号学与空间营销",
+        "industry_context": "所有依赖视觉识别和社区互动的行业",
+        "source_seed_id": "0701c4ad469dedd8dd78d98bb9c0212e_7"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF the ad uses a festive setting (e.g., holiday season) to frame the product as a gift, THEN it taps into cultural traditions of gift-giving to evoke emotions of generosity, renewal, and social connection, thereby reducing perceived barriers to adoption by associating the product with positive, shared experiences.",
+        "dimension": "Emotional and Cultural Resonance",
+        "industry_context": "所有强调可持续性、社会责任或情感价值的行业",
+        "source_seed_id": "5545bc26093857eb51c6945cdd0f466e_6"
+    },
+    {
+        "trigger_features": [
+            "增强现实叠加",
+            "日常物品数字化映射",
+            "交互式虚拟环境入口"
+        ],
+        "marketing_logic": "IF a mundane, ubiquitous object is digitally augmented to serve as a portal to an immersive virtual experience, THEN it leverages cognitive dissonance reduction (by making the unfamiliar feel inevitable) and gamification (through discovery and customization) to foster engagement and drive conversion.",
+        "dimension": "交互体验",
+        "industry_context": "所有需要将抽象概念或复杂产品转化为可感知体验的行业，如科技、汽车、房地产、教育",
+        "source_seed_id": "6d5b4ecd649565cab467386e3501794d_1"
+    },
+    {
+        "trigger_features": [
+            "immersive world traversal",
+            "character cameo integration",
+            "narrative fragment collection",
+            "seamless scene transition"
+        ],
+        "marketing_logic": "IF the ad immerses the audience in a curated selection of existing narrative worlds through seamless traversal and integrates familiar character cameos, THEN it triggers joy and excitement by leveraging the psychological principles of narrative anticipation and continuity, reducing the anxiety of content depletion and fostering a sense of endless discovery.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all subscription-based or content-driven industries where user retention depends on continuous discovery and seamless access to curated experiences",
+        "source_seed_id": "e160092ede71b03edf91b1ab03653dcc_4"
+    },
+    {
+        "trigger_features": [
+            "immersive world traversal",
+            "character cameo integration",
+            "collectible visual tokens",
+            "genre-spanning visual motifs"
+        ],
+        "marketing_logic": "IF the ad uses immersive world traversal and character cameo integration to depict a journey through diverse visual motifs, THEN it triggers a sense of discovery and continuity, leveraging the psychological principle of curiosity and completion bias to position the product as a solution for seamless entertainment transitions.",
+        "dimension": "Lifestyle Portrayal",
+        "industry_context": "all subscription-based or content-driven industries where user engagement and retention are critical, such as streaming services, gaming platforms, or educational content providers.",
+        "source_seed_id": "e160092ede71b03edf91b1ab03653dcc_8"
+    },
+    {
+        "trigger_features": [
+            "文本叠加展示",
+            "视觉焦点引导",
+            "品牌符号重复"
+        ],
+        "marketing_logic": "IF a marketing message prominently displays a direct access point (e.g., a website address) in a clear and repetitive manner, THEN it reduces cognitive load and enhances recall by leveraging the availability heuristic, making the product seem more accessible and actionable to the viewer.",
+        "dimension": "信息传递与记忆强化",
+        "industry_context": "所有依赖直接消费者行动或在线转化的行业",
+        "source_seed_id": "53f965d064c15e48130293473ee2ae3b_10"
+    },
+    {
+        "trigger_features": [
+            "非专业造型呈现",
+            "日常化服装道具",
+            "近距离社交互动镜头",
+            "生活化场景还原"
+        ],
+        "marketing_logic": "IF 广告呈现非专业造型、日常化服装道具和近距离社交互动镜头，THEN 通过降低视觉修饰度来制造真实感，触发观众对品牌真实性的信任，从而建立情感连接和身份认同。",
+        "dimension": "真实性维度",
+        "industry_context": "所有需要建立消费者信任和情感连接的行业，如餐饮、零售、金融服务、社区服务等。",
+        "source_seed_id": "fadaccd21f7c99de2b59bf5d094055a6_3"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙",
+            "肢体动作表达",
+            "居家环境符号",
+            "流畅无缝转场"
+        ],
+        "marketing_logic": "IF a spokesperson performs a complex acquisition ritual (e.g., purchasing a vehicle) while remaining in a relaxed, familiar setting (e.g., a sofa), THEN it triggers cognitive dissonance reduction and confidence by visually bridging the gap between perceived effort (high) and actual effort (low), leveraging the 'effortless acquisition' heuristic to evoke joy and trust in the process.",
+        "dimension": "Process Simplification",
+        "industry_context": "所有涉及高认知负荷或传统上需要物理互动的行业，如金融服务、房地产、教育服务、医疗预约系统",
+        "source_seed_id": "fd8e9e8b6b2b809bd2a32441bc67b45c_4"
+    },
+    {
+        "trigger_features": [
+            "idyllic visual sequences",
+            "contrasting atmospheric tones",
+            "dynamic action montages",
+            "aspirational voiceover"
+        ],
+        "marketing_logic": "IF a campaign presents a stark contrast between a mundane, tolerated reality (e.g., 'suffering through a season') and an idealized, accessible alternative (e.g., 'breathtaking natural beauty with endless amenities'), THEN it triggers cognitive dissonance and aspirational desire by reframing a negative perception into an opportunity for joy and exploration, leveraging scarcity of positive experiences to motivate action.",
+        "dimension": "Perception Reframing",
+        "industry_context": "all industries offering experiential products or services that compete against negative or neutral consumer perceptions, such as travel, leisure, wellness, and lifestyle brands.",
+        "source_seed_id": "3877c416cc8c8021538d2377ab35f494_4"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "自然元素特写",
+            "动态光影对比"
+        ],
+        "marketing_logic": "IF an ad uses high-saturation colors and close-ups of natural elements, THEN it triggers associations with purity and vitality in the viewer's mind, leveraging primal sensory appeal to differentiate from synthetic alternatives.",
+        "dimension": "视觉感官",
+        "industry_context": "所有强调天然、健康或可持续性的行业",
+        "source_seed_id": "542d4d6d707d1dbadcfbf91399676b25_9"
+    },
+    {
+        "trigger_features": [
+            "肢体动作表达夸张化",
+            "角色间互动对比",
+            "面部表情特写"
+        ],
+        "marketing_logic": "IF a brand uses exaggerated physical expression of joy in a protagonist, THEN it creates a visual metaphor for the emotional benefit of the product, leveraging positive affect and aspiration to enhance perceived value.",
+        "dimension": "Emotional Appeal",
+        "industry_context": "所有提供体验或节省成本的行业",
+        "source_seed_id": "59d834e523a111f46d46da46f20abd57_1"
+    },
+    {
+        "trigger_features": [
+            "数字化文本容器",
+            "日常职业沟通渠道",
+            "符号化行动号召"
+        ],
+        "marketing_logic": "IF a campaign embeds a symbolic action call (e.g., a petition link) within a digital text container (e.g., email signature) that is part of daily professional communication channels, THEN it leverages routine exposure and peer influence to foster collective identity and amplify social cause awareness among targeted demographics.",
+        "dimension": "Digital",
+        "industry_context": "所有涉及社会倡导、公共事务或需要群体动员的行业",
+        "source_seed_id": "e1e6dfe5904a7f7fa2672b46ed239787_2"
+    },
+    {
+        "trigger_features": [
+            "拟人化CGI角色",
+            "文化特定幽默风格",
+            "材质隐喻视觉符号"
+        ],
+        "marketing_logic": "IF a brand uses a culturally resonant anthropomorphic character with witty commentary on its product category, THEN it can create emotional engagement and memorability by leveraging humor as a social bonding mechanism and reducing perceived complexity through narrative framing.",
+        "dimension": "品牌叙事与情感连接",
+        "industry_context": "所有依赖文化认同和情感共鸣的消费品行业",
+        "source_seed_id": "4cebf7e598402df7f57913f930885b6c_4"
+    },
+    {
+        "trigger_features": [
+            "immersive digital environment",
+            "historical architectural motifs",
+            "curated virtual exhibition space",
+            "multisensory artistic expression"
+        ],
+        "marketing_logic": "IF a brand creates a digital environment that combines historical cultural symbols with contemporary artistic expression, THEN it triggers a psychological response of cultural prestige and innovation, enhancing brand perception as a patron of heritage and modernity, which fosters emotional connection and perceived exclusivity.",
+        "dimension": "Digital and Experiential",
+        "industry_context": "all industries emphasizing brand heritage, luxury, or cultural engagement, such as hospitality, retail, arts, and entertainment",
+        "source_seed_id": "729830e97099779912b31675481d22b3_1"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a brand combines a historical cultural symbol (e.g., ancient temple) with cutting-edge digital tools (e.g., immersive platform) in an experience, THEN it triggers a sense of engagement and creativity by leveraging nostalgia and innovation, positioning the brand as an experience innovator.",
+        "dimension": "Digital and Experiential media campaign",
+        "industry_context": "所有强调体验和创新的行业",
+        "source_seed_id": "729830e97099779912b31675481d22b3_4"
+    },
+    {
+        "trigger_features": [
+            "权威机构标识",
+            "精确数据呈现",
+            "具象化比喻",
+            "对比性视觉符号"
+        ],
+        "marketing_logic": "IF an authority figure presents precise negative statistics (e.g., annual fatalities) and uses a vivid metaphor (e.g., 'driving like a zombie') to contrast normal behavior with impaired behavior, THEN it triggers fear and urgency in the audience by making abstract risks concrete and relatable, leveraging cognitive dissonance to promote behavior change.",
+        "dimension": "社会公益与行为干预",
+        "industry_context": "所有涉及公共安全、健康促进或风险管理的行业",
+        "source_seed_id": "a48ccd6eace031bb3654d180aeb3fdca_8"
+    },
+    {
+        "trigger_features": [
+            "数字化工具交互",
+            "超现实视觉转换",
+            "感官愉悦符号"
+        ],
+        "marketing_logic": "IF a brand associates a mundane action (e.g., scanning) with fantastical, rewarding outcomes (e.g., travel, sensory experiences), THEN it triggers dopamine release and escapism desires in consumers, leveraging the psychological principle of operant conditioning to reinforce engagement.",
+        "dimension": "Emotional",
+        "industry_context": "所有需要提升用户参与度和转化率的行业，如零售、娱乐、旅游、科技服务",
+        "source_seed_id": "d4484b2bbc002e9cb2b9f2c23db394f3_8"
+    },
+    {
+        "trigger_features": [
+            "权威性旁白",
+            "工作场景符号",
+            "耐用材质特写",
+            "第一人称叙事视角"
+        ],
+        "marketing_logic": "IF a product is presented as a 'backbone' or essential support structure through authoritative narration and first-person perspective, THEN it triggers a psychological association of reliability and empowerment, reducing decision fatigue by framing the product as a non-negotiable necessity for the user's identity and daily success.",
+        "dimension": "Identity Reinforcement and Empowerment",
+        "industry_context": "所有强调专业身份、耐用性和日常依赖性的行业，如工具制造、职业服装、重型设备、安全装备等。",
+        "source_seed_id": "df52dc61b4f32381e51b09e8099585df_6"
+    },
+    {
+        "trigger_features": [
+            "实时双向视觉连接",
+            "共享环境控制界面",
+            "同步听觉体验"
+        ],
+        "marketing_logic": "IF a brand uses real-time bidirectional visual connections and shared environmental control interfaces to create a unified experience across separate physical spaces, THEN it triggers a sense of collective participation and belonging, reducing perceived spatial limitations and enhancing social bonding through interactive engagement.",
+        "dimension": "Spatial and Social Integration",
+        "industry_context": "所有面临空间限制或需要增强社交互动的行业",
+        "source_seed_id": "21ef74ddb45063f1d8bf8d34fb545ded_1"
+    },
+    {
+        "trigger_features": [
+            "权威人物特写",
+            "专业环境背景",
+            "服务互动场景",
+            "信任符号展示"
+        ],
+        "marketing_logic": "IF an advertisement prominently features interactions between authoritative figures and customers in a professional setting, THEN it triggers psychological mechanisms of trust and expertise attribution, reducing decision-making anxiety and fostering brand loyalty by positioning the brand as a reliable source of knowledge.",
+        "dimension": "Service and Expertise",
+        "industry_context": "所有强调专业咨询和客户服务的行业",
+        "source_seed_id": "cf260ae72ca834c936629f5d524c1a86_7"
+    },
+    {
+        "trigger_features": [
+            "自然景观背景",
+            "流畅线条美学",
+            "第一人称叙事",
+            "文化符号融合"
+        ],
+        "marketing_logic": "IF a brand combines a serene natural backdrop with sleek design aesthetics and first-person narrative, THEN it triggers a psychological response of nostalgia and identity affirmation, leveraging the contrast between organic and engineered elements to evoke emotional resonance and foster a sense of belonging.",
+        "dimension": "Emotional and Cultural",
+        "industry_context": "所有强调传承、身份认同或高端体验的行业",
+        "source_seed_id": "9b77262652c6f11b6213fc5110d23d4a_9"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of childlike play with serious consequences",
+            "slow-motion capture of simulated collisions",
+            "authentic emotional expressions from non-professional actors",
+            "minimalist background music with sudden silence",
+            "text overlay with statistical or factual statements"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes innocent or playful visual symbols (e.g., childlike activities) with severe real-world outcomes (e.g., accidents or harm), THEN it triggers cognitive dissonance and emotional shock in the viewer, leveraging guilt or protective instincts to reinforce a social responsibility message and enhance brand credibility as a safety advocate.",
+        "dimension": "Social Responsibility and Safety Messaging",
+        "industry_context": "All industries promoting public safety, ethical consumption, or corporate social responsibility, such as automotive, insurance, healthcare, and consumer goods.",
+        "source_seed_id": "6ad2c759127820f9c70cd78dc95a0d3a_1"
+    },
+    {
+        "trigger_features": [
+            "中性色调环境",
+            "日常场景设置",
+            "非对抗性对话镜头",
+            "幽默元素穿插"
+        ],
+        "marketing_logic": "IF neutral environments and everyday scenarios are combined with non-confrontational dialogue and humor, THEN it reduces psychological barriers and fosters a sense of shared experience, leveraging social proof and emotional safety to encourage engagement.",
+        "dimension": "Emotional Connection",
+        "industry_context": "所有涉及社会福祉、社区建设或需要降低参与门槛的行业",
+        "source_seed_id": "1fde9dcaf4b339582e58929d82d20878_6"
+    },
+    {
+        "trigger_features": [
+            "沉浸式环境改造",
+            "感官增强工具",
+            "品牌符号植入",
+            "互动式体验空间"
+        ],
+        "marketing_logic": "IF a brand creates a physical environment that integrates sensory enhancement tools (e.g., night vision goggles) with thematic elements from a partner's intellectual property, THEN it triggers psychological immersion and novelty-seeking behavior, leading to enhanced brand recall and emotional attachment through experiential engagement.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "所有寻求增强消费者参与度和品牌忠诚度的行业，如零售、娱乐、餐饮、旅游和科技",
+        "source_seed_id": "0437806c439b75ba46201d814ee8a0d9_10"
+    },
+    {
+        "trigger_features": [
+            "个性化定制界面特写",
+            "对比性视觉符号（巨型企业标识 vs 小型品牌标识）",
+            "动态数据可视化（市场份额对比动画）",
+            "第一人称视角交互模拟"
+        ],
+        "marketing_logic": "IF 品牌在竞争环境中处于资源劣势地位，THEN 通过强化其独特的个性化定制能力作为核心差异点，可以触发目标受众的自主权满足感与反主流身份认同，从而抵消竞争对手规模化优势带来的心理压迫。",
+        "dimension": "品牌定位与差异化战略",
+        "industry_context": "所有面临巨头垄断且拥有可定制化服务/产品的行业",
+        "source_seed_id": "5300abc5882f4d45374ee6507e7084cf_4"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "对比性场景",
+            "中心构图",
+            "象征性道具"
+        ],
+        "marketing_logic": "IF a brand uses a close-up shot of a worker holding a customized product in an unexpected or contrasting setting (e.g., a warehouse), THEN it triggers cognitive dissonance and curiosity in viewers, leading to enhanced memory encoding and brand differentiation by associating customization with uniqueness and personal control.",
+        "dimension": "Brand Differentiation",
+        "industry_context": "所有强调个性化或定制化服务的行业",
+        "source_seed_id": "5300abc5882f4d45374ee6507e7084cf_9"
+    },
+    {
+        "trigger_features": [
+            "高对比度视觉符号",
+            "负空间设计",
+            "触觉材质反差",
+            "权威人物关联"
+        ],
+        "marketing_logic": "IF a product's typical form is presented in a state of absence or negation (e.g., empty container, muted function), THEN it triggers cognitive dissonance and social proof mechanisms, leading to heightened message retention and behavioral intention shifts by leveraging scarcity and authority cues.",
+        "dimension": "Social Responsibility and Behavioral Change",
+        "industry_context": "所有涉及风险行为或消费选择的行业，如健康、安全、金融、环保",
+        "source_seed_id": "c312ac2ee11d3d419d9d41d3871c67d8_8"
+    },
+    {
+        "trigger_features": [
+            "权威人物旁白",
+            "快速动态影像",
+            "高对比度光影",
+            "多平台同步曝光"
+        ],
+        "marketing_logic": "IF a campaign combines an authoritative voice (symbolizing expertise and legacy) with dynamic visual representations of peak performance, THEN it triggers a sense of anticipation and excitement by leveraging social proof and the promise of exclusive access to high-stakes events.",
+        "dimension": "情感与权威",
+        "industry_context": "所有强调实时体验和竞争性的行业，如体育、娱乐、游戏和现场活动",
+        "source_seed_id": "a9ba93ade56b9c92fe83892fb51eeb17_7"
+    },
+    {
+        "trigger_features": [
+            "动态视觉符号",
+            "互动式界面元素",
+            "进度可视化反馈",
+            "社群参与机制"
+        ],
+        "marketing_logic": "IF a digital tool combines dynamic visual symbols with interactive elements and progress feedback, THEN it can leverage social validation and reward systems to counteract negative behaviors by promoting positive action, tapping into intrinsic motivation and peer influence.",
+        "dimension": "Behavioral Change",
+        "industry_context": "所有涉及习惯养成、健康促进或社会参与的行业",
+        "source_seed_id": "33da0b7488f9c20bd4593730c61e618b_1"
+    },
+    {
+        "trigger_features": [
+            "symbolic object overlay",
+            "universal cultural icon",
+            "visual juxtaposition",
+            "minimalist aesthetic"
+        ],
+        "marketing_logic": "IF a universal cultural icon (e.g., protective mask) is used as a blank canvas to overlay images of threatened entities (e.g., trafficked wildlife), THEN it triggers cognitive association and urgency by linking personal vulnerability to broader systemic risks, leveraging fear of loss and collective responsibility to drive action.",
+        "dimension": "Social Impact",
+        "industry_context": "all advocacy and public health campaigns",
+        "source_seed_id": "55dc022cf1f60cc16ecb536c226f0c3f_7"
+    },
+    {
+        "trigger_features": [
+            "文本输入界面交互",
+            "实时替换机制",
+            "教育性提示",
+            "符号化语言纠正"
+        ],
+        "marketing_logic": "IF a digital tool provides immediate, corrective feedback on socially sensitive language during routine user input, THEN it triggers cognitive dissonance and social responsibility awareness, leveraging the user's desire for self-improvement and alignment with progressive social norms to foster habitual change.",
+        "dimension": "社会公益与行为修正",
+        "industry_context": "所有涉及用户生成内容、教育技术、社会责任营销或行为干预的行业",
+        "source_seed_id": "9b604b90b3cf99b0047b330408843504_7"
+    },
+    {
+        "trigger_features": [
+            "第一人称视角镜头",
+            "仪式化场景的微观特写",
+            "沉浸式感官记录",
+            "符号化物体的主观视角"
+        ],
+        "marketing_logic": "IF 将权威性象征物（如奖杯）转化为第一人称叙事工具，THEN 能创造稀缺性视角（观众获得通常无法接触的体验），触发情感共鸣（通过代入感强化仪式感），并增强品牌权威（将象征物与创新叙事绑定）。",
+        "dimension": "情感共鸣与权威构建",
+        "industry_context": "所有依赖仪式感、成就展示或权威象征的行业（如体育、教育、奢侈品、企业颁奖）",
+        "source_seed_id": "abf300e3bc6ca4892667bd8acc31d15d_10"
+    },
+    {
+        "trigger_features": [
+            "跨媒介实体化呈现",
+            "社群驱动共创信号",
+            "感官体验符号化描述"
+        ],
+        "marketing_logic": "IF 一个数字化内容品牌将其虚拟影响力通过实体互动空间具象化，并融入社群共创元素与感官符号化描述，THEN 能激发受众的归属感与体验渴望，通过将抽象认同转化为可触达的实体消费行为，强化品牌忠诚度与转化效率。",
+        "dimension": "品牌延伸与社群激活",
+        "industry_context": "所有依赖线上社群或内容影响力、并寻求线下体验转化的行业（如数字媒体、生活方式品牌、教育平台等）",
+        "source_seed_id": "abd0f2ab60d8f90542a065881a34ba3d_5"
+    },
+    {
+        "trigger_features": [
+            "面部表情特写（犹豫/矛盾）",
+            "肢体动作符号（退缩/保护性姿态）",
+            "产品与人物互动的微观镜头",
+            "对比性剪辑（分享场景与独占场景）"
+        ],
+        "marketing_logic": "IF 广告展示人物在面对珍贵消费物品时表现出犹豫或拒绝分享的肢体/表情符号，THEN 这会激活观众对产品稀缺性/独特价值的认知，通过制造心理矛盾（社会分享规范 vs 个人占有欲望）来强化产品吸引力，从而提升品牌在竞争市场中的差异化定位。",
+        "dimension": "情感冲突与价值暗示",
+        "industry_context": "所有面临高替代性、低品牌忠诚度的快速消费品行业（如零食、饮料、个人护理产品）",
+        "source_seed_id": "263ac3b85cd159dd656b0bd9e6dad86a_2"
+    },
+    {
+        "trigger_features": [
+            "个性化算法干预",
+            "实时环境感知",
+            "选择性听觉过滤",
+            "协作开发背书"
+        ],
+        "marketing_logic": "IF a product demonstrates the ability to selectively mitigate negative sensory stimuli in real-time through personalized algorithmic intervention, THEN it creates a perception of intelligent empathy that reduces user anxiety while preserving social connection, thereby positioning the brand as a facilitator of inclusive autonomy rather than mere isolation.",
+        "dimension": "情感连接与功能性赋权",
+        "industry_context": "所有涉及感官调节、个性化健康管理或辅助技术的行业",
+        "source_seed_id": "1b50f42a80a997059b1fa3a5a30a2174_6"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a campaign uses a high-profile individual engaging in relatable, everyday activities with close personal connections, THEN it leverages the individual's established credibility and aspirational status to transfer positive associations to the brand, fostering trust and emotional resonance among target audiences who identify with the activities.",
+        "dimension": "Celebrity Endorsement",
+        "industry_context": "所有强调情感连接和生活方式定位的行业",
+        "source_seed_id": "9d5786469109788d25db69973a86ff2b_10"
+    },
+    {
+        "trigger_features": [
+            "拟人化品牌叙事",
+            "夸张的肯定性语言",
+            "功能性物品的形态创新",
+            "感官动词的密集使用"
+        ],
+        "marketing_logic": "IF 品牌使用拟人化叙事和夸张肯定性语言来宣称其产品能解决一个普遍的情感缺失问题（如缺乏乐趣），THEN 这会激活消费者的情感共鸣和身份认同，通过将产品定位为情感修复工具，从而增强品牌忠诚度和购买意愿。",
+        "dimension": "情感连接与品牌叙事",
+        "industry_context": "所有面向大众消费、强调情感价值或日常愉悦感的行业",
+        "source_seed_id": "0d739fad0891a7c93ac6146da7b09185_14"
+    },
+    {
+        "trigger_features": [
+            "anthropomorphic animal character",
+            "epic cinematic visuals",
+            "iconic nostalgic auditory cues",
+            "dynamic motion sequences",
+            "contrast between static and active states"
+        ],
+        "marketing_logic": "IF an ad uses an anthropomorphic animal character in a cinematic setting with nostalgic auditory cues and dynamic motion sequences, THEN it triggers emotional engagement and aspirational identification by associating the product's benefits (e.g., speed, reliability) with the character's transformation from a passive to an active state, leveraging the psychological principles of narrative immersion and the desire for self-improvement.",
+        "dimension": "Emotional and Aspirational",
+        "industry_context": "All industries promoting transformative or performance-enhancing products or services, such as technology, automotive, fitness, and luxury goods.",
+        "source_seed_id": "748ba26e5be7892044d549423aae4a55_6"
+    },
+    {
+        "trigger_features": [
+            "close-up of a non-human entity's face",
+            "expansive natural landscape backdrop",
+            "epic journey montage",
+            "iconic nostalgic auditory cue",
+            "rapid motion sequences",
+            "contrast between static and dynamic states"
+        ],
+        "marketing_logic": "IF a non-human entity is depicted transitioning from a static, mundane state to a dynamic, empowered state through the use of rapid motion and an epic journey montage, combined with an iconic nostalgic auditory cue, THEN it triggers a psychological association of liberation and enhanced capability, leveraging the viewer's desire for transformation and efficiency, thereby positioning the product as a catalyst for overcoming limitations and achieving superior performance.",
+        "dimension": "Emotional and aspirational",
+        "industry_context": "All industries promoting performance enhancement, efficiency, or transformation, such as technology, automotive, fitness, or financial services.",
+        "source_seed_id": "748ba26e5be7892044d549423aae4a55_1"
+    },
+    {
+        "trigger_features": [
+            "rugged natural environment visuals",
+            "juxtaposition of planned action with unexpected outcomes",
+            "dynamic motion photography",
+            "awe-inspiring landscape scale",
+            "professional human figure in action"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes a planned human action with an unexpected natural or environmental outcome, THEN it evokes a sense of thrill and freedom by tapping into the audience's desire for adventure and spontaneity, leveraging the psychological contrast between control and unpredictability to create emotional engagement.",
+        "dimension": "Emotional Appeal",
+        "industry_context": "all industries targeting consumers seeking adventure, spontaneity, or experiences beyond routine, such as outdoor gear, travel services, or lifestyle products",
+        "source_seed_id": "de8dec07c8b29d3b4e2007748b1f3b2d_14"
+    },
+    {
+        "trigger_features": [
+            "immersive first-person perspective",
+            "technological augmentation of natural experience",
+            "seamless integration of digital capture with physical activity"
+        ],
+        "marketing_logic": "IF a product integrates a digital tool with a physical experience in a way that overcomes a natural barrier (e.g., water resistance), THEN it triggers a sense of empowerment and social validation by enabling users to document and share previously inaccessible moments, leveraging scarcity and novelty to drive engagement.",
+        "dimension": "Experience Enhancement",
+        "industry_context": "all industries focused on adventure, travel, or experiential activities where capturing and sharing moments is hindered by environmental constraints",
+        "source_seed_id": "d8a352cb9d29ad6c45f2f9bb9645a8bf_2"
+    },
+    {
+        "trigger_features": [
+            "对比性数据呈现",
+            "个性化界面交互",
+            "设备本地化操作指示"
+        ],
+        "marketing_logic": "IF a communication tool highlights a severe quantitative disparity between a widespread human need and the scarcity of specialized human intermediaries, AND THEN demonstrates a solution that bypasses this scarcity through personalized, device-localized processing, THEN it triggers a psychological response that combines 'scarcity anxiety' (due to the limited human resources) with 'empowerment relief' (as the tool provides a direct, private alternative), fostering trust and adoption by positioning the product as both necessary and secure.",
+        "dimension": "隐私与个性化维度",
+        "industry_context": "所有依赖敏感个人数据或面临专业服务短缺的行业，如医疗保健、教育技术、金融服务和个性化数字工具领域。",
+        "source_seed_id": "d4f47224e505fe5621a66481daebf1e4_10"
+    },
+    {
+        "trigger_features": [
+            "悬念式预告片",
+            "隐藏符号植入",
+            "跨领域视觉嫁接"
+        ],
+        "marketing_logic": "IF a campaign uses a suspenseful teaser that visually grafts elements from a high-engagement cultural domain (e.g., popular entertainment) into an unrelated product context, THEN it triggers curiosity and speculation among the target audience, leveraging their existing emotional investment in the cultural domain to generate buzz and discussion around the product.",
+        "dimension": "跨品类嫁接",
+        "industry_context": "所有需要快速提升品牌话题度或进入新受众群体的行业",
+        "source_seed_id": "e0d8ca18495d71415de9d69d0c37e69e_2"
+    },
+    {
+        "trigger_features": [
+            "慢节奏叙事",
+            "自然光摄影",
+            "人物特写",
+            "环境音效",
+            "非结构化剪辑"
+        ],
+        "marketing_logic": "IF a brand associates its identity with narratives of individuals who have abandoned conventional societal structures to pursue authentic, self-defined lifestyles, THEN it triggers psychological mechanisms of aspiration and self-actualization in the audience, fostering a symbolic connection where the brand is perceived as an enabler of personal freedom and fulfillment.",
+        "dimension": "情感与价值观维度",
+        "industry_context": "所有面向寻求身份表达、生活意义或逃避日常压力的消费者的行业",
+        "source_seed_id": "2f2622f2cc9dd1cbb2a81e60bdecca68_20"
+    },
+    {
+        "trigger_features": [
+            "generational mirroring of physical actions",
+            "subdued color palette",
+            "understated emotional performances",
+            "temporal juxtaposition of life stages"
+        ],
+        "marketing_logic": "IF a narrative visually links a protagonist's past traumatic experience (as a recipient of negative actions) with their present behavior (as a replicator of those actions) through symbolic mirroring, THEN it activates cognitive empathy and identity reflection in the audience, reducing defensive reactions and fostering openness to behavioral change by framing the issue as a cycle rather than an isolated fault.",
+        "dimension": "Social Impact",
+        "industry_context": "all sectors promoting behavioral change or intervention, such as public health, education, and corporate responsibility initiatives",
+        "source_seed_id": "b66b09bf7a080271e76312879cb0b2df_2"
+    },
+    {
+        "trigger_features": [
+            "空间功能置换",
+            "权威符号借用",
+            "感官体验反差",
+            "叙事性环境重构"
+        ],
+        "marketing_logic": "IF a brand leverages an existing physical space associated with a different product category (e.g., a tire store) and transforms it into a high-end experiential setting (e.g., a pop-up restaurant) by incorporating authoritative symbols (e.g., Michelin stars) and expert figures (e.g., a renowned chef), THEN it creates a cognitive dissonance that captures attention, enhances perceived value through association with prestige, and fosters emotional engagement by addressing a perceived injustice or gap in recognition, thereby reinforcing brand identity and driving consumer interest.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "所有寻求提升品牌形象、创造独特体验或挑战行业现状的行业，如奢侈品、餐饮、旅游、零售和科技产品。",
+        "source_seed_id": "b8d6fd9640f51e31a201400eda6cfd7d_7"
+    },
+    {
+        "trigger_features": [
+            "数字化叠加层",
+            "环境条件模拟",
+            "交互式界面",
+            "时空对比呈现"
+        ],
+        "marketing_logic": "IF a product or service involves an intangible or inaccessible element (e.g., historical artifact, future concept, abstract benefit), THEN using a digital overlay that simulates real-world conditions (e.g., lighting, weather, time) can create a sense of tangible presence and emotional connection, leveraging cognitive dissonance reduction and experiential immersion to enhance perceived value and engagement.",
+        "dimension": "Experience Enhancement",
+        "industry_context": "所有涉及虚拟化、教育、旅游、文化遗产、房地产、或需要展示潜在或不可见价值的行业",
+        "source_seed_id": "8e249ee0ee93de9247e2f5c7184dfe5b_2"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of fast-paced urban scenes with slow-paced natural scenes",
+            "dynamic camera movements for urban settings",
+            "long slow zooms for natural settings",
+            "personal narrative voiceover",
+            "contrasting auditory environments (high-energy vs. tranquil)"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes high-energy urban elements with tranquil natural elements through contrasting visual and auditory techniques, THEN it triggers cognitive dissonance that highlights the product's ability to bridge dual identities, fostering a sense of versatility and aspirational belonging in the viewer.",
+        "dimension": "Identity Duality",
+        "industry_context": "All lifestyle and consumer goods industries targeting audiences with multifaceted identities or seeking products that enable transitions between different social or environmental contexts.",
+        "source_seed_id": "1f6cdfe9b9057ef4f372cdf45365d0fe_3"
+    },
+    {
+        "trigger_features": [
+            "沉浸式场景构建",
+            "干扰源符号的视觉化呈现",
+            "对比蒙太奇剪辑"
+        ],
+        "marketing_logic": "IF an advertisement constructs an immersive scenario where a desired activity (e.g., leisure, productivity) is depicted as being disrupted by a common external interference (e.g., unwanted communication, noise), THEN it triggers a psychological response of frustration or anxiety related to the interference, which the product is positioned to resolve, thereby enhancing perceived value through problem-solution framing and fostering emotional relief or satisfaction upon resolution.",
+        "dimension": "Emotional Engagement and Problem-Solution Framing",
+        "industry_context": "所有提供解决方案以消除干扰、提升专注或体验质量的行业，如科技、服务、娱乐、教育、健康与保健",
+        "source_seed_id": "d1abf7767cebc11971abf78f951bfe8e_6"
+    },
+    {
+        "trigger_features": [
+            "absence of human figures in initial scenes",
+            "gradual revelation of performers",
+            "juxtaposition of empty environments with dynamic events",
+            "use of symbolic objects in motion"
+        ],
+        "marketing_logic": "IF an advertisement initially presents a scenario where key human elements are omitted, creating a sense of mystery or invisibility, THEN the subsequent revelation of those elements (e.g., performers or participants) triggers cognitive dissonance resolution and emotional engagement, leading to increased empathy, identity recognition, and social validation for the underrepresented group.",
+        "dimension": "Social Impact and Inclusion",
+        "industry_context": "all industries aiming to promote diversity, equity, and inclusion, such as corporate social responsibility campaigns, non-profit advocacy, or brands seeking to enhance community engagement and positive brand perception.",
+        "source_seed_id": "375f8a32cd39c33c4d5fdce9f4bb9025_4"
+    },
+    {
+        "trigger_features": [
+            "自动化捕捉系统",
+            "实时数据流",
+            "预测性触发机制",
+            "非干扰性交付"
+        ],
+        "marketing_logic": "IF a system uses automated sensors and predictive algorithms to capture high-emotion moments in real-time, AND delivers the content during natural breaks in the experience, THEN it enhances emotional engagement by providing personalized, shareable memories without disrupting the primary activity, leveraging anticipation and social validation.",
+        "dimension": "Emotional Engagement and Social Sharing",
+        "industry_context": "所有涉及现场体验、娱乐或社交互动的行业",
+        "source_seed_id": "13898d59608db32b36663c37a07098f0_8_modify"
+    },
+    {
+        "trigger_features": [
+            "创作者身份与主题的象征性关联",
+            "非传统视觉符号的引入",
+            "多感官创作过程的暗示",
+            "跨媒体一致性的艺术呈现"
+        ],
+        "marketing_logic": "IF 品牌将产品主题（如：不可见的感知维度）与创作者的身份特征（如：感官差异）建立象征性关联，并通过非传统视觉符号（如：艺术化抽象表达）和多感官创作过程的暗示来呈现，THEN 这会激发受众的认知重构（打破常规感知框架）、增强主题的深度共鸣（通过身份与主题的隐喻连接），并提升品牌的文化价值感知（展示对多元表达的包容与创新）。",
+        "dimension": "Digital, Experiential, and OOH Outdoor",
+        "industry_context": "所有强调叙事深度、情感共鸣或文化价值的行业（如：娱乐、艺术、教育、高端消费品）",
+        "source_seed_id": "6bbd9e07bd35ddb80a219d22609fe271_2_modify"
+    },
+    {
+        "trigger_features": [
+            "contrasting visual sequences",
+            "symbolic object transformation",
+            "emotional auditory cues",
+            "textual call-to-action overlay"
+        ],
+        "marketing_logic": "IF a symbolic object transformation (e.g., from a disposable item to a representation of natural life) is paired with contrasting visual sequences (e.g., showing degradation vs. renewal) and emotional auditory cues (e.g., somber to hopeful tones), THEN it triggers cognitive dissonance and empathy in viewers, leading to a heightened sense of responsibility and motivation for behavioral change, as it frames a mundane action as a meaningful contribution to a larger cause.",
+        "dimension": "Environmental and social responsibility messaging",
+        "industry_context": "All industries promoting sustainability, ethical consumption, or community engagement, such as consumer goods, technology, and services.",
+        "source_seed_id": "8716cc6a2215c53a51dc47b089851b34_2_modify"
+    },
+    {
+        "trigger_features": [
+            "象征性物体降级处理",
+            "怀旧视觉符号",
+            "数字化界面展示"
+        ],
+        "marketing_logic": "IF a symbolic object associated with a traditional service is visually degraded (e.g., lowered to half-mast) to represent obsolescence, THEN it triggers emotional resonance through nostalgia and loss, while contrasting with a modern digital tool that offers enhanced efficiency, thereby leveraging cognitive dissonance to drive adoption of the new solution.",
+        "dimension": "情感共鸣与效率提升",
+        "industry_context": "所有面临技术替代或服务升级的传统行业",
+        "source_seed_id": "49b2dd601275da4f5916620a5caa38cc_5_modify"
+    },
+    {
+        "trigger_features": [
+            "vast landscape aerial shots",
+            "isolated human figures in extreme environments",
+            "rapid cross-cutting between contrasting geographical zones",
+            "close-ups of digital interface interactions"
+        ],
+        "marketing_logic": "IF the ad juxtaposes extreme geographical isolation with seamless digital connectivity, THEN it triggers a psychological contrast between human vulnerability in nature and empowerment through technology, leveraging scarcity anxiety (fear of disconnection) and social belonging needs to position the product as a bridge to overcome physical barriers.",
+        "dimension": "Spatial and Social Connectivity",
+        "industry_context": "All industries offering solutions for remote access, communication, or bridging physical divides, such as telecommunications, remote work tools, logistics, and healthcare telemedicine services.",
+        "source_seed_id": "721b7a867d849fa90923f256ab4fa82f_3_modify"
+    },
+    {
+        "trigger_features": [
+            "情感化视觉符号",
+            "亲密关系场景",
+            "对比性叙事结构",
+            "权威机构标识"
+        ],
+        "marketing_logic": "IF the ad uses emotional visual symbols combined with intimate relationship scenarios to depict potential negative outcomes, THEN it triggers empathy and fear of loss in the audience, leveraging social bonding instincts to promote preventive behavior.",
+        "dimension": "Public Interest",
+        "industry_context": "所有强调社会责任和风险预防的行业",
+        "source_seed_id": "6ca41134a5b139ebee2f75d4c4cd22ed_9_modify"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "比例夸张",
+            "单一焦点构图",
+            "慢动作镜头"
+        ],
+        "marketing_logic": "IF a mundane object is isolated and magnified through visual exaggeration, THEN it triggers cognitive dissonance and perceptual salience, forcing the audience to re-evaluate its significance and impact.",
+        "dimension": "Perceptual Framing",
+        "industry_context": "所有需要改变公众认知或行为的社会公益、环保、健康和安全行业",
+        "source_seed_id": "dd6b77a9edf6d46cb6cec5abac46236c_10_modify"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "视觉尺度对比",
+            "单一元素放大",
+            "环境背景虚化"
+        ],
+        "marketing_logic": "IF a mundane or overlooked element is isolated and magnified to dominate the visual field, THEN it triggers cognitive dissonance and perceptual salience, forcing the audience to re-evaluate its significance and inducing a sense of urgency or responsibility through the contrast with its usual context.",
+        "dimension": "Perceptual Manipulation",
+        "industry_context": "所有需要提升公众意识或改变行为习惯的行业，如环境倡导、公共健康、社会公益、教育推广",
+        "source_seed_id": "dd6b77a9edf6d46cb6cec5abac46236c_5_modify"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "比例对比",
+            "单一焦点构图",
+            "高对比度色彩"
+        ],
+        "marketing_logic": "IF a communication campaign uses microscopic close-ups to magnify a typically overlooked object (e.g., litter) and juxtaposes it with a large-scale environmental context (e.g., pollution statistics), THEN it triggers cognitive dissonance and perceptual salience in the audience, leading to increased awareness and urgency by making the abstract problem tangible and visually dominant.",
+        "dimension": "Public Interest",
+        "industry_context": "所有需要提升公众意识或行为改变的行业，如环保、健康、安全、教育等",
+        "source_seed_id": "dd6b77a9edf6d46cb6cec5abac46236c_7_modify"
+    },
+    {
+        "trigger_features": [
+            "可扫描的图形编码",
+            "无额外安装的数字化交互入口",
+            "动态内容更新机制"
+        ],
+        "marketing_logic": "IF a product integrates a scannable graphical code that serves as a direct, app-free entry point to digital content, AND this content is dynamically updatable without physical reprints, THEN it leverages the psychological principles of convenience (reducing user effort) and novelty-seeking (providing ongoing engagement), thereby fostering long-term user retention and reducing perceived obsolescence.",
+        "dimension": "Sustainability and Digital Innovation",
+        "industry_context": "所有依赖物理材料分发信息并寻求减少浪费的行业，如教育、零售、旅游、出版和环保倡议",
+        "source_seed_id": "e422fc38350d83cb3938686376fb7aba_3_modify"
+    },
+    {
+        "trigger_features": [
+            "环境沉浸式媒介",
+            "主题一致性空间",
+            "超常规尺寸展示"
+        ],
+        "marketing_logic": "IF a campaign uses an environment that physically embodies the core theme of the product (e.g., placing a poster in a swimming pool for an aquatic-themed movie), THEN it triggers heightened sensory engagement and cognitive resonance by aligning the consumer's immediate surroundings with the product's narrative, leveraging spatial context to enhance memorability and emotional connection.",
+        "dimension": "OOH Outdoor",
+        "industry_context": "所有强调体验或主题沉浸的行业",
+        "source_seed_id": "4befadccca96f42861f03a284e33508e_2_modify"
+    },
+    {
+        "trigger_features": [
+            "低饱和度色彩",
+            "慢节奏剪辑",
+            "儿童角色",
+            "象征性道具",
+            "画外音旁白"
+        ],
+        "marketing_logic": "IF the ad uses child actors engaging in symbolic play with a desirable object (e.g., pretending to consume a luxury item) in a subdued visual style, THEN it triggers empathy and guilt in the viewer by highlighting the contrast between childhood innocence and economic hardship, leveraging emotional resonance to drive prosocial behavior.",
+        "dimension": "Emotional Appeal",
+        "industry_context": "所有依赖社会责任感或慈善捐赠的行业，如非营利组织、公益营销、企业社会责任活动。",
+        "source_seed_id": "8fa6d3f18284b80c23f96c5652e4bd8e_2_modify"
+    },
+    {
+        "trigger_features": [
+            "gamified narrative interface",
+            "character archetype selection",
+            "knowledge-testing mechanics",
+            "competitive social simulation",
+            "ambiguous scenario presentation"
+        ],
+        "marketing_logic": "IF a brand uses gamified narrative interfaces with character archetype selection and knowledge-testing mechanics, THEN it leverages intrinsic motivation and social identity formation to reduce cognitive resistance and enhance message retention, by framing educational content as a competitive social simulation that avoids direct instruction.",
+        "dimension": "Engagement and Education",
+        "industry_context": "所有需要传递敏感或复杂信息、同时避免说教以提升用户参与度的行业，如健康、金融、环境或社会公益领域",
+        "source_seed_id": "61938acb36cde8160261c4ad9c1a453e_7_modify"
+    },
+    {
+        "trigger_features": [
+            "直接回应用户生成内容",
+            "创始人出镜",
+            "幽默讽刺语气",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a brand directly addresses and responds to public criticism or skepticism in a humorous and self-aware manner, THEN it can reduce perceived distance between the brand and consumer, foster authenticity, and convert skeptics by leveraging social proof and relatability.",
+        "dimension": "品牌沟通与消费者互动",
+        "industry_context": "所有面临公众质疑或需要建立信任的行业，如消费品、科技、服务",
+        "source_seed_id": "4b636bc7cb7d78ad929477333d2032e5_10_modify"
+    },
+    {
+        "trigger_features": [
+            "虚拟社交环境",
+            "用户生成内容",
+            "包容性视觉符号",
+            "跨平台整合"
+        ],
+        "marketing_logic": "IF a brand creates a virtual social environment that allows for user-generated content and displays inclusive visual symbols, THEN it can foster a sense of community and identity expression, leveraging psychological needs for belonging and self-actualization.",
+        "dimension": "Social Impact",
+        "industry_context": "所有面向社群建设、身份表达或社会倡导的行业",
+        "source_seed_id": "83c1b79a4ca8a63ef9695a226278ac25_10_modify"
+    },
+    {
+        "trigger_features": [
+            "物理空间再现",
+            "手工定制化呈现",
+            "媒介转换展示",
+            "环境融合展示"
+        ],
+        "marketing_logic": "IF a product is presented through a physical recreation of its original context and handcrafted customization, THEN it triggers authenticity perception and exclusivity desire by linking the product to its roots and emphasizing personal touch.",
+        "dimension": "Authenticity and Exclusivity",
+        "industry_context": "所有强调原创性、手工制作或文化传承的行业",
+        "source_seed_id": "8bc4a64e07c98d74cc1a65802ef83bea_1_modify"
+    },
+    {
+        "trigger_features": [
+            "快速感官转换",
+            "语义双关符号",
+            "意外事件序列"
+        ],
+        "marketing_logic": "IF a product uses a name with inherent positive connotations (e.g., surprise, strength) and combines it with a rapid sensory shift (e.g., from initial to delayed taste perception), THEN it triggers curiosity and emotional engagement by leveraging cognitive dissonance and novelty-seeking behavior, leading to enhanced brand recall and perceived uniqueness.",
+        "dimension": "品牌叙事与感官体验",
+        "industry_context": "所有依赖感官差异化或情感连接的消费品行业",
+        "source_seed_id": "274d360823f88c1f53bf5d7f423ab346_6_modify"
+    },
+    {
+        "trigger_features": [
+            "快速对比呈现",
+            "符号化命名",
+            "意外事件序列",
+            "感官体验描述"
+        ],
+        "marketing_logic": "IF a product's name is transformed into a symbolic slogan that encapsulates an abstract desirable quality (e.g., surprise, intensity), AND this is reinforced through a series of unexpected events in audiovisual content, THEN it creates a cognitive link between the product and the abstract quality, leveraging curiosity and emotional resonance to enhance brand memorability and perceived uniqueness.",
+        "dimension": "Branding and Narrative",
+        "industry_context": "All consumer goods industries where differentiation through emotional or experiential branding is critical, such as food and beverage, entertainment, or lifestyle products.",
+        "source_seed_id": "274d360823f88c1f53bf5d7f423ab346_10_modify"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of contrasting visual elements",
+            "authentic local auditory narration",
+            "rapid montage of diverse human activities"
+        ],
+        "marketing_logic": "IF an advertisement juxtaposes unexpected and contrasting elements (e.g., diverse scenes or symbols) with authentic local auditory cues (e.g., music or narration), THEN it triggers cognitive dissonance reduction and social identity reinforcement, leading to enhanced perceived inclusivity and emotional resonance in the audience.",
+        "dimension": "Cultural and Social Identity",
+        "industry_context": "All industries emphasizing community engagement, tourism, or brand differentiation through local authenticity.",
+        "source_seed_id": "5cfcb73651563e25b6ff9b06c53e3892_1_modify"
+    },
+    {
+        "trigger_features": [
+            "微观特写",
+            "自然材质纹理",
+            "柔和色调",
+            "亲子互动场景",
+            "对话式叙事"
+        ],
+        "marketing_logic": "IF a product is presented through a natural material (e.g., avocado) in a close-up visual and contextualized within an intimate human interaction (e.g., parent-child dialogue), THEN it triggers psychological associations of purity, trust, and holistic care, leveraging emotional bonding and authenticity cues to enhance perceived product efficacy and safety.",
+        "dimension": "情感与信任维度",
+        "industry_context": "所有强调天然、安全、家庭导向的行业，如个人护理、食品饮料、儿童产品、健康服务",
+        "source_seed_id": "ba8afb6d56269505fbe0f995e443b502_1_modify"
+    },
+    {
+        "trigger_features": [
+            "语义符号对比",
+            "视觉符号对比",
+            "权威人物旁白",
+            "情感化语言"
+        ],
+        "marketing_logic": "IF a message presents a stark contrast between the symbolic representation of a socially accepted entity (e.g., 'cat' as a living individual) and a socially objectified entity (e.g., 'chicken' as fragmented objects), THEN it triggers cognitive dissonance and empathy by highlighting perceived hypocrisy or inconsistency in human behavior, leading to a reevaluation of norms and potential adoption of alternative values.",
+        "dimension": "Ethical and Social Advocacy",
+        "industry_context": "所有涉及道德、社会变革或身份重塑的行业，如非营利组织、社会运动、可持续消费品牌、教育机构",
+        "source_seed_id": "a4febdee8a7a8edc88adebcfce17bf78_10_modify"
+    },
+    {
+        "trigger_features": [
+            "时间跨度可视化",
+            "权威符号引用",
+            "多代际用户群展示",
+            "未来导向暗示"
+        ],
+        "marketing_logic": "IF a brand combines visual representations of its historical timeline with references to scientific authority and showcases diverse user groups across generations, THEN it triggers psychological mechanisms of legacy validation (enhancing trust through proven track record), aspirational identification (users see themselves in past/present narratives), and future anticipation (stimulating curiosity about continued innovation).",
+        "dimension": "Brand Legacy & Future Vision",
+        "industry_context": "所有依赖技术演进、用户忠诚度或长期品牌叙事的行业（如：科技硬件、户外装备、汽车制造、金融服务）",
+        "source_seed_id": "37be6a26b5c069f41d51595838165d2b_8_modify"
+    },
+    {
+        "trigger_features": [
+            "industrial_warehouse_environment",
+            "fire_plume_eruption",
+            "overhead_swinging_exploding_object",
+            "blackwork_tattoo_application",
+            "drumbeat_audio_accompaniment",
+            "metallic_gold_snake_motif",
+            "high_contrast_side_lit_photography",
+            "black_background_with_tattooed_arms"
+        ],
+        "marketing_logic": "IF the advertisement combines industrial or raw settings with elements of controlled chaos (e.g., fire, explosions) and body art symbolism, THEN it triggers a psychological response of rebellion, sensory excitement, and identity formation in the target audience, leveraging primal instincts and a desire for uniqueness to foster brand allure and memorability.",
+        "dimension": "Audiovisual and symbolic",
+        "industry_context": "All industries targeting youth or niche demographics seeking differentiation through edgy or experiential branding, such as fashion, beverages, entertainment, and lifestyle products.",
+        "source_seed_id": "5b7524aa95cefec619be4966bcef3210_1_modify"
+    },
+    {
+        "trigger_features": [
+            "visual metaphor of fluctuating gauge",
+            "contrast between desaturated and warm color palettes",
+            "close-up shots of emotional facial expressions",
+            "diegetic sound of heartbeat-like rhythm"
+        ],
+        "marketing_logic": "IF a visual metaphor representing an abstract emotional state (e.g., a fluctuating gauge) is combined with a contrast between desaturated and warm color palettes, THEN it triggers emotional engagement and empathy in the audience by making the intangible emotional journey tangible and relatable, leading to increased identification with the cause and motivation to support it.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all sectors emphasizing emotional connection and social impact, such as non-profits, healthcare, education, and community services",
+        "source_seed_id": "4f5e8cda6e17b0565cd1aa3ed7911e50_7_modify"
+    },
+    {
+        "trigger_features": [
+            "温暖色调照明",
+            "亲密社交场景",
+            "共享食物特写",
+            "舒缓背景音乐"
+        ],
+        "marketing_logic": "IF an advertisement combines warm visual tones with intimate social interactions and shared consumption of sustenance, THEN it triggers feelings of belonging and reduces perceived isolation, leveraging the human need for social connection and comfort.",
+        "dimension": "Emotional Impact",
+        "industry_context": "所有强调社区、关怀或缓解孤独感的行业",
+        "source_seed_id": "b89262db0fd50ac72ebae9319988eda8_5_modify"
+    },
+    {
+        "trigger_features": [
+            "幽默叙事语调",
+            "积极情感词汇",
+            "日常场景符号化",
+            "直接受众对话"
+        ],
+        "marketing_logic": "IF a brand uses humor and positive framing to address a topic associated with social stigma or negative emotions, THEN it reduces psychological barriers (e.g., shame, anxiety) and reframes the issue as a desirable aspect of self-care, thereby increasing engagement and acceptance.",
+        "dimension": "情感与心理维度",
+        "industry_context": "所有涉及敏感、禁忌或高焦虑话题的行业，如健康护理、金融服务、个人卫生、心理健康服务",
+        "source_seed_id": "24f7c8ce5e2d92427dd84488c28b1a02_7_modify"
+    },
+    {
+        "trigger_features": [
+            "真实人物叙事",
+            "社区场景展示",
+            "合作机构标志",
+            "情感化旁白"
+        ],
+        "marketing_logic": "IF an advertisement uses authentic human stories and community partner visuals, THEN it triggers emotional resonance and trust by associating the brand with shared values and social impact, leveraging the psychological principles of social proof and altruistic identity.",
+        "dimension": "情感连接与社会责任",
+        "industry_context": "所有强调社区参与和品牌信任的行业",
+        "source_seed_id": "22a09a871bd0057b4b4d4c5394817ab6_6_modify"
+    },
+    {
+        "trigger_features": [
+            "算法生成叙事内容",
+            "个性化听觉体验",
+            "大规模内容产出",
+            "模拟现实事件"
+        ],
+        "marketing_logic": "IF a brand uses AI to generate personalized, immersive auditory narratives that simulate desired outcomes, THEN it taps into human psychological mechanisms of wish fulfillment and identity reinforcement, leveraging the scarcity of such tailored experiences to create emotional engagement and perceived value.",
+        "dimension": "情感与体验维度",
+        "industry_context": "所有涉及粉丝文化、娱乐或个性化服务的行业",
+        "source_seed_id": "b2b35a9d4278c3907b001964324dded7_9_modify"
+    },
+    {
+        "trigger_features": [
+            "immersive digital environment",
+            "first-person perspective simulation",
+            "contextual scenario overlay",
+            "interactive visual prompts"
+        ],
+        "marketing_logic": "IF a brand creates an immersive digital environment that simulates first-person use of a product in contextual scenarios, THEN it triggers cognitive rehearsal and aspirational identification, reducing perceived adoption barriers and enhancing perceived utility through experiential learning.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "all industries promoting lifestyle-enhancing products or services that require user engagement to demonstrate value",
+        "source_seed_id": "44ed519b9a1857027d42b0221e579377_2_modify"
+    },
+    {
+        "trigger_features": [
+            "sparse visual composition",
+            "digital overlay on physical environments",
+            "symbolic replacement of architectural elements"
+        ],
+        "marketing_logic": "IF a brand overlays digital representations onto sparse physical environments to replace key architectural elements, THEN it triggers cognitive dissonance and adaptation anxiety in viewers, leveraging the contrast to position the digital tool as an essential gateway for survival and growth in disrupted contexts.",
+        "dimension": "digital transformation and crisis adaptation",
+        "industry_context": "all industries undergoing digital disruption or requiring rapid adaptation to external shocks, such as retail, education, healthcare, and service sectors",
+        "source_seed_id": "0633f626c5217d043e2885d2b4f73b17_1_modify"
+    },
+    {
+        "trigger_features": [
+            "sparse visual composition",
+            "digital compositing of dynamic elements into static environments",
+            "juxtaposition of absence and presence"
+        ],
+        "marketing_logic": "IF a visual narrative combines sparse, human-absent environments with digitally integrated dynamic elements, THEN it triggers a psychological association of transformation and necessity, leveraging scarcity anxiety and solution-oriented thinking to position the product as an essential bridge in disrupted contexts.",
+        "dimension": "Visual Metaphor and Contextual Positioning",
+        "industry_context": "all industries undergoing digital transformation or facing disruption, such as technology services, retail, education, healthcare, and entertainment",
+        "source_seed_id": "0633f626c5217d043e2885d2b4f73b17_6_modify"
+    },
+    {
+        "trigger_features": [
+            "情感化文字符号",
+            "社会议题关联",
+            "权威数据引用",
+            "集体身份符号"
+        ],
+        "marketing_logic": "IF a campaign uses emotional text symbols (e.g., 'Support Someone Else') combined with social issue associations (e.g., loneliness, mental health) and authoritative data references (e.g., statistics on impact), THEN it triggers psychological mechanisms of empathy and social responsibility, leading to increased engagement and action by fostering a sense of collective identity and urgency.",
+        "dimension": "情感与社会责任维度",
+        "industry_context": "所有涉及社会关怀、健康、或社区服务的行业",
+        "source_seed_id": "4e235062b6f2f89c7966d0841c68027e_8_modify"
+    },
+    {
+        "trigger_features": [
+            "symbolic object transfer",
+            "emotional narrative arc",
+            "authentic human interaction capture",
+            "evocative auditory backdrop"
+        ],
+        "marketing_logic": "IF a symbolic object (representing group identity) is depicted as being transferred through a series of authentic, emotional interactions among individuals, THEN it triggers a sense of shared ownership and belonging, leveraging social proof and emotional contagion to foster community identity and loyalty.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all industries emphasizing community building and brand loyalty, such as entertainment, sports, lifestyle, and membership-based services",
+        "source_seed_id": "09eee462ea4178befb4ff0d736741ffa_6_modify"
+    },
+    {
+        "trigger_features": [
+            "对比性视觉叙事",
+            "情感化听觉符号",
+            "社会议题关联"
+        ],
+        "marketing_logic": "IF a campaign juxtaposes a common societal concern (e.g., screen addiction) with a specific, urgent issue (e.g., lack of access to life-saving technology), THEN it leverages cognitive dissonance and empathy to shift audience attention from trivial to critical matters, thereby enhancing message salience and driving action through guilt or responsibility.",
+        "dimension": "Emotional Appeal",
+        "industry_context": "所有涉及社会公益、健康倡导或危机沟通的行业",
+        "source_seed_id": "7876488d314d9ddd7d909830fa9a87bc_1_modify"
+    },
+    {
+        "trigger_features": [
+            "文本符号的视觉叠加",
+            "跨媒介内容复制",
+            "熟悉符号的陌生化呈现"
+        ],
+        "marketing_logic": "IF a cultural artifact is perceived as distant or inaccessible due to its historical or formal context, THEN overlaying it with contemporary, high-frequency digital symbols (e.g., hashtags) can trigger cognitive dissonance reduction and social identity alignment, leading to increased engagement and perceived relevance.",
+        "dimension": "Cultural Engagement",
+        "industry_context": "所有面临传统与现代受众脱节的行业，如教育、文化遗产、高端消费品",
+        "source_seed_id": "1d28c46759979b8b91029209bda1aacf_2_modify"
+    },
+    {
+        "trigger_features": [
+            "环境音效对比",
+            "面部表情特写",
+            "公共空间场景",
+            "非语言行为展示"
+        ],
+        "marketing_logic": "IF an ad juxtaposes disruptive auditory elements with serene environmental cues, THEN it triggers social norm awareness and empathy by highlighting the contrast between individual actions and collective experience, leveraging guilt aversion and group harmony instincts.",
+        "dimension": "Social Responsibility",
+        "industry_context": "所有涉及公共行为规范的行业",
+        "source_seed_id": "40503e06472a6d051a9c20294e18be82_3_modify"
+    },
+    {
+        "trigger_features": [
+            "pastoral natural landscapes",
+            "low-stress animal behavior",
+            "high-contrast visual comparison",
+            "authentic human testimonials"
+        ],
+        "marketing_logic": "IF an ad contrasts idyllic, natural settings with implied negative alternatives (e.g., confinement), THEN it triggers ethical identity reinforcement and scarcity anxiety, leading consumers to associate the product with superior quality and moral satisfaction.",
+        "dimension": "Ethical and Quality Assurance",
+        "industry_context": "all industries emphasizing ethical sourcing, natural ingredients, or premium quality standards, such as food and beverage, cosmetics, fashion, and sustainable products.",
+        "source_seed_id": "d045dc0e5a1fc291b5c3cf43b522be1f_3_modify"
+    },
+    {
+        "trigger_features": [
+            "pastoral_imagery",
+            "low_stress_environment_depiction",
+            "animal_welfare_visuals",
+            "natural_lighting",
+            "slow_paced_editing"
+        ],
+        "marketing_logic": "IF pastoral imagery and low-stress environment depiction are used to portray a lifestyle associated with the products, THEN it triggers psychological associations of purity, ethical consumption, and health benefits, leveraging the halo effect to transfer positive attributes from the depicted environment to the product, thereby enhancing perceived value and consumer trust.",
+        "dimension": "Lifestyle Association",
+        "industry_context": "所有强调道德、健康或可持续性的行业",
+        "source_seed_id": "d045dc0e5a1fc291b5c3cf43b522be1f_10_modify"
+    },
+    {
+        "trigger_features": [
+            "同龄人群体展示",
+            "权威角色赋予",
+            "共享经验叙事"
+        ],
+        "marketing_logic": "IF a campaign positions a marginalized or specialized group as experts in a challenging situation, THEN it leverages their lived experience to create authenticity and foster peer-to-peer empathy, reducing resistance to behavioral change.",
+        "dimension": "Social Influence and Behavioral Change",
+        "industry_context": "所有需要推广健康行为、安全实践或社会规范的行业，如公共卫生、教育、非营利组织、保险和金融服务。",
+        "source_seed_id": "9db92038f28e5ae1d2bb29ae46aeb5b5_5_modify"
+    },
+    {
+        "trigger_features": [
+            "角色身份对比",
+            "象征性动作",
+            "自信姿态展示",
+            "环境反差"
+        ],
+        "marketing_logic": "IF a narrative juxtaposes a character's initial low-status role with a subsequent empowered state, AND this transformation is explicitly linked to the use of a customizable product, THEN it triggers psychological mechanisms of self-efficacy and identity projection, leading consumers to associate the product with personal agency and social elevation.",
+        "dimension": "情感与身份认同",
+        "industry_context": "所有提供个性化选项或定制化服务的行业",
+        "source_seed_id": "e6fbaf04945626fdcd549e98705140b5_5_modify"
+    },
+    {
+        "trigger_features": [
+            "solemn voiceover narration",
+            "collective human voices representing diverse demographics",
+            "visual juxtaposition of historical symbols with contemporary challenges",
+            "slow-paced editing with dramatic pauses",
+            "use of iconic institutional text as narrative framework"
+        ],
+        "marketing_logic": "IF an institution's foundational text is re-contextualized through collective human voices and visual contrasts with modern obstacles, THEN it triggers psychological mechanisms of nostalgia, shared identity reinforcement, and perceived resilience against threats, leading to increased emotional investment and support for the institution.",
+        "dimension": "Public Interest",
+        "industry_context": "all organizations facing existential threats or needing to reinforce public trust and legacy value, such as non-profits, government agencies, or heritage brands in crisis management scenarios.",
+        "source_seed_id": "1f2c105406c2a8a206902893d019739b_2_modify"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a brand uses a trending cultural theme (e.g., women with superpowers) as a visual narrative, combined with a time-lapse video of a live art installation using the product as the medium, THEN it triggers identity reinforcement and social validation by aligning the product with subcultural symbols, leveraging the psychological effects of novelty and community engagement to enhance brand relevance.",
+        "dimension": "Cultural Integration",
+        "industry_context": "所有强调生活方式和社群连接的行业",
+        "source_seed_id": "385fce745b7bbbdb34fe2fd774166890_4_modify"
+    },
+    {
+        "trigger_features": [
+            "collage-style mixed media",
+            "fast-paced montage",
+            "bold graphics",
+            "juxtaposition of revered figures with statistical data"
+        ],
+        "marketing_logic": "IF a campaign uses a collage-style mixed media approach with fast-paced montage and bold graphics to juxtapose revered symbolic figures with stark statistical data, THEN it triggers cognitive dissonance and urgency in the viewer by highlighting a significant disparity, leveraging emotional resonance from the figures and rational appeal from the data to inspire action towards addressing the gap.",
+        "dimension": "Social Impact and Advocacy",
+        "industry_context": "all sectors emphasizing social justice, equity, or cause-related fundraising, such as non-profits, advocacy groups, and corporate social responsibility initiatives",
+        "source_seed_id": "38a9be4e56834f81015b9978c7a79a5c_2_modify"
+    },
+    {
+        "trigger_features": [
+            "collage-style mixed media composition",
+            "juxtaposition of revered human figures with bold typographic elements",
+            "fast-paced montage with statistical data overlay",
+            "high-contrast visual palette"
+        ],
+        "marketing_logic": "IF a campaign combines revered human figures (symbolizing authority and moral urgency) with bold typographic elements and fast-paced statistical overlays (symbolizing factual evidence and immediacy), THEN it triggers cognitive dissonance and empathy in the viewer by highlighting a stark contrast between ideal values (e.g., equality) and current realities (e.g., inequity), leading to increased motivation for corrective action such as donation or advocacy.",
+        "dimension": "Social Impact and Advocacy",
+        "industry_context": "all sectors focused on social justice, non-profit fundraising, or cause-related marketing where the goal is to mobilize support by emphasizing moral imperatives and evidence-based gaps.",
+        "source_seed_id": "38a9be4e56834f81015b9978c7a79a5c_7_modify"
+    },
+    {
+        "trigger_features": [
+            "真实人物叙事",
+            "积极肢体动作表达",
+            "日常场景融入",
+            "鼓舞人心的听觉符号"
+        ],
+        "marketing_logic": "IF the campaign uses authentic personal narratives combined with positive physical expressions in everyday settings, THEN it evokes feelings of empowerment and belonging by leveraging social proof and aspirational modeling, reducing perceived barriers to action.",
+        "dimension": "Public Interest and Sports",
+        "industry_context": "所有旨在促进行为改变或提升社会参与的行业",
+        "source_seed_id": "af84707eefb74dda24722820053bb46b_4_modify"
+    },
+    {
+        "trigger_features": [
+            "多城市背景切换",
+            "创意工作者群像",
+            "统一着装符号",
+            "环境与人物融合",
+            "多摄影师视角"
+        ],
+        "marketing_logic": "IF 使用多城市背景切换与创意工作者群像的组合，THEN 通过环境与人物融合引发身份认同，因为统一着装符号作为共同分母，能激发观众对归属感和价值观共鸣的渴望，从而提升品牌忠诚度。",
+        "dimension": "情感与身份维度",
+        "industry_context": "所有强调社群归属和价值观表达的行业",
+        "source_seed_id": "72f6d1c0de582392d8831c53261595df_4_modify"
+    },
+    {
+        "trigger_features": [
+            "slow-motion sequences",
+            "solemn yet hopeful voiceover",
+            "empty architectural spaces",
+            "symbolic closure gestures",
+            "uplifting musical score"
+        ],
+        "marketing_logic": "IF a brand uses visual and auditory symbols of temporary closure combined with messages of solidarity and future promise, THEN it triggers psychological mechanisms of shared adversity and hope, fostering emotional connection and loyalty by framing the closure as a collective pause rather than an end.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all service-based industries facing disruptions or closures, such as hospitality, entertainment, and public services",
+        "source_seed_id": "3fab57556d7f354e4283ac03eb27304b_6_modify"
+    },
+    {
+        "trigger_features": [
+            "expansive natural landscapes",
+            "dynamic vehicle motion through varied terrains",
+            "contrast between urban confinement and open spaces",
+            "symbolic unlocking gestures"
+        ],
+        "marketing_logic": "IF the ad juxtaposes scenes of constraint (e.g., urban settings or routine activities) with visuals of liberation (e.g., exploration in natural environments) through a product's dynamic use, THEN it triggers psychological associations of escape, autonomy, and aspirational identity, leveraging the human desire for freedom and self-actualization to position the product as an enabler of transformative experiences.",
+        "dimension": "Emotional and Aspirational",
+        "industry_context": "All industries promoting products or services that facilitate personal empowerment, adventure, or lifestyle enhancement, such as travel, outdoor gear, wellness, and premium consumer goods.",
+        "source_seed_id": "c4ee406813911cc52dbf3b6a6a2d62ed_7_modify"
+    },
+    {
+        "trigger_features": [
+            "数字化界面交互",
+            "文本信息层级视觉化",
+            "用户自主控制符号"
+        ],
+        "marketing_logic": "IF a product integrates a visual control mechanism within a digital interface to allow users to filter or prioritize information, THEN it leverages cognitive load reduction and perceived efficiency, triggering immediate utility recognition and reducing decision fatigue in information-dense environments.",
+        "dimension": "Digital",
+        "industry_context": "所有涉及信息处理、用户自定义或效率优化的行业",
+        "source_seed_id": "47ad45ea18e1a859c8355efc27d44fc2_8_modify"
+    },
+    {
+        "trigger_features": [
+            "跨代际情感符号",
+            "传统媒介渠道",
+            "社会责任感视觉叙事"
+        ],
+        "marketing_logic": "IF a brand uses traditional media channels to bridge a technological gap for a vulnerable demographic, THEN it triggers social responsibility perception and emotional resonance by leveraging accessible communication tools to foster connection, reducing isolation anxiety and enhancing brand trust through inclusive action.",
+        "dimension": "情感与社会连接",
+        "industry_context": "所有面向技术边缘化群体的服务行业",
+        "source_seed_id": "bf5dc4e56084ec8d3181d7592b81cd51_3_modify"
+    },
+    {
+        "trigger_features": [
+            "unexpected narrative interruption",
+            "close-up sensory focus",
+            "contrast between isolation and social context"
+        ],
+        "marketing_logic": "IF an advertisement abruptly introduces an unexpected element that disrupts a common social scenario, THEN it creates cognitive dissonance and heightened attention, leveraging the psychological principle of novelty-seeking to associate the product with a unique sensory experience, thereby fostering brand differentiation and memory retention.",
+        "dimension": "Sensory Experience",
+        "industry_context": "all consumer goods industries where products compete on sensory attributes and seek to break through market saturation by emphasizing exclusivity or personal indulgence",
+        "source_seed_id": "a116e60cc800e178a98c0c478861832f_7_modify"
+    },
+    {
+        "trigger_features": [
+            "symbolic visual motif repetition",
+            "collage of relatable life scenarios",
+            "dynamic typography integration",
+            "positive emotional tone"
+        ],
+        "marketing_logic": "IF a brand uses a recurring symbolic motif (e.g., a plus sign) to visually connect diverse and relatable life scenarios, THEN it triggers a psychological association of comprehensiveness and personal relevance, leveraging cognitive ease and identity resonance to position the brand as a holistic solution that addresses both expected and unexpected needs.",
+        "dimension": "brand positioning and value proposition communication",
+        "industry_context": "all subscription-based or membership-driven industries that aim to convey broad utility and emotional connection, such as retail, entertainment, and service platforms",
+        "source_seed_id": "751c1c597d80c8d6ec77e9d0515353d9_9_modify"
+    },
+    {
+        "trigger_features": [
+            "远程交互式体验",
+            "情感化叙事符号",
+            "跨空间连接技术"
+        ],
+        "marketing_logic": "IF a brand uses remote interactive experiences combined with emotional narrative symbols (e.g., celebrity animals as symbols of hope and resilience) to connect with audiences in isolated or restricted environments, THEN it can evoke empathy, foster emotional engagement, and enhance brand perception by leveraging the psychological principles of social connection and altruistic appeal, leading to increased loyalty and positive word-of-mouth.",
+        "dimension": "Experiential",
+        "industry_context": "所有需要建立情感联系、提升社会责任感或提供虚拟体验的行业，如医疗保健、教育、非营利组织、旅游和娱乐",
+        "source_seed_id": "2d80c4b671731716e8a1a8c318ee6fad_5_modify"
+    },
+    {
+        "trigger_features": [
+            "拟人化CGI角色",
+            "材质纹理特写",
+            "幽默叙事旁白"
+        ],
+        "marketing_logic": "IF 使用拟人化CGI角色结合材质纹理特写与幽默叙事旁白，THEN 通过角色认同与感官暗示，将抽象工艺过程转化为具象情感连接，从而降低认知门槛并激发探索欲。",
+        "dimension": "品牌人格化与工艺可视化",
+        "industry_context": "所有依赖传统工艺或复杂生产流程的高价值消费品行业",
+        "source_seed_id": "4cebf7e598402df7f57913f930885b6c_3_modify"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a brand combines historical cultural symbols with contemporary digital tools, THEN it triggers a sense of timelessness and innovation, leveraging nostalgia and novelty to enhance brand prestige and audience engagement.",
+        "dimension": "Digital and Experiential media campaign",
+        "industry_context": "所有强调文化传承与创新融合的行业",
+        "source_seed_id": "729830e97099779912b31675481d22b3_2_modify"
+    },
+    {
+        "trigger_features": [
+            "时间轴可视化",
+            "里程碑符号",
+            "怀旧色调",
+            "渐进式叙事"
+        ],
+        "marketing_logic": "IF a brand uses visual representations of its historical timeline and milestone markers, THEN it triggers a sense of legacy, trust, and emotional connection by appealing to nostalgia and perceived stability in the audience's mind.",
+        "dimension": "Temporal",
+        "industry_context": "所有强调长期信誉、专业传承或客户忠诚度的行业",
+        "source_seed_id": "938faea7437c08e8deac1e509442851d_1_modify"
+    },
+    {
+        "trigger_features": [
+            "immersive spatial environment",
+            "tactile interaction element",
+            "multi-sensory narrative sequence",
+            "natural phenomenon simulation",
+            "sculptural installation with ethereal aesthetic"
+        ],
+        "marketing_logic": "IF an immersive experience combines tactile interaction with multi-sensory narrative sequences that simulate natural phenomena, THEN it triggers a sense of awe and exclusivity by engaging multiple senses to create a personal connection with a rare material, leveraging scarcity and sensory immersion to enhance perceived value and emotional attachment.",
+        "dimension": "Experiential Marketing",
+        "industry_context": "所有强调稀有性、工艺和感官体验的行业，如奢侈品、高端消费品、艺术和文化活动",
+        "source_seed_id": "6cb9e8466b2117afcaf7c33693bc6a00_6_modify"
+    },
+    {
+        "trigger_features": [
+            "时间跨度可视化",
+            "多代际人物群像",
+            "肢体动作表达",
+            "环境场景对比"
+        ],
+        "marketing_logic": "IF an advertisement visually juxtaposes the same individual or archetype across different life stages or time periods, THEN it triggers the audience's autobiographical memory and temporal self-continuity, fostering emotional resonance and brand legacy association.",
+        "dimension": "情感连接",
+        "industry_context": "所有强调长期信任、生命周期服务或里程碑纪念的行业",
+        "source_seed_id": "938faea7437c08e8deac1e509442851d_10_modify"
+    },
+    {
+        "trigger_features": [
+            "真实人物叙事",
+            "情感化视觉语言",
+            "社区背景展示",
+            "成就庆祝符号"
+        ],
+        "marketing_logic": "IF a brand showcases authentic stories of individuals overcoming adversity through personal effort and community support, THEN it triggers emotional resonance and social identity reinforcement, leading to increased brand trust and perceived social responsibility.",
+        "dimension": "Social Impact and Community Engagement",
+        "industry_context": "所有强调企业社会责任、社区连接或支持弱势群体的行业",
+        "source_seed_id": "6fe1c3e4fd1276c16860589a1a11ac92_2_modify"
+    },
+    {
+        "trigger_features": [
+            "真实人物叙事",
+            "过程可视化",
+            "权威机构背书",
+            "即时反馈循环"
+        ],
+        "marketing_logic": "IF a brand showcases the transformation of raw, authentic personal expression into a polished, professional output through a guided, collaborative process with industry authorities, THEN it triggers psychological mechanisms of aspiration, validation, and belonging, as audiences witness underrepresented individuals gaining tangible skills and recognition, thereby reinforcing the brand's commitment to empowerment and social impact.",
+        "dimension": "社会价值与品牌使命",
+        "industry_context": "所有致力于社会影响、人才发展或社区参与的行业，如教育、非营利组织、企业社会责任项目、创意产业等",
+        "source_seed_id": "20e130e2aa2fe20367ebc90ecc731996_10_modify"
+    },
+    {
+        "trigger_features": [
+            "环境音景构建",
+            "非语言叙事",
+            "沉浸式声场",
+            "生活场景符号化"
+        ],
+        "marketing_logic": "IF an advertisement uses ambient sounds and non-verbal cues to evoke visceral experiences associated with leisure and adventure, THEN it can bypass cognitive resistance to hard selling by triggering emotional resonance and identity projection, leading to broader audience appeal.",
+        "dimension": "情感共鸣与身份认同",
+        "industry_context": "所有强调生活方式、体验或情感连接的行业",
+        "source_seed_id": "dbb5bdd914acbf51252dc92641fc0a44_7_modify"
+    },
+    {
+        "trigger_features": [
+            "高饱和度色彩",
+            "快节奏剪辑",
+            "微观特写",
+            "打破第四面墙"
+        ],
+        "marketing_logic": "IF a symbolic representation of a collective effort is created through digital participation, THEN it leverages social identity and moral urgency to foster emotional engagement and sustained pressure.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "所有强调社会正义或集体行动的行业",
+        "source_seed_id": "a254457caea1d7e5d7dc18b07b70a7eb_7_modify"
+    },
+    {
+        "trigger_features": [
+            "juxtaposition of visual elements",
+            "contextual media placement",
+            "public call-to-action via social tagging"
+        ],
+        "marketing_logic": "IF a brand identifies a discrepancy between a competitor's visual representation and a mandatory regulatory symbol, THEN by highlighting this omission through adjacent media placements and social engagement, it can leverage cognitive dissonance to position itself as a corrective authority, thereby fostering trust and relevance among the target audience.",
+        "dimension": "regulatory compliance and competitive differentiation",
+        "industry_context": "all industries where regulatory symbols or certifications are required for legitimacy, such as finance, healthcare, and consumer safety",
+        "source_seed_id": "6d14771520f14e490b177df05f10217b_10_modify"
+    },
+    {
+        "trigger_features": [
+            "打破第四面墙",
+            "日常场景设定",
+            "非正式对话氛围",
+            "幽默元素融入"
+        ],
+        "marketing_logic": "IF a campaign addresses a traditionally stigmatized or emotionally heavy topic (e.g., mental health) by using informal, relatable settings and humor, THEN it reduces psychological barriers, fosters approachability, and encourages audience engagement through emotional resonance and social normalization.",
+        "dimension": "Emotional Engagement and Social Connection",
+        "industry_context": "所有涉及敏感话题、需要降低受众抵触情绪或促进社会对话的行业，如心理健康服务、公益倡导、健康护理、社会教育等。",
+        "source_seed_id": "1fde9dcaf4b339582e58929d82d20878_9_modify"
+    },
+    {
+        "trigger_features": [
+            "immersive digital environments",
+            "personalized digital avatars",
+            "augmented reality overlays",
+            "multi-platform digital tool integration"
+        ],
+        "marketing_logic": "IF a brand uses immersive digital environments and personalized digital avatars to create a sense of presence and ownership, THEN it can bridge the gap between consumers' emotional attachment to traditional experiences and perceived utility of technology by demonstrating how technology enhances rather than replaces those experiences, leveraging psychological principles of identity projection and experiential enrichment.",
+        "dimension": "Emotional Engagement",
+        "industry_context": "all industries where consumers have strong emotional connections to traditional or physical experiences, such as sports, entertainment, cultural events, and lifestyle sectors",
+        "source_seed_id": "179e6887f3f90c35309011b517d8a20d_2_modify"
+    },
+    {
+        "trigger_features": [
+            "简化界面流程",
+            "减少操作步骤",
+            "无缝集成支付",
+            "实时反馈机制"
+        ],
+        "marketing_logic": "IF a digital tool reduces the number of steps and cognitive load required to complete a transaction, THEN it triggers a sense of efficiency and trust, reducing friction and increasing user adoption by appealing to the psychological need for convenience and immediate gratification.",
+        "dimension": "User Experience and Payment Integration",
+        "industry_context": "所有涉及在线交易或服务交付的行业，如电子商务、数字内容平台、教育科技、健康科技和金融服务",
+        "source_seed_id": "aafefa8c108a7f53f8495f8b6a48666c_5_modify"
+    },
+    {
+        "trigger_features": [
+            "auditory narrative with assumed identity",
+            "reveal through auditory cue",
+            "emotional build-up followed by cognitive dissonance"
+        ],
+        "marketing_logic": "IF an auditory narrative is presented that initially aligns with audience assumptions about a specific identity or context, THEN a sudden reveal that challenges those assumptions creates cognitive dissonance and emotional engagement, leading to increased attention and reflection on the underlying message.",
+        "dimension": "auditory and narrative",
+        "industry_context": "all industries aiming to challenge stereotypes or promote inclusivity, such as sports, entertainment, education, and social advocacy",
+        "source_seed_id": "d30984b560af549a7aa3f9d7d68abe00_8_modify"
+    },
+    {
+        "trigger_features": [
+            "真实互动记录",
+            "无脚本对话",
+            "第一人称视角叙事",
+            "亲密社交场景"
+        ],
+        "marketing_logic": "IF a brand uses unscripted, first-person narratives of authentic social interactions, THEN it triggers psychological mechanisms of social proof and empathy, reducing perceived social distance and fostering in-group identification, which can be leveraged to combat prejudice and promote allyship.",
+        "dimension": "Social Impact",
+        "industry_context": "所有涉及社会倡导、社区建设或旨在减少偏见和促进包容性的行业",
+        "source_seed_id": "cb3a095cc2f56f88590b810d358e2f09_2_modify"
+    },
+    {
+        "trigger_features": [
+            "patriotic auditory symbol with deliberate lyrical alteration",
+            "emotional narrative of personal struggle",
+            "strategic use of silence as auditory punctuation"
+        ],
+        "marketing_logic": "IF a campaign uses a widely recognized patriotic auditory symbol (e.g., a national anthem) and alters its lyrics to highlight a contradiction with current social conditions, THEN it triggers cognitive dissonance and emotional resonance in the audience by juxtaposing cherished ideals with harsh realities, leveraging identity-based guilt and urgency to drive reflection and action.",
+        "dimension": "Social Advocacy",
+        "industry_context": "All sectors aiming to challenge societal norms or promote policy change, including non-profits, political campaigns, and corporate social responsibility initiatives.",
+        "source_seed_id": "15fce7cc54808c774e591a8e492651c9_6_modify"
+    },
+    {
+        "trigger_features": [
+            "rapid cross-cutting between contrasting states",
+            "dramatic transformation of environmental conditions",
+            "symbolic opening and closing motions",
+            "visual emphasis on atmospheric clarity"
+        ],
+        "marketing_logic": "IF an ad uses rapid cross-cutting between contrasting states (e.g., closed vs. open, stagnant vs. dynamic) combined with symbolic opening and closing motions, THEN it triggers a psychological response of relief and renewal by visually resolving a problem (e.g., confinement or impurity) into an ideal state (e.g., freedom or purity), leveraging cognitive dissonance reduction and aspirational fulfillment.",
+        "dimension": "Visual and Temporal",
+        "industry_context": "All industries emphasizing improvement, purification, or transformation, such as wellness, home appliances, environmental services, or personal development.",
+        "source_seed_id": "892b6fc7d27b0711eb96632ec68b15d7_2_modify"
+    },
+    {
+        "trigger_features": [
+            "抽象视觉隐喻",
+            "诗意旁白",
+            "多维度空间转换",
+            "包容性符号"
+        ],
+        "marketing_logic": "IF an ad uses abstract visual metaphors and poetic narration to depict a concept as universally accessible and boundary-transcending, THEN it triggers psychological responses of collective identity and empowerment, reducing perceived barriers and fostering a sense of shared human potential.",
+        "dimension": "情感与归属",
+        "industry_context": "所有强调创新、社区建设或打破传统界限的行业",
+        "source_seed_id": "15c30e668902c2b83e4deab3cb22d1ed_7_modify"
+    },
+    {
+        "trigger_features": [
+            "语义符号重构",
+            "积极词汇替换",
+            "个人成就展示",
+            "节日时间锚点"
+        ],
+        "marketing_logic": "IF a social stigma is linguistically anchored to a negative term (e.g., 'down' implying inferiority), THEN replacing it with a positive counterpart (e.g., 'up' implying elevation) can trigger cognitive reframing, fostering identity pride and reducing prejudice by associating the condition with aspirational achievements and collective celebration.",
+        "dimension": "社会公益与品牌叙事",
+        "industry_context": "所有涉及社会污名、身份认同或需要重塑公众认知的行业，如心理健康、残疾权益、少数群体倡导、教育变革或文化转型领域。",
+        "source_seed_id": "5f366395bba0da99e58dee30ab4dc833_5_modify"
+    },
+    {
+        "trigger_features": [
+            "monumental public sculpture",
+            "dual-component physical structure",
+            "symbolic gesture of connection",
+            "site-specific cultural landmark",
+            "collaborative artistic creation"
+        ],
+        "marketing_logic": "IF a brand creates a tangible, symbolic artifact that embodies a shared emotional desire (e.g., connection during isolation) and positions it as a public landmark in a culturally significant location, THEN it leverages collective memory and aspirational identity to foster community pride and external attraction, thereby generating positive brand association and economic stimulus through increased visitation.",
+        "dimension": "Cultural Resonance and Placemaking",
+        "industry_context": "All industries seeking to enhance brand loyalty and drive local economic activity through experiential marketing, such as tourism, hospitality, and consumer goods.",
+        "source_seed_id": "e11991b50a64026b671887ed94150f3d_2_modify"
+    },
+    {
+        "trigger_features": [
+            "gradual visual revelation",
+            "absence of human figures in initial scenes",
+            "autonomous object movement",
+            "contrast between emptiness and presence",
+            "emotional close-ups on faces"
+        ],
+        "marketing_logic": "IF an advertisement initially presents scenarios where key human elements are visually absent, creating a sense of mystery or invisibility, THEN the subsequent revelation of those elements (e.g., individuals or groups) triggers cognitive dissonance resolution and emotional engagement, leading to enhanced empathy, identity recognition, and social inclusion messaging that fosters brand association with positive societal values.",
+        "dimension": "Social Impact and Inclusion",
+        "industry_context": "all industries aiming to promote diversity, equity, and inclusion initiatives, such as corporate social responsibility campaigns, non-profit advocacy, or consumer brands seeking to align with progressive social movements.",
+        "source_seed_id": "375f8a32cd39c33c4d5fdce9f4bb9025_3_modify"
+    }
+]
