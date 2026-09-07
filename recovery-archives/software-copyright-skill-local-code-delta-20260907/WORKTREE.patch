@@ -1,0 +1,106 @@
+diff --git a/software-copyright-materials/scripts/build_docx_from_md.py b/software-copyright-materials/scripts/build_docx_from_md.py
+index c4c734d..277bd8d 100644
+--- a/software-copyright-materials/scripts/build_docx_from_md.py
++++ b/software-copyright-materials/scripts/build_docx_from_md.py
+@@ -17,7 +17,7 @@ from common import ensure_dir, read_json, safe_filename
+ 
+ try:
+     from docx import Document
+-    from docx.enum.section import WD_SECTION
++    from docx.enum.section import WD_ORIENT, WD_SECTION
+     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+     from docx.oxml import OxmlElement
+     from docx.oxml.ns import qn
+@@ -204,8 +204,8 @@ def force_black_document(document: Any) -> None:
+                                 pass
+ 
+ 
+-def configure_a4(document: Any) -> None:
+-    section = document.sections[0]
++def configure_portrait_a4(section: Any) -> None:
++    section.orientation = WD_ORIENT.PORTRAIT
+     section.page_width = Cm(21)
+     section.page_height = Cm(29.7)
+     section.top_margin = Cm(2.54)
+@@ -214,6 +214,20 @@ def configure_a4(document: Any) -> None:
+     section.right_margin = Cm(2.54)
+ 
+ 
++def configure_landscape_a4(section: Any) -> None:
++    section.orientation = WD_ORIENT.LANDSCAPE
++    section.page_width = Cm(29.7)
++    section.page_height = Cm(21)
++    section.top_margin = Cm(1.6)
++    section.bottom_margin = Cm(1.6)
++    section.left_margin = Cm(1.6)
++    section.right_margin = Cm(1.6)
++
++
++def configure_a4(document: Any) -> None:
++    configure_portrait_a4(document.sections[0])
++
++
+ def configure_code_a4(document: Any) -> None:
+     section = document.sections[0]
+     section.page_width = Cm(21)
+@@ -586,18 +600,26 @@ def parse_table_line(line: str) -> list[str]:
+     return [cell.strip() for cell in line.strip().strip("|").split("|")]
+ 
+ 
+-def add_image(document: Any, image_path: Path) -> None:
++def add_image(document: Any, image_path: Path) -> bool:
+     if not image_path.exists():
+         p = document.add_paragraph()
+         run = p.add_run(f"[截图缺失：{image_path}]")
+         set_run_font(run, "SimSun", 10.5)
+-        return
++        return False
+     try:
+-        document.add_picture(str(image_path), width=Inches(5.8))
++        section = document.add_section(WD_SECTION.NEW_PAGE)
++        configure_landscape_a4(section)
++        p = document.add_paragraph()
++        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
++        p.paragraph_format.space_before = Pt(0)
++        p.paragraph_format.space_after = Pt(4)
++        p.add_run().add_picture(str(image_path), width=Inches(9.8))
++        return True
+     except Exception:
+         p = document.add_paragraph()
+         run = p.add_run(f"[截图无法插入：{image_path}]")
+         set_run_font(run, "SimSun", 10.5)
++        return False
+ 
+ 
+ def build_manual_docx_python(md_path: Path, out_path: Path, base_dir: Path, software_name: str, version: str) -> None:
+@@ -609,6 +631,7 @@ def build_manual_docx_python(md_path: Path, out_path: Path, base_dir: Path, soft
+     lines = md_path.read_text(encoding="utf-8").splitlines()
+     table_buf: list[list[str]] = []
+     in_fence = False
++    image_caption_pending = False
+ 
+     def flush_table() -> None:
+         nonlocal table_buf
+@@ -636,8 +659,21 @@ def build_manual_docx_python(md_path: Path, out_path: Path, base_dir: Path, soft
+             continue
+         image_match = re.search(r"!\[[^\]]*\]\(([^)]+)\)", stripped)
+         if image_match:
+-            add_image(document, (base_dir / image_match.group(1)).resolve())
++            image_caption_pending = add_image(document, (base_dir / image_match.group(1)).resolve())
++            continue
++        if image_caption_pending and re.fullmatch(r"图\s*\d+\s+.+", stripped):
++            p = document.add_paragraph()
++            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
++            run = p.add_run(stripped)
++            set_run_font(run, "SimSun", 10.5)
++            section = document.add_section(WD_SECTION.NEW_PAGE)
++            configure_portrait_a4(section)
++            image_caption_pending = False
+             continue
++        if image_caption_pending:
++            section = document.add_section(WD_SECTION.NEW_PAGE)
++            configure_portrait_a4(section)
++            image_caption_pending = False
+         heading = re.match(r"^(#{1,4})\s+(.+)$", stripped)
+         if heading:
+             level = min(len(heading.group(1)), 3)
