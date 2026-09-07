@@ -1,0 +1,17 @@
+{
+  "cutoff": "2026-08-24",
+  "new_external_search": false,
+  "local_sources": [
+    "artifacts/innovation1_validanswer_pilot50_20260711_v1/evidence_recall_annotation_v1/region_frames/317186a60ff3f4d540b349a60fe99eb0_4__gbp340.png",
+    "artifacts/innovation1_validanswer_pilot50_20260711_v1/evidence_recall_annotation_v1/contact_sheets/317186a60ff3f4d540b349a60fe99eb0_4.jpg",
+    "deliverables/patent/figures_v4_1/",
+    "deliverables/patent/figures_v4_6/",
+    "ad_video_analysis_system/run/compressed-screenshots/"
+  ],
+  "outputs": [
+    "deliverables/patent/figures_v4_6/fig7_amount_slot_examples.mmd",
+    "deliverables/patent/figures_v4_6/fig7_amount_slot_examples.svg",
+    "deliverables/patent/figures_v4_6/preview/fig7_amount_slot_examples.png",
+    "deliverables/patent/一种基于视频证据双差分许可的视频问答答案更新控制方法、装置、设备及存储介质_专利申请终稿.md"
+  ]
+}

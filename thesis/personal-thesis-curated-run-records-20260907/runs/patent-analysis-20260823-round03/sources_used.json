@@ -1,0 +1,14 @@
+{
+  "local_sources": [
+    "deliverables/patent/视频问答答案可靠性保障专利申请候选稿_V3_20260823.md",
+    "docs/AdsQA实验结果总表与复现索引.md",
+    "docs/论文思考记录.md",
+    "docs/本对话论文最终结果与阶段总结_20260820.md",
+    "runs/patent-analysis-20260823-round02/"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html"
+  ],
+  "evidence_status": "inventor-confirmed experiment outcome; result artifacts not stored and not independently verifiable",
+  "date": "2026-08-23"
+}

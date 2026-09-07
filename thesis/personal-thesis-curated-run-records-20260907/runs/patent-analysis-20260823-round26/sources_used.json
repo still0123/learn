@@ -1,0 +1,30 @@
+{
+  "run": "patent-analysis-20260823-round26",
+  "date": "2026-08-23",
+  "purpose": "rewrite V4.5 from the round25 prior-art search and critique",
+  "main_output": "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.5_20260823.md",
+  "local_sources": [
+    "deliverables/patent/V4.4权利要求级查新初筛报告_20260823.md",
+    "deliverables/patent/基于视频证据与答案双差分配准的更新控制_V4.4.1查新后收紧建议_20260823.md",
+    "deliverables/patent/基于预冻结视频证据观测记录的视频问答答案状态更新控制专利_V4.4设计增强稿_20260823.md",
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4.2_20260823.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "runs/patent-analysis-20260823-round25"
+  ],
+  "prior_art_urls": [
+    "https://patents.google.com/patent/CN103870528A/zh",
+    "https://patents.google.com/patent/CN117744802A/zh",
+    "https://patents.google.com/patent/US20160034457A1/en",
+    "https://patents.google.com/patent/EP4617945A1/en",
+    "https://patents.google.com/patent/US12536376B2/en",
+    "https://patents.google.com/patent/US20260121859A1/en",
+    "https://patents.justia.com/patent/20260134218",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558"
+  ],
+  "limitations": [
+    "not a formal CNIPA or commercial-database search opinion",
+    "V4.5 is not represented as fully implemented",
+    "no unrecorded experimental metric is asserted"
+  ]
+}

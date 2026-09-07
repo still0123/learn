@@ -1,0 +1,23 @@
+{
+  "run": "patent-analysis-20260824-round29",
+  "date": "2026-08-24",
+  "scope": "revise six patent figures, merge them into V4.6, and assess finalization gates",
+  "local_sources": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md",
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制权利要求书_V4.5.1_20260824.md",
+    "deliverables/patent/figures_v4_5",
+    "runs/patent-analysis-20260824-round27",
+    "runs/patent-analysis-20260824-round28"
+  ],
+  "outputs": [
+    "deliverables/patent/figures_v4_6",
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md"
+  ],
+  "new_web_search_performed": false,
+  "limitations": [
+    "no formal novelty search in this round",
+    "no new experimental evidence",
+    "old application legal status not professionally verified",
+    "not converted to formal filing layout"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "local_sources": [
+    "deliverables/patent/一种基于视频证据双差分许可的视频问答答案更新控制方法、装置、设备及存储介质_专利申请终稿.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "runs/patent-analysis-20260824-round31/09_search_materials_report.md",
+    "runs/patent-analysis-20260824-round32/04_prior_art_comparison_matrix.md",
+    "runs/patent-analysis-20260824-round32/07_examiner_critic_review.md",
+    "runs/patent-analysis-20260824-round35/gates.md"
+  ],
+  "official_web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html",
+    "https://www.cnipa.gov.cn/art/2023/12/21/art_3317_189352.html",
+    "https://www.cnipa.gov.cn/art/2025/11/13/art_74_202560.html",
+    "https://www.cnipa.gov.cn/art/2025/12/4/art_66_202935.html",
+    "https://www.cnipa.gov.cn/art/2024/12/31/art_66_196988.html"
+  ],
+  "limitations": [
+    "CNIPA登录检索未补到实际申请时点",
+    "原申请官方完整档案和法律状态未取得",
+    "非授权保证或正式法律意见"
+  ]
+}

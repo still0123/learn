@@ -1,0 +1,189 @@
+round_id: patent-innovation-20260818-r01
+stage: I3_TOTAL_GATE
+status: COMPLETE_ZERO_PASS
+generated_at: "2026-08-18T01:51:40+08:00"
+
+merge_policy:
+  score_source: 03a_evidence_gate
+  scores_increased: false
+  scores_averaged: false
+  hard_failures_overridable: false
+  paper_review_role: "仅补充拥挤度与最强论文组合攻击，不抵消硬失败或分项不足"
+  empty_pass_list_allowed: true
+
+thresholds:
+  total: 80
+  technical_problem: 6
+  data_flow: 9
+  non_trivial_coupling: 14
+  local_support: 10
+  technical_effect: 9
+  implementation: 6
+  claimability: 9
+  require_no_hard_failure: true
+
+summary:
+  candidate_count: 8
+  pass_to_i4_count: 0
+  hold_experiment_count: 2
+  retain_dependent_only_count: 3
+  hard_reject_count: 3
+  hard_failure_candidate_count: 6
+  highest_score:
+    candidate_id: I2B-P08
+    total: 75
+    blocking_hard_failure: HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP
+    explicit_boundary: "与自家权利要求8关于决定性证据最小破坏、背景保留和排序训练实质重叠"
+
+decisions:
+  PASS_TO_I4: []
+  HOLD_EXPERIMENT:
+    - I2B-P02
+    - I2B-P03
+  RETAIN_DEPENDENT_ONLY:
+    - I2B-P01
+    - I2B-P05
+    - I2B-P08
+  HARD_REJECT:
+    - I2B-P04
+    - I2B-P06
+    - I2B-P07
+
+i4:
+  authorized: false
+  candidate_ids: []
+  patent_search_executed_by_i3: false
+  reason: "无候选同时满足总分>=80、全部分项最低分和无硬失败。"
+
+candidate_decisions:
+  I2B-P01:
+    total: 59
+    hard_failures:
+      - HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP
+    paper_crowding: HIGH
+    final_decision: REJECT_HARD_AS_INDEPENDENT_RETAIN_DEPENDENT_EXPERIMENT_ONLY
+    blocking_conditions:
+      - total
+      - non_trivial_coupling
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+  I2B-P02:
+    total: 61
+    hard_failures: []
+    paper_crowding: HIGH
+    final_decision: HOLD_EXPERIMENT_BEFORE_I4
+    explicit_note: "实验先行"
+    blocking_conditions:
+      - total
+      - technical_effect
+      - implementation
+  I2B-P03:
+    total: 53
+    hard_failures: []
+    paper_crowding: CRITICAL
+    final_decision: HOLD_EXPERIMENT_BEFORE_I4
+    explicit_note: "实验先行"
+    blocking_conditions:
+      - total
+      - non_trivial_coupling
+      - technical_effect
+      - implementation
+      - claimability
+  I2B-P04:
+    total: 48
+    hard_failures:
+      - HF_NO_LOCAL_SUPPORT_FOR_CORE_FAILURE
+      - HF_PARALLEL_MODULES_AS_WRITTEN
+    paper_crowding: HIGH
+    final_decision: REJECT_HARD
+    blocking_conditions:
+      - total
+      - non_trivial_coupling
+      - local_support
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+  I2B-P05:
+    total: 63
+    hard_failures:
+      - HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP
+    paper_crowding: HIGH
+    final_decision: REJECT_HARD_AS_INDEPENDENT_RETAIN_DEPENDENT_EXPERIMENT_ONLY
+    blocking_conditions:
+      - total
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+  I2B-P06:
+    total: 43
+    hard_failures:
+      - HF_NO_LOCAL_SUPPORT_FOR_CORE_MECHANISM
+      - HF_SCENARIO_OR_BUSINESS_RULE_CORE
+    paper_crowding: CRITICAL
+    final_decision: REJECT_HARD
+    blocking_conditions:
+      - total
+      - non_trivial_coupling
+      - local_support
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+  I2B-P07:
+    total: 48
+    hard_failures:
+      - HF_NO_LOCAL_SUPPORT_FOR_CORE_FAILURE
+      - HF_SCENARIO_OR_BUSINESS_RULE_CORE
+    paper_crowding: HIGH
+    final_decision: REJECT_HARD
+    blocking_conditions:
+      - total
+      - non_trivial_coupling
+      - local_support
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+  I2B-P08:
+    total: 75
+    hard_failures:
+      - HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP
+    paper_crowding: CRITICAL
+    final_decision: REJECT_HARD_AS_INDEPENDENT_PRIORITIZE_DEPENDENT_IMPLEMENTATION
+    explicit_note: "75分且与自家权利要求8实质重叠，不得进入I4"
+    blocking_conditions:
+      - total
+      - technical_effect
+      - implementation
+      - claimability
+      - hard_failure
+
+guardrails_observed:
+  patent_search: false
+  formal_application_modified: false
+  git_operation: false
+
+formal_application_integrity:
+  unchanged: true
+  files:
+    新申请初稿V2.1_说明书全文_20260817.md: 1e980b4a7dcc87ead5a368d0523f65da8a94318a21d1dee1a9bde019d8d04c7b
+    一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md: 224e09e6c3de3e2ca5ae5d1f3726fc266d4c06bbf4f1536340b6bb2d884bb2fa
+    一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.docx: 844a947527b8921e7258966a3ebe7b36967d41ac767296773f2c7af1f8205e2f
+
+sha256:
+  inputs:
+    02_candidate_cards.jsonl: da5c0904f0783368f0b4facb88488e5b9605856b0403039f9f1ffbc447686cdc
+    02_candidate_cards.md: 79b4e55a482759a6789747cabb0ac37fac88b0d8848956e2b818128413c11356
+    03a_evidence_gate.jsonl: 6a8c1354873bba6136d9b6861c7eac25cfd4d00dfa75a5f5a601e4bd1b9987c7
+    03a_evidence_gate.md: a05668acc73672a215d04e5878480b1148ebc457fd5e2bea72007178f6415594
+    03b_paper_attack.jsonl: 7ad06a8de127f65c841fc58ef2842766c29df878406d825fb915a2ac9dac449a
+    03b_paper_attack.md: 052d1f834d8b01032952b3db31971bc332487a819abc6632534b8cd95bbdaea8
+    gates.yaml: 73abfb44f1454cfbaa92c06a3c1fcce053a323fb9256b11116d19cdd0e40a5fc
+    GOAL_OVERNIGHT_V2.md: 6fc29151984ab1b2bd01ce820f4aea10e38f9a52c42de40bb6cc57eb45298092
+  generated:
+    03_candidate_gate.jsonl: 41f0361d41457c6de54b93a4108b920dc2e0f471aed61ff35d9e4e2521ab8c18
+    03_candidate_gate.md: 42cc14300a17772039758a73177967fe42ed0722386f15f96cd6d78e6be18da9

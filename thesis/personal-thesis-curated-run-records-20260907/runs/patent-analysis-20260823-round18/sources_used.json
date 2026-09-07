@@ -1,0 +1,17 @@
+{
+  "local_sources": [
+    "CS2215-基于视听协同感知与链式校验的广告视频问答方法及系统-驳回决定.pdf",
+    "source_texts/patent_docx.txt",
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4_20260823.md",
+    "runs/patent-analysis-20260823-round17/10_final_recommendation.md"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html",
+    "https://www.cnipa.gov.cn/art/2023/12/21/art_98_189197.html",
+    "https://www.cnipa.gov.cn/jact/front/mailpubdetail.do?sysid=6&transactId=509864",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://arxiv.org/abs/2608.19739"
+  ],
+  "notes": "用户已决定不复审旧案，V4作为独立改进申请重写；旧案正式驳回依据为创造性不足，正式独权仍待扩展查新和优先权策略确认。"
+}

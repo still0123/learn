@@ -1,0 +1,107 @@
+{
+  "retrieved_on": "2026-08-14",
+  "formal_conference_sources": [
+    {
+      "title": "Active Video Perception: Iterative Evidence Seeking for Agentic Long Video Understanding",
+      "venue": "CVPR 2026 Findings",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Wang_Active_Video_Perception_Iterative_Evidence_Seeking_for_Agentic_Long_Video_CVPRF_2026_paper.html"
+    },
+    {
+      "title": "VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority",
+      "venue": "ICML 2026 regular",
+      "url": "https://openreview.net/forum?id=RsPequeaiZ"
+    },
+    {
+      "title": "Chain-of-Glimpse: Search-Guided Progressive Object-Grounded Reasoning for Video Understanding",
+      "venue": "ICML 2026 regular",
+      "url": "https://openreview.net/forum?id=J9cU4mVavU"
+    },
+    {
+      "title": "IV-Bench: A Benchmark for Image-Grounded Video Perception and Reasoning in Multimodal LLMs",
+      "venue": "ICLR 2026 Poster",
+      "url": "https://openreview.net/forum?id=3di7ct0iOJ"
+    },
+    {
+      "title": "ArrowGEV: Grounding Events in Video via Learning the Arrow of Time",
+      "venue": "ACL 2026 Findings",
+      "url": "https://aclanthology.org/2026.findings-acl.1730/"
+    },
+    {
+      "title": "MUSEG: Reinforcing Video Temporal Understanding via Timestamp-Aware Multi-Segment Grounding",
+      "venue": "ACL 2026 Long Paper",
+      "url": "https://aclanthology.org/2026.acl-long.1644/"
+    },
+    {
+      "title": "EMCompress: Video-LLMs with Endomorphic Multimodal Compression",
+      "venue": "ACL 2026 Findings",
+      "url": "https://aclanthology.org/2026.findings-acl.8/"
+    },
+    {
+      "title": "MoHoBench: Assessing Honesty of Multimodal Large Language Models via Unanswerable Visual Questions",
+      "venue": "AAAI 2026",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40159"
+    }
+  ],
+  "camera_ready_workshop_or_preprint_sources": [
+    {
+      "title": "Video-MTR: Reinforced Multi-Turn Reasoning for Long Video Understanding",
+      "status": "arXiv camera-ready marked accepted by ICML 2026",
+      "url": "https://arxiv.org/abs/2508.20478"
+    },
+    {
+      "title": "Reinforce to Learn, Elect to Reason",
+      "status": "arXiv camera-ready marked accepted at CVPR 2026",
+      "url": "https://arxiv.org/abs/2604.04379"
+    },
+    {
+      "title": "CRAFT: Critic-Refined Adaptive Key-Frame Targeting for Multimodal Video Question Answering",
+      "status": "ACL 2026 Workshop",
+      "url": "https://arxiv.org/abs/2605.19075"
+    },
+    {
+      "title": "TRACE: Evidence Grounding-Guided Multi-Video Event Understanding and Claim Generation",
+      "status": "ACL 2026 Workshop",
+      "url": "https://arxiv.org/abs/2605.16740"
+    },
+    {
+      "title": "Evidence-Driven Dynamic Visual Selector for Efficient Long Video Understanding",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2608.05780"
+    },
+    {
+      "title": "Video-o3: Native Interleaved Clue Seeking for Long Video Multi-Hop Reasoning",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.23224"
+    },
+    {
+      "title": "Evidence-Backed Video Question Answering",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.11862"
+    },
+    {
+      "title": "Counterfactual Reasoning for Fine-Grained Evidence Disentanglement in VideoQA",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2606.09181"
+    },
+    {
+      "title": "Kestrel: Grounding Self-Refinement for LVLM Hallucination Mitigation",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2603.16664"
+    },
+    {
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2607.28590"
+    },
+    {
+      "title": "V-Loop: Visual Logical Loop Verification for Hallucination Detection in Medical Visual Question Answering",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.18240"
+    },
+    {
+      "title": "FaithSCAN: Model-Driven Single-Pass Hallucination Detection for Faithful Visual Question Answering",
+      "status": "arXiv preprint",
+      "url": "https://arxiv.org/abs/2601.00269"
+    }
+  ]
+}

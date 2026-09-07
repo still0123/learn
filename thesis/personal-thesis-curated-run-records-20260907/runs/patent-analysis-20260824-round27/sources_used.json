@@ -1,0 +1,33 @@
+{
+  "run": "patent-analysis-20260824-round27",
+  "date": "2026-08-24",
+  "scope": "line-by-line comparison and second-round claim tightening",
+  "local_sources": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.5_20260823.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "runs/patent-analysis-20260823-round25",
+    "runs/patent-analysis-20260823-round26"
+  ],
+  "prior_art": [
+    {
+      "id": "CN121388101A",
+      "url": "https://www.imaibj.cn/patent/details/202511481937",
+      "evidence_note": "public abstract plus quotations from the official office action"
+    },
+    {
+      "id": "CN117744802A",
+      "url": "https://patents.google.com/patent/CN117744802A/zh",
+      "claims_checked": [1, 7, 8, 9]
+    },
+    {
+      "id": "CN103870528A/B",
+      "url": "https://patents.google.com/patent/CN103870528A/zh",
+      "claims_checked": [33, 34, 35, 36, 37, 38, 39, 40]
+    }
+  ],
+  "limitations": [
+    "CN121388101A claims were not directly retrieved from an official full-text page",
+    "not a formal CNIPA or commercial-database search",
+    "V4.5.1 is not represented as fully implemented"
+  ]
+}

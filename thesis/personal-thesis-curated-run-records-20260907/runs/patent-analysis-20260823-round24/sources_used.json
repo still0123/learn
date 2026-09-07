@@ -1,0 +1,90 @@
+{
+  "round": 24,
+  "date": "2026-08-23",
+  "local_sources": [
+    {
+      "path": "deliverables/patent/基于视频证据覆盖增量的视频问答答案状态更新控制专利_V4.3创新增强稿_20260823.md",
+      "purpose": "V4.3 前序方案和缺口基线"
+    },
+    {
+      "path": "source_texts/patent_docx.txt",
+      "purpose": "核对旧申请已公开的声画滑窗、三流响应图、锚定和初答改写"
+    },
+    {
+      "path": "code_refactor/evidence/evidence_package.py",
+      "purpose": "证据 ID、视频时空、区域、模态和质量字段"
+    },
+    {
+      "path": "code_refactor/reflection/claim_checker.py",
+      "purpose": "声明拆分和事实所需模态基础"
+    },
+    {
+      "path": "code_refactor/rag/retriever.py",
+      "purpose": "支持证据 ID 关联基础"
+    },
+    {
+      "path": ".remote_threshold_work/build_selective_evidence_rewrite_calibration500_v1.py",
+      "purpose": "OCR/ASR 文本、时间、区域和质量字段"
+    }
+  ],
+  "web_sources": [
+    {
+      "url": "https://patents.google.com/patent/US9613317",
+      "purpose": "候选答案与支持/反对证据近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US10769552B2/en",
+      "purpose": "候选答案证明性证据评分近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US10068175B2",
+      "purpose": "关键数据元素多个可能值和证据关系近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20230205824A1/en",
+      "purpose": "冲突候选值及消歧近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US9342608B2/en",
+      "purpose": "多个候选答案和区分因素近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20250005298A1/en",
+      "purpose": "大模型生成输出证据映射近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/CN121660075A/zh",
+      "purpose": "最终答案事实—证据映射、版本和审计近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/WO2024073087A1/en",
+      "purpose": "声明证据、第二文本和输出门控近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20250390544A1/en",
+      "purpose": "结构化增量更新提案近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20180121816A1/en",
+      "purpose": "观测和推导事实认证近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20210398000A1/en",
+      "purpose": "证明树、版本和派生事实近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US9064174B2/en",
+      "purpose": "视频 OCR 跟踪和跨帧合并近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/WO2022271266A1/en",
+      "purpose": "视频问答语义范围和候选特征近邻"
+    }
+  ],
+  "limitations": [
+    "本轮为定向网页检索，不是 CNIPA 全库或商业数据库正式查新",
+    "原申请官方著录、公开范围、优先权和自身在先公开后果仍需调档",
+    "V4.4 主机制尚未编码或实验验证，Full-7844 不能证明其效果"
+  ]
+}
+

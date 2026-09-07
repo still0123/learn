@@ -1,0 +1,91 @@
+round_id: patent-innovation-20260818-r01
+stage: I4_PATENT_SEARCH
+status: SKIPPED
+decision: SKIPPED_GATE_ZERO_SURVIVOR
+generated_at: "2026-08-18T01:54:17+08:00"
+
+input:
+  candidate_count: 8
+  pass_to_i4_count: 0
+  PASS_TO_I4: []
+
+gate:
+  threshold_total: 80
+  require_all_dimension_minima: true
+  require_no_hard_failure: true
+  hard_failures_overridable: false
+  patent_search_authorized: false
+  reason: "无候选同时满足总分>=80、全部分项最低分和无硬失败；禁止为凑数检索被淘汰候选。"
+
+excluded_examples:
+  I2B-P08:
+    score: 75
+    entered_i4: false
+    reason: "低于80分且命中HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP，与自家权利要求8实质重叠。"
+  I2B-P02:
+    score: 61
+    entered_i4: false
+    reason: "实验先行；总分、技术效果和实现分项未达标。"
+  I2B-P03:
+    score: 53
+    entered_i4: false
+    reason: "实验先行；总分及多个分项未达标。"
+
+execution:
+  patent_search_executed: false
+  cn:
+    status: NOT_EXECUTED
+    query_count: 0
+  wo:
+    status: NOT_EXECUTED
+    query_count: 0
+  us:
+    status: NOT_EXECUTED
+    query_count: 0
+  ep:
+    status: NOT_EXECUTED
+    query_count: 0
+  total_query_count: 0
+  patent_full_text_fetch_count: 0
+  claims_or_paragraphs_verified_count: 0
+  patent_family_verified_count: 0
+  source_record_count: 0
+
+coverage: NOT_APPLICABLE_NO_SURVIVOR
+coverage_reason: "I4没有获准检索的幸存候选；本状态不是专利相似性、新颖性或创造性结论。"
+
+future_reopen_requirements:
+  - "形成新的冻结候选版本并重新提交I3。"
+  - "总分>=80且全部分项达到最低分。"
+  - "清除全部硬失败，包括自家在先实质重叠、无核心本地支持、模块并列或业务规则核心。"
+  - "以可审计代码、数据或冻结实验补足技术效果和实现支持。"
+  - "冻结原子必要特征、关系链、删除测试和独立权项骨架。"
+  - "新的I3裁决显式产生非空PASS_TO_I4。"
+
+search_templates:
+  status: NOT_EXECUTED
+  location: "04_patent_search_report.md#5-建议检索原子特征模板"
+
+outputs:
+  report: 04_patent_search_report.md
+  sources: 04_sources_patents.jsonl
+  sources_jsonl_valid_empty: true
+
+formal_application_integrity:
+  unchanged: true
+  git_operation: false
+  files:
+    新申请初稿V2.1_说明书全文_20260817.md: 1e980b4a7dcc87ead5a368d0523f65da8a94318a21d1dee1a9bde019d8d04c7b
+    一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md: 224e09e6c3de3e2ca5ae5d1f3726fc266d4c06bbf4f1536340b6bb2d884bb2fa
+    一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.docx: 844a947527b8921e7258966a3ebe7b36967d41ac767296773f2c7af1f8205e2f
+
+sha256:
+  inputs:
+    03_gate_decision.yaml: dd87959ff4accfdd5f8c4b01a468e3e45c768a04113cc6457c7dc772ade6bb5e
+    03_candidate_gate.md: 42cc14300a17772039758a73177967fe42ed0722386f15f96cd6d78e6be18da9
+    03_candidate_gate.jsonl: 41f0361d41457c6de54b93a4108b920dc2e0f471aed61ff35d9e4e2521ab8c18
+    GOAL_OVERNIGHT_V2.md: 6fc29151984ab1b2bd01ce820f4aea10e38f9a52c42de40bb6cc57eb45298092
+    MULTI_AGENT_INNOVATION_WORKFLOW.md: 08c5f19ed5cbbc2be2188d1480659855fa671c69ee9d753550ea8730d9312c66
+  outputs:
+    04_patent_search_report.md: ad023622b7ab0b8b2baf9f82ab24830c811e72150df7ab973d9a5d73954ae964
+    04_sources_patents.jsonl: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b

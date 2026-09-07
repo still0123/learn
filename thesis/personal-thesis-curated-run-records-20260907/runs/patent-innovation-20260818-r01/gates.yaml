@@ -1,0 +1,56 @@
+round_id: patent-innovation-20260818-r01
+gates:
+  G0_contract:
+    status: PASS
+    checks:
+      formal_application_read_only: true
+      evidence_boundaries_frozen: true
+      hard_deadline_set: true
+      external_budgets_set: true
+  G1_research:
+    status: PASS
+    checks:
+      verified_urls: true
+      publication_dates: true
+      full_text_evidence: true
+      paper_family_dedup: true
+      negative_evidence_included: true
+      coverage_reported: true
+      full_text_verified_count: 126
+      full_text_unavailable_count: 18
+      final_cards_count: 77
+  G2_candidates:
+    status: PASS
+    checks:
+      isolated_ideation_preserved: true
+      local_support_paths: true
+      causal_core: true
+      deletion_test: true
+      combination_motivation_test: true
+      unsupported_effects_explicit: true
+      candidate_count: 8
+  G3_candidate_gate:
+    status: PASS_ZERO_SURVIVOR
+    checks:
+      threshold_enforced: true
+      per_dimension_minima_enforced: true
+      hard_failures_enforced: true
+      strongest_attack_recorded: true
+      pass_to_i4_count: 0
+  G4_patent_search:
+    status: NOT_APPLICABLE_NO_SURVIVOR
+    checks:
+      pass_to_i4_empty: true
+      search_authorized: false
+      search_executed: false
+      empty_source_file_valid: true
+      coverage_reported: true
+  G5_final:
+    status: PASS
+    checks:
+      evidence_contract: true
+      section_26_support_risk: true
+      final_use_classified: true
+      claim_strategy_written: true
+      formal_application_hashes_unchanged: true
+      receipts_complete: true

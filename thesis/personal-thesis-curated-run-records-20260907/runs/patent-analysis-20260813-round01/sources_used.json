@@ -1,0 +1,21 @@
+{
+  "round": "patent-analysis-20260813-round01",
+  "primary_sources": [
+    "/Users/bytedance/Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_l0i79alm05q221_dd3c/msg/file/2026-08/CS2215-基于视听协同感知与链式校验的广告视频问答方法及系统-驳回决定.pdf",
+    "/Users/bytedance/vqa_thesis_continue/source_texts/patent_docx.txt",
+    "/Users/bytedance/vqa_thesis_continue/source_texts/patent_office_action_pdf_extract.txt",
+    "/Users/bytedance/vqa_thesis_continue/source_texts/patent_opinion_statement.txt",
+    "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_合并修改后_二次润色.txt",
+    "/Users/bytedance/vqa_thesis_continue/deliverables/patent/广告视频问答专利申请候选稿.md"
+  ],
+  "implementation_sources": [
+    "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py",
+    "/Users/bytedance/vqa_thesis_continue/code_refactor/reflection/claim_checker.py",
+    "/Users/bytedance/vqa_thesis_continue/code_refactor/rag/retriever.py",
+    "/Users/bytedance/vqa_thesis_continue/docs/论文思考记录.md",
+    "/Users/bytedance/vqa_thesis_continue/docs/AdsQA最终结果交付_20260731.md",
+    "/Users/bytedance/vqa_thesis_continue/docs/Luna_问题驱动证据选择与证据缺口工具补证实验SPEC_20260804.md"
+  ],
+  "external_search_performed": false,
+  "legal_status": "technical_analysis_only"
+}

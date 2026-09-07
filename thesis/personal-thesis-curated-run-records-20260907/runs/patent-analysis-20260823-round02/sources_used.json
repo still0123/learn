@@ -1,0 +1,23 @@
+{
+  "local_sources": [
+    "deliverables/patent/视频问答答案可靠性保障专利申请候选稿_V3_20260823.md",
+    "docs/本对话论文最终结果与阶段总结_20260820.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_opinion_statement.txt",
+    "runs/patent-analysis-20260823-round01/",
+    "evaluation/tools/score_answer_claims_qwen3_v1.py",
+    "evaluation/tools/adsqa_qwen25_full7846_protocol_v1.py",
+    "evaluation/tools/build_modality_counterfactual_train_v1.py"
+  ],
+  "web_sources": [
+    "https://patents.google.com/patent/US9053425B2/en",
+    "https://patents.google.com/patent/US9165252B2/en",
+    "https://patents.google.com/patent/CN117744802A/zh",
+    "https://patents.google.com/patent/CN119863745A/en",
+    "https://patents.google.com/patent/CN119691224A/en",
+    "https://patents.google.com/patent/CN118627623B/en",
+    "https://patents.google.com/patent/US11720754"
+  ],
+  "search_level": "Web-level only; not a substitute for formal CNIPA/WIPO/EPO/commercial search",
+  "date": "2026-08-23"
+}

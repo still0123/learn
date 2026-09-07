@@ -1,0 +1,97 @@
+{
+  "cutoff": "2026-08-24",
+  "official_sources": [
+    {
+      "title": "CNIPA 中国专利公布公告查询",
+      "url": "https://app.gjzwfw.gov.cn/jmopen/webapp/html5/zlgbggcx/index.html",
+      "status": "accessed_but_anonymous_results_unreliable",
+      "use": "递交日前中国公布公告定点复核入口"
+    },
+    {
+      "title": "CNIPA PSS 常规检索",
+      "url": "https://pss-system.cponline.cnipa.gov.cn/conventionalSearch",
+      "status": "page_not_operable_in_current_session",
+      "use": "官方专利检索入口，需正常登录/前置认证"
+    }
+  ],
+  "patent_fulltext_or_index_sources": [
+    {
+      "publication": "CN117744802A",
+      "url": "https://patents.google.com/patent/CN117744802A/zh",
+      "status": "google_patents_full_text_accessed"
+    },
+    {
+      "publication": "CN121901431A",
+      "url": "https://patents.google.com/patent/CN121901431A/zh",
+      "status": "google_patents_full_text_accessed"
+    },
+    {
+      "publication": "CN122346550A",
+      "url": "https://eureka.patsnap.com/patent/CN122346550A",
+      "status": "third_party_full_text_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN122414409B",
+      "url": "https://eureka.patsnap.com/patent/CN122414409B",
+      "status": "third_party_full_text_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN122262318B",
+      "url": "https://eureka.patsnap.com/patent/CN122262318B",
+      "status": "third_party_full_text_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN122549438A",
+      "url": "https://eureka.patsnap.com/patent/CN122549438A",
+      "status": "third_party_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN122570719A",
+      "url": "https://eureka.patsnap.com/patent/CN122570719A",
+      "status": "third_party_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN122572703A",
+      "url": "https://eureka.patsnap.com/patent/CN122572703A",
+      "status": "third_party_full_text_index_accessed_official_confirmation_pending"
+    },
+    {
+      "publication": "CN121388101A",
+      "url": "https://www.imaibj.cn/patent/details/202511481937",
+      "status": "third_party_index_accessed_prior_office_action_confirms_relevance"
+    }
+  ],
+  "primary_npl": [
+    {
+      "title": "Adaptive Dense Evidence Refinement",
+      "url": "https://arxiv.org/html/2606.01104v1",
+      "status": "full_text_accessed"
+    },
+    {
+      "title": "PBRC",
+      "url": "https://arxiv.org/abs/2604.15558",
+      "status": "record_and_full_text_features_accessed"
+    },
+    {
+      "title": "Omni-Decision",
+      "url": "https://arxiv.org/html/2607.11433",
+      "status": "full_text_accessed"
+    },
+    {
+      "title": "Evidence-RL",
+      "url": "https://arxiv.org/abs/2608.08021",
+      "status": "record_and_full_text_features_accessed"
+    },
+    {
+      "title": "REVEAL",
+      "url": "https://arxiv.org/abs/2608.08612",
+      "status": "record_and_full_text_features_accessed"
+    }
+  ],
+  "local_inputs": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md",
+    "runs/patent-analysis-20260824-round31/02_claim_feature_map.md",
+    "runs/patent-analysis-20260824-round31/04_prior_art_comparison_matrix.md",
+    "runs/patent-analysis-20260824-round31/09_search_materials_report.md"
+  ]
+}

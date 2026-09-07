@@ -1,0 +1,53 @@
+{
+  "cutoff": "2026-08-24",
+  "local_inputs": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md",
+    "runs/patent-analysis-20260824-round32/",
+    "code_refactor/evidence/evidence_package.py",
+    "code_refactor/reflection/claim_checker.py",
+    "code_refactor/scripts/run_rag_qwen3_inference.py",
+    "docs/创新点一多模态证据覆盖选择实验预注册_20260804.md"
+  ],
+  "targeted_prior_art": [
+    {
+      "title": "CN111240991A 动态污点检测",
+      "url": "https://patents.google.com/patent/CN111240991A/zh",
+      "status": "full_text_index_accessed"
+    },
+    {
+      "title": "US20210216229A1 Data lineage and data provenance enhancement",
+      "url": "https://patents.google.com/patent/US20210216229A1/en",
+      "status": "full_text_accessed"
+    },
+    {
+      "title": "Shadow-Channel Verification for Multi-Body Model Fusion",
+      "url": "https://www.tdcommons.org/dpubs_series/10827/",
+      "status": "public_defensive_disclosure_accessed"
+    },
+    {
+      "title": "Quotient Admission Algorithms for Witness-Supported Graph Windows",
+      "url": "https://arxiv.org/abs/2606.08698",
+      "status": "record_and_abstract_accessed"
+    },
+    {
+      "title": "CN122196109A 动态数据血缘问答",
+      "url": "https://eureka.patsnap.com/patent/CN122196109A",
+      "status": "third_party_full_text_index_accessed"
+    },
+    {
+      "title": "Adaptive Dense Evidence Refinement",
+      "url": "https://arxiv.org/html/2606.01104v1",
+      "status": "full_text_accessed"
+    },
+    {
+      "title": "Evidence-RL",
+      "url": "https://arxiv.org/abs/2608.08021",
+      "status": "record_and_features_accessed"
+    },
+    {
+      "title": "PBRC",
+      "url": "https://arxiv.org/abs/2604.15558",
+      "status": "record_and_features_accessed"
+    }
+  ]
+}

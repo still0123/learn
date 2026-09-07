@@ -1,0 +1,18 @@
+{
+  "local_sources": [
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4_20260823.md",
+    "runs/patent-analysis-20260823-round16/01_full_text_prior_art_comparison.md",
+    "runs/patent-analysis-20260823-round16/02_prior_application_CN121962369A_risk.md",
+    "source_texts/patent_docx.txt",
+    "source_texts/patent_office_action_pdf_extract.txt"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html",
+    "https://www.cnipa.gov.cn/art/2023/12/21/art_98_189197.html",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://arxiv.org/abs/2608.19739",
+    "https://eureka.patsnap.com/patent/CN121765049A"
+  ],
+  "notes": "round16近邻报告可作预检，但由于申请日误写、同申请人抵触申请口径错误、旧案官方身份未核及广域检索未完成，正式独权和递交稿仍为no-go。"
+}

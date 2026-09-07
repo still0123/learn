@@ -1,0 +1,56 @@
+{
+  "cutoff": "2026-08-24",
+  "official_sources": [
+    {
+      "title": "CNIPA 中国专利文献权威文档说明",
+      "url": "https://www.cnipa.gov.cn/art/2023/1/31/art_3164_181829.html",
+      "status": "accessed",
+      "use": "定义官方记录字段并下载截至2026-06-30的权威文档"
+    },
+    {
+      "title": "CNIPA 中国专利公布公告查询",
+      "url": "https://app.gjzwfw.gov.cn/jmopen/webapp/html5/zlgbggcx/index.html",
+      "status": "login_required_for_live_results",
+      "use": "2026-07-01至递交日实时增量查询入口"
+    },
+    {
+      "title": "WIPO PATENTSCOPE WO2025091218A1",
+      "url": "https://patentscope.wipo.int/search/ko/detail.jsf?docId=WO2025091218",
+      "status": "accessed",
+      "use": "grounded VQA 国际场景近案"
+    }
+  ],
+  "primary_npl": [
+    {
+      "title": "Adaptive Dense Evidence Refinement",
+      "url": "https://arxiv.org/html/2606.01104v1",
+      "status": "full_text_accessed"
+    },
+    {
+      "title": "Evidence-Backed Video Question Answering",
+      "url": "https://arxiv.org/abs/2607.11862",
+      "status": "record_and_abstract_accessed"
+    },
+    {
+      "title": "REVEAL",
+      "url": "https://arxiv.org/abs/2608.08612",
+      "status": "record_and_full_text_accessed"
+    }
+  ],
+  "third_party_patent_leads_pending_official_confirmation": [
+    "CN122364371A",
+    "CN122391945A",
+    "CN122549438A",
+    "CN122570719A",
+    "CN122570754A",
+    "CN122570773A",
+    "CN122570792A",
+    "CN122572691A"
+  ],
+  "local_inputs": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md",
+    "runs/patent-analysis-20260824-round30/11_fulltext_novelty_report.md",
+    "runs/patent-analysis-20260824-round30/12_cnipa_incremental_search_20260824.md",
+    "runs/patent-analysis-20260824-round30/12_international_official_incremental_search.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "local_sources": [
+    "runs/patent-analysis-20260823-round12/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round13/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round13/gates.md"
+  ],
+  "web_sources": [
+    "https://arxiv.org/abs/2607.11433",
+    "https://www.cnipa.gov.cn/art/2024/1/18/art_2199_189877.html"
+  ],
+  "notes": "本轮仅复核简要建议；未修改申请稿或实验。"
+}

@@ -1,0 +1,40 @@
+{
+  "cutoff_date": "2026-08-24",
+  "target": "V4.6 video-evidence double-delta permit patent draft",
+  "local_fulltext_sources": [
+    {"id": "CN121388101A", "path": "/Users/bytedance/vqa_thesis_continue/专利相关/1基于迭代式多模态的视频问答系统及方法.pdf"},
+    {"id": "CN117744802A", "path": "/Users/bytedance/vqa_thesis_continue/专利相关/2一种解决法律大语言模型的幻觉问题的方法及系统.pdf"},
+    {"id": "CN121765049A", "path": "/Users/bytedance/vqa_thesis_continue/专利相关/3一种应用于外部知识问答的多模态多尺度检索增强生成方法、系统、设备及介质.pdf"},
+    {"id": "CN121031606A", "path": "/Users/bytedance/vqa_thesis_continue/专利相关/4一种面向复杂场景的端到端语义提取系统.pdf"},
+    {"id": "CN121350217A", "path": "/Users/bytedance/vqa_thesis_continue/专利相关/5基于大小模型协同的知识型视觉问答方法、设备及介质.pdf"}
+  ],
+  "web_sources": [
+    {"id": "CN117744802A", "url": "https://patents.google.com/patent/CN117744802A/en"},
+    {"id": "CN120561217A", "url": "https://patents.google.com/patent/CN120561217A/zh"},
+    {"id": "CN121660075A", "url": "https://patents.google.com/patent/CN121660075A/en"},
+    {"id": "US11687716B2", "url": "https://patents.google.com/patent/US11687716B2/en"},
+    {"id": "ORPRG-US12640933B1", "url": "https://patents.justia.com/patent/12640933"},
+    {"id": "US20260236570A1", "url": "https://patents.justia.com/patent/20260236570"},
+    {"id": "US20260244686A1", "url": "https://patents.justia.com/patent/20260244686"},
+    {"id": "VideoHV-Agent", "url": "https://arxiv.org/abs/2603.04977"},
+    {"id": "Atomic-Fact-Decomposition", "url": "https://arxiv.org/abs/2410.16708"},
+    {"id": "SAFEFLOW", "url": "https://arxiv.org/abs/2506.07564"},
+    {"id": "PBRC", "url": "https://arxiv.org/abs/2604.15558"},
+    {"id": "Omni-Decision", "url": "https://arxiv.org/abs/2607.11433"},
+    {"id": "Q-Guide", "url": "https://arxiv.org/abs/2608.19739"},
+    {"id": "Evidence-Lock-v1", "url": "https://arxiv.org/html/2608.05353v1"},
+    {"id": "Evidence-Lock-current-record", "url": "https://arxiv.org/abs/2608.05353"},
+    {"id": "Cordon-MAS", "url": "https://arxiv.org/abs/2605.26754"},
+    {"id": "ProvenanceGuard", "url": "https://arxiv.org/abs/2606.18037"},
+    {"id": "LLMs-as-a-Jury", "url": "https://arxiv.org/abs/2607.10139"},
+    {"id": "RI2VER", "url": "https://aclanthology.org/2025.findings-acl.354/"},
+    {"id": "TRUST", "url": "https://openreview.net/pdf/ff4eda054f7ba17778699deaa39b587a2810f402.pdf"},
+    {"id": "multi-path-video-QA-lead", "url": "https://k-knowledge.kr/srch/read.jsp?id=283512295", "evidence_level": "bibliographic-lead-only"}
+  ],
+  "limitations": [
+    "No commercial patent database full-corpus semantic search was available.",
+    "The multi-path video-QA Chinese application 202511488361.X requires official full-text retrieval.",
+    "Evidence Lock was withdrawn on 2026-08-11 due to a code error; only its public method disclosure was used.",
+    "The former application 202610425757.8/CN121962369A requires official legal-status and ownership review."
+  ]
+}

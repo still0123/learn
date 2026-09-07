@@ -1,0 +1,19 @@
+{
+  "local_sources": [
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4_20260823.md",
+    "runs/patent-analysis-20260823-round20/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round20/gates.md",
+    "CS2215-基于视听协同感知与链式校验的广告视频问答方法及系统-驳回决定.pdf",
+    "专利相关/1基于迭代式多模态的视频问答系统及方法.pdf",
+    "专利相关/2一种解决法律大语言模型的幻觉问题的方法及系统.pdf",
+    "专利相关/5基于大小模型协同的知识型视觉问答方法、设备及介质.pdf"
+  ],
+  "official_web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_524_171347.html",
+    "https://www.cnipa.gov.cn/art/2024/12/31/art_66_196988.html",
+    "https://www.cnipa.gov.cn/art/2025/11/13/art_99_202568.html",
+    "https://www.cnipa.gov.cn/art/2025/12/4/art_66_202935.html",
+    "https://www.cnipa.gov.cn/art/2023/12/21/art_98_189197.html"
+  ],
+  "notes": "技术方案可冻结；正式递交稿仍受旧案/优先权、组合查新、清楚性和正式附件四项门禁约束。"
+}

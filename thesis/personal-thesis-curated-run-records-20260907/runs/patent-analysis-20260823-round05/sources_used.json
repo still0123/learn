@@ -1,0 +1,25 @@
+{
+  "local_sources": [
+    "deliverables/patent/视频问答答案可靠性保障专利申请候选稿_V3_20260823.md",
+    "runs/patent-analysis-20260823-round04/10_final_recommendation.md",
+    "code_refactor/reflection/claim_checker.py",
+    "code_refactor/evidence/evidence_package.py",
+    "evaluation/tools/build_modality_counterfactual_train_v1.py",
+    "evaluation/tools/train_lightweight_claim_evidence_verifier_v23.py",
+    ".remote_threshold_work/infer_qwen3_adaptive_crop_threshold_full_v1.py",
+    ".remote_overnight_work/materialize_adsqa_supplement2526_candidates_v1.py",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "docs/开题专利创新性诊断报告.md"
+  ],
+  "web_sources": [
+    "https://patents.google.com/patent/CN121388101A/zh",
+    "https://patents.google.com/patent/CN117744802A/zh",
+    "https://eureka.patsnap.com/patent/CN122264085A",
+    "https://arxiv.org/abs/2608.19739",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://arxiv.org/abs/2602.07621",
+    "https://arxiv.org/abs/2608.00076"
+  ],
+  "notes": "CN122264085A information came from a third-party page and requires CNIPA verification. All C1-C5 mechanisms are candidates unless explicitly mapped to current code; no unsaved experiment is treated as evidence."
+}

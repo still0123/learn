@@ -1,0 +1,18 @@
+{
+  "local_sources": [
+    "runs/patent-analysis-20260823-round06/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round07/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round07/gates.md",
+    "code_refactor/reflection/claim_checker.py",
+    "evaluation/tools/build_modality_counterfactual_train_v1.py",
+    ".remote_threshold_work/infer_qwen3_adaptive_crop_threshold_full_v1.py",
+    ".remote_overnight_work/materialize_adsqa_supplement2526_candidates_v1.py"
+  ],
+  "web_sources": [
+    "https://arxiv.org/abs/2608.19739",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://www.cnipa.gov.cn/art/2024/1/18/art_2199_189877.html"
+  ],
+  "notes": "本轮复核二次评价；未修改专利申请稿，未虚构实验结果。"
+}

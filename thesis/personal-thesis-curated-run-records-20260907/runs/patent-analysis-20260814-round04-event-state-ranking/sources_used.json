@@ -1,0 +1,32 @@
+{
+  "local_sources": [
+    "docs/论文思考记录.md",
+    "docs/第4章_闭环审查修订版.md",
+    "source_texts/patent_docx.txt",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_opinion_statement.txt",
+    "evaluation/tools/generate_luna_logic_trees_qwen3_v1.py",
+    "evaluation/tools/build_luna_logic_evidence8_v1.py",
+    "code_refactor/evidence/evidence_package.py",
+    "code_refactor/reflection/claim_checker.py",
+    "code_refactor/reasoning/prompt_builder.py"
+  ],
+  "external_sources": [
+    "https://arxiv.org/abs/2601.06097",
+    "https://arxiv.org/abs/2410.05643",
+    "https://patents.google.com/patent/US11582485B1/en",
+    "https://arxiv.org/abs/2604.01002",
+    "https://arxiv.org/abs/2512.05774",
+    "https://arxiv.org/abs/2510.15440",
+    "https://arxiv.org/abs/2508.04197",
+    "https://arxiv.org/abs/2401.07080",
+    "https://doi.org/10.1111/coin.12686",
+    "https://openreview.net/forum?id=9vPBISqNVo",
+    "https://arxiv.org/abs/2509.08621",
+    "https://arxiv.org/abs/2602.08355",
+    "https://openreview.net/forum?id=P9VdRQOyqu",
+    "https://arxiv.org/abs/2605.30557",
+    "https://arxiv.org/abs/2604.14799"
+  ],
+  "scope_note": "Directed novelty-risk screening only; not a complete prior-art, patent-family, priority-date, legal-status, or freedom-to-operate search."
+}

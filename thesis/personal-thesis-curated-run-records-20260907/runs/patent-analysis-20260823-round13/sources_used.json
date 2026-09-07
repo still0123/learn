@@ -1,0 +1,17 @@
+{
+  "local_sources": [
+    "runs/patent-analysis-20260823-round11/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round12/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round12/02_claim_feature_map.md",
+    "code_refactor/reflection/claim_checker.py",
+    "code_refactor/evidence/evidence_package.py",
+    "evaluation/tools/score_answer_claims_qwen3_v1.py"
+  ],
+  "web_sources": [
+    "https://arxiv.org/abs/2608.19739",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://www.cnipa.gov.cn/art/2024/1/18/art_2199_189877.html"
+  ],
+  "notes": "本轮冻结V4最终技术规格候选；仍需实现、实验、正式查新和代理人复核。"
+}

@@ -1,0 +1,15 @@
+{
+  "local_sources": [
+    "CS2215-基于视听协同感知与链式校验的广告视频问答方法及系统-驳回决定.pdf",
+    "专利相关/1基于迭代式多模态的视频问答系统及方法.pdf",
+    "专利相关/2一种解决法律大语言模型的幻觉问题的方法及系统.pdf",
+    "专利相关/3一种应用于外部知识问答的多模态多尺度检索增强生成方法、系统、设备及介质.pdf",
+    "专利相关/4一种面向复杂场景的端到端语义提取系统.pdf",
+    "专利相关/5基于大小模型协同的知识型视觉问答方法、设备及介质.pdf",
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4_20260823.md",
+    "runs/patent-analysis-20260813-round01/03_office_action_issue_map.md",
+    "runs/patent-analysis-20260823-round18/04_prior_art_comparison_matrix.md",
+    "runs/patent-analysis-20260823-round19/10_final_recommendation.md"
+  ],
+  "notes": "本轮依据本地全文复核；官方著录、法律状态、优先权和申请日前全库检索仍需递交前确认。"
+}

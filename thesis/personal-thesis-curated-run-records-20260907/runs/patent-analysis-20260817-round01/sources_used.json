@@ -1,0 +1,12 @@
+{
+  "run": "patent-analysis-20260817-round01",
+  "sources": [
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_docx.txt",
+    "docs/Qwen2.5主动证据补看_2026论文启发与实验预注册_20260804.md",
+    "docs/论文思考记录.md",
+    "docs/AdsQA实验结果总表与复现索引.md",
+    "docs/完整论文_题目不变_证据选择与主动补看版_20260817.md"
+  ],
+  "caveat": "未执行外部查新检索；结论需代理人复核"
+}

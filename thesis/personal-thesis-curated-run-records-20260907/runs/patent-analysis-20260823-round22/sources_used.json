@@ -1,0 +1,23 @@
+{
+  "round": "patent-analysis-20260823-round22",
+  "generated_on": "2026-08-23",
+  "sources": [
+    {"id":"V4.2","type":"local_draft","title":"基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4.2","path":"deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4.2_20260823.md","verification":"local_verified"},
+    {"id":"D1","type":"patent","title":"CN121388101A","verification":"local_fulltext_reviewed","note":"视频低置信迭代取证/重选帧"},
+    {"id":"D2","type":"patent","title":"CN117744802A","verification":"local_fulltext_reviewed","note":"初答验证并修改"},
+    {"id":"D5","type":"patent","title":"CN121350217A","verification":"local_fulltext_reviewed","note":"候选生成和评分"},
+    {"id":"OLD","type":"patent_application","title":"202610425757.8 / CN121962369A","verification":"official_metadata_and_scope_pending","note":"旧案自身在先公开/优先权风险待官方核验"},
+    {"id":"OMNI","type":"paper","title":"Omni-Decision","url":"https://arxiv.org/abs/2607.11433","verification":"arxiv_v1_reviewed"},
+    {"id":"PBRC","type":"paper","title":"PBRC","url":"https://arxiv.org/abs/2604.15558","verification":"arxiv_v1_reviewed"},
+    {"id":"QGUIDE","type":"paper","title":"Q-Guide","url":"https://arxiv.org/abs/2608.19739","verification":"arxiv_v1_reviewed"},
+    {"id":"CN121147827B","type":"patent","title":"CN121147827B","url":"https://patents.google.com/patent/CN121147827B/zh","verification":"public_webpage_scope_reviewed"},
+    {"id":"CN120804272B","type":"patent","title":"CN120804272B","url":"https://patents.google.com/patent/CN120804272B/zh","verification":"public_webpage_scope_reviewed"},
+    {"id":"CN121029784A","type":"patent","title":"CN121029784A","url":"https://patents.google.com/patent/CN121029784A/zh","verification":"public_webpage_scope_reviewed"},
+    {"id":"CN119782469B","type":"patent","title":"CN119782469B","url":"https://patents.google.com/patent/CN119782469B/zh","verification":"public_webpage_scope_reviewed"},
+    {"id":"CN121901431A","type":"patent","title":"CN121901431A","url":"https://patents.google.com/patent/CN121901431A/zh","verification":"claims_and_description_public_webpage_reviewed"},
+    {"id":"CN103229168A","type":"patent","title":"CN103229168A","url":"https://patents.google.com/patent/CN103229168A/zh","verification":"claims_public_webpage_reviewed"},
+    {"id":"US10769552B2","type":"patent","title":"US10769552B2","url":"https://patents.google.com/patent/US10769552B2/en","verification":"claims_public_webpage_reviewed"},
+    {"id":"US20250259044A1","type":"patent","title":"US20250259044A1","url":"https://patents.google.com/patent/US20250259044A1/en","verification":"description_and_claims_public_webpage_reviewed"}
+  ],
+  "limitations": ["Not an exhaustive patent search", "Not an official CNIPA legal-status report", "Not legal advice or an authorization opinion"]
+}

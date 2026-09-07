@@ -1,0 +1,12 @@
+{
+  "cutoff": "2026-08-24",
+  "mode": "final_draft_consistency_review",
+  "new_external_search": false,
+  "local_inputs": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.6_20260824.md",
+    "deliverables/patent/figures_v4_6/",
+    "runs/patent-analysis-20260824-round32/",
+    "runs/patent-analysis-20260824-round33/"
+  ],
+  "output": "deliverables/patent/一种基于视频证据双差分许可的视频问答答案更新控制方法、装置、设备及存储介质_专利申请终稿.md"
+}

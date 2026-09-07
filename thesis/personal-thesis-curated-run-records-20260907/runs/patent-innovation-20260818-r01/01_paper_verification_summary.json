@@ -1,0 +1,11 @@
+{
+  "attempted": 144,
+  "verified": 126,
+  "eligible_verified": 108,
+  "cards": 77,
+  "unavailable": 18,
+  "sources_sha256": "58934393e8f64861203e401fe868fb366a122d351a18cf9100333c1539de3950",
+  "cards_sha256": "2da2b85860de1d5be00ada8e2e1c525eda9f94b464006e06ea674406713c1d9b",
+  "r1_cards": 34,
+  "r2_cards": 43
+}

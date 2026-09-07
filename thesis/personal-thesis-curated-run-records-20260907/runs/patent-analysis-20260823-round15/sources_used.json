@@ -1,0 +1,14 @@
+{
+  "local_sources": [
+    "deliverables/patent/视频问答答案可靠性保障专利申请候选稿_V3_20260823.md",
+    "runs/patent-analysis-20260823-round13/10_final_recommendation.md",
+    "runs/patent-analysis-20260823-round14/10_final_recommendation.md",
+    "/Users/bytedance/.codex/attachments/96fabad6-3d44-4207-9443-27f6764a8927/pasted-text.txt"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2024/12/31/art_66_196988.html",
+    "https://www.cnipa.gov.cn/module/download/downfile.jsp?classid=0&filename=f02bb03ee436406397fc7fb127a1d05c.pdf",
+    "https://www.cnipa.gov.cn/art/2024/1/18/art_2199_189877.html"
+  ],
+  "notes": "本轮冻结V4文字规格并形成Markdown初稿；未执行正式专利全文查新，未把Full-7844旧数字作为V4效果证据。"
+}

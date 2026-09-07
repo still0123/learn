@@ -1,0 +1,2117 @@
+# I2-B 正式候选卡片
+
+## 交付口径
+
+- `candidate_count`: `8`
+- `jsonl_sha256`: `da5c0904f0783368f0b4facb88488e5b9605856b0403039f9f1ffbc447686cdc`
+- “正式候选卡片”表示Schema与证据边界已稳定，不表示通过I3/I4门禁，更不表示具备新颖性、创造性或授权前景。
+- 本轮只校准`02b_preliminary_candidates.md`中的8个候选；没有新增候选。
+- 未执行专利检索；`patent_search_queries`仅为后续建议查询，统一标记`NOT_EXECUTED`。
+- 未修改正式申请稿，未执行Git操作。
+- `source_papers`只允许2026正式论文、2026首次公开预印本，或2025预印本后于2026正式发表的论文族。
+- 已完整读取`01v1_verified_001_040.jsonl`、`01v2_verified_041_080.jsonl`和`01v3_verified_081_120.jsonl`及对应摘要；V2/V3是在首轮生成后出现，已触发增量重校准。
+
+## 严格Schema
+
+每张卡片及JSONL每行恰含以下字段，顺序固定，无额外顶层字段：
+
+```text
+candidate_id, final_title, classification, technical_problem, ad_video_property, local_support, source_papers, novelty_hypothesis, causal_core, required_features, non_trivial_coupling, processing_chain, deletion_test, implementation_status, evidence_contract, unsupported_effects, closest_paper_attack, self_prior_art_boundary, independent_claim_skeleton, dependent_claim_fallbacks, implementation_tasks, experiment_tasks, patent_search_queries, pre_gate_risks
+```
+
+## 论文池标记
+
+### 可进入2026池并可用于`source_papers`
+
+| paper_id | 简称 | 最早公开 | 入池依据 |
+|---|---|---|---|
+| 01V1-R35 | VideoSEAL | 2026-05-12 | ICML 2026 |
+| 01V1-R36 | Seeing the Scene Matters / Scene-RAG | 2026-03-28 | CVPR 2026 Highlight |
+| 01V1-R38 | When and Where to Look / EcoFrame | 2026-08-04 | 2026首次公开预印本 |
+| 01V1-R39 | On the Adversarial Robustness... / CAGE | 2026-01-29 | ICML 2026 |
+| 01V1-R40 | Less Is More -- Until It Breaks | 2026-01-17 | 2026首次公开预印本 |
+| PAPER-CD-020 | LENS | 2026-07-27 | ECCV 2026 |
+| PAPER-A009/CD-012 | Evidence-Backed Video Question Answering | 2026-07-13 | ECCV 2026 |
+| PAPER-A010 | CaST-Bench | 2026-05-22 | CVPR 2026 |
+| PAPER-A011 | HERBench | 2025-12-16 | 2025预印本+2026正式发表 |
+| PAPER-A007/CD-002 | Active Video Perception | 2025-12-05 | 2025预印本+2026正式发表 |
+| PAPER-CD-005 | LensWalk | 2026-03-25 | CVPR 2026 |
+| PAPER-CD-008 | SIEVES | 2026-04-28 | 2026首次公开预印本 |
+| PAPER-CD-015 | Multimodal Clinical Calibration | 2026-03-03 | CHIL 2026 |
+| PAPER-CD-016 | When Model Priors Conflict with Visual Evidence | 2026-07-31 | 2026首次公开预印本 |
+| PAPER-B015 | GroundingME | 2025-12-19 | 2025预印本+2026正式发表 |
+| 01V2-R43 | MemDreamer | 2026-06-05 | 2026首次公开预印本 |
+| 01V2-R47 | VideoRouter | 2026-05-07 | 2026首次公开预印本 |
+| 01V2-R48 | Hierarchical AV Entity Cohesion | 2026-01-20 | 2026首次公开预印本 |
+| 01V2-R52 | Unified Object-Centric AV Graph | 2026-06-15 | ICMR 2026 |
+| 01V2-R54 | AdaptToken | 2026-03-30 | 2026首次公开预印本 |
+| 01V2-R59 | CREST | 2026-05-09 | 2026首次公开预印本 |
+| 01V2-R64 | MemoryCard | 2026-06-04 | 2026首次公开预印本 |
+| 01V2-R65 | Reading or Guessing? | 2026-05-26 | 2026首次公开预印本 |
+| 01V2-R66 | Evidence-Driven Dynamic Visual Selector | 2026-08-06 | 2026首次公开预印本 |
+| 01V2-R80 | TraceAV-Bench | 2026-05-08 | 2026首次公开预印本 |
+| 01V3-R85 | Entropy Alone is Insufficient | 2026-03-22 | 2026首次公开预印本 |
+| 01V3-R86 | FaithSCAN | 2026-01-01 | 2026首次公开预印本 |
+| 01V3-R88 | CounterVid | 2026-01-08 | 2026首次公开预印本 |
+| 01V3-R99 | Visual Token Compression Enhances Robustness | 2026-07-21 | 2026首次公开预印本 |
+| 01V3-R104 | IC-VCO | 2026-05-29 | 2026首次公开预印本 |
+| 01V3-R112 | SPARROW | 2026-03-12 | 2026首次公开预印本 |
+| 01V3-R119 | VBackChecker | 2025-11-15 | 2025预印本+AAAI 2026正式发表 |
+
+### 仅背景的2025论文，禁止进入`source_papers`
+
+| paper_id | 简称 | 背景身份 |
+|---|---|---|
+| PAPER-A003 | Object-centric Video Question Answering with Visual Grounding and Referring | ICCV 2025 |
+| PAPER-A004 | EgoTextVQA | CVPR 2025 |
+| PAPER-A012 | MME-VideoOCR | NeurIPS 2025 Datasets and Benchmarks |
+| PAPER-B014 | FOCUS | NeurIPS 2025 |
+| PAPER-CD-013 | DeFacto | 2025预印本；未核验2026正式年份 |
+| PAPER-CD-017 | PruneVid | Findings of ACL 2025 |
+| PAPER-CD-018 | FrameFusion | ICCV 2025 |
+
+这些背景论文只出现在`closest_paper_attack.background_only_2025_excluded_from_source_papers`中，不作为I2正式候选来源论文。
+
+## 候选总览
+
+| candidate_id | final_title | classification |
+|---|---|---|
+| I2B-P01 | 问题槽位约束的短时文字与Logo显隐脉冲原帧回取 | `DEPENDENT_CLAIM_ONLY` |
+| I2B-P02 | 互斥带符号声画时延假设格驱动的证据配对 | `EXPERIMENT_FIRST` |
+| I2B-P03 | 镜头曝光欠账约束的等预算突发采样 | `EXPERIMENT_FIRST` |
+| I2B-P04 | 跨镜头产品实体身份约束的属性槽位账本 | `NEW_APPLICATION` |
+| I2B-P05 | 禁止跨模态抵消的声明-模态-时间冲突张量 | `CURRENT_APPLICATION_ENHANCEMENT` |
+| I2B-P06 | 允许缺失与回环的数据驱动广告叙事阶段图 | `EXPERIMENT_FIRST` |
+| I2B-P07 | 实体-条件-时间联合约束的报价与主张版本事实账本 | `NEW_APPLICATION` |
+| I2B-P08 | 跨模态事实副本图约束的删除充分证书 | `CURRENT_APPLICATION_ENHANCEMENT` |
+
+## 完整卡片
+
+### I2B-P01 问题槽位约束的短时文字与Logo显隐脉冲原帧回取
+
+```json
+{
+  "candidate_id": "I2B-P01",
+  "final_title": "问题槽位约束的短时文字与Logo显隐脉冲原帧回取",
+  "classification": "DEPENDENT_CLAIM_ONLY",
+  "technical_problem": "固定帧采样、逐帧OCR Top-K或普通跨帧合并可能漏掉仅出现数帧的价格、折扣、Logo、CTA和免责声明；即使检出文字，也缺少由显隐生命周期与问题槽位共同控制原分辨率回取的机制。",
+  "ad_video_property": [
+    "短时文字或Logo闪现",
+    "片尾高信息密度",
+    "同一文字跨帧尺度和可读性变化",
+    "重复营销元素与无关长时文字并存"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "175-204,459-486",
+      "supports": "早期OCR仅为语义代理；后续已有800帧、2210框的查询条件化OCR缓存和fail-closed校验。",
+      "boundary": "仅证明OCR构件和缓存可运行，不证明显隐脉冲、跨帧稳定性或QA收益。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/创新点一阶段性负结果与论文降级方案.md",
+      "lines": "42-46",
+      "supports": "OCR将Region Recall提高到10/10。",
+      "boundary": "pilot QA与对照持平，定位改善不能外推为答案改善。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/learn/patent-research/application/一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md",
+      "lines": "203-215",
+      "supports": "当前申请已有相邻帧文字合并、时间、区域、置信度和跨帧次数。",
+      "boundary": "跨帧文字事件本身已在自家当前申请公开，不能再作为独权核心。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py",
+      "lines": "18-37,79-98",
+      "supports": "EvidencePackage已有时间、OCR、Logo、全局/局部视图字段。",
+      "boundary": "轻量构建器仍主要填充ASR、元信息和弱先验，脉冲生命周期未实现。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "PAPER-CD-020",
+      "title": "LENS: Adaptive Spatio-Temporal Zooming for Keyframe Sampling in Long-Form Videos",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-27",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "直接攻击按查询分配空间/时间预算；本候选不得泛化主张自适应采样。"
+    },
+    {
+      "paper_id": "01V1-R38",
+      "title": "When and Where to Look: Adaptive Visual Evidence Scheduling for Efficient Long Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-08-04",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "EcoFrame以熵、attention和边际效用进行闭环调度，压缩本候选的预算控制边界。"
+    },
+    {
+      "paper_id": "01V1-R40",
+      "title": "Less Is More -- Until It Breaks: Security Pitfalls of Vision Token Compression in Large Vision-Language Models",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-17",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "提供低保留率下关键token排序失稳的反向证据，要求脉冲原帧不能只靠压缩后attention验收。"
+    },
+    {
+      "paper_id": "01V2-R65",
+      "title": "Reading or Guessing? Visual Grounding Failures of Vision-Language Models for OCR in Ancient Greek Editions",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-26",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "以受控字符扰动和token级image-gain证明流畅OCR输出不等于真实视觉读取。"
+    },
+    {
+      "paper_id": "01V3-R99",
+      "title": "Visual Token Compression Enhances Robustness of MLLMs",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-21",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "虽显示压缩可缓解部分幻觉，但明确指出会损伤OCRBench等细粒度文字任务。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不在跨帧OCR，而在将显隐边界、可读尺度和问题槽位匹配写入同一脉冲状态，并由该状态在固定预算内共同决定首次、峰值和末次原帧的替换式回取。",
+    "status": "待等Token删除实验、专利检索和代理人复核；当前仅建议从属限定。"
+  },
+  "causal_core": "短曝光文字容易被按时长或单帧分数采样漏掉；显隐脉冲把同一文字的生命周期和可读尺度显式化，问题槽位限定哪些脉冲是决定性证据，替换式回取再把有限视觉预算移至对应原帧。只有该状态真正改变回取集合时，才存在可测因果路径。",
+  "required_features": [
+    "密集低成本缩略帧OCR或Logo实例检测",
+    "基于规范化字符串、标识嵌入和区域连续性的跨帧脉冲身份",
+    "显隐边界、可见时长、最大可读尺度和区域轨迹",
+    "品牌、数值、CTA、限制条件等问题槽位及其与脉冲的匹配",
+    "固定总视图和视觉Token下的首次、峰值、末次原帧替换式回取",
+    "脉冲ID、原帧ID、文字框和识别置信度审计回执"
+  ],
+  "non_trivial_coupling": "问题槽位决定候选脉冲，脉冲生命周期和可读尺度共同决定回取时刻，固定预算又要求回取必须替换普通帧而非简单追加；删除槽位、生命周期或预算回收任一环节都会退化为逐帧OCR Top-K、普通跟踪或无约束高清裁剪。",
+  "processing_chain": [
+    "输入广告视频和问题",
+    "执行密集缩略帧OCR/Logo扫描",
+    "跨帧聚合并生成显隐边界与可读尺度轨迹",
+    "解析问题文字证据槽位并匹配脉冲",
+    "在固定预算内选择短而决定性的脉冲",
+    "回取首次、峰值和末次原分辨率帧",
+    "提交脉冲摘要、原帧和provenance用于回答或补证"
+  ],
+  "deletion_test": {
+    "baseline": "逐帧OCR相关性Top-K；附加仅峰值帧版本。",
+    "fixed_factors": [
+      "问题集",
+      "回答器",
+      "原视频",
+      "最终视图数",
+      "视觉Token",
+      "OCR候选"
+    ],
+    "metrics": [
+      "短曝光事件Recall",
+      "品牌/数值exact match",
+      "对应题型QA",
+      "无关长时文字误召回率",
+      "每千Token决定性文字召回"
+    ],
+    "fail_condition": "在等Token条件下未超过逐帧Top-K，或首/末帧删除无可辨识影响，则降为REJECT或仅保留审计性从属项。"
+  },
+  "implementation_status": {
+    "status": "PARTIAL_BUILDING_BLOCKS",
+    "implemented": [
+      "OCR缓存",
+      "时间/OCR/Logo字段",
+      "原帧回指基础",
+      "固定预算审计"
+    ],
+    "missing": [
+      "显隐边界",
+      "脉冲轨迹",
+      "问题槽位",
+      "替换式回取策略",
+      "部署态持久化"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称OCR缓存和字段基础存在",
+      "可声称既有OCR定位曾改善Region Recall"
+    ],
+    "upgrade_requirements": [
+      "100个以上短曝光事件人工标注",
+      "等Token配对删除测试",
+      "独立复核文字身份和边界"
+    ],
+    "attribution_constraints": [
+      "不得把既有QA结果归因于脉冲机制",
+      "不得把压缩后attention当成关键证据保留证书"
+    ],
+    "status": "CANDIDATE_DIRECTION_REQUIRES_I3_I4"
+  },
+  "unsupported_effects": [
+    "已提高短时文字或Logo召回",
+    "已提高品牌、价格或CTA问答准确率",
+    "已降低视觉Token且不丢失决定性文字",
+    "已具备跨帧OCR稳定性或鲁棒性保证"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "EcoFrame已公开由模型内部熵、attention和边际效用控制证据调度。",
+      "LENS已公开查询自适应的时空预算分配。",
+      "2026视觉Token压缩脆弱性论文表明重要性排序和低保留率可能系统性丢失或扭曲关键证据。",
+      "Reading or Guessing以受控反事实表明VLM可能输出流畅但视觉无支撑的OCR文本。",
+      "OOD-VTP的正文局限明确记录压缩会损伤细粒度OCR任务。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-A012 MME-VideoOCR（NeurIPS 2025）已覆盖视频OCR识别、定位、跟踪和跨帧整合。",
+      "PAPER-B014 FOCUS（NeurIPS 2025）已公开内部表征驱动的细粒度ROI选择。"
+    ],
+    "surviving_boundary": "仅保留脉冲生命周期、问题槽位和固定预算原帧替换三者共同控制的窄边界。"
+  },
+  "self_prior_art_boundary": "自家在先申请已公开OCR热力图、时序滑动窗口、响应密度锚框和全局/局部双流；当前申请又已公开跨帧文字事件。本候选不得主张OCR、跨帧合并、局部裁剪或高分辨率回取本身，只能测试上述窄耦合是否足以形成从属限定。",
+  "independent_claim_skeleton": [
+    "从广告视频的密集缩略帧提取文字或标识实例",
+    "将同一文字或标识跨帧聚合为包含显隐边界、可读尺度和区域轨迹的脉冲",
+    "将问题解析为文字证据槽位并匹配脉冲",
+    "基于槽位匹配、可见时长和可读尺度共同确定目标脉冲及多个原分辨率时刻",
+    "在固定视觉输入预算内以目标时刻替换普通采样帧并生成答案"
+  ],
+  "dependent_claim_fallbacks": [
+    "以规范化字符串和Logo嵌入共同确定脉冲身份",
+    "回取时刻限定为首次、最大可读尺度和末次出现",
+    "预算不足时优先保留槽位exact-match且可见时长最短的脉冲",
+    "输出脉冲ID、原帧ID、文字框和哈希组成的审计回执"
+  ],
+  "implementation_tasks": [
+    "实现TextPulseTrack及跨帧关联",
+    "实现问题文字槽位解析器",
+    "接入固定Token替换式预算器",
+    "增加压缩前后脉冲原帧ID一致性与证据丢失审计"
+  ],
+  "experiment_tasks": [
+    "标注短曝光文字/Logo事件及首次、峰值、末次帧",
+    "执行Pulse、逐帧Top-K、仅峰值三臂等Token实验",
+    "按可见时长、文字类型和快切强度分层",
+    "增加低保留率与无压缩双运行，测关键文字证据丢失率"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] video question answering transient text pulse lifecycle keyframe retrieval",
+    "[NOT_EXECUTED] 视频问答 短时文字 显隐 生命周期 原帧 回取 固定预算",
+    "[NOT_EXECUTED] advertisement video OCR event question slot adaptive sampling"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "HIGH",
+      "issue": "当前申请已公开跨帧文字事件，新增字段可能仅属常规数据组织。",
+      "gate": "等Token删除测试不过则不进入I4。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "EcoFrame与LENS已覆盖广义自适应证据调度。",
+      "gate": "不得以自适应采样或预算分配作为上位核心。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "视觉Token压缩可能丢失短时文字或被重要性排序操纵。",
+      "gate": "必须报告压缩前后证据保留率，不得只报平均QA。"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "短曝光专项题量可能不足。",
+      "gate": "先完成样本量与置信区间设计。"
+    }
+  ]
+}
+```
+
+### I2B-P02 互斥带符号声画时延假设格驱动的证据配对
+
+```json
+{
+  "candidate_id": "I2B-P02",
+  "final_title": "互斥带符号声画时延假设格驱动的证据配对",
+  "classification": "EXPERIMENT_FIRST",
+  "technical_problem": "固定同刻匹配、固定距离衰减或单一滑动窗口无法同时表示旁白领先、旁白滞后和多个局部相关峰，可能把真实跨模态事件拆开或把无关语音聚合到画面。",
+  "ad_video_property": [
+    "画外音提前铺垫",
+    "产品先出现后由口播解释",
+    "片尾品牌揭示与语音错位",
+    "音乐或音效峰值与视觉转折不同步"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "175-204,4073-4082",
+      "supports": "早期ASR没有时间戳；后续已有9481个带时间状态的ASR句段。",
+      "boundary": "仅证明数据基础，不证明多峰时延、声画协同或QA效果。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/evaluation/tools/build_evads_avfunnel_manifest_entropy_v1.py",
+      "lines": "138-159",
+      "supports": "现有时间线按绝对时间距离进行单峰衰减匹配。",
+      "boundary": "未实现带符号、多峰或互斥时延状态。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py",
+      "lines": "18-31",
+      "supports": "已有timestamp、time_window和ASR字段。",
+      "boundary": "没有视觉/音频事件节点和时延边。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "2943-2955",
+      "supports": "旧AV门控命中7题，但均无ASR/OCR，AV与CLIP计划及答案相同。",
+      "boundary": "这是联合模态未激活的反证，不能用作声画协同正效果。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "01V1-R36",
+      "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-28",
+      "eligibility_basis": "CVPR 2026 Highlight；首次公开于2026",
+      "role": "Scene-RAG已公开场景切分、视觉embedding和时间对齐音频caption的动态多模态场景记忆。"
+    },
+    {
+      "paper_id": "PAPER-A007/PAPER-CD-002",
+      "title": "Active Video Perception: Iterative Evidence Seeking for Agentic Long Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2025-12-05",
+      "eligibility_basis": "2025预印本，2026正式发表，按规则进入2026池",
+      "role": "公开按证据缺口重规划观察，但不维护相反方向的互斥时延峰。"
+    },
+    {
+      "paper_id": "01V1-R35",
+      "title": "VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-12",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "公开规划与回答权分离及Inspector充分性反馈，压迫任何泛化的检索-反馈闭环主张。"
+    },
+    {
+      "paper_id": "01V2-R48",
+      "title": "Hierarchical Long Video Understanding with Audiovisual Entity Cohesion and Agentic Search",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-20",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开segment/entity/scene/global四级数据库及跨镜头音视频实体凝聚，压迫普通声画事件配对和层级记忆。"
+    },
+    {
+      "paper_id": "01V2-R52",
+      "title": "A Unified Object-Centric Spatio-Temporal Graph Reasoning Framework for Audio-Visual Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-06-15",
+      "eligibility_basis": "ICMR 2026；首次公开于2026",
+      "role": "公开声音引导对象跟踪、统一音视频对象图和问题条件消息传播。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别在于不把声画关系压成零时延、单一窗口或单峰，而是保留音频领先与视觉领先的互斥带符号假设，并由问题槽位选择相容边来共同决定两端证据回取。",
+    "status": "必须先证明相对零时延、固定滑窗和Scene-RAG场景对齐的独立删除效应；通过后才考虑NEW_APPLICATION。"
+  },
+  "causal_core": "真实相关音频与画面可能具有方向不同的局部时延；保留互斥峰避免正负时延平均成伪同步，问题槽位再选择与待回答实体、动作或属性一致的边，从而改变实际配对证据而非仅改变时间权重。",
+  "required_features": [
+    "视觉事件和带起止时间的ASR/音频事件切分",
+    "有界正负时延区间内的多峰关联",
+    "每条边的signed_lag、方向、峰宽、来源和互斥组",
+    "问题实体、动作或属性槽位对边的相容性约束",
+    "按所选边联合回取视觉与音频证据",
+    "无有效边时明确降级为单模态路径"
+  ],
+  "non_trivial_coupling": "signed_lag同时决定事件配对、回取时间范围和冲突方向；互斥组阻止相反假设被平均；问题槽位决定采用哪条边。若删除任一约束，就退化为固定滑窗、Top-K相关峰或普通多模态拼接。",
+  "processing_chain": [
+    "输入视频、分段ASR/音频和问题",
+    "切分视觉事件与音频事件",
+    "在正负时延窗内计算多个局部关联峰",
+    "构建包含方向、峰宽和互斥关系的假设格",
+    "按问题证据槽位选择相容边",
+    "联合回取边两端证据",
+    "生成答案并输出采用的时延边或单模态降级原因"
+  ],
+  "deletion_test": {
+    "baseline": "零时延配对；自家固定滑动窗口；Scene-RAG式场景级时间对齐。",
+    "fixed_factors": [
+      "事件候选",
+      "视图数",
+      "ASR文本量",
+      "回答器",
+      "视觉/文本Token"
+    ],
+    "metrics": [
+      "人工声画配对Recall",
+      "lag MAE",
+      "错配边比例",
+      "speech/audio子集QA",
+      "采用证据跨度"
+    ],
+    "fail_condition": "多峰互斥格未超过零时延和固定滑窗，或优势仅来自更多上下文，则不进入专利检索。"
+  },
+  "implementation_status": {
+    "status": "NOT_IMPLEMENTED",
+    "implemented": [
+      "分段ASR",
+      "时间戳字段",
+      "固定距离衰减",
+      "固定窗口基础"
+    ],
+    "missing": [
+      "视觉事件切分",
+      "多峰时延估计",
+      "互斥组",
+      "问题槽位选边",
+      "时延标注和消融"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称带时间ASR数据存在",
+      "可声称现有路径仅采用固定距离匹配",
+      "可声称旧AV实验未证明真实联合激活"
+    ],
+    "upgrade_requirements": [
+      "声画事件人工配对集",
+      "零时延/固定滑窗/场景对齐三类对照",
+      "每个采用边的provenance"
+    ],
+    "attribution_constraints": [
+      "不得把9481个ASR句段表述为时延估计已实现",
+      "不得把旧AV结果表述为声画协同收益"
+    ],
+    "status": "EXPERIMENT_BLOCKED_BEFORE_I4"
+  },
+  "unsupported_effects": [
+    "已实现声画异步对齐",
+    "已提高语音或音频题准确率",
+    "已优于固定滑窗、动态时间规整或Scene-RAG",
+    "已证明多峰假设比单峰更稳定"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "Scene-RAG已把视频切为场景并对齐视觉embedding与音频caption，容易与常规Top-K时延峰组合。",
+      "Active Video Perception已公开按证据缺口迭代观察。",
+      "VideoSEAL已公开检索者与回答者分权及充分性反馈。",
+      "Hierarchical AV Entity Cohesion已公开跨镜头音视频实体凝聚和四级数据库。",
+      "Unified Object-Centric AV Graph已公开声音引导对象绑定和问题条件时空图。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [],
+    "surviving_boundary": "带符号相反方向假设的互斥保存，以及问题槽位对实际声画事件配对的选择，不是扩大窗口或改变衰减参数。"
+  },
+  "self_prior_art_boundary": "自家在先申请已经用中心滑动窗口聚合邻近语音热力图。本候选必须排除扩大窗口、改变衰减、改变权重和普通动态对齐；当前申请的带时间语音和未覆盖位置也不能作为新点。",
+  "independent_claim_skeleton": [
+    "生成视觉事件和带时间范围的音频事件",
+    "在正负时延范围内为事件对计算多个局部关联峰",
+    "构建记录方向、时延区间和互斥关系的时延假设格",
+    "依据问题证据槽位选择相容时延边",
+    "按照所选边联合获取视觉和音频证据并生成答案",
+    "输出所采用时延边或单模态降级状态"
+  ],
+  "dependent_claim_fallbacks": [
+    "区分音频领先、视觉领先和近同步",
+    "以峰宽表示可接受时延区间",
+    "相反方向假设处于同一互斥组时禁止加权平均",
+    "格边保存ASR span、视觉帧和问题槽位provenance"
+  ],
+  "implementation_tasks": [
+    "实现视觉/音频事件统一时间轴",
+    "实现带符号多峰提取和互斥组生成",
+    "实现问题槽位到时延边的相容性评分",
+    "实现边级证据回执和单模态降级"
+  ],
+  "experiment_tasks": [
+    "标注旁白领先、视觉领先、近同步和无关四类事件对",
+    "执行零时延、固定滑窗、场景对齐、互斥格四臂实验",
+    "按lag方向、时长和问题类型报告",
+    "检查收益是否来自额外ASR文本量或更多视觉帧"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] audiovisual question answering signed lag hypothesis lattice mutually exclusive peaks",
+    "[NOT_EXECUTED] 广告视频 声画异步 多峰 时延 假设格 问题槽位",
+    "[NOT_EXECUTED] video audio event pairing positive negative lag evidence retrieval"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "HIGH",
+      "issue": "多峰互相关、动态时间规整和Top-K峰属于常规信号处理。",
+      "gate": "必须证明互斥带符号状态对QA或错配率的独立作用。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "自家滑动窗口已针对声画异步。",
+      "gate": "权项不得落到窗口范围或衰减参数。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Scene-RAG已公开场景级视听记忆。",
+      "gate": "必须正面对照场景时间对齐，不能只与零时延比较。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "2026音视频实体凝聚和对象中心AV图已覆盖跨镜头身份与问题引导对齐。",
+      "gate": "必须把带符号互斥lag而非实体图或场景库作为唯一核心。"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "高质量lag标注成本高且边界可能主观。",
+      "gate": "预注册标注协议和双审一致性。"
+    }
+  ]
+}
+```
+
+### I2B-P03 镜头曝光欠账约束的等预算突发采样
+
+```json
+{
+  "candidate_id": "I2B-P03",
+  "final_title": "镜头曝光欠账约束的等预算突发采样",
+  "classification": "EXPERIMENT_FIRST",
+  "technical_problem": "均匀采样按时长分配视图，相关性Top-K按峰值分配视图，两者都可能低估短镜头；相关性集中还会扩大时间空洞，使短时揭示和跨镜头连续性证据丢失。",
+  "ad_video_property": [
+    "快速镜头切换",
+    "短镜头承载产品或品牌揭示",
+    "长静态镜头挤占采样预算",
+    "跨镜头实体连续性"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/创新点一时间证据定位最终结论与复现索引.md",
+      "lines": "23-44,55-59",
+      "supports": "MMR32提高帧精度但最大时间空洞由3.28%增至12.51%；去覆盖约束继续扩大空洞。",
+      "boundary": "只证明覆盖约束有价值和相关性集中有风险，不证明曝光欠账或QA增益。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/evaluation/methods/common/qwen_video_budget.py",
+      "lines": "12-31,34-68,71-155",
+      "supports": "已有固定视图数、精确Token和实际表示帧审计。",
+      "boundary": "预算可审计不等于预算分配最优。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "3868-3886",
+      "supports": "增加全帧Token没有单调增益。",
+      "boundary": "不得声称更多短镜头视图必然提高答案。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "01V1-R38",
+      "title": "When and Where to Look: Adaptive Visual Evidence Scheduling for Efficient Long Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-08-04",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "EcoFrame直接公开熵门控预算、attention候选扩展和边际效用重选，是本候选最强近邻。"
+    },
+    {
+      "paper_id": "PAPER-CD-020",
+      "title": "LENS: Adaptive Spatio-Temporal Zooming for Keyframe Sampling in Long-Form Videos",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-27",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "公开固定帧预算下的查询自适应时空分配。"
+    },
+    {
+      "paper_id": "01V1-R36",
+      "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-28",
+      "eligibility_basis": "CVPR 2026 Highlight；首次公开于2026",
+      "role": "Scene-RAG使用场景切分和场景记忆，压迫广义镜头/场景级采样主张。"
+    },
+    {
+      "paper_id": "01V1-R39",
+      "title": "On the Adversarial Robustness of Large Vision-Language Models under Visual Token Compression",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-29",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "证明高重要token可在压缩瓶颈下保留高扰动，反驳重要性排序等于证据安全。"
+    },
+    {
+      "paper_id": "01V1-R40",
+      "title": "Less Is More -- Until It Breaks: Security Pitfalls of Vision Token Compression in Large Vision-Language Models",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-17",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "证明低保留率下token排序失稳可造成压缩状态特有故障。"
+    },
+    {
+      "paper_id": "01V2-R47",
+      "title": "VideoRouter: Query-Adaptive Dual Routing for Efficient Long-Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-07",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开全局/自适应保真双路由及关键帧高分辨率、非关键帧强压缩的动态预算。"
+    },
+    {
+      "paper_id": "01V2-R54",
+      "title": "AdaptToken: Entropy-based Adaptive Token Selection for MLLM Long Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-30",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开响应熵分组、全局token分配、位置去冗余和置信早停。"
+    },
+    {
+      "paper_id": "01V2-R59",
+      "title": "CREST: Curvature-Regulated Event-Centric Sampling for Efficient Long-Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-09",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "以相关性曲率区分短暂尖峰和缓慢平台，并以动态抑制半径保留邻近决定性帧，是短事件采样的直接近邻。"
+    },
+    {
+      "paper_id": "01V2-R66",
+      "title": "Evidence-Driven Dynamic Visual Selector for Efficient Long Video Understanding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-08-06",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "复用目标MLLM三类注意力先验，联合决定时间戳保留、局部采样率和空间分辨率。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不在自适应预算或重要性采样，而在模型置信度之前建立ShotExposureLedger，以同一曝光欠账状态同时约束每镜头最低覆盖、短镜头边界/中部突发组和从长静态镜头回收预算。",
+    "status": "EcoFrame近邻极强；只有结构性曝光欠账相对EcoFrame/LENS在快切子集有独立删除效应时才进入I4。"
+  },
+  "causal_core": "按视频时长或模型相关性分配会系统性低估短而高变化的镜头；曝光欠账将镜头时长、切换强度、语义变化和已有覆盖合成预算债务，并用同一债务完成短镜头增配与长镜头回收，使总预算不变时实际证据覆盖发生可归因变化。",
+  "required_features": [
+    "低成本镜头边界检测",
+    "每镜头时长、切换强度、语义变化、实体连续性和已分配视图",
+    "每镜头最低覆盖约束",
+    "由上述状态计算的曝光欠账",
+    "高欠账镜头边界后/中部/边界前突发视图",
+    "从低欠账长静态镜头回收预算",
+    "压缩前后实际帧与视觉Token审计"
+  ],
+  "non_trivial_coupling": "曝光欠账不是排序分数，而是同时驱动最低覆盖、突发分配和预算回收的守恒状态；若增配不触发对应回收就突破公平预算，若删除最低覆盖则退化为EcoFrame/LENS式自适应选择，若删除镜头结构则退化为普通Top-K。",
+  "processing_chain": [
+    "输入视频和问题",
+    "执行镜头切分并建立曝光账本",
+    "先分配每镜头最低覆盖",
+    "根据时长、切换强度、语义变化和已有覆盖计算欠账",
+    "为高欠账镜头分配突发组",
+    "从低欠账长静态镜头回收等量预算",
+    "审计实际表示帧和Token后回答"
+  ],
+  "deletion_test": {
+    "baseline": "Uniform；MMR Top-K；EcoFrame式熵/attention调度；附加每镜头单帧版本。",
+    "fixed_factors": [
+      "总视图数",
+      "视觉Token",
+      "回答器",
+      "视频",
+      "问题",
+      "候选帧解码成本"
+    ],
+    "metrics": [
+      "短镜头Recall",
+      "每镜头覆盖率",
+      "归一化最大空洞",
+      "关键转场Recall",
+      "快切子集QA",
+      "QA/Token"
+    ],
+    "fail_condition": "优势仅来自更多解码帧、未超过EcoFrame式调度，或三帧突发删除无影响，则停止专利化。"
+  },
+  "implementation_status": {
+    "status": "PARTIAL_BUILDING_BLOCKS",
+    "implemented": [
+      "固定视图/Token审计",
+      "候选帧基础",
+      "时间覆盖指标"
+    ],
+    "missing": [
+      "镜头切分",
+      "曝光欠账",
+      "突发组",
+      "预算回收",
+      "快切专项集",
+      "压缩安全审计"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称MMR相关性集中扩大时间空洞",
+      "可声称固定Token审计工具存在"
+    ],
+    "upgrade_requirements": [
+      "四臂等Token实验",
+      "快切镜头人工标注",
+      "实际解码和压缩后帧保留审计"
+    ],
+    "attribution_constraints": [
+      "不得把覆盖指标改善等同于QA改善",
+      "不得把attention/重要性作为因果证据或安全证书"
+    ],
+    "status": "EXPERIMENT_BLOCKED_BEFORE_I4"
+  },
+  "unsupported_effects": [
+    "已提高短镜头召回",
+    "已优于EcoFrame、LENS、Uniform或MMR",
+    "已同时降低成本并提高准确率",
+    "已保证视觉Token压缩后关键证据不丢失"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "EcoFrame已经实现免训练的闭环预算扩展、局部密集搜索和边际效用重选，构成直接近邻。",
+      "LENS已公开固定预算下的自适应时空zoom。",
+      "Scene-RAG已公开场景级切分和记忆。",
+      "CAGE与Less Is More证明重要性/attention驱动压缩具有排序操纵和低预算特有失效。",
+      "CREST已用曲率调节抑制半径专门保护短暂尖峰事件。",
+      "VideoRouter、AdaptToken和Evidence-Driven Dynamic Selector已覆盖查询路由、熵门控、token分配及时间/空间联合采样。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-CD-018 FrameFusion（ICCV 2025）已公开相似度合并后按重要性剪枝，并指出快切会破坏相邻对应假设。",
+      "PAPER-CD-017 PruneVid（ACL Findings 2025）已公开时空合并、问题注意力剪枝和KV压缩。"
+    ],
+    "surviving_boundary": "与模型输出熵和attention无关的镜头结构欠账守恒，以及该状态对最低覆盖、突发增配和等量回收的共同约束。"
+  },
+  "self_prior_art_boundary": "自家在先申请已有高频过采样后语义Top-K；当前申请已有均匀候选网格、MMR和覆盖约束。本候选不能主张镜头检测、短镜头多采样、覆盖约束、相关性排序或预算审计本身。",
+  "independent_claim_skeleton": [
+    "将广告视频切分为多个镜头",
+    "为各镜头记录时长、切换强度、语义变化和已分配视图",
+    "先按最低覆盖条件分配镜头视图",
+    "依据上述记录计算镜头曝光欠账",
+    "为高欠账镜头分配多个镜头内时刻的突发视图",
+    "从低欠账且超过最低覆盖的镜头回收等量预算",
+    "在总视图和视觉Token预算内生成问答输入"
+  ],
+  "dependent_claim_fallbacks": [
+    "突发视图为边界后、中部和边界前时刻",
+    "跨镜头实体连续时保留相邻两镜头边界视图",
+    "回收优先来自长时、低变化且已超过最低覆盖的镜头",
+    "输出每镜头欠账、分配视图和实际Token回执"
+  ],
+  "implementation_tasks": [
+    "接入镜头边界检测并建立ShotExposureLedger",
+    "实现最低覆盖、欠账计算、突发分配和预算回收",
+    "接入现有qwen_video_budget审计",
+    "增加压缩前后关键帧ID和token保留率记录"
+  ],
+  "experiment_tasks": [
+    "建立快切广告子集和关键镜头标注",
+    "执行Uniform、MMR、EcoFrame式调度、Exposure四臂等Token实验",
+    "删除突发组三帧和最低覆盖分别消融",
+    "加入压缩/无压缩与不同保留率稳健性测试"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] shot exposure debt burst sampling fixed token budget video question answering",
+    "[NOT_EXECUTED] 广告视频 镜头 曝光欠账 突发采样 预算回收",
+    "[NOT_EXECUTED] short shot minimum coverage adaptive keyframe sampling ledger"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "CRITICAL",
+      "issue": "EcoFrame与本候选在闭环预算和局部密集搜索上高度接近。",
+      "gate": "必须以EcoFrame式实现为直接对照，不能只对比Uniform/MMR。"
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "CREST已直接处理短暂尖峰事件，VideoRouter/AdaptToken/动态Selector覆盖多种预算控制。",
+      "gate": "必须证明镜头曝光欠账守恒相对这些机制仍有独立效应。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "镜头检测、每镜头至少一帧和短镜头多采样可能是常规分层采样。",
+      "gate": "欠账守恒状态需有独立删除效应。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "视觉Token压缩安全论文否定重要性排序即证据保留。",
+      "gate": "必须增加保留率与压缩状态分层。"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "镜头检测本身增加预处理成本。",
+      "gate": "公平报告端到端时延和解码帧数。"
+    }
+  ]
+}
+```
+
+### I2B-P04 跨镜头产品实体身份约束的属性槽位账本
+
+```json
+{
+  "candidate_id": "I2B-P04",
+  "final_title": "跨镜头产品实体身份约束的属性槽位账本",
+  "classification": "NEW_APPLICATION",
+  "technical_problem": "局部高分辨率视图可以提高属性可见性，但不保存颜色、容量、型号、接口、材质或配方属于哪个产品实例和哪个版本；多产品或多版本交替剪辑时会产生跨镜头属性串绑。",
+  "ad_video_property": [
+    "多产品或多版本交替",
+    "产品特写和包装文字",
+    "细粒度属性只在局部区域出现",
+    "快速切镜导致身份连续性弱"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py",
+      "lines": "18-35",
+      "supports": "已有全局/局部视图、OCR、Logo、时间和evidence ID字段。",
+      "boundary": "没有产品实体、属性槽位或跨镜头身份关系。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/reflection/claim_checker.py",
+      "lines": "18-26",
+      "supports": "当前仅按关键词把声明粗分为OCR、ASR、营销或视觉检查。",
+      "boundary": "没有实体键、属性键和身份连续性。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "3868-3886",
+      "supports": "EvidenceMix4K低于Raw4K，盲目增加局部证据可放大非决定区域。",
+      "boundary": "局部可见性不能证明属性归属正确。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/方案B_多中心裁剪消融结果_20260731.md",
+      "lines": "35-55",
+      "supports": "多中心裁剪略低于同锚点整帧且区间跨零。",
+      "boundary": "不能把裁剪位置或清晰度作为本候选效果。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "PAPER-CD-005",
+      "title": "LensWalk: Agentic Video Understanding by Planning How You See in Videos",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-25",
+      "eligibility_basis": "CVPR 2026；首次公开于2026",
+      "role": "已维护时间戳锚点和主体记忆表，是主体身份状态的强近邻。"
+    },
+    {
+      "paper_id": "PAPER-A009/PAPER-CD-012",
+      "title": "Evidence-Backed Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-13",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "联合输出答案、时间段和跨帧masklet，公开对象级时空证据绑定。"
+    },
+    {
+      "paper_id": "PAPER-B015",
+      "title": "GroundingME: Exposing the Visual Grounding Gap in MLLMs through Multi-Dimensional Evaluation",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2025-12-19",
+      "eligibility_basis": "2025预印本，2026正式发表，按规则进入2026池",
+      "role": "公开辨别、空间、受限和拒绝四维grounding及负样本训练权衡。"
+    },
+    {
+      "paper_id": "01V1-R36",
+      "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-28",
+      "eligibility_basis": "CVPR 2026 Highlight；首次公开于2026",
+      "role": "Scene-RAG已公开场景级多模态记忆，压迫普通主体/场景记忆表述。"
+    },
+    {
+      "paper_id": "01V2-R48",
+      "title": "Hierarchical Long Video Understanding with Audiovisual Entity Cohesion and Agentic Search",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-20",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开canonical audiovisual entity连接跨镜头实体及segment/entity/scene/global四级数据库。"
+    },
+    {
+      "paper_id": "01V2-R52",
+      "title": "A Unified Object-Centric Spatio-Temporal Graph Reasoning Framework for Audio-Visual Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-06-15",
+      "eligibility_basis": "ICMR 2026；首次公开于2026",
+      "role": "公开对象跟踪、声音引导对象绑定和问题条件时空图。"
+    },
+    {
+      "paper_id": "01V3-R112",
+      "title": "SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-12",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开目标专属跟踪特征、代表外观和双提示视频像素grounding。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不是对象跟踪或属性抽取，而是实体身份连续性作为属性写入准入条件；同槽多值保留时间和冲突状态；问题的实体键和属性键只读取目标槽及原始provenance。",
+    "status": "候选可另起申请，但需实体ID打乱实验和正式专利检索证明绑定状态不是常规MOT加槽填充。"
+  },
+  "causal_core": "属性串绑来自局部属性值失去产品身份；跨镜头实体身份决定属性写入目标，属性冲突反向暴露身份归并不可信，问题实体键又限制读取范围。只有打乱实体ID导致属性题特异性退化，才支持绑定关系而非局部清晰度产生效果。",
+  "required_features": [
+    "产品候选检测与跨镜头实体身份",
+    "局部视觉和OCR属性候选",
+    "身份连续性阈值控制属性写入",
+    "实体属性槽中的候选值、时间、来源模态、版本和冲突状态",
+    "问题到实体键和属性键的解析",
+    "未绑定属性的隔离状态",
+    "目标槽位原帧/OCR provenance"
+  ],
+  "non_trivial_coupling": "实体轨迹决定属性写入位置，属性冲突反馈实体身份可信度，问题键只读取对应实体槽；删除实体ID后所有局部识别结果退化为无归属集合，不能由普通裁剪或对象mask替代。",
+  "processing_chain": [
+    "输入视频和问题",
+    "检测产品并建立跨镜头身份",
+    "读取局部属性和OCR",
+    "按身份连续性写入实体属性槽",
+    "保留同槽多值、时间和冲突",
+    "解析问题实体键和属性键",
+    "读取目标槽及原始证据并生成答案"
+  ],
+  "deletion_test": {
+    "baseline": "同视频内随机置换实体ID；所有属性扁平拼接；仅使用跨帧masklet。",
+    "fixed_factors": [
+      "帧",
+      "属性候选",
+      "OCR文本",
+      "回答器",
+      "Token",
+      "问题"
+    ],
+    "metrics": [
+      "实体track IDF1",
+      "属性抽取F1",
+      "属性串绑错误率",
+      "细粒度产品题exact match",
+      "非属性题变化"
+    ],
+    "fail_condition": "实体ID打乱未使属性题特异性退化，或扁平拼接不劣，则绑定账本没有独立作用。"
+  },
+  "implementation_status": {
+    "status": "NOT_IMPLEMENTED",
+    "implemented": [
+      "局部视图字段",
+      "OCR/Logo",
+      "时间",
+      "evidence ID"
+    ],
+    "missing": [
+      "产品检测/跟踪",
+      "跨镜头身份",
+      "属性槽",
+      "冲突/版本状态",
+      "实体ID打乱实验"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称局部/OCR数据结构存在",
+      "可声称既有裁剪未证明独立QA增益"
+    ],
+    "upgrade_requirements": [
+      "产品实体和属性双标注",
+      "实体ID打乱对照",
+      "跨镜头身份与属性错误分层"
+    ],
+    "attribution_constraints": [
+      "不得把裁剪清晰度、OCR字符正确或mask质量等同于属性绑定正确",
+      "不得把既有裁剪结果归因于本账本"
+    ],
+    "status": "NEW_APPLICATION_CANDIDATE_REQUIRES_IMPLEMENTATION"
+  },
+  "unsupported_effects": [
+    "已降低属性串绑",
+    "已提高细粒度产品问答",
+    "已实现可靠跨镜头产品身份",
+    "已优于LensWalk主体记忆或E-VQA masklet"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "LensWalk已有主体记忆表和多轮视觉计划。",
+      "Evidence-Backed VQA已有跨帧masklet和答案-证据绑定。",
+      "GroundingME覆盖复杂grounding和拒绝。",
+      "Scene-RAG已有动态多模态场景memory bank。",
+      "Hierarchical AV Entity Cohesion已公开canonical实体连接跨镜头片段。",
+      "Unified Object-Centric AV Graph和SPARROW分别公开对象中心时空图与目标专属视频轨迹特征。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-A003 Object-centric Video Question Answering with Visual Grounding and Referring（ICCV 2025）已公开对象提示跨帧传播和mask输出。",
+      "PAPER-B014 FOCUS（NeurIPS 2025）已公开内部状态驱动ROI选择。"
+    ],
+    "surviving_boundary": "身份连续性控制属性写入、同槽冲突不覆盖、问题实体-属性键限制读取三者的闭环。"
+  },
+  "self_prior_art_boundary": "自家在先申请的局部视图来自热力图锚框并与全局流拼接；当前申请的evidence package和补看仍以帧/区域为单位。本候选不能主张裁剪、跟踪、OCR、evidence ID或局部属性补看本身。",
+  "independent_claim_skeleton": [
+    "从多个广告视频镜头检测产品实例并建立跨镜头实体身份",
+    "从对应视觉区域和文字区域提取属性候选",
+    "依据实体身份连续性将属性候选写入对应实体的属性槽",
+    "保留属性候选的时间、来源、版本和冲突状态",
+    "根据问题确定目标实体键和属性键",
+    "基于目标槽及其原始证据生成答案"
+  ],
+  "dependent_claim_fallbacks": [
+    "实体身份由外观嵌入、包装文字和时间连续性共同确定",
+    "属性槽区分颜色、型号、容量、接口、材质、配方或包装版本",
+    "同槽多值记录并列、替代或未解析冲突",
+    "身份连续性不足时输出unbound_attribute并禁止答题使用"
+  ],
+  "implementation_tasks": [
+    "建立产品检测、跟踪和跨镜头re-ID流水线",
+    "定义EntityAttributeLedger和槽位版本模型",
+    "实现OCR/局部视觉属性抽取与写入准入",
+    "实现问题实体-属性键解析和provenance查询"
+  ],
+  "experiment_tasks": [
+    "标注多产品/多版本广告的实体轨迹和属性槽",
+    "执行实体ID打乱、扁平属性、masklet、完整账本对照",
+    "按属性类型和切镜强度分层串绑错误",
+    "检查非属性题不应因账本产生同幅变化"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] cross-shot product identity attribute ledger video question answering",
+    "[NOT_EXECUTED] 广告视频 跨镜头 产品实体 属性槽 绑定 冲突",
+    "[NOT_EXECUTED] object track identity gated attribute slot provenance video QA"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "HIGH",
+      "issue": "MOT、re-ID、属性抽取和槽填充均是成熟技术。",
+      "gate": "实体ID打乱必须产生属性题特异性因果效应。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "LensWalk主体记忆与E-VQA masklet可组合攻击。",
+      "gate": "权项必须限定写入准入和冲突保持，不可停留在主体表。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "2026音视频实体凝聚、对象中心AV图和SPARROW已强化跨镜头身份近邻。",
+      "gate": "必须证明属性写入准入和同槽冲突状态超出跟踪/grounding。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "当前无实现和标注。",
+      "gate": "实现前不能进入效果或权项强度门禁。"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "属性版本与P07报价版本可能边界重叠。",
+      "gate": "P04限定一般产品属性身份绑定，P07限定报价条件和版本关系。"
+    }
+  ]
+}
+```
+
+### I2B-P05 禁止跨模态抵消的声明-模态-时间冲突张量
+
+```json
+{
+  "candidate_id": "I2B-P05",
+  "final_title": "禁止跨模态抵消的声明-模态-时间冲突张量",
+  "classification": "CURRENT_APPLICATION_ENHANCEMENT",
+  "technical_problem": "单一支持分数把视觉支持/ASR反驳、早期值被片尾更新、未检测、模态不可用和模态不可辨识压成一个标量，容易被简单ASR状态主导或发生跨模态错误抵消。",
+  "ad_video_property": [
+    "旁白、屏幕文字、包装和演示相互冲突",
+    "原价/现价或前后版本局部生效",
+    "OCR、ASR和视觉可用性不一致",
+    "高信息密度导致同一声明跨时变化"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "2904-2915",
+      "supports": "显式缺失候选被ASR 7/7主导，OCR/视觉仅4/7、3/6。",
+      "boundary": "证明共享状态空间和聚合可能失真，不证明张量可修复。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "3797-3822",
+      "supports": "真实正反声明分类使AUROC由0.5409升至0.6599；Calibration240无OCR-present。",
+      "boundary": "0.6599只能归因于真实正反声明分类训练，不能归因于冲突张量或反事实排序。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/evaluation/tools/build_modality_counterfactual_train_v1.py",
+      "lines": "62-73,141-178",
+      "supports": "已有按声明类型路由ASR/OCR/视觉/联合模态及单因素反事实的构件。",
+      "boundary": "没有部署态时间张量、模态内校准或防抵消规则。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/learn/patent-research/application/一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md",
+      "lines": "223-247",
+      "supports": "当前申请已有支持/反驳/不足和多源冲突缺口。",
+      "boundary": "检测冲突和声明级评分已公开，独立主张必须落在时间化状态与禁抵消控制。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "PAPER-CD-008",
+      "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-04-28",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "联合评分答案正确性、定位质量和证据一致性，并按risk-coverage回答或拒答。"
+    },
+    {
+      "paper_id": "PAPER-A009/PAPER-CD-012",
+      "title": "Evidence-Backed Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-13",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "联合输出答案、时间段和masklet，压迫答案与时空证据绑定。"
+    },
+    {
+      "paper_id": "PAPER-CD-015",
+      "title": "An Empirical Analysis of Calibration and Selective Prediction in Multimodal Clinical Condition Classification",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-03",
+      "eligibility_basis": "CHIL 2026；首次公开于2026",
+      "role": "提供聚合判别增益可掩盖少数类失准和拒答退化的反向证据。"
+    },
+    {
+      "paper_id": "01V1-R35",
+      "title": "VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-12",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "公开独立Inspector充分性判断和回答权分离，压迫普通验证器反馈闭环。"
+    },
+    {
+      "paper_id": "PAPER-CD-016",
+      "title": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-31",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开带图/无图双评分、冲突强度和选择性改答。"
+    },
+    {
+      "paper_id": "01V3-R85",
+      "title": "Entropy Alone is Insufficient for Safe Selective Prediction in LLMs",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-22",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "证明低熵可对应自信错误，并以正确性探针与熵组合控制risk-coverage。"
+    },
+    {
+      "paper_id": "01V3-R86",
+      "title": "FaithSCAN: Model-Driven Single-Pass Hallucination Detection for Faithful Visual Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-01",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "从单次前向联合token不确定性、视觉语义和跨模态对齐状态检测幻觉。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不是多源冲突检测，而是以声明、模态和时间为正交维度保存带符号五态；禁止不可用或不可辨识模态被其他模态高分抵消；时间维明确区分同刻矛盾与合法更新。",
+    "status": "可作为当前申请增强，但必须先通过模态单调性和时间维删除测试；否则降为DEPENDENT_CLAIM_ONLY。"
+  },
+  "causal_core": "错误来自过早聚合：模态维决定支持或反驳来自哪里，时间维决定两个相反状态是同时矛盾还是先后更新，可用性/可辨识性决定该单元能否参与决策。保持张量直到解析后再聚合，才能阻断跨模态错误抵消。",
+  "required_features": [
+    "原子声明和时态槽位",
+    "视觉、OCR、ASR等模态分别输出支持/反驳/未检测/不可用/不可辨识",
+    "按时间箱记录状态、强度、来源和校准版本",
+    "同刻冲突、时序更新和持续缺失的区分",
+    "不可用/不可辨识单元禁止参与补偿聚合",
+    "未解析冲突的补证、保持或拒答状态",
+    "单元级evidence ID和provenance"
+  ],
+  "non_trivial_coupling": "模态维提供冲突方向，时间维提供更新语义，可辨识性门禁决定单元是否有效；ResolutionPolicy必须同时读取三者。删除时间维会把更新误判为冲突，删除模态维会恢复标量抵消，删除可辨识性会让ASR简单状态掩盖OCR/视觉失败。",
+  "processing_chain": [
+    "将问题或候选答案拆为原子声明并解析时态",
+    "按模态和时间区间分别取证",
+    "执行每模态可用性与可辨识性门禁",
+    "写入声明-模态-时间带符号张量",
+    "区分同刻冲突、时序更新和缺失",
+    "解析冲突或保留未确定状态",
+    "生成答案或控制补证、保持、拒答"
+  ],
+  "deletion_test": {
+    "baseline": "沿模态和时间求均值的当前支持分数；删除时间维；删除unidentifiable门禁。",
+    "fixed_factors": [
+      "声明",
+      "原始证据",
+      "验证头",
+      "回答器",
+      "阈值预算"
+    ],
+    "metrics": [
+      "冲突macro-F1",
+      "缺失/反驳混淆率",
+      "时序更新误判率",
+      "跨模态错误抵消率",
+      "每模态ECE/Brier",
+      "冲突题QA"
+    ],
+    "fail_condition": "禁抵消或时间维任一删除无可辨识影响，或OCR/视觉单调性仍不过门，则只能保留数据审计从属项。"
+  },
+  "implementation_status": {
+    "status": "PARTIAL_BUILDING_BLOCKS",
+    "implemented": [
+      "声明类型",
+      "三态标签",
+      "模态路由",
+      "反事实构造",
+      "验证器分数"
+    ],
+    "missing": [
+      "部署态张量",
+      "unavailable/unidentifiable",
+      "时间箱冲突",
+      "模态内校准",
+      "解析策略"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称标量聚合存在ASR主导风险",
+      "可声称真实正反声明训练AUROC为0.6599",
+      "可声称OCR校准覆盖不足且OCR删除方向仅5/10"
+    ],
+    "upgrade_requirements": [
+      "同刻冲突/时序更新/缺失人工小集",
+      "每模态单调性门禁",
+      "禁抵消和时间维独立消融"
+    ],
+    "attribution_constraints": [
+      "0.6599不得归因于张量或反事实排序",
+      "OCR分支未通过前不得声称跨模态校准有效"
+    ],
+    "status": "CURRENT_APPLICATION_ENHANCEMENT_REQUIRES_GATES"
+  },
+  "unsupported_effects": [
+    "已提高冲突题QA",
+    "已实现跨模态校准",
+    "已降低错误抵消或错误自信",
+    "已具备risk-coverage或安全拒答保证"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "SIEVES已公开证据质量联合评分与选择性回答。",
+      "Evidence-Backed VQA已公开答案、时间和空间证据联合输出。",
+      "VideoSEAL已公开独立Inspector和回答权分离。",
+      "Selective Prior Calibration已公开视觉证据与模型先验冲突下的选择性改答。",
+      "CHIL 2026校准分析已提供分组失准反向证据。",
+      "Entropy Alone is Insufficient已否定单独使用熵作安全选择信号，并公开熵与正确性探针组合。",
+      "FaithSCAN已公开多内部信号融合的单次前向幻觉检测。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-CD-013 DeFacto（2025预印本，未核验2026正式年份）已公开必要证据遮挡、随机遮挡和unknown训练。"
+    ],
+    "surviving_boundary": "声明×模态×时间五态张量、不可辨识禁入和更新/同刻冲突解析的组合。"
+  },
+  "self_prior_art_boundary": "自家在先申请已线性融合问题、语音和OCR热力图；当前申请已公开声明级支持/反驳/不足、多源冲突和验证器。不得主张多模态冲突、声明评分、三态标签、阈值或拒答本身。",
+  "independent_claim_skeleton": [
+    "将候选答案拆解为原子声明并确定声明时态",
+    "针对各声明在多个时间区间分别获取视觉、文字和语音证据",
+    "对每一模态执行可用性和可辨识性判断",
+    "将证据写入以声明、模态和时间为维度且区分五态的冲突张量",
+    "根据问题时态区分同时冲突与时序更新",
+    "禁止不可用或不可辨识单元参与跨模态补偿",
+    "基于解析状态生成答案或保留未解析状态"
+  ],
+  "dependent_claim_fallbacks": [
+    "unidentifiable由E+到E-单调方向门禁确定",
+    "时序更新边记录旧值、新值和生效时间",
+    "同刻冲突未解析时触发定向补证或拒绝替换",
+    "输出每个张量单元的evidence ID、时间范围和校准版本"
+  ],
+  "implementation_tasks": [
+    "定义ConflictTensor和五态枚举",
+    "实现模态可用性/可辨识性账本",
+    "实现时间箱冲突边和ResolutionPolicy",
+    "接入现有声明验证器并保留单元级provenance"
+  ],
+  "experiment_tasks": [
+    "构造同刻冲突、时序更新、缺失和不可用四类小集",
+    "先验证ASR/OCR/视觉各自E+到E-单调性",
+    "执行标量、无时间维、无禁抵消、完整张量消融",
+    "报告每模态校准和错误抵消而非只报总体QA"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] claim modality time conflict tensor video question answering evidence",
+    "[NOT_EXECUTED] 多模态 视频问答 声明 时间 冲突张量 禁止抵消",
+    "[NOT_EXECUTED] unavailable unidentifiable modality evidence aggregation temporal update"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "HIGH",
+      "issue": "当前申请已公开多源冲突和声明级状态。",
+      "gate": "必须证明时间维、五态和禁抵消不是说明书细化。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "多维表和四/五态逻辑可能被认定为常规数据组织。",
+      "gate": "需两个正交删除测试各自有效。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "OCR单调性当前仅5/10。",
+      "gate": "OCR门禁不过则不得进入联合模态结论。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "VideoSEAL/SIEVES覆盖验证、充分性和选择性决策。",
+      "gate": "不得把验证闭环或拒答作为新颖核心。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Entropy Alone与FaithSCAN进一步覆盖多信号风险和跨模态内部状态。",
+      "gate": "本候选只能坚持显式证据张量、时间更新和禁抵消边界。"
+    }
+  ]
+}
+```
+
+### I2B-P06 允许缺失与回环的数据驱动广告叙事阶段图
+
+```json
+{
+  "candidate_id": "I2B-P06",
+  "final_title": "允许缺失与回环的数据驱动广告叙事阶段图",
+  "classification": "EXPERIMENT_FIRST",
+  "technical_problem": "逐帧相关性或场景Top-K容易只保留产品和片尾，丢失情境、问题、转折、介入和结果；主题、情绪、策略与受众问题依赖跨时间叙事结构而非单一ROI。",
+  "ad_video_property": [
+    "快节奏叙事",
+    "问题到产品介入再到结果",
+    "前后对照",
+    "CTA或品牌收束",
+    "阶段可缺失、重复、交错或回环"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/创新点一阶段性负结果与论文降级方案.md",
+      "lines": "66-80",
+      "supports": "受众、情绪、叙事策略、隐喻和品牌使命依赖跨时间叙事，不是单个ROI。",
+      "boundary": "这是失败动机，不证明阶段图或营销因果真实。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/data/adsqa_loader.py",
+      "lines": "9-39",
+      "supports": "AdsQA任务覆盖视觉概念、情绪、主题、说服策略和受众。",
+      "boundary": "任务标签不是叙事阶段标注。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/创新点一时间证据定位最终结论与复现索引.md",
+      "lines": "35-44",
+      "supports": "相关帧精度提高同时扩大时间空洞。",
+      "boundary": "不能单独归因为叙事边缺失。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/reasoning/prompt_builder.py",
+      "lines": "29-46",
+      "supports": "当前仅有通用Observation-Knowledge-Analysis-Answer文本结构。",
+      "boundary": "没有数据驱动阶段节点、边或图查询。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "01V1-R36",
+      "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-28",
+      "eligibility_basis": "CVPR 2026 Highlight；首次公开于2026",
+      "role": "Scene-RAG公开场景切分、多模态场景记忆、查询分解和Top场景检索，是最强直接近邻。"
+    },
+    {
+      "paper_id": "PAPER-A010",
+      "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-22",
+      "eligibility_basis": "CVPR 2026；首次公开于2026",
+      "role": "公开可变长因果链、时间段、事实rationale和bbox轨迹。"
+    },
+    {
+      "paper_id": "PAPER-A011",
+      "title": "HERBench: A Benchmark for Multi-Evidence Integration in Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2025-12-16",
+      "eligibility_basis": "2025预印本，2026正式发表，按规则进入2026池",
+      "role": "公开至少三个分散cue及检索/融合缺口诊断。"
+    },
+    {
+      "paper_id": "01V1-R35",
+      "title": "VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-12",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "公开长视频搜索、候选span、Inspector充分性反馈和回答权分离。"
+    },
+    {
+      "paper_id": "01V2-R43",
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-06-05",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开实体、微事件、Macro Event、Super Event和Video Root层级异构图及时间因果边。"
+    },
+    {
+      "paper_id": "01V2-R64",
+      "title": "MemoryCard: Topic-Aware Multi-Modal Clue Compression for Long-Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-06-04",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开semantic sessions、事件级多模态gist、代表帧和Top-K卡片检索。"
+    },
+    {
+      "paper_id": "01V2-R80",
+      "title": "TraceAV-Bench: Benchmarking Multi-Hop Trajectory Reasoning over Long Audio-Visual Videos",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-08",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开跨非相邻事件的音视频多跳trajectory和带时间戳证据链。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不是场景RAG、因果链或营销模板，而是由视频事件状态变化生成允许缺失、重复和回环的阶段边，并用最小连通子图而非节点Top-K共同控制多段证据选择和顺序编码。",
+    "status": "Scene-RAG与CaST组合攻击强；固定AIDA/PAS模板直接REJECT，必须先通过阶段边打乱实验。"
+  },
+  "causal_core": "节点只给出局部事实，边决定这些事实是否构成前后变化、对照、介入或收束；问题槽位要求覆盖一条连通路径。保持节点和Token不变而打乱边若显著破坏长跨度题，才支持图关系产生技术效果。",
+  "required_features": [
+    "镜头、ASR、角色变化、产品揭示和CTA事件候选",
+    "由状态变化产生的时间、转折、对照或因果候选边",
+    "允许阶段缺失、重复和回环的图结构",
+    "每条边的时间跨度和视听provenance",
+    "问题角色、动作、前态和后态槽位",
+    "覆盖槽位的最小连通叙事子图",
+    "按边顺序组织的多段证据"
+  ],
+  "non_trivial_coupling": "事件节点提供事实，状态变化边定义关系，问题槽位要求连通覆盖，顺序编码依赖边方向；删除边会退化为Scene-RAG或普通Top-K，固定阶段标签会退化为业务规则，删除问题约束会变成全图摘要。",
+  "processing_chain": [
+    "切分镜头和ASR事件",
+    "生成角色、动作、产品、状态和CTA事件",
+    "依据状态变化建立阶段候选边",
+    "构建允许缺失、重复和回环的阶段图",
+    "解析问题所需事件槽位",
+    "提取覆盖槽位的最小连通子图",
+    "按边顺序提交多段证据并回答"
+  ],
+  "deletion_test": {
+    "baseline": "保持节点不变随机打乱阶段边；删除全部边只做节点Top-K；Scene-RAG式Top场景检索。",
+    "fixed_factors": [
+      "事件节点",
+      "视图数",
+      "ASR",
+      "Token",
+      "回答器",
+      "问题"
+    ],
+    "metrics": [
+      "阶段边界F1",
+      "阶段覆盖率",
+      "最小连通子图充分率",
+      "边打乱敏感性",
+      "Type_2至Type_5 QA",
+      "长跨度题QA"
+    ],
+    "fail_condition": "边打乱无影响、收益可由Top场景检索解释，或阶段来自固定营销模板，则REJECT。"
+  },
+  "implementation_status": {
+    "status": "NOT_IMPLEMENTED",
+    "implemented": [
+      "任务类型",
+      "帧/ASR时间",
+      "通用结构化Prompt"
+    ],
+    "missing": [
+      "阶段候选",
+      "边界模型",
+      "状态转折边",
+      "最小连通子图",
+      "阶段标注"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称抽象广告问题依赖跨时间证据",
+      "可声称相关性集中扩大时间空洞"
+    ],
+    "upgrade_requirements": [
+      "数据驱动阶段/边标注",
+      "边打乱和Scene-RAG直接对照",
+      "长跨度问题预注册"
+    ],
+    "attribution_constraints": [
+      "不得把营销阶段模板当作技术事实",
+      "不得把Full-7844增益归因于阶段图"
+    ],
+    "status": "EXPERIMENT_BLOCKED_BEFORE_I4"
+  },
+  "unsupported_effects": [
+    "已提高主题、情绪、策略或受众问答",
+    "已识别真实广告叙事或营销意图",
+    "已优于Scene-RAG、CaST或HERBench式多证据组织",
+    "阶段图已实现或已具备因果解释"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "Scene-RAG已公开场景切分、多模态记忆、查询分解和Top场景检索。",
+      "CaST-Bench已公开因果链、时间段、rationale和区域轨迹。",
+      "HERBench已公开多段分散证据和检索/融合诊断。",
+      "VideoSEAL已公开搜索-检查-回答闭环。",
+      "MemDreamer已公开含实体、微事件和时间因果边的层级图记忆。",
+      "MemoryCard已公开事件级多模态session和代表帧卡片。",
+      "TraceAV-Bench已公开跨非相邻事件的多跳音视频轨迹。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [],
+    "surviving_boundary": "数据驱动状态变化边、允许缺失/回环的阶段图，以及边对最小连通证据子图和顺序编码的共同控制。"
+  },
+  "self_prior_art_boundary": "自家在先申请已有营销知识库、RAG和观察-分析-推理-答案文本协议；当前申请已有问题证据需求逻辑树。不得主张营销阶段、知识检索、CoT、因果提示或多段证据本身。",
+  "independent_claim_skeleton": [
+    "从广告视频的镜头事件和语音事件生成阶段候选",
+    "依据角色、动作、产品和状态变化建立阶段候选之间的关系边",
+    "形成允许阶段缺失、重复或回环的叙事阶段图",
+    "根据问题确定所需事件槽位",
+    "从阶段图提取覆盖槽位的最小连通子图",
+    "按照子图边顺序组织多段视频证据并生成答案"
+  ],
+  "dependent_claim_fallbacks": [
+    "阶段边由转折词、角色变化、产品揭示或CTA信号中的至少两类支持",
+    "每条边保存起止时间、视觉区域、ASR span和置信度",
+    "不确定边保留多个候选路径",
+    "最小连通子图覆盖前态、介入事件和后态"
+  ],
+  "implementation_tasks": [
+    "定义NarrativePhaseGraph和状态变化边类型",
+    "实现事件抽取、边生成和provenance",
+    "实现问题槽位到最小连通子图查询",
+    "实现按边顺序的证据编码"
+  ],
+  "experiment_tasks": [
+    "标注阶段边界、状态变化边和长跨度问题证据",
+    "执行边打乱、节点Top-K、Scene-RAG式检索、完整图四臂实验",
+    "按Type_2至Type_5和证据跨度分层",
+    "审计阶段是否由固定模板或文本先验泄漏"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] advertisement narrative phase graph minimum connected evidence video question answering",
+    "[NOT_EXECUTED] 广告视频 数据驱动 叙事阶段图 最小连通 子图 问答",
+    "[NOT_EXECUTED] scene graph state transition evidence retrieval long video QA"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "CRITICAL",
+      "issue": "Scene-RAG与CaST组合可覆盖场景记忆、查询分解和因果证据链。",
+      "gate": "必须以两者为组合攻击基线。"
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "MemDreamer已直接公开层级异构事件图和时间因果边，MemoryCard/TraceAV补齐事件卡片与多跳轨迹。",
+      "gate": "仅剩广告特定状态变化边和最小连通子图的极窄边界。"
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "固定AIDA/PAS阶段属于业务规则风险。",
+      "gate": "任何固定营销模板实现直接淘汰。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "阶段边标注主观且易泄漏答案。",
+      "gate": "需要盲标、双审和边证据provenance。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "当前完全未实现。",
+      "gate": "边打乱测试前不得进入专利检索。"
+    }
+  ]
+}
+```
+
+### I2B-P07 实体-条件-时间联合约束的报价与主张版本事实账本
+
+```json
+{
+  "candidate_id": "I2B-P07",
+  "final_title": "实体-条件-时间联合约束的报价与主张版本事实账本",
+  "classification": "NEW_APPLICATION",
+  "technical_problem": "扁平OCR/ASR文本集合不能表示原价、现价、套餐层级、限时条件、脚注和片尾CTA的生效区间、适用实体及替代/并列/冲突关系，相似数字还容易被合并到错误商品。",
+  "ad_video_property": [
+    "多报价与多条件",
+    "片尾更新或补充限制",
+    "OCR和口播并列或冲突",
+    "同一视频含多产品或多套餐",
+    "短时小字承载限制条件"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py",
+      "lines": "55-76",
+      "supports": "现有代码只以弱关键词识别price、scarcity和CTA。",
+      "boundary": "没有报价值、单位、实体、条件或版本关系。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/code_refactor/reflection/claim_checker.py",
+      "lines": "18-26",
+      "supports": "价格、数字和折扣只被粗分到OCR/Logo/local view。",
+      "boundary": "没有时间版本和条件语义。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/AdsQA实验结果总表与复现索引.md",
+      "lines": "260-264",
+      "supports": "价格、Logo和CTA被记录为脆弱小目标。",
+      "boundary": "仅支持问题重要性，不支持版本解析效果。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/learn/patent-research/application/一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md",
+      "lines": "203-215,241-251",
+      "supports": "当前申请已有跨帧文字事件和价格类补看。",
+      "boundary": "实体、条件和版本关系未公开；跨帧文字或价格补看本身不能重申。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "01V1-R36",
+      "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-03-28",
+      "eligibility_basis": "CVPR 2026 Highlight；首次公开于2026",
+      "role": "Scene-RAG公开时间组织的多模态场景记忆，压迫普通时间化事实存储。"
+    },
+    {
+      "paper_id": "PAPER-A009/PAPER-CD-012",
+      "title": "Evidence-Backed Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-13",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "公开答案与时间段、跨帧masklet绑定，压迫报价证据provenance上位概念。"
+    },
+    {
+      "paper_id": "PAPER-CD-016",
+      "title": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-31",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开先验与视觉证据冲突下的候选级校正和选择性改答。"
+    },
+    {
+      "paper_id": "01V2-R65",
+      "title": "Reading or Guessing? Visual Grounding Failures of Vision-Language Models for OCR in Ancient Greek Editions",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-26",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "以受控字符扰动证明流畅OCR文本可能主要来自语言先验而非图像。"
+    },
+    {
+      "paper_id": "01V2-R48",
+      "title": "Hierarchical Long Video Understanding with Audiovisual Entity Cohesion and Agentic Search",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-20",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开跨镜头canonical audiovisual entity及层级场景数据库，压迫实体绑定和时间存储上位概念。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不是识别价格或建立数据库，而是实体、条件范围和时间共同作为版本关系判定前提；只有实体与条件相容时后出现事实才允许覆盖，否则保留并列或冲突，并按问题对象、条件和时态查询。",
+    "status": "可另起申请，但技术效果必须落在视频OCR/ASR跨时绑定和防错误数字合并，避免落入业务报价规则。"
+  },
+  "causal_core": "错误数字引用来自扁平化：时间顺序只有结合产品实体和条件范围才能决定覆盖、并列或冲突；版本关系再决定问题应读取哪个值。删除版本边但保留全部文本和Token若显著增加错误引用，才支持该关系结构的技术效果。",
+  "required_features": [
+    "带时间和区域的OCR/ASR数值、单位、促销关系和限制条件抽取",
+    "报价事件到产品实体的绑定",
+    "以实体、属性和条件范围构成的事实键",
+    "每个版本的值、币种/单位、生效时间、来源和适用范围",
+    "替代、并列、冲突三类版本关系",
+    "问题对象、条件和时态查询",
+    "原帧、字符框和ASR span provenance"
+  ],
+  "non_trivial_coupling": "时间不能单独决定覆盖，必须同时满足实体和条件范围；实体绑定依赖文字区域、ASR和时间；问题查询读取版本关系而非所有数值。三者删除任一项都会退化为普通OCR加数据库或后出现值覆盖。",
+  "processing_chain": [
+    "从OCR/ASR事件提取数值、单位和条件",
+    "将报价或主张绑定产品实体",
+    "以实体、属性和条件范围写入时间版本",
+    "判定替代、并列或冲突关系",
+    "解析问题对象、条件和时态",
+    "读取目标版本及原始证据",
+    "生成答案或输出未解析冲突"
+  ],
+  "deletion_test": {
+    "baseline": "删除版本边和条件范围，仅提供全部OCR/ASR数值；后出现值自动覆盖；Scene-RAG式场景文本记忆。",
+    "fixed_factors": [
+      "OCR/ASR文本",
+      "视图",
+      "Token",
+      "回答器",
+      "问题",
+      "数值归一器"
+    ],
+    "metrics": [
+      "数值/单位exact match",
+      "实体报价绑定F1",
+      "版本关系F1",
+      "最终有效报价准确率",
+      "错误数字引用率",
+      "price/promo QA"
+    ],
+    "fail_condition": "版本关系删除无影响、题量不足以形成可测区间，或收益仅由更强OCR/规则抽取产生，则不进入I4。"
+  },
+  "implementation_status": {
+    "status": "NOT_IMPLEMENTED",
+    "implemented": [
+      "OCR/Logo/ASR字段",
+      "时间",
+      "弱price/promo类型"
+    ],
+    "missing": [
+      "数值单位解析",
+      "实体绑定",
+      "条件范围",
+      "版本关系",
+      "专项数据",
+      "查询接口"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称价格/CTA是本地记录的脆弱小目标",
+      "可声称当前代码没有事实版本"
+    ],
+    "upgrade_requirements": [
+      "price/promo专项集",
+      "实体-条件-版本双标注",
+      "扁平集合和场景记忆直接对照"
+    ],
+    "attribution_constraints": [
+      "不得把OCR字符识别或Region Recall等同于报价事实正确",
+      "不得声称后出现值必然为有效报价"
+    ],
+    "status": "NEW_APPLICATION_CANDIDATE_REQUIRES_IMPLEMENTATION"
+  },
+  "unsupported_effects": [
+    "已提高最终有效报价准确率",
+    "已降低错误数字引用",
+    "已正确解析促销条件、覆盖或冲突",
+    "已有足够专项题量支撑技术效果"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "Scene-RAG已公开场景级多模态记忆和查询检索。",
+      "Evidence-Backed VQA已公开答案与时空证据绑定。",
+      "Selective Prior Calibration已公开冲突条件下的选择性改答。",
+      "Reading or Guessing已证明OCR流畅输出可能没有视觉grounding。",
+      "Hierarchical AV Entity Cohesion已公开跨镜头实体凝聚和场景层级存储。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-A012 MME-VideoOCR（NeurIPS 2025）已公开视频文字变化跟踪和跨帧整合。",
+      "PAPER-A004 EgoTextVQA（CVPR 2025）已公开时间定位、多帧、高分辨率和辅助OCR的受控诊断。"
+    ],
+    "surviving_boundary": "实体、条件、时间共同判定版本关系并直接控制问题读取，且防止跨产品和跨条件数字错误合并。"
+  },
+  "self_prior_art_boundary": "自家在先申请仅把OCR用于热力图和局部视图；当前申请已有跨帧文字事件和价格类补看。不得主张价格识别、时间戳文字、OCR回取、跨帧跟踪或冲突检测本身。",
+  "independent_claim_skeleton": [
+    "从带时间信息的文字和语音事件提取报价值、单位和适用条件",
+    "将报价事件绑定到广告视频中的产品实体",
+    "以产品实体、报价属性和适用条件为事实键写入多个时间版本",
+    "依据实体一致性、条件范围和时间关系确定替代、并列或冲突",
+    "按照问题对象、条件和时态读取目标版本",
+    "输出目标版本及其视频证据"
+  ],
+  "dependent_claim_fallbacks": [
+    "报价值包括原价、现价、折扣、套餐价或免费条件",
+    "条件范围包括时间、数量、会员、地区或购买组合",
+    "仅在实体和条件一致时允许新版本覆盖旧版本",
+    "OCR与ASR值冲突时保留双来源并输出未解析状态"
+  ],
+  "implementation_tasks": [
+    "实现数值、币种/单位和促销条件抽取",
+    "复用P04或独立实现产品实体绑定",
+    "定义VersionedOfferLedger和版本关系状态机",
+    "实现问题对象/条件/时态查询和provenance输出"
+  ],
+  "experiment_tasks": [
+    "盘点price/promo题量并建立专项集",
+    "标注实体、条件、版本关系和最终有效值",
+    "执行扁平集合、后值覆盖、Scene-RAG式记忆、版本账本对照",
+    "按OCR/ASR来源、短曝光和多产品分层"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] advertisement video offer version ledger entity condition temporal fact",
+    "[NOT_EXECUTED] 广告视频 报价 版本 事实账本 实体 条件 时间",
+    "[NOT_EXECUTED] video OCR ASR price update conflict product binding question answering"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "HIGH",
+      "issue": "版本化数据库、时态事实抽取和促销条件解析均有成熟基础。",
+      "gate": "必须证明视频证据绑定和防错误合并的删除效应。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "报价规则可能被认定为业务规则。",
+      "gate": "权项与效果必须落在OCR/ASR跨时技术处理和错误引用率。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "专项题量未知且当前无实现。",
+      "gate": "先盘点样本量，不能为候选凑数据。"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "与P04实体属性账本存在组合关系。",
+      "gate": "不得把两者简单拼装为大系统；分别做删除测试。"
+    }
+  ]
+}
+```
+
+### I2B-P08 跨模态事实副本图约束的删除充分证书
+
+```json
+{
+  "candidate_id": "I2B-P08",
+  "final_title": "跨模态事实副本图约束的删除充分证书",
+  "classification": "CURRENT_APPLICATION_ENHANCEMENT",
+  "technical_problem": "当前反事实训练把首个锚点、一个OCR框或一个时间段当作决定性证据；广告中同一事实会在Logo、包装、口播、片尾和重复镜头中多次出现，局部删除后负样本仍支持原声明，造成错误负标签。",
+  "ad_video_property": [
+    "品牌、人物、CTA和口号重复出现",
+    "同一事实跨视觉、OCR、Logo和ASR表达",
+    "片尾重复和替代支持路径",
+    "局部遮挡后仍存在残余证据"
+  ],
+  "local_support": [
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/tmp/innovation2_stage2/failure_attribution.md",
+      "lines": "15-20",
+      "supports": "固定协议Smoke20仅2/20，通用替换或马赛克未删除决定性事实。",
+      "boundary": "证明现有负样本构造失败，不证明副本图可以完整发现支持路径。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/docs/创新点一阶段性负结果与论文降级方案.md",
+      "lines": "607-617",
+      "supports": "候选A/B为0/20、8/20，12/20同视频负样本仍支持原声明。",
+      "boundary": "只支持单锚点或单时段干预不足。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/tmp/innovation2_stage2/build_candidate_b_same_video_smoke_v1.py",
+      "lines": "109-138,198-265",
+      "supports": "已有锚点排除窗口和完整32帧同视频替换原型。",
+      "boundary": "没有事实等价副本图、全路径覆盖或独立残余复验。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/tmp/innovation2_stage2/build_candidate_d_formal_data_v1.py",
+      "lines": "263-311,361-376",
+      "supports": "已有同文本OCR出现聚类和多框马赛克。",
+      "boundary": "500/500像素变化只证明图像被改动；OCR方向仅5/10，不能证明事实删除。"
+    },
+    {
+      "path": "/Users/bytedance/vqa_thesis_continue/ad_video_analysis_system/learn/patent-research/application/一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md",
+      "lines": "305-319",
+      "supports": "当前申请要求破坏决定性证据并保留背景，权利要求8已有最小破坏证据对。",
+      "boundary": "反事实证据构造和最小破坏本身已属自家当前申请边界。"
+    }
+  ],
+  "source_papers": [
+    {
+      "paper_id": "PAPER-A010",
+      "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-22",
+      "eligibility_basis": "CVPR 2026；首次公开于2026",
+      "role": "已通过遮蔽全部标注证据区域过滤可猜问题，直接攻击全证据破坏概念。"
+    },
+    {
+      "paper_id": "PAPER-A009/PAPER-CD-012",
+      "title": "Evidence-Backed Video Question Answering",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-07-13",
+      "eligibility_basis": "ECCV 2026；首次公开于2026",
+      "role": "已公开答案、非重叠时间段和跨帧masklet的稠密证据绑定。"
+    },
+    {
+      "paper_id": "01V1-R35",
+      "title": "VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-12",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "独立Inspector只基于提交的视频证据判断充分性，可直接攻击独立残余复验上位概念。"
+    },
+    {
+      "paper_id": "01V1-R39",
+      "title": "On the Adversarial Robustness of Large Vision-Language Models under Visual Token Compression",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-29",
+      "eligibility_basis": "ICML 2026；首次公开于2026",
+      "role": "表明压缩会保留高度失真的高重要token，反驳压缩后低支持等于原事实已删除。"
+    },
+    {
+      "paper_id": "01V1-R40",
+      "title": "Less Is More -- Until It Breaks: Security Pitfalls of Vision Token Compression in Large Vision-Language Models",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-17",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "表明低保留率存在全token测试无法复现的排序失效，要求删除证书区分事实删除与压缩遗漏。"
+    },
+    {
+      "paper_id": "01V3-R88",
+      "title": "CounterVid: Counterfactual Video Generation for Mitigating Action and Temporal Hallucinations in Video-Language Models",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-01-08",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开保持场景身份但替换动作/顺序语义的反事实视频及MixDPO偏好训练。"
+    },
+    {
+      "paper_id": "01V3-R104",
+      "title": "Learning from Fine-Grained Visual Discrepancies: Mitigating Multimodal Hallucinations via In-Context Visual Contrastive Optimization",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2026-05-29",
+      "eligibility_basis": "仅核验到预印本，但首次公开于2026",
+      "role": "公开精细视觉编辑硬负例、同一多图上下文和编辑有效性质检。"
+    },
+    {
+      "paper_id": "01V3-R119",
+      "title": "Seeing Is Believing: Rich-Context Hallucination Detection for MLLMs via Backward Visual Grounding",
+      "pool_status": "2026_POOL_ELIGIBLE",
+      "earliest_public_date": "2025-11-15",
+      "eligibility_basis": "2025预印本，AAAI 2026正式发表，按规则进入2026池",
+      "role": "公开把响应反向定位到像素mask并据视觉支持判定幻觉。"
+    }
+  ],
+  "novelty_hypothesis": {
+    "hypothesis": "潜在区别不在遮挡必要证据，而在先建立同一原子事实的跨时、跨模态等价副本图，将每个可独立支持声明的路径纳入覆盖干预，再由隔离复验过程搜索残余路径；残余状态直接决定样本能否进入训练。",
+    "status": "当前申请增强优先级最高，但CaST、E-VQA、DeFacto和自家权利要求8组合攻击强，必须经正式专利检索。"
+  },
+  "causal_core": "无效负样本的根因是尚有独立支持路径；副本图定义路径全集的已发现近似，集合覆盖将干预绑定到每条路径，独立残余搜索验证是否仍可支持声明，训练准入再由证书状态硬控制。删除图、复验或准入任一环节都会恢复错误负标签。",
+  "required_features": [
+    "针对原子声明的全视频视觉、OCR、Logo和ASR支持实例检索",
+    "表达同一事实的跨时跨模态等价聚类",
+    "事实到可独立支持实例或路径的EvidenceOccurrenceGraph",
+    "覆盖全部已发现支持路径且尽量保留背景的干预集合",
+    "与构造器隔离的残余支持复验",
+    "记录覆盖路径数、残余路径数和干预哈希的删除充分证书",
+    "证书失败时counterfactual_invalid并禁止训练准入",
+    "区分事实删除失败与视觉Token压缩遗漏"
+  ],
+  "non_trivial_coupling": "等价聚类定义哪些实例属于同一事实，路径图把实例转为覆盖约束，独立复验产生残余路径数，训练准入直接读取该数值；若只做检测加遮挡、构造器自证或证书不控制训练，都会退化为已失败的反事实构造。",
+  "processing_chain": [
+    "输入原子声明和广告视频",
+    "检索全视频多模态支持实例",
+    "聚类同一事实的等价副本",
+    "构建事实到独立支持路径的副本图",
+    "求覆盖已发现路径的干预集合并生成E-",
+    "由隔离复验过程重新搜索残余支持",
+    "签发或拒绝删除充分证书",
+    "仅将有效E+/E-用于验证器训练或校准"
+  ],
+  "deletion_test": {
+    "baseline": "仅干预首个锚点、最高分框或一个时间窗；删除独立复验器；证书不控制训练准入。",
+    "fixed_factors": [
+      "原子声明",
+      "原视频",
+      "干预算子预算",
+      "复验协议",
+      "训练器"
+    ],
+    "metrics": [
+      "残余支持路径率",
+      "E-复验通过率",
+      "删除覆盖率",
+      "错误负标签率",
+      "每模态配对方向",
+      "counterfactual_invalid率"
+    ],
+    "fail_condition": "副本图未降低残余支持或错误负标签，独立复验与构造器自证无差异，或证书样本无法改善验证器方向性，则降为实验数据治理而非专利核心。"
+  },
+  "implementation_status": {
+    "status": "EXPERIMENTAL_LOCAL_IMPLEMENTATION",
+    "implemented": [
+      "锚点排除",
+      "同视频整段替换",
+      "OCR同字符串分组",
+      "多框马赛克",
+      "像素变化审计",
+      "固定Token协议"
+    ],
+    "missing": [
+      "跨时/跨模态事实等价聚类",
+      "路径最小覆盖",
+      "隔离残余搜索",
+      "删除充分证书",
+      "训练准入门禁"
+    ]
+  },
+  "evidence_contract": {
+    "current_evidence": [
+      "可声称单锚点/单时段负样本大量无效",
+      "可声称OCR像素变化不等于事实删除",
+      "可声称现有原型能执行局部干预"
+    ],
+    "upgrade_requirements": [
+      "全副本人工标注",
+      "隔离复验器或人工双审",
+      "证书前后错误负标签率",
+      "仅有效E-训练的方向性实验"
+    ],
+    "attribution_constraints": [
+      "0.6599只归因于真实正反声明分类训练",
+      "不得把像素变化、低支持或压缩遗漏表述为事实已删除",
+      "当前无QA增益可归因"
+    ],
+    "status": "CURRENT_APPLICATION_ENHANCEMENT_REQUIRES_I3_I4"
+  },
+  "unsupported_effects": [
+    "已发现同一事实的全部支持副本",
+    "已生成有效删除充分证书",
+    "已降低错误负标签或提高验证器",
+    "已提高QA、校准或安全性",
+    "已保证对未知压缩机制或攻击鲁棒"
+  ],
+  "closest_paper_attack": {
+    "eligible_2026": [
+      "CaST-Bench已遮蔽全部标注因果证据区域。",
+      "Evidence-Backed VQA已提供跨帧密集masklet。",
+      "VideoSEAL已公开独立Inspector对提交证据做充分性判断。",
+      "两篇2026视觉Token压缩脆弱性论文表明压缩后缺失与事实删除不可混同。",
+      "CounterVid已公开保持场景身份的动作/时序反事实视频和偏好训练。",
+      "IC-VCO已公开精细视觉编辑硬负例及编辑有效性质检。",
+      "VBackChecker已公开声明内容到像素mask的反向视觉验证。"
+    ],
+    "background_only_2025_excluded_from_source_papers": [
+      "PAPER-CD-013 DeFacto（2025预印本，未核验2026正式年份）已公开必要证据遮挡、随机遮挡和unknown训练。",
+      "PAPER-A003 Object-centric Video QA（ICCV 2025）已公开跨帧对象mask。"
+    ],
+    "surviving_boundary": "广告重复事实的跨模态等价副本图、全路径覆盖、隔离残余搜索和训练准入之间的硬闭环。"
+  },
+  "self_prior_art_boundary": "自家当前申请权利要求8已覆盖真实视频决定性证据最小破坏和排序约束，说明书已要求破坏决定性证据并保留背景。本候选不得主张反事实训练、最小破坏、遮挡、排序损失或验证器训练本身，只能限定删除充分的实现与样本拒用合同。",
+  "independent_claim_skeleton": [
+    "针对原子声明在广告视频中检索多个模态的支持实例",
+    "将表达同一事实的支持实例聚类并构建事实到支持实例的副本图",
+    "确定覆盖全部已发现独立支持路径的干预集合",
+    "生成被干预证据并由隔离复验过程搜索残余支持路径",
+    "仅在残余支持满足删除充分条件时签发证书",
+    "仅允许具有有效证书的证据对进入验证器训练或校准"
+  ],
+  "dependent_claim_fallbacks": [
+    "支持实例包括视觉区域、OCR字符串、Logo、ASR span和时间区间",
+    "等价聚类共同使用文本语义、对象身份、时间上下文和跨模态对齐",
+    "干预集合以集合覆盖确定并记录每条路径的干预算子",
+    "复验器与构造器使用不同模型版本、规则或人工双审",
+    "证书记录覆盖路径数、残余路径数、像素/音频变化哈希和无效原因"
+  ],
+  "implementation_tasks": [
+    "定义EvidenceOccurrenceGraph和支持路径",
+    "实现跨时/跨模态事实等价聚类",
+    "实现覆盖干预规划和路径-算子映射",
+    "实现隔离残余搜索与DeletionSufficiencyCertificate",
+    "在数据加载器加入证书硬准入门禁"
+  ],
+  "experiment_tasks": [
+    "在Candidate B/D样本上标注全部可见支持副本和独立路径",
+    "比较单锚点、单模态多框、副本图覆盖三种构造",
+    "比较构造器自证、异模型复验和人工双审",
+    "仅以有效证书E-训练并报告每模态方向性，不先做QA宣传",
+    "增加压缩/无压缩双运行，区分残余事实与压缩遗漏"
+  ],
+  "patent_search_queries": [
+    "[NOT_EXECUTED] cross-modal evidence occurrence graph deletion sufficiency certificate verifier training",
+    "[NOT_EXECUTED] 视频声明 反事实 证据副本图 删除充分 训练准入",
+    "[NOT_EXECUTED] residual support path verification multimodal counterfactual video"
+  ],
+  "pre_gate_risks": [
+    {
+      "severity": "CRITICAL",
+      "issue": "CaST全证据遮蔽、E-VQA masklet、DeFacto必要证据遮挡与集合覆盖可组合攻击。",
+      "gate": "必须在I4检索跨模态副本图和训练准入闭环。"
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "CounterVid与IC-VCO已强化反事实视频/图像编辑、偏好对和有效性质检。",
+      "gate": "不得把高质量反事实生成或编辑质检作为新颖核心。"
+    },
+    {
+      "severity": "CRITICAL",
+      "issue": "自家权利要求8已宽泛覆盖最小破坏证据对。",
+      "gate": "代理人需判断是否仅能作为从属实施限定或继续申请。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "无法证明发现了全部未知支持路径。",
+      "gate": "证书必须表述为对已发现路径及冻结复验协议充分，不得绝对化。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "独立复验器仍可能共享错误。",
+      "gate": "需异模型、异规则或人工双审并报告一致性。"
+    },
+    {
+      "severity": "HIGH",
+      "issue": "压缩后低支持可能只是token遗漏。",
+      "gate": "证书必须包含无压缩复验或原始证据路径检查。"
+    }
+  ]
+}
+```
+

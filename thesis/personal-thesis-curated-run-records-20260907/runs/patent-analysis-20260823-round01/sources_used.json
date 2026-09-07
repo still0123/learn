@@ -1,0 +1,25 @@
+{
+  "local_sources": [
+    "docs/本对话论文最终结果与阶段总结_20260820.md",
+    "docs/AdsQA最终结果交付_20260731.md",
+    "docs/完整论文_题目不变_证据选择与主动补看版_20260817.md",
+    "专利相关/新申请初稿V2.1_说明书全文_20260817.md",
+    "source_texts/patent_docx.txt",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_opinion_statement.txt",
+    "evaluation/tools/build_evads_siglip_mmr8_manifest_compat_v1.py",
+    "evaluation/tools/score_answer_claims_qwen3_v1.py",
+    "evaluation/tools/adsqa_qwen25_full7846_protocol_v1.py",
+    "evaluation/tools/build_modality_counterfactual_train_v1.py"
+  ],
+  "web_sources": [
+    "https://patents.google.com/patent/CN117744802A/zh",
+    "https://patents.google.com/patent/CN120472379B/zh",
+    "https://patents.google.com/patent/CN118627623B/en",
+    "https://patents.google.com/patent/CN121235759B/zh",
+    "https://arxiv.org/html/2601.04778v1",
+    "https://arxiv.org/html/2510.22751v1"
+  ],
+  "search_level": "Web-level only; not a substitute for CNIPA/formal database search",
+  "date": "2026-08-23"
+}

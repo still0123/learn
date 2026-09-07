@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.0",
+  "round_id": "patent-innovation-20260818-r01",
+  "stage": "I5_FINAL_BOARD",
+  "generated_at": "2026-08-18T01:57:41+08:00",
+  "evidence_refreshed_at": "2026-08-18T02:12:06+08:00",
+  "status": "COMPLETE_ZERO_PASS",
+  "final_decision": {
+    "pass_to_i4": [],
+    "final_patent_candidates": [],
+    "zero_pass_is_valid": true,
+    "no_reopening_by_i5": true,
+    "reason": "八个候选均未同时满足总分至少80、全部分项最低分且无硬失败；I5严格接受空PASS_TO_I4，不重新放行任何候选。",
+    "sources": [
+      "03_candidate_gate.md#1-最终结论",
+      "03_gate_decision.yaml#summary",
+      "03_gate_decision.yaml#decisions"
+    ],
+    "receipt_refs": [
+      "I5_RECEIPT"
+    ]
+  },
+  "research_scale": {
+    "metadata_recall_reported": 800,
+    "eligible_metadata_records": 848,
+    "abstract_screened_records": 300,
+    "abstract_screening_quality": "PASS_126_FULL_TEXT_PLUS_174_OFFICIAL_ARXIV_ABSTRACTS",
+    "abstract_full_text_count": 126,
+    "abstract_official_arxiv_count": 174,
+    "abstract_title_only_count": 0,
+    "exa_queries": 18,
+    "exa_deduplicated_records": 1501,
+    "exa_cost_usd": 1.73,
+    "final_fulltext_queue": 120,
+    "preverified_in_final_queue": 34,
+    "pending_in_final_queue_at_queue_freeze": 86,
+    "fulltext_attempted": 144,
+    "fulltext_verified": 126,
+    "fulltext_unavailable": 18,
+    "pool_eligible_verified": 108,
+    "final_paper_mechanism_cards": 77,
+    "final_r1_cards": 34,
+    "final_r2_cards": 43,
+    "authoritative_unresolved_ranks": 0,
+    "v1": {
+      "range": "1-40",
+      "verified": 40,
+      "unavailable": 0,
+      "status": "COMPLETE"
+    },
+    "v2": {
+      "range": "41-80",
+      "verified": 30,
+      "unavailable": 10,
+      "status": "PARTIAL"
+    },
+    "v3_old": {
+      "range": "81-120",
+      "self_reported_verified": 32,
+      "self_reported_unavailable": 8,
+      "status": "REJECTED_NOT_AUTHORITATIVE",
+      "reason": "38/40 rank-title pairs do not match the final authoritative queue."
+    },
+    "v3r": {
+      "range": "81-120",
+      "present": true,
+      "verified": 32,
+      "unavailable": 8,
+      "rank_title_consistent": true,
+      "status": "COMPLETE_AUTHORITATIVE_RECOVERY"
+    },
+    "v4": {
+      "range": "topup 1-12",
+      "verified": 12,
+      "unavailable": 0,
+      "status": "COMPLETE"
+    },
+    "v5": {
+      "range": "topup 13-24",
+      "verified": 12,
+      "unavailable": 0,
+      "status": "COMPLETE"
+    },
+    "counting_rule": "权威汇总覆盖V1、V2、V3R、V4和V5，共144次全文尝试、126篇全文成功、18篇FULL_TEXT_UNAVAILABLE；其中108篇为2026池合格正文，最终形成77张R1/R2论文机制卡（R1=34，R2=43）。旧01v3仍为拒绝批次，不得与V3R重复计数。",
+    "sources": [
+      "01_paper_verification_summary.json",
+      "01_sources_papers.jsonl",
+      "01_paper_cards.md",
+      "01v3r_summary.md",
+      "01v4_summary.md",
+      "01v5_summary.md",
+      "02_candidate_reference_reconciliation.md",
+      "receipts.jsonl:L5-L16"
+    ],
+    "receipt_refs": [
+      "R_I1_R",
+      "R_I1_R2",
+      "R_I1_S",
+      "R_I1_X",
+      "R_I1_Q_FINAL",
+      "R_I1_V1",
+      "R_I1_V2",
+      "R_I1_V3_OLD",
+      "I5_EVIDENCE_REFRESH_RECEIPT",
+      "I5_RECEIPT"
+    ]
+  },
+  "candidate_summary": {
+    "counts": {
+      "RETAIN_DEPENDENT_ONLY": 3,
+      "HOLD_EXPERIMENT": 2,
+      "HARD_REJECT": 3,
+      "PASS_TO_I4": 0
+    },
+    "highest_score": {
+      "candidate_id": "I2B-P08",
+      "score": 75,
+      "blocking_hard_failure": "HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP"
+    },
+    "zero_pass_reasons": [
+      "无候选总分达到80；最高分P08为75。",
+      "P01、P04、P05、P06、P07、P08共六个候选命中至少一项硬失败。",
+      "P02与P03虽无硬失败，但技术效果和实现均低于分项最低线，且总分分别仅61和53。",
+      "P08与自家权利要求8实质重叠，不能由最高相对分数覆盖该硬失败。",
+      "论文未覆盖的窄关系不等于专利新颖性或创造性。"
+    ],
+    "sources": [
+      "03a_evidence_gate.md#5-汇总",
+      "03b_paper_attack.md#2-总体结论",
+      "03_candidate_gate.md#1-最终结论",
+      "03_gate_decision.yaml#summary"
+    ],
+    "receipt_refs": [
+      "I5_RECEIPT"
+    ]
+  },
+  "candidates": [
+    {
+      "candidate_id": "I2B-P01",
+      "title": "问题槽位约束的短时文字与Logo显隐脉冲原帧回取",
+      "score": 59,
+      "classification": "RETAIN_DEPENDENT_ONLY",
+      "hard_failures": [
+        "HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP"
+      ],
+      "conclusion": "独权硬淘汰，不进入I4；仅保留为当前申请权利要求2/4/6附近的窄从属实验方向。",
+      "dependent_experiment_value": "验证槽位准入、显隐生命周期三时刻和等Token替换是否具有独立作用；价值在于补强短时文字证据的实施限定和审计回执，不支撑新的独立发明。",
+      "required_experiments": [
+        "标注至少100个短曝光文字/Logo事件及首次、峰值、末次帧。",
+        "固定回答器、视图数和视觉Token，对比逐帧Top-K、仅峰值和完整脉冲。",
+        "分别删除问题槽位、生命周期、首末帧和预算回收。",
+        "报告压缩前后关键文字证据保留率。"
+      ],
+      "sources": [
+        "02_candidate_cards.md#I2B-P01",
+        "03a_evidence_gate.md#P01-短时文字与-Logo-显隐脉冲",
+        "03b_paper_attack.md#3-I2B-P01",
+        "03_candidate_gate.jsonl#I2B-P01"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P02",
+      "title": "互斥带符号声画时延假设格驱动的证据配对",
+      "score": 61,
+      "classification": "HOLD_EXPERIMENT",
+      "hard_failures": [],
+      "conclusion": "实验冻结，不进入I4；是下一轮重新提交I3的第一顺位独立候选。",
+      "reopen_conditions": [
+        "建立旁白领先、视觉领先、近同步、无关四类双审声画事件配对集。",
+        "证明联合声画路径真实激活，不得复用旧AV退化为CLIP的结果。",
+        "完成无互斥、无符号、无问题槽位三项独立删除测试。",
+        "在相同事件候选、ASR文本量、视图、Token和回答器下，正面对照零时延、固定滑窗和Scene-RAG式场景对齐。",
+        "形成新冻结候选版本，重新达到I3总分和全部分项门槛，并显式获得非空PASS_TO_I4。"
+      ],
+      "sources": [
+        "02_candidate_cards.md#I2B-P02",
+        "03a_evidence_gate.md#P02-互斥带符号声画时延格",
+        "03b_paper_attack.md#4-I2B-P02",
+        "03_candidate_gate.jsonl#I2B-P02"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P03",
+      "title": "镜头曝光欠账约束的等预算突发采样",
+      "score": 53,
+      "classification": "HOLD_EXPERIMENT",
+      "hard_failures": [],
+      "conclusion": "实验冻结，不进入I4；论文拥挤度CRITICAL，重开门槛高于P02。",
+      "reopen_conditions": [
+        "冻结ShotExposureLedger状态转移、欠账公式、清偿条件和预算冲突规则。",
+        "建立快切镜头与决定性事件双标注，不能仅按短镜头时长构造难例。",
+        "执行Uniform、MMR、EcoFrame、CREST、Exposure五臂等解码帧、等视图、等Token实验。",
+        "分别删除最低覆盖、等量回收、三时刻突发和实体连续性；任一核心关系无独立效应即停止独权方向。",
+        "形成新冻结候选版本，重新通过I3后才可进入I4。"
+      ],
+      "sources": [
+        "02_candidate_cards.md#I2B-P03",
+        "03a_evidence_gate.md#P03-镜头曝光欠账",
+        "03b_paper_attack.md#5-I2B-P03",
+        "03_candidate_gate.jsonl#I2B-P03"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P04",
+      "title": "跨镜头产品实体身份约束的属性槽位账本",
+      "score": 48,
+      "classification": "HARD_REJECT",
+      "hard_failures": [
+        "HF_NO_LOCAL_SUPPORT_FOR_CORE_FAILURE",
+        "HF_PARALLEL_MODULES_AS_WRITTEN"
+      ],
+      "conclusion": "本轮永久阻断，不进入I4，不作为下一轮优先方向；缺少本地串绑失败证据，且当前链路是成熟模块并列。",
+      "reopen_boundary": "只有建立可审计串绑失败集、把属性冲突反向更新身份可信度写成确定状态转移并通过实体ID置乱消融后，才可作为全新版本重新立项；本结论不构成自动重开授权。",
+      "sources": [
+        "02_candidate_cards.md#I2B-P04",
+        "03a_evidence_gate.md#P04-产品实体属性账本",
+        "03b_paper_attack.md#6-I2B-P04",
+        "03_candidate_gate.jsonl#I2B-P04"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P05",
+      "title": "禁止跨模态抵消的声明-模态-时间冲突张量",
+      "score": 63,
+      "classification": "RETAIN_DEPENDENT_ONLY",
+      "hard_failures": [
+        "HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP"
+      ],
+      "conclusion": "独权硬淘汰，不进入I4；仅保留五态单元、时间更新分流和禁抵消不变量的窄从属实验。",
+      "dependent_experiment_value": "用于检验现有声明级验证器在ASR主导、OCR不可辨识和合法时序更新场景中的聚合失真，可能形成实施方式或从属限定，但不得把0.6599归因于该张量。",
+      "required_experiments": [
+        "先让ASR、OCR、视觉分别通过冻结的E+到E-单调性门禁。",
+        "构造同刻冲突、时序更新、未检测、不可用和不可辨识小集。",
+        "独立删除时间维、模态维和unidentifiable禁入。",
+        "报告错误抵消率、时序更新误判率和每模态ECE/Brier，不只报告总体QA。"
+      ],
+      "sources": [
+        "02_candidate_cards.md#I2B-P05",
+        "03a_evidence_gate.md#P05-声明-模态-时间冲突张量",
+        "03b_paper_attack.md#7-I2B-P05",
+        "03_candidate_gate.jsonl#I2B-P05"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P06",
+      "title": "允许缺失与回环的数据驱动广告叙事阶段图",
+      "score": 43,
+      "classification": "HARD_REJECT",
+      "hard_failures": [
+        "HF_NO_LOCAL_SUPPORT_FOR_CORE_MECHANISM",
+        "HF_SCENARIO_OR_BUSINESS_RULE_CORE"
+      ],
+      "conclusion": "硬淘汰，不进入I4；缺少阶段边本地证据，且固定营销阶段会落入业务规则核心。",
+      "reopen_boundary": "只有完全由可计算视听状态变化定义边、建立盲标双审数据并通过保持节点和预算不变的受限边置换实验后，才可作为全新版本重新立项；本轮不得恢复。",
+      "sources": [
+        "02_candidate_cards.md#I2B-P06",
+        "03a_evidence_gate.md#P06-广告叙事阶段图",
+        "03b_paper_attack.md#8-I2B-P06",
+        "03_candidate_gate.jsonl#I2B-P06"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P07",
+      "title": "实体-条件-时间联合约束的报价与主张版本事实账本",
+      "score": 48,
+      "classification": "HARD_REJECT",
+      "hard_failures": [
+        "HF_NO_LOCAL_SUPPORT_FOR_CORE_FAILURE",
+        "HF_SCENARIO_OR_BUSINESS_RULE_CORE"
+      ],
+      "conclusion": "硬淘汰，不进入I4；没有版本错误本地证据，技术链易退化为OCR/ASR加报价业务规则和版本数据库。",
+      "reopen_boundary": "先盘点price/promo题量、隔离现有answer泄漏构件，并给出不依赖促销业务规则的版本判定算法；不能满足时永久放弃专利化。本轮不得恢复。",
+      "sources": [
+        "02_candidate_cards.md#I2B-P07",
+        "03a_evidence_gate.md#P07-报价与主张版本账本",
+        "03b_paper_attack.md#9-I2B-P07",
+        "03_candidate_gate.jsonl#I2B-P07"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "candidate_id": "I2B-P08",
+      "title": "跨模态事实副本图约束的删除充分证书",
+      "score": 75,
+      "classification": "RETAIN_DEPENDENT_ONLY",
+      "hard_failures": [
+        "HF_SELF_PRIOR_SUBSTANTIAL_OVERLAP"
+      ],
+      "conclusion": "本轮最高分仍低于80，且与自家权利要求8实质重叠；独权硬淘汰，不进入I4，仅优先开发为权利要求8的从属实施限定或数据质量实验。",
+      "dependent_experiment_value": "八项中本地失败证据最强，可直接降低反事实证据对的残余支持和错误负标签风险；实验价值在训练数据治理和权利要求8实施质量，不代表新的独立训练发明。",
+      "required_experiments": [
+        "把名称限定为对已发现路径及冻结复验协议的条件充分回执。",
+        "标注全部可见支持副本和独立支持路径。",
+        "在等修改像素、时长和模态预算下比较单锚点、多框和副本图覆盖。",
+        "分别删除隔离复验和训练硬准入，报告残余支持率、错误负标签率及分模态方向性。",
+        "增加无压缩原始证据复验，区分事实仍存在与Token压缩遗漏。"
+      ],
+      "sources": [
+        "02_candidate_cards.md#I2B-P08",
+        "03a_evidence_gate.md#P08-跨模态事实副本图删除证书",
+        "03b_paper_attack.md#10-I2B-P08",
+        "03_candidate_gate.jsonl#I2B-P08",
+        "03_gate_decision.yaml#candidate_decisions.I2B-P08"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    }
+  ],
+  "i4_patent_novelty_search": {
+    "status": "NOT_APPLICABLE_NO_SURVIVOR",
+    "authorized": false,
+    "executed": false,
+    "query_count": 0,
+    "fulltext_fetch_count": 0,
+    "source_record_count": 0,
+    "interpretation": "I4无获准检索的幸存候选，因此本轮专利查新不适用。该状态绝不表示未发现类似专利、没有类似专利、候选具备新颖性或创造性。",
+    "sources": [
+      "03_gate_decision.yaml#i4",
+      "04_patent_search_report.md#1-阶段结论",
+      "04_patent_search_status.yaml#execution",
+      "04_sources_patents.jsonl"
+    ],
+    "receipt_refs": [
+      "I5_RECEIPT"
+    ]
+  },
+  "formal_application_do_not_change": {
+    "instruction": "当前正式申请稿不因本轮候选而修改。",
+    "items": [
+      "不把P01、P05或P08升格为当前独立权利要求，也不把P02/P03实验计划写入正式稿。",
+      "不改变现有F1-F9闭环、同一验证器同口径评分、绝对阈值加相对裕量、失败回退和权利要求8的最小破坏训练边界。",
+      "不把0.5409到0.6599归因于冲突张量、反事实排序或删除证书；它只归因于真实正反声明分类训练。",
+      "不把Full-7844的加7.00/加10.12个百分点外推到任何新候选；它只支撑支持度触发、证据补看和独立候选生成的联合效果。",
+      "不把E-VAds 28胜0负外推到新候选；它只支撑绝对阈值与相对裕量双条件门控。",
+      "不写入未实现机制、计划实验、虚构效果或保证授权表述。",
+      "不修正候选卡V3引用错位到正式稿；该问题只在研究产物中处理。"
+    ],
+    "integrity": {
+      "unchanged": true,
+      "files": {
+        "新申请初稿V2.1_说明书全文_20260817.md": "1e980b4a7dcc87ead5a368d0523f65da8a94318a21d1dee1a9bde019d8d04c7b",
+        "一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.md": "224e09e6c3de3e2ca5ae5d1f3726fc266d4c06bbf4f1536340b6bb2d884bb2fa",
+        "一种视频问答的答案可靠性保障方法、验证器训练方法、装置、电子设备及存储介质_20260817135947.docx": "844a947527b8921e7258966a3ebe7b36967d41ac767296773f2c7af1f8205e2f"
+      }
+    },
+    "sources": [
+      "00_brief.md#当前独权原子特征",
+      "00_brief.md#证据边界",
+      "03_gate_decision.yaml#formal_application_integrity",
+      "04_patent_search_report.md#正式稿完整性复核"
+    ],
+    "receipt_refs": [
+      "R_I0",
+      "I5_RECEIPT"
+    ]
+  },
+  "next_round_priorities": {
+    "independent_candidate_reopen_track": [
+      {
+        "priority": 1,
+        "candidate_id": "I2B-P02",
+        "goal": "先证明互斥signed-lag状态具有独立效应并真实激活声画联合路径。"
+      },
+      {
+        "priority": 2,
+        "candidate_id": "I2B-P03",
+        "goal": "仅在严格等预算条件下正面超过EcoFrame和CREST后重开。"
+      }
+    ],
+    "dependent_implementation_track": [
+      {
+        "priority": 1,
+        "candidate_id": "I2B-P08",
+        "goal": "降低残余支持和错误负标签，限定为权利要求8实施质量。"
+      },
+      {
+        "priority": 2,
+        "candidate_id": "I2B-P05",
+        "goal": "验证时间分流和禁抵消是否改善可审计错误类型。"
+      },
+      {
+        "priority": 3,
+        "candidate_id": "I2B-P01",
+        "goal": "验证短时文字脉冲三时刻等Token回取。"
+      }
+    ],
+    "no_resource_allocation": [
+      "I2B-P04",
+      "I2B-P06",
+      "I2B-P07"
+    ],
+    "sources": [
+      "03_candidate_gate.md#4-逐候选记录",
+      "03_gate_decision.yaml#candidate_decisions",
+      "04_patent_search_report.md#4-未来重新开放-I4-的必要条件"
+    ],
+    "receipt_refs": [
+      "I5_RECEIPT"
+    ]
+  },
+  "publication_date_risks": {
+    "patent_cutoff_date": "2026-08-18",
+    "risks": [
+      "论文池资格与专利现有技术日期必须分开：2025预印本在2026正式发表可进入研究池，但最早公开日仍是2025。",
+      "权威V2已发现正式版本为2026但最早公开日为2023-12-08的论文族，不能以正式发表年覆盖更早公开。",
+      "2026年1月至8月的近邻论文在本轮截止日前已公开，后续代理人必须按具体申请日、公开可得性、司法辖区和宽限期规则逐件判断。",
+      "旧01v3日期和机制记录因队列错位不得承担正式结论；权威V3R已恢复32篇全文并记录8篇不可用，后续只按01_sources_papers.jsonl中的稳定paper_record_id和标题引用。",
+      "在任何新候选提交前公开代码、论文、答辩材料或Git内容，可能形成自公开风险；须先由代理人确认申请时序和适用宽限期。",
+      "本轮没有专利检索，不能据论文检索推断专利领域无在先公开。"
+    ],
+    "sources": [
+      "00_brief.md#论文范围",
+      "01v2_summary.md#关键核验事项",
+      "01v3r_summary.md#日期纠正",
+      "02_candidate_reference_reconciliation.md",
+      "receipts.jsonl:L7",
+      "receipts.jsonl:L16",
+      "04_patent_search_report.md#1-阶段结论"
+    ],
+    "receipt_refs": [
+      "R_I1_R2",
+      "R_I1_V2",
+      "R_I1_V3_OLD",
+      "I5_EVIDENCE_REFRESH_RECEIPT",
+      "I5_RECEIPT"
+    ]
+  },
+  "attorney_review_points": {
+    "items": [
+      "确认P01/P05/P08是否只能落入现有从属权项或说明书实施方式，尤其P08与权利要求8的实质重叠及禁止重复申请风险。",
+      "复核任何未来新增关系是否具备原始说明书支持，避免超范围修改和支持性风险。",
+      "在P02/P03重新通过I3后，按冻结必要特征执行CN/WO/US/EP正式查新、同族、最早优先权日、公开日和法律状态核验。",
+      "逐件判断2025预印本、2026正式论文和申请日前后公开的现有技术资格，不用venue年份代替最早公开日。",
+      "确认当前申请与潜在新申请的单一性、发明构思边界、重复授权和分案/继续申请路径。",
+      "审查P06/P07的业务规则风险以及P02/P03是否只是常规信号处理或采样参数变化。",
+      "把P08证书限定为对已发现路径和冻结复验协议的条件充分，不使用绝对删除、保证安全或保证授权表述。",
+      "核验发明人、权属、公开代码/论文/Git时间线及保密义务。"
+    ],
+    "sources": [
+      "03a_evidence_gate.md#4-全局矛盾",
+      "03_candidate_gate.md#4-逐候选记录",
+      "04_patent_search_report.md#4-未来重新开放-I4-的必要条件",
+      "patent-innovation-analysis/SKILL.md#门禁规则"
+    ],
+    "receipt_refs": [
+      "R_I0",
+      "I5_RECEIPT"
+    ]
+  },
+  "audit_anomalies": [
+    {
+      "severity": "MEDIUM",
+      "issue": "receipts.jsonl中的I1-V1摘要哈希与当前01v1_summary.md哈希不一致，但V1 JSONL哈希一致。",
+      "effect": "V1的40/40权威计数由当前摘要、40行JSONL及匹配的JSONL哈希共同确认；Receipt中的摘要哈希不作为当前摘要完整性证明。",
+      "sources": [
+        "receipts.jsonl:L14",
+        "01v1_summary.md#SHA256",
+        "01v1_verified_001_040.jsonl"
+      ],
+      "receipt_refs": [
+        "R_I1_V1",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "severity": "RESOLVED",
+      "issue": "01v3旧批次与最终队列不一致；I3据此发现P01、P04、P05、P08的旧V3 rank ID错位。",
+      "effect": "旧01v3继续排除；权威V3R已按最终队列恢复32篇全文、8篇不可用且rank/title逐条一致。后续以01_sources_papers.jsonl的稳定paper_record_id和标题为准，不回写候选内容或评分。",
+      "sources": [
+        "receipts.jsonl:L16",
+        "03a_evidence_gate.md#4.1-V3-引用-ID-系统性错位",
+        "01v3r_summary.md",
+        "02_candidate_reference_reconciliation.md"
+      ],
+      "receipt_refs": [
+        "R_I1_V3_OLD",
+        "I5_EVIDENCE_REFRESH_RECEIPT",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "receipts.jsonl中的I2-B输出哈希与当前02_candidate_cards文件哈希不一致。",
+      "effect": "R_I2_B只能证明初始候选生成沿革，当前候选结论必须引用现文件SHA和I3输出，不得把旧Receipt哈希作为当前完整性证明。",
+      "sources": [
+        "receipts.jsonl:L17",
+        "03_candidate_gate.md#6-SHA256"
+      ],
+      "receipt_refs": [
+        "R_I2_B_LINEAGE_ONLY",
+        "I5_RECEIPT"
+      ]
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "receipts.jsonl未追加I3和I4独立行。",
+      "effect": "I5以03_gate_decision.yaml、04_patent_search_status.yaml及本文件内I5_RECEIPT封存决定来源，不虚构缺失Receipt。",
+      "sources": [
+        "receipts.jsonl",
+        "03_gate_decision.yaml",
+        "04_patent_search_status.yaml"
+      ],
+      "receipt_refs": [
+        "I5_RECEIPT"
+      ]
+    }
+  ],
+  "receipt_index": {
+    "R_I0": "receipts.jsonl:L1",
+    "R_I1_R": "receipts.jsonl:L5",
+    "R_I1_R2": "receipts.jsonl:L7",
+    "R_I1_S": "receipts.jsonl:L8",
+    "R_I1_X": "receipts.jsonl:L9",
+    "R_I1_Q_FINAL": "receipts.jsonl:L13",
+    "R_I1_V1": "receipts.jsonl:L14",
+    "R_I1_V2": "receipts.jsonl:L15",
+    "R_I1_V3_OLD": "receipts.jsonl:L16",
+    "R_I2_B_LINEAGE_ONLY": "receipts.jsonl:L17",
+    "I5_RECEIPT": "05_final_board.json#i5_receipt",
+    "I5_EVIDENCE_REFRESH_RECEIPT": "05_final_board.json#evidence_refresh_receipt"
+  },
+  "source_sha256": {
+    "00_brief.md": "48113d5c3e9680ffeadc489c6174828c9c8aa1c5f61f75532883001c9ec3705d",
+    "01g_fulltext_verification_queue.jsonl": "309fd5ce5c8af3075132dabf25f092f769d174866f86b14d90f0b3faadbbc032",
+    "01_paper_verification_summary.json": "7a7020c78dc0c753bd1298e99eae205ca9919d7df7d6ac3be723e4d501cd8a28",
+    "01_sources_papers.jsonl": "58934393e8f64861203e401fe868fb366a122d351a18cf9100333c1539de3950",
+    "01_paper_cards.md": "7ecaafc0c30ebe5288d66be0b41507cd8dd896c01a1acf29f880903b065fa90a",
+    "01v1_summary.md": "7a27a302f21f03e74df7ec006438c8cae460e3fef4e4268c36328a6942f32bad",
+    "01v1_verified_001_040.jsonl": "7d0cf750de856a7aefb08fb1a95f13ac0937d0b2c4e0810498092819c50ec986",
+    "01v2_summary.md": "1a20485fa8d201d3bc88764877dec6df584586d928feb8024dde82f0406d7899",
+    "01v2_verified_041_080.jsonl": "622766e406b8935a179019236abf248467b591af40d98ae8766497ab5764f597",
+    "01v3_summary.md": "c11e44cd4eaa0be73f59742892f83682711a88d6f33d12399bb1acab254b75a4",
+    "01v3_verified_081_120.jsonl": "7dc11191de7f9da4c8a0744a3226c317aff5cc6ded24d84ccec7b532eae8d76f",
+    "01v3r_summary.md": "68c67a7d9cac69b4b99c7b2c8e22ba3bd9bfeb236238ca91197a5504d76090e1",
+    "01v3r_verified_081_120.jsonl": "bbe3630d0168fdae1d67cc73c71eccf8d15b23f485d86664c3cae61bb22552b2",
+    "01v4_summary.md": "af96f17af25dcf660a0d3876676e49f3202cd5cd834af76654799a35337e9072",
+    "01v4_topup_001_012.jsonl": "7a1a3e73cebf3475922e1c44d4660572f1136f0d11717a73a5e402d3794b7876",
+    "01v5_summary.md": "b14862a5b132296cdef926232bf560777a21e4405986215ee381f3f42e0390b3",
+    "01v5_topup_013_024.jsonl": "6efb7eab8cccb81c7b6d24542c69ce893730a4f99d15b24fed1b37a984803af2",
+    "02_candidate_reference_reconciliation.md": "90670175a0b55e4bb75bccb38861e3de155a88f15a64b66d99f374085cdb1303",
+    "02_candidate_cards.md": "79b4e55a482759a6789747cabb0ac37fac88b0d8848956e2b818128413c11356",
+    "02_candidate_cards.jsonl": "da5c0904f0783368f0b4facb88488e5b9605856b0403039f9f1ffbc447686cdc",
+    "03a_evidence_gate.md": "a05668acc73672a215d04e5878480b1148ebc457fd5e2bea72007178f6415594",
+    "03a_evidence_gate.jsonl": "6a8c1354873bba6136d9b6861c7eac25cfd4d00dfa75a5f5a601e4bd1b9987c7",
+    "03b_paper_attack.md": "052d1f834d8b01032952b3db31971bc332487a819abc6632534b8cd95bbdaea8",
+    "03b_paper_attack.jsonl": "7ad06a8de127f65c841fc58ef2842766c29df878406d825fb915a2ac9dac449a",
+    "03_candidate_gate.md": "42cc14300a17772039758a73177967fe42ed0722386f15f96cd6d78e6be18da9",
+    "03_candidate_gate.jsonl": "41f0361d41457c6de54b93a4108b920dc2e0f471aed61ff35d9e4e2521ab8c18",
+    "03_gate_decision.yaml": "dd87959ff4accfdd5f8c4b01a468e3e45c768a04113cc6457c7dc772ade6bb5e",
+    "04_patent_search_report.md": "ad023622b7ab0b8b2baf9f82ab24830c811e72150df7ab973d9a5d73954ae964",
+    "04_patent_search_status.yaml": "ce1390e1b9844193fb4051b734df26c514affb4cdfc5a9bb1884356fa7d5be77",
+    "04_sources_patents.jsonl": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "receipts.jsonl": "1af1679f3001fed065ac1a82e5933a8783fa0b2ef3cbe0df877cdc91ac8923a4"
+  },
+  "i5_receipt": {
+    "receipt_id": "I5_RECEIPT",
+    "stage": "I5_FINAL_BOARD",
+    "decision": "COMPLETE_ZERO_PASS",
+    "input_contract": "完整读取指定SKILL、00、02、03a/03b、03总门禁、04、01v1、01v2，并检查01v3r；额外读取已出现但被拒绝的01v3以确定不可计数边界。",
+    "pass_to_i4_accepted_as_empty": true,
+    "candidates_reopened": [],
+    "files_created": [
+      "05_final_board.md",
+      "05_final_board.json"
+    ],
+    "formal_application_modified": false,
+    "git_operation": false,
+    "patent_search_executed": false,
+    "integrity_note": "最终文件SHA256采用外部摘要，记录于05_final_board.md及交付消息；JSON不嵌入自身哈希以避免自引用。",
+    "timestamp": "2026-08-18T01:57:41+08:00"
+  },
+  "evidence_refresh_receipt": {
+    "receipt_id": "I5_EVIDENCE_REFRESH_RECEIPT",
+    "stage": "I5_EVIDENCE_REFRESH",
+    "decision": "COMPLETE_STATS_AND_REFERENCE_REFRESH_ONLY",
+    "inputs": [
+      "05_final_board.md",
+      "05_final_board.json",
+      "01_paper_verification_summary.json",
+      "01_sources_papers.jsonl",
+      "01v3r_summary.md",
+      "01v4_summary.md",
+      "01v5_summary.md",
+      "03_gate_decision.yaml",
+      "04_patent_search_report.md"
+    ],
+    "outputs_updated": [
+      "05_final_board.md",
+      "05_final_board.json"
+    ],
+    "outputs_created": [
+      "02_candidate_reference_reconciliation.md"
+    ],
+    "candidate_content_modified": false,
+    "candidate_scores_modified": false,
+    "candidates_reopened": [],
+    "pass_to_i4_remains_empty": true,
+    "i4_status_remains": "NOT_APPLICABLE_NO_SURVIVOR",
+    "formal_application_modified": false,
+    "git_operation": false,
+    "timestamp": "2026-08-18T02:12:06+08:00"
+  }
+}

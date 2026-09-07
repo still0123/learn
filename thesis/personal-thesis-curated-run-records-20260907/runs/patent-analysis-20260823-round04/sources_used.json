@@ -1,0 +1,26 @@
+{
+  "local_sources": [
+    "deliverables/patent/视频问答答案可靠性保障专利申请候选稿_V3_20260823.md",
+    ".remote_threshold_work/infer_qwen3_adaptive_crop_threshold_full_v1.py",
+    ".remote_threshold_work/FULL5320_PREREGISTERED_PROTOCOL.json",
+    ".remote_threshold_work/build_selective_evidence_rewrite_full_threshold_v1.py",
+    ".remote_overnight_work/materialize_adsqa_supplement2526_candidates_v1.py",
+    ".remote_overnight_work/build_evads_a0_verifier_pool_v2.py",
+    "evaluation/tools/score_answer_claims_qwen3_v1.py",
+    "docs/AdsQA实验结果总表与复现索引.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_docx.txt"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html",
+    "https://patents.google.com/patent/CN117744802A/zh",
+    "https://www.imaibj.cn/patent/details/202511481937",
+    "https://patents.google.com/patent/CN120472379B/zh",
+    "https://patents.google.com/patent/CN121235759B/zh"
+  ],
+  "unverified_identifiers": [
+    "CN121962369A",
+    "CN122615110A"
+  ],
+  "notes": "Google Patents and third-party pages are used for technical cross-checking; formal filing decisions require CNIPA bibliographic records and full texts."
+}

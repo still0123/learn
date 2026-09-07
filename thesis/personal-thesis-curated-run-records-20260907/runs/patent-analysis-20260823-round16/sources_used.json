@@ -1,0 +1,18 @@
+{
+  "local_sources": [
+    "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4_20260823.md",
+    "source_texts/patent_docx.txt",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "runs/patent-analysis-20260823-round04/09_search_materials_report.md"
+  ],
+  "web_sources": [
+    "https://www.cnipa.gov.cn/art/2020/11/23/art_97_155167.html",
+    "https://www.cnipa.gov.cn/art/2023/12/21/art_98_189197.html",
+    "https://arxiv.org/abs/2607.11433",
+    "https://arxiv.org/html/2607.11433",
+    "https://arxiv.org/abs/2604.15558",
+    "https://arxiv.org/abs/2608.19739",
+    "https://arxiv.org/html/2608.19739"
+  ],
+  "notes": "本轮确认两项A.3工作应作为本案内部递交授权P0，而非法定受理前置；PBRC全文和旧案官方时间线仍待完成。"
+}

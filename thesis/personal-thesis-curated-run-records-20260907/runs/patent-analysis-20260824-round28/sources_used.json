@@ -1,0 +1,32 @@
+{
+  "run": "patent-analysis-20260824-round28",
+  "date": "2026-08-24",
+  "scope": "merge V4.5.1 claims into a complete V4.6 text-only patent draft and audit written support",
+  "primary_local_sources": [
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制专利申请初稿_V4.5_20260823.md",
+    "deliverables/patent/基于视频证据双差分许可的视频问答答案更新控制权利要求书_V4.5.1_20260824.md",
+    "runs/patent-analysis-20260824-round27",
+    "source_texts/patent_office_action_pdf_extract.txt"
+  ],
+  "prior_art_carried_forward": [
+    {
+      "id": "CN121388101A",
+      "evidence_basis": "office-action quotations and previously available public material"
+    },
+    {
+      "id": "CN117744802A",
+      "url": "https://patents.google.com/patent/CN117744802A/zh"
+    },
+    {
+      "id": "CN103870528A/B",
+      "url": "https://patents.google.com/patent/CN103870528A/zh"
+    }
+  ],
+  "new_web_search_performed": false,
+  "limitations": [
+    "no formal CNIPA or commercial-database search in round28",
+    "no new experimental evidence",
+    "no actual patent figures",
+    "the old application's official publication scope and legal status still require professional verification"
+  ]
+}

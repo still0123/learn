@@ -1,0 +1,177 @@
+{
+  "run": "patent-analysis-20260823-round25",
+  "cutoff_date": "2026-08-23",
+  "scope": "claim-level web full-text preliminary search",
+  "limitations": [
+    "not a formal CNIPA or commercial-database search opinion",
+    "not all patent families and citation chains were exhaustively traced",
+    "CN121388101A was checked through a public abstract and quotations in the local office action"
+  ],
+  "local_sources": [
+    "deliverables/patent/基于预冻结视频证据观测记录的视频问答答案状态更新控制专利_V4.4设计增强稿_20260823.md",
+    "source_texts/patent_office_action_pdf_extract.txt",
+    "source_texts/patent_opinion_statement.txt",
+    "source_texts/patent_docx.txt",
+    "runs/patent-analysis-20260823-round24/"
+  ],
+  "self_application": {
+    "application_number": "202610425757.8",
+    "applicant": "湖南大学",
+    "title": "基于视听协同感知与链式校验的广告视频问答方法及系统",
+    "office_action_date": "2026-05-30",
+    "verification_note": "Application metadata and the second office action were verified from local extracted records; the exact publication number and final legal status still require official-file verification."
+  },
+  "patents": [
+    {
+      "id": "CN103870528A/B",
+      "title": "深度问题回答系统中的问题分类和特征映射的方法和系统",
+      "priority_date": "2012-12-17",
+      "filing_date": "2013-11-29",
+      "publication_date": "2014-06-18",
+      "grant_publication_date": "2018-04-17",
+      "url": "https://patents.google.com/patent/CN103870528A/zh",
+      "relevance": "claim 33 covers generating an updated response based on changed evidence after a confidence-threshold condition"
+    },
+    {
+      "id": "US9141660B2",
+      "title": "Intelligent evidence classification and notification in a deep question answering system",
+      "priority_date": "2012-12-17",
+      "publication_date": "2015-09-22",
+      "url": "https://patents.google.com/patent/US9141660B2/en",
+      "relevance": "automatic updated response based on changed evidence"
+    },
+    {
+      "id": "CN121388101A",
+      "title": "基于迭代式多模态的视频问答系统及方法",
+      "publication_date": "2026-01-23",
+      "url": "https://www.imaibj.cn/patent/details/202511481937",
+      "relevance": "video QA, targeted frame/evidence acquisition, confidence iteration"
+    },
+    {
+      "id": "CN117744802A",
+      "title": "一种解决法律大语言模型的幻觉问题的方法及系统",
+      "publication_date": "2024-03-22",
+      "url": "https://patents.google.com/patent/CN117744802A/zh",
+      "relevance": "initial-answer-fed verification and revision"
+    },
+    {
+      "id": "US9141662B2",
+      "title": "Intelligent evidence classification and notification in a deep question answering system",
+      "priority_date": "2012-12-17",
+      "url": "https://patents.google.com/patent/US9141662B2/en",
+      "relevance": "changed evidence and updated response"
+    },
+    {
+      "id": "US20160034457A1",
+      "title": "Changed Answer Notification in a Question and Answer System",
+      "priority_date": "2014-07-29",
+      "publication_date": "2016-02-04",
+      "url": "https://patents.google.com/patent/US20160034457A1/en",
+      "relevance": "first/second answer difference"
+    },
+    {
+      "id": "EP4617945A1",
+      "title": "Grounding responses from a large language model",
+      "priority_date": "2024-03-13",
+      "publication_date": "2025-09-17",
+      "url": "https://patents.google.com/patent/EP4617945A1/en",
+      "relevance": "critical entity type/value matching and downstream gate"
+    },
+    {
+      "id": "US12536376B2",
+      "title": "Document entity extraction using machine-learned models",
+      "priority_date": "2023-08-21",
+      "publication_date": "2026-01-27",
+      "url": "https://patents.google.com/patent/US12536376B2/en",
+      "relevance": "schema, spatial tags, normalized value matching, discard on mismatch"
+    },
+    {
+      "id": "US12353469B1",
+      "title": "Verification and citation for language model outputs",
+      "filing_date": "2024-06-28",
+      "publication_date": "2025-07-08",
+      "url": "https://patents.google.com/patent/US12353469B1/en",
+      "relevance": "numeric answer/source comparison and correction"
+    },
+    {
+      "id": "CN119669548A",
+      "title": "A practical fact-checking system for LLM",
+      "priority_date": "2023-09-21",
+      "publication_date": "2025-03-21",
+      "url": "https://patents.google.com/patent/CN119669548A/en",
+      "relevance": "key-value facts and difference reporting"
+    },
+    {
+      "id": "CN119669428B",
+      "title": "融合知识图谱和大模型的智能问答方法、装置及存储介质",
+      "priority_date": "2025-02-18",
+      "publication_date": "2025-05-06",
+      "url": "https://patents.google.com/patent/CN119669428B/zh",
+      "relevance": "triple evidence verification and hallucination filtering"
+    },
+    {
+      "id": "US12204524B1",
+      "title": "Maintaining factual consistency during processing",
+      "priority_date": "2023-08-29",
+      "publication_date": "2025-01-21",
+      "url": "https://patents.google.com/patent/US12204524B1/en",
+      "relevance": "fact-linked intermediate rationale and verified final answer"
+    },
+    {
+      "id": "US20250061279A1",
+      "title": "Hallucination detection and remediation in text generation interface systems",
+      "priority_date": "2023-08-16",
+      "publication_date": "2025-02-20",
+      "url": "https://patents.google.com/patent/US20250061279A1/en",
+      "relevance": "source IDs, claim verification, output gating"
+    },
+    {
+      "id": "US20260121859A1",
+      "title": "Medical Data Governance and Deterministic Arbitration System for Evidence-Bound Artificial Intelligence Outputs",
+      "priority_date": "2023-11-27",
+      "publication_date": "2026-04-30",
+      "url": "https://patents.google.com/patent/US20260121859A1/en",
+      "relevance": "deterministic evidence pack, sentence arbitration, render gate, supersession"
+    },
+    {
+      "id": "US20260134218A1",
+      "title": "Hardware-Secured System for Evidence-Governed AI Output Generation with Time-Aligned Semantic Unit Validation",
+      "provisional_date": "2025-11-26",
+      "publication_date": "2026-05-14",
+      "url": "https://patents.justia.com/patent/20260134218",
+      "relevance": "isolated verifier, time-aligned evidence, semantic-unit states, no-new-token rewrite"
+    }
+  ],
+  "non_patent_literature": [
+    {
+      "id": "arXiv:2607.11433",
+      "title": "Omni-Decision: A Progressive Evidence-State Agent System for Omni-Modal QA",
+      "publication_date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.11433"
+    },
+    {
+      "id": "arXiv:2604.15558",
+      "title": "Preregistered Belief Revision Contracts",
+      "publication_date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.15558"
+    },
+    {
+      "id": "arXiv:2608.19739",
+      "title": "Question-Guided Evidence Acquisition for Multimodal Visual Question Answering",
+      "publication_date": "2026-08-20",
+      "url": "https://arxiv.org/abs/2608.19739"
+    },
+    {
+      "id": "arXiv:2608.15708",
+      "title": "What You Ask is What You Ground: Bridging Question Intent to Temporal Evidence for Grounded VideoQA",
+      "publication_date": "2026-08-16",
+      "url": "https://arxiv.org/abs/2608.15708"
+    },
+    {
+      "id": "arXiv:2309.11392",
+      "title": "Retrieving Supporting Evidence for Generative Question Answering",
+      "publication_date": "2023-09-20",
+      "url": "https://arxiv.org/abs/2309.11392"
+    }
+  ]
+}

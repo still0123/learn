@@ -1,0 +1,85 @@
+{
+  "round": 23,
+  "date": "2026-08-23",
+  "local_sources": [
+    {
+      "path": "deliverables/patent/基于增量视频证据与声明依赖闭包的视频问答答案更新控制专利申请候选稿_V4.2_20260823.md",
+      "purpose": "前序候选稿与权利要求基线"
+    },
+    {
+      "path": "CS2215-基于视听协同感知与链式校验的广告视频问答方法及系统-驳回决定.pdf",
+      "purpose": "旧案审查背景"
+    },
+    {
+      "path": "code_refactor/evidence/evidence_package.py",
+      "purpose": "证据标识、时空与模态字段实施基础"
+    },
+    {
+      "path": "code_refactor/reflection/claim_checker.py",
+      "purpose": "声明拆分和所需证据模态基础"
+    },
+    {
+      "path": "code_refactor/rag/retriever.py",
+      "purpose": "证据 ID 关联基础"
+    },
+    {
+      "path": ".remote_threshold_work/build_selective_evidence_rewrite_calibration500_v1.py",
+      "purpose": "OCR/ASR 时空定位和质量字段"
+    }
+  ],
+  "web_sources": [
+    {
+      "url": "https://patents.google.com/patent/CN121901431A/zh",
+      "purpose": "原子陈述、证据核验和三态处理近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/CN117744802A/zh",
+      "purpose": "初始答案验证和修正近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20170004204A1/en",
+      "purpose": "动态答案更新和变化传播近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/WO2024073087A1/en",
+      "purpose": "声明级证据归因、第二文本生成和输出门控近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/CN121660075A/zh",
+      "purpose": "事实证据映射、证据版本和审计链近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20210398000A1/en",
+      "purpose": "版本证明树、结果差异和派生事实近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20160110357A1/en",
+      "purpose": "低置信触发不同模态证据检索近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20260121859A1/en",
+      "purpose": "确定性证据包和血缘跟踪近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US12380343B2/en",
+      "purpose": "复杂问题完整互补证据覆盖近邻"
+    },
+    {
+      "url": "https://patents.google.com/patent/US20140072948A1/en",
+      "purpose": "缺失信息和次级问题生成近邻"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08612",
+      "purpose": "视频证据充分性缺口和定向重检索近邻"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.11862",
+      "purpose": "精确时空证据绑定的视频问答近邻"
+    }
+  ],
+  "limitations": [
+    "本轮为定向网页检索，不是 CNIPA 全库或商业数据库正式查新",
+    "旧案法律状态、优先权和自身在先公开须以官方档案为准",
+    "V4.3 核心机制尚未实现或实验验证"
+  ]
+}
