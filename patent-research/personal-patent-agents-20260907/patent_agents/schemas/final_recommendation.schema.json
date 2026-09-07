@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinalRecommendation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "executive_conclusion",
+    "top_innovations",
+    "claim_strategy",
+    "response_strategy",
+    "code_support",
+    "risks",
+    "next_steps"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "executive_conclusion": {"type": "string"},
+    "top_innovations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rank", "title", "usage", "support_strength", "risk"],
+        "properties": {
+          "rank": {"type": "integer"},
+          "title": {"type": "string"},
+          "usage": {"type": "string"},
+          "support_strength": {"type": "string", "enum": ["strong", "medium", "weak"]},
+          "risk": {"type": "string", "enum": ["low", "medium", "high"]}
+        }
+      }
+    },
+    "claim_strategy": {"type": "string"},
+    "response_strategy": {"type": "string"},
+    "code_support": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "paths", "status"],
+        "properties": {
+          "title": {"type": "string"},
+          "paths": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "status": {"type": "string"}
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "next_steps": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

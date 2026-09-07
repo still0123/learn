@@ -1,0 +1,41 @@
+roles:
+  - id: P0
+    name: 专利主编/协调 Agent
+    output: 10_final_recommendation.md
+    purpose: 总控、合并产物、最终裁决
+  - id: P1
+    name: 材料与检索 Agent
+    output: 01_material_inventory.md
+    purpose: 盘点本地材料并提出检索建议
+  - id: P2
+    name: 权利要求-技术特征映射 Agent
+    output: 02_claim_feature_map.md
+    purpose: 拆解权利要求并映射说明书/代码/论文支撑
+  - id: P3
+    name: 审查意见问题分析 Agent
+    output: 03_office_action_issue_map.md
+    purpose: 拆解驳回逻辑和当前答复弱点
+  - id: P4
+    name: 对比文件/现有技术矩阵 Agent
+    output: 04_prior_art_comparison_matrix.md
+    purpose: 生成特征-对比文件矩阵
+  - id: P5
+    name: 模拟审查员批判 Agent
+    output: 07_examiner_critic_review.md
+    purpose: 敌对攻击模块拼接、显而易见、无技术效果等风险
+  - id: P6
+    name: 创新点构思 Agent
+    output: 06_innovation_candidates.md
+    purpose: 生成新创新点候选
+  - id: P7
+    name: 修改与答复策略 Agent
+    output: 08_revision_strategy.md
+    purpose: 形成权利要求修改和答复策略
+  - id: P8
+    name: 代码实现难度评审 Agent
+    output: 05_code_implementation_map.md
+    purpose: 评估实现状态和实现难度
+  - id: P9
+    name: 证据与风险门禁 Agent
+    output: gates.md
+    purpose: 执行门禁并约束最终建议

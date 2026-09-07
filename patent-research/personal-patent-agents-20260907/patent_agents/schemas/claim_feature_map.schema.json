@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClaimFeatureMap",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "features"],
+  "properties": {
+    "claim_id": {"type": "string"},
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feature_id", "claim_text", "normalized_meaning", "support_strength"],
+        "properties": {
+          "feature_id": {"type": "string"},
+          "claim_text": {"type": "string"},
+          "normalized_meaning": {"type": "string"},
+          "support_strength": {"type": "string", "enum": ["strong", "medium", "weak"]},
+          "support_paths": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "code_paths": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "risk": {"type": "string"}
+        }
+      }
+    }
+  }
+}

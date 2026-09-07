@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InnovationCandidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "technical_mechanism",
+    "not_module_stacking",
+    "original_support",
+    "prior_art_differences",
+    "technical_effect",
+    "claim_path",
+    "code_feasibility",
+    "examiner_attack",
+    "recommendation"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "technical_mechanism": {"type": "string"},
+    "not_module_stacking": {"type": "string"},
+    "original_support": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "excerpt", "strength"],
+        "properties": {
+          "path": {"type": "string"},
+          "excerpt": {"type": "string"},
+          "strength": {"type": "string", "enum": ["strong", "medium", "weak"]}
+        }
+      }
+    },
+    "prior_art_differences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reference", "status", "difference"],
+        "properties": {
+          "reference": {"type": "string"},
+          "status": {"type": "string", "enum": ["disclosed", "partial", "not_disclosed", "unknown"]},
+          "difference": {"type": "string"}
+        }
+      }
+    },
+    "technical_effect": {"type": "string"},
+    "claim_path": {"type": "string"},
+    "code_feasibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "difficulty", "notes"],
+      "properties": {
+        "status": {"type": "string", "enum": ["implemented", "partial", "scaffold", "not_implemented"]},
+        "difficulty": {"type": "string", "enum": ["low", "medium", "high"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "examiner_attack": {"type": "string"},
+    "recommendation": {
+      "type": "string",
+      "enum": ["keep", "revise", "discard", "continuation", "paper_only"]
+    }
+  }
+}

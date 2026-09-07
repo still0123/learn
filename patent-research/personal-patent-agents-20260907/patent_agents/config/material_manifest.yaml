@@ -1,0 +1,386 @@
+materials:
+  - id: adsqa_paper_extracted
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/adsqa_paper_extracted.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: patent_docx
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/patent_docx.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: patent_office_action_pdf_extract
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/patent_office_action_pdf_extract.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: patent_opinion_statement
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/patent_opinion_statement.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: proposal_doc
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/proposal_doc.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: proposal_pptx
+    path: "/Users/bytedance/vqa_thesis_continue/source_texts/proposal_pptx.txt"
+    type: source_text
+    priority: high
+    notes: "machine-readable extracted source"
+  - id: AdsQA论文详细阅读笔记
+    path: "/Users/bytedance/vqa_thesis_continue/docs/AdsQA论文详细阅读笔记.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: Agent编排执行方案
+    path: "/Users/bytedance/vqa_thesis_continue/docs/Agent编排执行方案.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: RAG升级_Embedding与Hybrid检索说明
+    path: "/Users/bytedance/vqa_thesis_continue/docs/RAG升级_Embedding与Hybrid检索说明.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: RAG接入推理脚本说明与测试报告
+    path: "/Users/bytedance/vqa_thesis_continue/docs/RAG接入推理脚本说明与测试报告.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: RAG模型与检索方法说明
+    path: "/Users/bytedance/vqa_thesis_continue/docs/RAG模型与检索方法说明.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: agent_orchestration_v2
+    path: "/Users/bytedance/vqa_thesis_continue/docs/agent_orchestration_v2.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: patent_agent_roles
+    path: "/Users/bytedance/vqa_thesis_continue/docs/patent_agent_roles.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: patent_agent_workflow
+    path: "/Users/bytedance/vqa_thesis_continue/docs/patent_agent_workflow.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: patent_analysis_output_schemas
+    path: "/Users/bytedance/vqa_thesis_continue/docs/patent_analysis_output_schemas.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: patent_innovation_gates
+    path: "/Users/bytedance/vqa_thesis_continue/docs/patent_innovation_gates.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 【软件名称待定】V1.0_软件说明书_软著草稿
+    path: "/Users/bytedance/vqa_thesis_continue/docs/【软件名称待定】V1.0_软件说明书_软著草稿.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 【软件名称待定】V1.0_软著源代码提交与脱敏清单
+    path: "/Users/bytedance/vqa_thesis_continue/docs/【软件名称待定】V1.0_软著源代码提交与脱敏清单.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 主线重构与创新点改写稿
+    path: "/Users/bytedance/vqa_thesis_continue/docs/主线重构与创新点改写稿.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 代码实现与实验设置建议
+    path: "/Users/bytedance/vqa_thesis_continue/docs/代码实现与实验设置建议.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 代码闭环修改与测试报告
+    path: "/Users/bytedance/vqa_thesis_continue/docs/代码闭环修改与测试报告.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 代码闭环多Agent编排方案
+    path: "/Users/bytedance/vqa_thesis_continue/docs/代码闭环多Agent编排方案.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 完整论文_题目不变_证据流闭环版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/完整论文_题目不变_证据流闭环版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 实验补充计划与记录模板
+    path: "/Users/bytedance/vqa_thesis_continue/docs/实验补充计划与记录模板.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 开题专利创新性诊断报告
+    path: "/Users/bytedance/vqa_thesis_continue/docs/开题专利创新性诊断报告.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 开题报告可替换段落_题目不变版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/开题报告可替换段落_题目不变版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 明早检查摘要
+    path: "/Users/bytedance/vqa_thesis_continue/docs/明早检查摘要.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 术语与题目真源
+    path: "/Users/bytedance/vqa_thesis_continue/docs/术语与题目真源.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 真实参考文献核查清单
+    path: "/Users/bytedance/vqa_thesis_continue/docs/真实参考文献核查清单.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第3-4章图示索引与插入说明
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第3-4章图示索引与插入说明.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第3-4章方法章节整合说明
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第3-4章方法章节整合说明.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第3章_视觉特征压缩与证据定位方法
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第3章_视觉特征压缩与证据定位方法.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第3章_闭环审查修订版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第3章_闭环审查修订版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第3章_闭环审查过程记录
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第3章_闭环审查过程记录.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第4章_知识增强链式反思推理方法
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第4章_知识增强链式反思推理方法.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第4章_闭环审查修订版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第4章_闭环审查修订版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第4章_闭环审查过程记录
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第4章_闭环审查过程记录.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第5章_实验设计与结果分析
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第5章_实验设计与结果分析.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第5章_闭环审查修订版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第5章_闭环审查修订版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第5章_闭环审查过程记录
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第5章_闭环审查过程记录.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 第5章实验执行清单
+    path: "/Users/bytedance/vqa_thesis_continue/docs/第5章实验执行清单.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 答辩Q&A
+    path: "/Users/bytedance/vqa_thesis_continue/docs/答辩Q&A.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 论文主体骨架_题目不变_证据流主线版
+    path: "/Users/bytedance/vqa_thesis_continue/docs/论文主体骨架_题目不变_证据流主线版.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 论文主体骨架整合说明
+    path: "/Users/bytedance/vqa_thesis_continue/docs/论文主体骨架整合说明.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 论文代码包审查报告
+    path: "/Users/bytedance/vqa_thesis_continue/docs/论文代码包审查报告.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 论文续写整合稿
+    path: "/Users/bytedance/vqa_thesis_continue/docs/论文续写整合稿.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 闭环多Agent论文写作编排方案
+    path: "/Users/bytedance/vqa_thesis_continue/docs/闭环多Agent论文写作编排方案.md"
+    type: doc
+    priority: medium
+    notes: "project documentation/reference"
+  - id: 1基于迭代式多模态的视频问答系统及方法
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/1基于迭代式多模态的视频问答系统及方法.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 2026104257578_基于视听协同感知与链式校验的广告视频问答方法及系统_第一次审查意见通知书_湖南大学（多通知书合并）
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/2026104257578_基于视听协同感知与链式校验的广告视频问答方法及系统_第一次审查意见通知书_湖南大学（多通知书合并）.zip"
+    type: patent_asset:zip
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 2一种解决法律大语言模型的幻觉问题的方法及系统
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/2一种解决法律大语言模型的幻觉问题的方法及系统.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 3一种应用于外部知识问答的多模态多尺度检索增强生成方法、系统、设备及介质
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/3一种应用于外部知识问答的多模态多尺度检索增强生成方法、系统、设备及介质.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 4一种面向复杂场景的端到端语义提取系统
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/4一种面向复杂场景的端到端语义提取系统.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 5基于大小模型协同的知识型视觉问答方法、设备及介质
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/5基于大小模型协同的知识型视觉问答方法、设备及介质.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: CS2215湖南大学_发明2026104257578基于视听协同感知与链式校验的广告视频问答方法及系统_第N次审查意见通知书_20260530（多通知书合并）
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/CS2215湖南大学_发明2026104257578基于视听协同感知与链式校验的广告视频问答方法及系统_第N次审查意见通知书_20260530（多通知书合并）.pdf"
+    type: patent_asset:pdf
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: CS2215湖南大学_发明2026104257578基于视听协同感知与链式校验的广告视频问答方法及系统_第N次审查意见通知书_20260530（多通知书合并）
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/CS2215湖南大学_发明2026104257578基于视听协同感知与链式校验的广告视频问答方法及系统_第N次审查意见通知书_20260530（多通知书合并）.zip"
+    type: patent_asset:zip
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: oa1_最终提交版
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/oa1_最终提交版.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: oa1_权要替换页
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/oa1_权要替换页.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 一种基于视听协同感知与链式校验的广告视频问答方法2
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/一种基于视听协同感知与链式校验的广告视频问答方法2.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 代理原版_意见陈述书
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/代理原版_意见陈述书.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 原文提取
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/原文提取.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 开题最新版本基于视觉特征压缩与链式反思的广告视频问答方法开题报告
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/开题最新版本基于视觉特征压缩与链式反思的广告视频问答方法开题报告.doc"
+    type: patent_asset:doc
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_修订对照版
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_修订对照版.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_合并修改后 copy
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_合并修改后 copy.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_合并修改后
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_合并修改后.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_合并修改后_二次润色
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_合并修改后_二次润色.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_逐段对照版_生成报告
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_逐段对照版_生成报告.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_逐段对照版_红增绿删黑不变
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_逐段对照版_红增绿删黑不变.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_逐段对照版_绿增红删_二次润色生成报告
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_逐段对照版_绿增红删_二次润色生成报告.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_逐段对照版_绿增红删_生成报告
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_逐段对照版_绿增红删_生成报告.txt"
+    type: patent_asset:txt
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书_逐段对照版_绿增红删黑不变
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书_逐段对照版_绿增红删黑不变.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书修改对比说明
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书修改对比说明.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: 意见陈述书绿增红删黑不变2
+    path: "/Users/bytedance/vqa_thesis_continue/专利相关/意见陈述书绿增红删黑不变2.docx"
+    type: patent_asset:docx
+    priority: high
+    notes: "patent/prosecution/local prior-art asset"
+  - id: evidence_package
+    path: "/Users/bytedance/vqa_thesis_continue/code_refactor/evidence/evidence_package.py"
+    type: code_evidence
+    priority: medium
+    notes: "implementation evidence"
+  - id: retriever
+    path: "/Users/bytedance/vqa_thesis_continue/code_refactor/rag/retriever.py"
+    type: code_evidence
+    priority: medium
+    notes: "implementation evidence"
+  - id: prompt_builder
+    path: "/Users/bytedance/vqa_thesis_continue/code_refactor/reasoning/prompt_builder.py"
+    type: code_evidence
+    priority: medium
+    notes: "implementation evidence"
+  - id: claim_checker
+    path: "/Users/bytedance/vqa_thesis_continue/code_refactor/reflection/claim_checker.py"
+    type: code_evidence
+    priority: medium
+    notes: "implementation evidence"
+  - id: rag_retriever
+    path: "/Users/bytedance/vqa_thesis_continue/rag_mvp/rag_retriever.py"
+    type: code_evidence
+    priority: medium
+    notes: "implementation evidence"

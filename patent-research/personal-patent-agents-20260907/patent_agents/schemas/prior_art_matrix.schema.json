@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PriorArtMatrix",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rows"],
+  "properties": {
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feature_id", "our_feature", "references"],
+        "properties": {
+          "feature_id": {"type": "string"},
+          "our_feature": {"type": "string"},
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["reference", "status", "notes"],
+              "properties": {
+                "reference": {"type": "string"},
+                "status": {"type": "string", "enum": ["disclosed", "partial", "not_disclosed", "unknown"]},
+                "notes": {"type": "string"}
+              }
+            }
+          },
+          "counter_position": {"type": "string"}
+        }
+      }
+    }
+  }
+}

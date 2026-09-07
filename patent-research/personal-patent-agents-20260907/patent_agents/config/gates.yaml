@@ -1,0 +1,25 @@
+gates:
+  - id: G1
+    name: 材料覆盖
+    description: 必须覆盖专利文本、审查意见/驳回决定、意见陈述书、对比文件、论文/开题材料、相关代码实现
+  - id: G2
+    name: 原始公开支持
+    description: 每个最终创新点必须有原始说明书或已提交文本支持
+  - id: G3
+    name: 相对现有技术差异
+    description: 每个最终创新点必须说明与本地对比文件的差异和组合风险
+  - id: G4
+    name: 技术效果
+    description: 不得编造实验结果，只能主张可由本地材料支持或可合理推导的技术效果
+  - id: G5
+    name: 非模块拼接
+    description: 必须回答是否只是普通视频问答、普通RAG、普通CoT、自我验证或热力图/全局局部特征的常规组合
+  - id: G6
+    name: 代码可行性
+    description: 必须区分已实现、部分实现、scaffold、未实现和外部依赖
+  - id: G7
+    name: 无虚构数据
+    description: 禁止出现未经证实的准确率、token、延迟、人工评估或消融数值
+  - id: G8
+    name: 法律表述谨慎
+    description: 禁止保证授权或作出确定性法律结论，必要时标注需代理人复核
