@@ -1,0 +1,47 @@
+diff --git a/src/memoryforge/storage/workspace.py b/src/memoryforge/storage/workspace.py
+index 5fdbc67..836c361 100644
+--- a/src/memoryforge/storage/workspace.py
++++ b/src/memoryforge/storage/workspace.py
+@@ -98,6 +98,7 @@ from memoryforge.storage.workspace_contract import (
+     CAPTURE_SCHEMA,
+     CONFLICT_SCHEMA,
+     EGRESS_SCHEMA,
++    QUERY_GAP_SCHEMA,
+ )
+ from memoryforge.storage.workspace_contract import (
+     DATABASE_RELATIVE_PATH as DATABASE_RELATIVE_PATH,
+@@ -2711,6 +2712,8 @@ def _apply_schema_without_source_fts(connection: sqlite3.Connection) -> None:
+         connection.execute(statement)
+     for statement in CONFLICT_SCHEMA:
+         connection.execute(statement)
++    for statement in QUERY_GAP_SCHEMA:
++        connection.execute(statement)
+ 
+ 
+ def _rebuild_origin_main_fts(connection: sqlite3.Connection, root: Path) -> None:
+@@ -2801,6 +2804,8 @@ def _apply_schema(connection: sqlite3.Connection) -> None:
+         connection.execute(statement)
+     for statement in CONFLICT_SCHEMA:
+         connection.execute(statement)
++    for statement in QUERY_GAP_SCHEMA:
++        connection.execute(statement)
+ 
+ 
+ def _backfill_wiki_facts(connection: sqlite3.Connection, root: Path) -> None:
+diff --git a/src/memoryforge/storage/workspace_contract.py b/src/memoryforge/storage/workspace_contract.py
+index c7712ac..dde43fa 100644
+--- a/src/memoryforge/storage/workspace_contract.py
++++ b/src/memoryforge/storage/workspace_contract.py
+@@ -7,10 +7,12 @@ from pathlib import Path
+ from memoryforge.compiler.egress_policy import SCHEMA_SQL as _EGRESS_SCHEMA
+ from memoryforge.compiler.knowledge_conflicts import SCHEMA_SQL as _CONFLICT_SCHEMA
+ from memoryforge.storage.capture_inbox import SCHEMA_SQL as _CAPTURE_SCHEMA
++from memoryforge.storage.query_gaps import SCHEMA_SQL as _QUERY_GAP_SCHEMA
+ 
+ CAPTURE_SCHEMA = _CAPTURE_SCHEMA
+ CONFLICT_SCHEMA = _CONFLICT_SCHEMA
+ EGRESS_SCHEMA = _EGRESS_SCHEMA
++QUERY_GAP_SCHEMA = _QUERY_GAP_SCHEMA
+ 
+ DATABASE_RELATIVE_PATH = Path(".memoryforge/index.sqlite")
+ RAW_CATEGORIES = ("design", "postmortem", "summary", "notes", "refs")
