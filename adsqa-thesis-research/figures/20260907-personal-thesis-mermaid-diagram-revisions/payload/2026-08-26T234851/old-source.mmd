@@ -1,0 +1,10 @@
+flowchart LR
+    U["用户 / OpenAPI / 运维"] --> R["⑤ 接口可靠性<br>准入、超时、分类、降级"]
+    R --> S["③ 接入资源安全<br>Account → FS → AP/MP/DQ"]
+    S --> D["① DataFlow 生命周期<br>Policy + Task"]
+    D --> X["TOS / TLS / MQ / 数据面"]
+    B["② 后台作业治理<br>扫描、调度、回写、清理、续期"] -.持续收敛.-> D
+    B -.对账.-> X
+    P["④ 流水线构建<br>生命周期测试 + 只读诊断"] --> R
+    P --> S
+    P --> D

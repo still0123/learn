@@ -1,0 +1,26 @@
+flowchart TB
+    A["① 自动化测试流水线建设与稳定性治理<br/>生命周期测试 · 稳定性治理 · 只读诊断"]
+    B["② DataFlow 后台作业治理<br/>同步 Job · 互斥 · 分页 · CAS · 可观测性"]
+    C["③ 接入资源安全与生命周期一致性<br/>三级归属 · 原子更新 · 计费边界 · 异常状态"]
+    D["④ 接口与资源查询可靠性治理<br/>准入 · 超时 · 错误分类 · 降级 · 集群筛选"]
+
+    ENTRY(["请求入口"]) -->|"由④保护"| D
+    D -->|"可靠流转"| C
+    B -->|"持续收敛"| TASKS["资源与数据流任务"]
+    C -->|"守住"| CORRECT(["资源正确性"])
+
+    A -.->|"验证"| B
+    A -.->|"验证"| C
+    A -.->|"验证"| D
+
+    classDef test fill:#E8F3FF,stroke:#3370FF,stroke-width:2px,color:#102452
+    classDef job fill:#F3E8FF,stroke:#7C3AED,stroke-width:2px,color:#32115F
+    classDef safety fill:#E8FAF0,stroke:#16A34A,stroke-width:2px,color:#124425
+    classDef api fill:#FFF4E5,stroke:#F59E0B,stroke-width:2px,color:#5E3600
+    classDef endpoint fill:#F5F6F7,stroke:#8F959E,stroke-width:1.5px,color:#1F2329
+
+    class A test
+    class B job
+    class C safety
+    class D api
+    class ENTRY,TASKS,CORRECT endpoint

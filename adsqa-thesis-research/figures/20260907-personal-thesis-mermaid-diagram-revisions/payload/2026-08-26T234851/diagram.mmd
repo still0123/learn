@@ -1,0 +1,20 @@
+flowchart LR
+    P["① 自动化测试流水线<br/>生命周期测试<br/>稳定性治理 · 只读诊断"]
+    J["② DataFlow 后台<br/>作业治理<br/>同步 Job · 互斥 · 分页<br/>CAS · 可观测性<br/>持续收敛：资源与数据流任务<br/>扩展知识：DataFlow 完整生命周期"]
+    S["③ 接入资源安全与<br/>生命周期一致性<br/>三级归属 · 原子更新<br/>计费边界 · 异常状态<br/>守住资源正确性<br/>扩展知识：Workspace / Filespace<br/>接入链路"]
+    R["④ 接口与资源查询<br/>可靠性治理<br/>准入 · 超时 · 错误分类<br/>降级 · 集群筛选<br/>保护请求入口"]
+
+    P -->|验证作业收敛| J
+    P -->|验证资源正确性| S
+    P -->|验证入口可靠性| R
+    R -->|入口校验后流转| S
+    J -->|持续收敛资源与数据流任务| S
+
+    classDef pipeline fill:#E8F1FF,stroke:#2563EB,stroke-width:2px,color:#0F172A
+    classDef job fill:#F3E8FF,stroke:#7C3AED,stroke-width:2px,color:#0F172A
+    classDef resource fill:#E8F8EF,stroke:#15803D,stroke-width:2px,color:#0F172A
+    classDef reliability fill:#FFF4E5,stroke:#D97706,stroke-width:2px,color:#0F172A
+    class P pipeline
+    class J job
+    class S resource
+    class R reliability
