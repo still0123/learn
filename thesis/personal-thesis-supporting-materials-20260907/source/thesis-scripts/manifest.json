@@ -1,0 +1,15 @@
+{
+  "root": "/Users/bytedance/vqa_thesis_continue",
+  "generated_at": "2026年6月18日",
+  "files": [
+    "/Users/bytedance/vqa_thesis_continue/README.md",
+    "/Users/bytedance/vqa_thesis_continue/docs/论文续写整合稿.md",
+    "/Users/bytedance/vqa_thesis_continue/docs/实验补充计划与记录模板.md",
+    "/Users/bytedance/vqa_thesis_continue/docs/答辩Q&A.md",
+    "/Users/bytedance/vqa_thesis_continue/rag_mvp/marketing_knowledge_base_extended.json",
+    "/Users/bytedance/vqa_thesis_continue/rag_mvp/rag_retriever.py",
+    "/Users/bytedance/vqa_thesis_continue/docx/基于视听协同感知与链式校验的广告视频问答方法_续写稿_20260618.docx"
+  ],
+  "docx_generated": true,
+  "note": "All outputs are under /Users/bytedance/vqa_thesis_continue, not under efs-mgr."
+}
