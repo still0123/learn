@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950">
+
+<style>
+  .title { font: 700 22px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #17365D; }
+  .subtitle { font: 500 14px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #4F5B66; }
+  .zone1 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #2F75B5; }
+  .zone2 { font: 700 17px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #C55A11; }
+  .box { fill: #EAF3F8; stroke: #2F75B5; stroke-width: 1.6; }
+  .box2 { fill: #FCE4D6; stroke: #C55A11; stroke-width: 1.6; }
+  .box3 { fill: #E2F0D9; stroke: #548235; stroke-width: 1.6; }
+  .box4 { fill: #E4DFEC; stroke: #7030A0; stroke-width: 1.6; }
+  .box5 { fill: #FFF2CC; stroke: #BF9000; stroke-width: 1.6; }
+  .small { font: 13px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .tiny { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .label { font: 700 15px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .note { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .arrow { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#ah); }
+  .dash { stroke: #777; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; marker-end: url(#ah); }
+</style>
+<defs>
+  <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+  </marker>
+</defs>
+
+<text x="700" y="34" text-anchor="middle" class="title">创新点二：证据缺口驱动的主动补看与保守答案决策</text>
+<text x="700" y="58" text-anchor="middle" class="subtitle">训练仅验证器（真实声明），答案模型冻结；推理阶段为“何时补看—补看什么—是否采纳”的显式决策链（论文第4章）</text>
+<text x="180" y="100" text-anchor="middle" class="zone2">训练阶段（仅轻量验证器）</text>
+<rect x="30" y="112" width="1340" height="180" rx="14" fill="none" stroke="#C55A11" stroke-width="1.2" stroke-dasharray="8 5"/>
+<rect x="50" y="128" width="220" height="140" rx="10" class="box2"/>
+<text x="160.0" y="152" text-anchor="middle" class="label">正反声明构造（RealClaim985）</text>
+<text x="160.0" y="171" text-anchor="middle" class="small">真实回答→原子声明 c_i</text>
+<text x="160.0" y="189" text-anchor="middle" class="small">642 supported / 343 not-supported</text>
+<text x="160.0" y="207" text-anchor="middle" class="small">弱监督标签（自动推导）</text>
+<text x="160.0" y="225" text-anchor="middle" class="small">与校准/评测视频隔离</text>
+<path d="M270,198 L310,198" class="arrow"/>
+<rect x="310" y="128" width="240" height="140" rx="10" class="box2"/>
+<text x="430.0" y="152" text-anchor="middle" class="label">反事实证据对（E+/E−）</text>
+<text x="430.0" y="171" text-anchor="middle" class="small">E+ 完整证据（决定性+背景保留）</text>
+<text x="430.0" y="189" text-anchor="middle" class="small">E− 最小破坏：删除关键帧</text>
+<text x="430.0" y="207" text-anchor="middle" class="small">模糊关键文字 / 语音错移±2s</text>
+<text x="430.0" y="225" text-anchor="middle" class="small">替换邻近干扰帧（保留背景）</text>
+<path d="M550,198 L590,198" class="arrow"/>
+<rect x="590" y="128" width="250" height="140" rx="10" class="box4"/>
+<text x="715.0" y="152" text-anchor="middle" class="label">配对排序目标与支持判别</text>
+<text x="715.0" y="171" text-anchor="middle" class="small">score(q,c,E+) &gt; score(q,c,E−)+margin</text>
+<text x="715.0" y="189" text-anchor="middle" class="small">支持状态：支持 / 反驳 / 不足</text>
+<text x="715.0" y="207" text-anchor="middle" class="small">同题同声明下的证据对比监督</text>
+<path d="M840,198 L880,198" class="arrow"/>
+<rect x="880" y="128" width="220" height="140" rx="10" class="box2"/>
+<text x="990.0" y="152" text-anchor="middle" class="label">Qwen3 LoRA 充分性验证器</text>
+<text x="990.0" y="171" text-anchor="middle" class="small">视觉编码器冻结</text>
+<text x="990.0" y="189" text-anchor="middle" class="small">语言侧 LoRA ≈0.03% 参数</text>
+<text x="990.0" y="207" text-anchor="middle" class="small">8视图+问题+声明+ASR输入</text>
+<rect x="1140" y="128" width="210" height="140" rx="10" class="box3"/>
+<text x="1245.0" y="152" text-anchor="middle" class="label">输出</text>
+<text x="1245.0" y="171" text-anchor="middle" class="small">P(充分 | q, c, E) ∈ [0,1]</text>
+<text x="1245.0" y="189" text-anchor="middle" class="small">φ(A)：声明级聚合</text>
+<text x="1245.0" y="207" text-anchor="middle" class="small">三基座独立校准阈值</text>
+<path d="M1100,198 L1140,198" class="arrow"/>
+<text x="700" y="284" text-anchor="middle" class="note">路线选择：受控反事实适配器 AUROC 0.575 未达 0.70 门禁；真实正反声明直接训练成为主线（Calibration-240：冻结基座 0.541 → Qwen3 LoRA 0.660，+0.12，CI 全正）；E+/E- 保留为对比校准与证据扰动诊断。</text>
+<text x="180" y="330" text-anchor="middle" class="zone2">推理阶段——选择性补看与保守决策</text>
+<rect x="30" y="342" width="1340" height="470" rx="14" fill="none" stroke="#C55A11" stroke-width="1.2" stroke-dasharray="8 5"/>
+<rect x="50" y="360" width="190" height="100" rx="10" class="box"/>
+<text x="145.0" y="384" text-anchor="middle" class="label">初始答案 A0</text>
+<text x="145.0" y="403" text-anchor="middle" class="small">MMR8 初始证据生成</text>
+<text x="145.0" y="421" text-anchor="middle" class="small">（第3章创新点一）</text>
+<path d="M240,410 L280,410" class="arrow"/>
+<rect x="280" y="360" width="230" height="100" rx="10" class="box2"/>
+<text x="395.0" y="384" text-anchor="middle" class="label">① 声明拆解与支持度</text>
+<text x="395.0" y="403" text-anchor="middle" class="small">A0 → 声明 c_i</text>
+<text x="395.0" y="421" text-anchor="middle" class="small">验证器评分 φ(A0)</text>
+<path d="M510,410 L550,410" class="arrow"/>
+<rect x="550" y="360" width="200" height="100" rx="10" class="box5"/>
+<text x="650.0" y="384" text-anchor="middle" class="label">② 触发判断</text>
+<text x="650.0" y="403" text-anchor="middle" class="small">φ(A0) &lt; τ_trigger ？</text>
+<text x="650.0" y="421" text-anchor="middle" class="small">否 → 输出 A0（结束）</text>
+<path d="M750,410 L790,410" class="arrow"/>
+<rect x="790" y="360" width="270" height="100" rx="10" class="box5"/>
+<text x="925.0" y="384" text-anchor="middle" class="label">③ 证据缺口诊断（answer-free）</text>
+<text x="925.0" y="403" text-anchor="middle" class="small">问题逻辑树：OCR/ASR/动作/对象/场景叶</text>
+<text x="925.0" y="421" text-anchor="middle" class="small">× 初始证据覆盖 → 缺口记录</text>
+<text x="925.0" y="439" text-anchor="middle" class="small">{missing_leaf, gap_reason}</text>
+<path d="M1060,410 L1100,410" class="arrow"/>
+<rect x="1100" y="360" width="250" height="100" rx="10" class="box2"/>
+<text x="1225.0" y="384" text-anchor="middle" class="label">④ 动作决策（单轮单动作）</text>
+<text x="1225.0" y="403" text-anchor="middle" class="small">OCR叶缺失/定位分歧→LOOK_REGION</text>
+<text x="1225.0" y="421" text-anchor="middle" class="small">ASR/时序叶缺失→LOOK_TIME</text>
+<text x="1225.0" y="439" text-anchor="middle" class="small">无可定位缺口→DIRECT</text>
+<rect x="50" y="510" width="400" height="110" rx="10" class="box2"/>
+<text x="250.0" y="534" text-anchor="middle" class="label">LOOK_TIME：补看新时间位置</text>
+<text x="250.0" y="553" text-anchor="middle" class="small">ASR段首/段尾 · 锚点邻域新帧</text>
+<text x="250.0" y="571" text-anchor="middle" class="small">补看帧均不同于初始8帧与锚点帧</text>
+<text x="250.0" y="589" text-anchor="middle" class="small">附时间段ASR文本回指</text>
+<rect x="480" y="510" width="400" height="110" rx="10" class="box2"/>
+<text x="680.0" y="534" text-anchor="middle" class="label">LOOK_REGION：补看锚点区域</text>
+<text x="680.0" y="553" text-anchor="middle" class="small">锚点全帧 + 高分辨率证据视图</text>
+<text x="680.0" y="571" text-anchor="middle" class="small">附该时刻OCR文本与ASR段落回指</text>
+<text x="680.0" y="589" text-anchor="middle" class="small">调用第3章锚点机制（响应峰/熵）</text>
+<rect x="910" y="510" width="440" height="110" rx="10" class="box3"/>
+<text x="1130.0" y="534" text-anchor="middle" class="label">DIRECT：保留 A0</text>
+<text x="1130.0" y="553" text-anchor="middle" class="small">低支持但无可定位缺口时不做无目的补看</text>
+<text x="1130.0" y="571" text-anchor="middle" class="small">与高支持未触发共用“回退/直出”路径</text>
+<text x="1130.0" y="589" text-anchor="middle" class="small">每题输出动作、原因与调用记录</text>
+<path d="M1225,460 C1225,480 700,470 700,510" class="dash"/>
+<path d="M250,620 L250,660" class="arrow"/>
+<path d="M680,620 L680,660" class="arrow"/>
+<rect x="50" y="660" width="800" height="70" rx="10" class="box2"/>
+<text x="450.0" y="684" text-anchor="middle" class="label">⑤ 证据增强输入（12视图 / 3,104 Token，预算审计） → ⑥ 独立候选生成 A2（不以A0为改写对象，直接在增强证据上作答）</text>
+<path d="M850,695 L890,695" class="arrow"/>
+<rect x="890" y="650" width="460" height="90" rx="10" class="box4"/>
+<text x="1120.0" y="674" text-anchor="middle" class="label">⑦ 保守门控：φ(A2) ≥ τ 且 φ(A2) − φ(A0) ≥ margin</text>
+<text x="1120.0" y="693" text-anchor="middle" class="small">通过 → 替换为 A2；未通过 / 平票 / 格式失败 → 回退 A0</text>
+<text x="1120.0" y="711" text-anchor="middle" class="small">（验证器不可用或评分失败一律回退）</text>
+<path d="M1350,695 L1370,695" class="arrow"/>
+<rect x="1210" y="760" width="140" height="40" rx="10" class="box3"/>
+<text x="1280.0" y="784" text-anchor="middle" class="label">最终答案 A*</text>
+<path d="M1120,740 C1120,780 1180,780 1210,780" class="arrow"/>
+<rect x="50" y="760" width="500" height="40" rx="10" class="box3"/>
+<text x="300.0" y="784" text-anchor="middle" class="label">审计轨迹：动作 · 补看帧号/时间戳/区域 · φ(A0), φ(A2) · 替换决策</text>
+<text x="700" y="850" text-anchor="middle" class="note">冻结门控参数（开发/校准集确定，评测集标签不参与）：Qwen3 τ=0.960292（OOF-500）；ReAd-R τ=0.924142, margin=0（Calibration-100）；Qwen2.5 τ=0.392437, margin=0.25（GroupCV-500五折）。</text>
+<text x="700" y="874" text-anchor="middle" class="note">不是自由思维链，也不是外部知识检索增强：补看只由低支持风险触发，并受视频内部证据约束。无门控反思 Strict −8.87 pp，门控后回到0；完整方法相对MMR8 +7.00/+10.12 pp（Full-7844）。</text>
+<text x="700" y="898" text-anchor="middle" class="note">零错误修改确认：ReAd-R Confirm-600 5胜/0负；E-VAds External-1000B 28胜/0负；Fresh-500 29胜/0负。</text>
+</svg>

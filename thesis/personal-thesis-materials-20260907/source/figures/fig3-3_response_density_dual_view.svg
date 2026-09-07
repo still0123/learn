@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="340" viewBox="0 0 1260 340">
+
+<style>
+  .title { font: 700 22px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #17365D; }
+  .subtitle { font: 500 14px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #4F5B66; }
+  .box { fill: #EAF3F8; stroke: #2F75B5; stroke-width: 1.6; rx: 12; }
+  .box2 { fill: #FCE4D6; stroke: #C55A11; stroke-width: 1.6; rx: 12; }
+  .box3 { fill: #E2F0D9; stroke: #548235; stroke-width: 1.6; rx: 12; }
+  .box4 { fill: #E4DFEC; stroke: #7030A0; stroke-width: 1.6; rx: 12; }
+  .box5 { fill: #FFF2CC; stroke: #BF9000; stroke-width: 1.6; rx: 12; }
+  .small { font: 13px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .label { font: 700 15px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .note { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .arrow { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  .dash { stroke: #777; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; marker-end: url(#arrowhead); }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+  </marker>
+</defs>
+
+
+<text x="560" y="34" text-anchor="middle" class="title">响应密度锚定与全局—局部双流视觉输入</text>
+<text x="560" y="58" text-anchor="middle" class="subtitle">在保留整体语境的同时强化 Logo、字幕、价格等局部证据</text>
+<rect x="60" y="120" width="170" height="90" class="box"/>
+<text x="145.0" y="148" text-anchor="middle" class="label">综合响应图 H(t)</text>
+<text x="145.0" y="166" text-anchor="middle" class="label">语义响应分布</text>
+<path d="M230,165 L300,165" class="arrow"/>
+<rect x="300" y="100" width="170" height="130" class="box2"/>
+<text x="385.0" y="128" text-anchor="middle" class="small">语义重心定位</text>
+<text x="385.0" y="146" text-anchor="middle" class="small">c_x, c_y</text>
+<text x="385.0" y="164" text-anchor="middle" class="small">多尺度候选框</text>
+<text x="385.0" y="182" text-anchor="middle" class="small">0.4 / 0.6 / 0.8 / 1.0</text>
+<path d="M470,165 L540,165" class="arrow"/>
+<rect x="540" y="100" width="180" height="130" class="box3"/>
+<text x="630.0" y="128" text-anchor="middle" class="small">响应密度筛选</text>
+<text x="630.0" y="146" text-anchor="middle" class="small">D(B)=ΣH/Area^ρ</text>
+<text x="630.0" y="164" text-anchor="middle" class="small">选择最佳锚框 B*</text>
+<path d="M720,165 L790,165" class="arrow"/>
+<rect x="790" y="90" width="220" height="70" class="box5"/>
+<text x="900.0" y="118" text-anchor="middle" class="label">局部高分辨率视图 L_t</text>
+<text x="900.0" y="136" text-anchor="middle" class="label">Crop(B*) + Upsample</text>
+<rect x="790" y="205" width="220" height="70" class="box"/>
+<text x="900.0" y="233" text-anchor="middle" class="label">全局语境视图 G_t</text>
+<text x="900.0" y="251" text-anchor="middle" class="label">Resize(原始关键帧)</text>
+<path d="M900,160 L900,205" class="arrow"/>
+<path d="M1010,125 L1070,165" class="arrow"/>
+<path d="M1010,240 L1070,205" class="arrow"/>
+<rect x="1070" y="145" width="140" height="80" class="box4"/>
+<text x="1140.0" y="173" text-anchor="middle" class="label">双流输入</text>
+<text x="1140.0" y="191" text-anchor="middle" class="label">Z_t=[G_t;L_t]</text>
+<text x="630" y="285" text-anchor="middle" class="note">局部视图负责细节，全局视图负责场景与情绪</text>
+
+</svg>

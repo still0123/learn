@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>第3/4章方法图预览</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 32px; color: #222; }
+    h1 { color: #17365D; }
+    .figure { margin: 28px 0 44px; padding: 18px; border: 1px solid #ddd; border-radius: 12px; background: #fafafa; }
+    .figure h2 { margin: 0 0 8px; color: #1f4e79; }
+    .figure p { line-height: 1.7; }
+    img { max-width: 100%; background: white; border: 1px solid #eee; }
+    code { background: #f0f0f0; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>第3/4章方法图预览</h1>
+  <p>论文题目保持不变：<strong>基于视觉特征压缩与链式反思的广告视频问答方法</strong></p>
+
+  <div class="figure">
+    <h2>图3-1 基于视觉特征压缩与链式反思的广告视频问答方法总体框架</h2>
+    <p>展示“证据定位—证据压缩—证据解释—证据校验”的全文方法闭环。</p>
+    <img src="fig3-1_overall_framework.svg" />
+  </div>
+
+  <div class="figure">
+    <h2>图3-2 视听-文字时空响应图构建示意图</h2>
+    <p>展示问题响应、ASR 邻域响应、OCR/Logo 响应如何融合为综合响应图。</p>
+    <img src="fig3-2_av_text_response_map.svg" />
+  </div>
+
+  <div class="figure">
+    <h2>图3-3 基于响应密度的局部证据锚定与全局—局部双流视觉输入</h2>
+    <p>展示语义重心、多尺度候选框、响应密度筛选以及 Global-Local 双流输入。</p>
+    <img src="fig3-3_response_density_dual_view.svg" />
+  </div>
+
+  <div class="figure">
+    <h2>图4-1 证据驱动的广告营销知识检索流程</h2>
+    <p>展示证据包如何构造复合查询，并进行证据感知知识重排序。</p>
+    <img src="fig4-1_evidence_driven_rag.svg" />
+  </div>
+
+  <div class="figure">
+    <h2>图4-2 声明级证据回溯式链式反思流程</h2>
+    <p>展示初始答案声明拆解，以及视觉/OCR/ASR/营销声明的逐项证据回溯校验。</p>
+    <img src="fig4-2_claim_level_reflection.svg" />
+  </div>
+</body>
+</html>

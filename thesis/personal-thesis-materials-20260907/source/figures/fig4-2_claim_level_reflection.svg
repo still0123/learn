@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520">
+
+<style>
+  .title { font: 700 22px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #17365D; }
+  .subtitle { font: 500 14px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #4F5B66; }
+  .box { fill: #EAF3F8; stroke: #2F75B5; stroke-width: 1.6; rx: 12; }
+  .box2 { fill: #FCE4D6; stroke: #C55A11; stroke-width: 1.6; rx: 12; }
+  .box3 { fill: #E2F0D9; stroke: #548235; stroke-width: 1.6; rx: 12; }
+  .box4 { fill: #E4DFEC; stroke: #7030A0; stroke-width: 1.6; rx: 12; }
+  .box5 { fill: #FFF2CC; stroke: #BF9000; stroke-width: 1.6; rx: 12; }
+  .small { font: 13px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .label { font: 700 15px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #222; }
+  .note { font: 12px 'Arial', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #555; }
+  .arrow { stroke: #555; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  .dash { stroke: #777; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; marker-end: url(#arrowhead); }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+  </marker>
+</defs>
+
+
+<text x="610" y="34" text-anchor="middle" class="title">声明级证据回溯式链式反思</text>
+<text x="610" y="58" text-anchor="middle" class="subtitle">不是让模型“再想一遍”，而是逐条声明回查多模态证据</text>
+<rect x="50" y="115" width="160" height="85" class="box"/>
+<text x="130.0" y="143" text-anchor="middle" class="label">初始答案 y_0</text>
+<text x="130.0" y="161" text-anchor="middle" class="label">观察-知识匹配-分析-答案</text>
+<path d="M210,157 L285,157" class="arrow"/>
+<rect x="285" y="95" width="185" height="125" class="box2"/>
+<text x="377.5" y="123" text-anchor="middle" class="small">声明拆解</text>
+<text x="377.5" y="141" text-anchor="middle" class="small">视觉声明</text>
+<text x="377.5" y="159" text-anchor="middle" class="small">文字声明</text>
+<text x="377.5" y="177" text-anchor="middle" class="small">语音声明</text>
+<text x="377.5" y="195" text-anchor="middle" class="small">营销推理声明</text>
+<path d="M470,157 L545,157" class="arrow"/>
+<rect x="545" y="70" width="190" height="80" class="box3"/>
+<text x="640.0" y="98" text-anchor="middle" class="label">视觉声明校验</text>
+<text x="640.0" y="116" text-anchor="middle" class="label">关键帧 / local crop</text>
+<rect x="545" y="170" width="190" height="80" class="box5"/>
+<text x="640.0" y="198" text-anchor="middle" class="label">文字声明校验</text>
+<text x="640.0" y="216" text-anchor="middle" class="label">OCR文本 / 局部图</text>
+<rect x="545" y="270" width="190" height="80" class="box"/>
+<text x="640.0" y="298" text-anchor="middle" class="label">语音声明校验</text>
+<text x="640.0" y="316" text-anchor="middle" class="label">ASR片段 / 时间窗口</text>
+<rect x="545" y="370" width="190" height="80" class="box4"/>
+<text x="640.0" y="398" text-anchor="middle" class="label">营销声明校验</text>
+<text x="640.0" y="416" text-anchor="middle" class="label">视频证据 + 知识条目</text>
+<path d="M735,110 L820,230" class="arrow"/>
+<path d="M735,210 L820,240" class="arrow"/>
+<path d="M735,310 L820,250" class="arrow"/>
+<path d="M735,410 L820,260" class="arrow"/>
+<rect x="820" y="190" width="180" height="120" class="box2"/>
+<text x="910.0" y="218" text-anchor="middle" class="small">校验结果</text>
+<text x="910.0" y="236" text-anchor="middle" class="small">CONFIRM</text>
+<text x="910.0" y="254" text-anchor="middle" class="small">REVISE</text>
+<text x="910.0" y="272" text-anchor="middle" class="small">REJECT</text>
+<text x="910.0" y="290" text-anchor="middle" class="small">LOW_CONFIDENCE</text>
+<path d="M1000,250 L1075,250" class="arrow"/>
+<rect x="1075" y="205" width="150" height="90" class="box3"/>
+<text x="1150.0" y="233" text-anchor="middle" class="small">最终答案</text>
+<text x="1150.0" y="251" text-anchor="middle" class="small">修正/确认/拒答</text>
+<text x="1150.0" y="269" text-anchor="middle" class="small">证据说明</text>
+<text x="640" y="475" text-anchor="middle" class="note">错误类型：视觉误读 / OCR误读 / ASR错配 / 时间错位 / 知识误用 / 过度推断</text>
+
+</svg>
