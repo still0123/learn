@@ -1,0 +1,5 @@
+a52693c9e660fff8a930e5f583c4f6269be95763154c845f2f65e89631a3af85  ./MANIFEST.tsv
+2f1b0b7a4af7719e2b1cd554f78e44a6cc78393a77ae268892b1b3c2e93662bb  ./README.md
+d7d0970261329d520073a089aa4dfad2316f491988176578adc666234215ed86  ./source/audit_external_kb.py
+c7541ac04994229a95fa6f303bd4e2a1d6e47f2c02e7abd414a7bae92af03c46  ./source/external_marketing_kb_v1_1_80.json
+b5c88945ecaee6bcc65adf870019387c8165fdce5662abe432f6e19c43ac4bc8  ./source/external_marketing_kb_v1_80.json

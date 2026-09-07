@@ -1,0 +1,2282 @@
+{
+  "build_notes": {
+    "version": "v1_80",
+    "item_count": 80,
+    "constraint_note": "Built only from public external sources listed below; excludes AdsQA and local dataset-derived knowledge files.",
+    "format_note": "Top-level object contains ranked sources, the complete 80-item knowledge_base array, and a coverage self-check."
+  },
+  "source_ranked": [
+    {
+      "credibility_rank": 1,
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising."
+    },
+    {
+      "credibility_rank": 2,
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions."
+    },
+    {
+      "credibility_rank": 3,
+      "source_name": "Google Ads Help — Use the Audience builder when creating a campaign",
+      "source_url": "https://support.google.com/google-ads/answer/13323469?hl=en",
+      "source_notes": "Google explains that audience builder combines demographics, first-party lists, interests, search-term cues, and AI-based signals."
+    },
+    {
+      "credibility_rank": 4,
+      "source_name": "Google Ads Help — About affinity segments",
+      "source_url": "https://support.google.com/google-ads/answer/13151406?hl=en",
+      "source_notes": "Google describes affinity segments as durable interest and lifestyle groupings useful for awareness and consideration."
+    },
+    {
+      "credibility_rank": 5,
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance."
+    },
+    {
+      "credibility_rank": 6,
+      "source_name": "Google Ads Help — Use square and vertical video to engage mobile customers",
+      "source_url": "https://support.google.com/google-ads/answer/9128498?hl=en",
+      "source_notes": "Google recommends square and vertical video plus mobile-friendly framing when advertisers want stronger phone-screen engagement."
+    },
+    {
+      "credibility_rank": 7,
+      "source_name": "Google Ads Help — About YouTube ads and view metrics",
+      "source_url": "https://support.google.com/google-ads/answer/2375499?hl=en",
+      "source_notes": "Google describes view, watch, engagement, and conversion-adjacent metrics that help interpret how video creative is performing."
+    },
+    {
+      "credibility_rank": 8,
+      "source_name": "Google Ads Help — About video ad formats",
+      "source_url": "https://support.google.com/google-ads/answer/6167122?hl=en",
+      "source_notes": "Google’s video format guidance helps map length, placement, skip behavior, and response style to likely creative strategy."
+    },
+    {
+      "credibility_rank": 9,
+      "source_name": "Google Ads Help — Google Ads specs: ad formats, sizes, and best practices",
+      "source_url": "https://support.google.com/google-ads/answer/13676244?hl=en",
+      "source_notes": "Google’s specs page supports rules about aspect ratio, safe framing, legibility, and asset-format constraints."
+    },
+    {
+      "credibility_rank": 10,
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments."
+    },
+    {
+      "credibility_rank": 11,
+      "source_name": "IPA EffWorks — The Power of Emotion",
+      "source_url": "https://ipa.co.uk/initiatives/effworks/effworks-ft-reports/the-power-of-emotion/",
+      "source_notes": "IPA/EffWorks summarizes evidence that emotion is a major mechanism behind campaign effectiveness and long-term impact."
+    },
+    {
+      "credibility_rank": 12,
+      "source_name": "IPA — The Long and the Short of It",
+      "source_url": "https://ipa.co.uk/knowledge/publications-reports/the-long-and-the-short-of-it-balancing-short-and-long-term-marketing-strategies",
+      "source_notes": "IPA distinguishes between short-term sales activation and long-term brand building, useful for inferring likely funnel intent."
+    },
+    {
+      "credibility_rank": 13,
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity."
+    },
+    {
+      "credibility_rank": 14,
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations."
+    },
+    {
+      "credibility_rank": 15,
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims."
+    },
+    {
+      "credibility_rank": 16,
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response."
+    }
+  ],
+  "knowledge_base": [
+    {
+      "knowledge_id": "EXT001",
+      "title": "Close-up Product Priority",
+      "category": "visual_rhetoric",
+      "funnel_stage": "awareness",
+      "rule": "When an ad repeatedly uses close-ups of a product or a decisive feature, it usually signals that the object itself is the main recall anchor. In video QA, close framing often marks what the advertiser most wants the viewer to notice.",
+      "qa_use": "Useful for questions about which visual element is central or most emphasized in the ad.",
+      "visual_cues": [
+        "product close-up",
+        "macro detail shot",
+        "centered item",
+        "repeated feature shot"
+      ],
+      "audio_cues": [
+        "brand name spoken during product shot",
+        "short reinforcing tagline"
+      ],
+      "negative_cues": [
+        "Close-ups can also be stylistic filler if the product is never identified."
+      ],
+      "example_application": "A fictional coffee ad keeps returning to the crema and cup texture, so the rule supports that the drink itself is the focal visual concept.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT002",
+      "title": "Repeated Brand Asset Recall",
+      "category": "brand_role",
+      "funnel_stage": "awareness",
+      "rule": "If the logo, pack shape, mascot, or branded color appears early and again later, the ad is probably trying to strengthen brand memory rather than hide the brand until the end. Repetition of brand assets is a strong clue that recall matters.",
+      "qa_use": "Useful for questions about brand exposure, brand prominence, or whether the ad is brand-building.",
+      "visual_cues": [
+        "logo reappears",
+        "pack shot repeats",
+        "brand color dominates",
+        "mascot returns"
+      ],
+      "audio_cues": [
+        "brand name repeated",
+        "sonic logo",
+        "tagline repetition"
+      ],
+      "negative_cues": [
+        "A final end card alone is weaker evidence than repeated in-story branding."
+      ],
+      "example_application": "A fictional sports drink ad shows the bottle label in the opening, mid-scene locker room shot, and closing end card, indicating deliberate brand reinforcement.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT003",
+      "title": "Faces Guide Attention",
+      "category": "visual_rhetoric",
+      "funnel_stage": "general",
+      "rule": "Human faces and gaze direction often act as visual pointers in video ads. When people look at a product, screen text, or another character, the ad is usually guiding viewers toward that same point of attention.",
+      "qa_use": "Useful for questions asking what viewers are being guided to notice or how attention is directed visually.",
+      "visual_cues": [
+        "close face shot",
+        "eyeline toward product",
+        "shared gaze",
+        "reaction shot"
+      ],
+      "audio_cues": [
+        "name callout after reaction",
+        "brief explanatory line"
+      ],
+      "negative_cues": [
+        "Faces can carry emotion without indicating the most important product cue."
+      ],
+      "example_application": "In a fictional skincare ad, the model glances from the mirror to the bottle before the bottle fills the frame, suggesting the bottle is the intended attention target.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT004",
+      "title": "Readable Mobile Visual Pairing",
+      "category": "visual_rhetoric",
+      "funnel_stage": "general",
+      "rule": "On mobile-oriented video, simple visuals paired with short readable text usually indicate a message designed for quick comprehension. Large text plus one dominant visual idea is often more deliberate than crowded multi-claim layouts.",
+      "qa_use": "Useful for questions about why the ad looks visually simple or what design choice helps comprehension.",
+      "visual_cues": [
+        "large on-screen text",
+        "single object focus",
+        "clean layout",
+        "few competing elements"
+      ],
+      "audio_cues": [
+        "same phrase echoed in voiceover",
+        "brief CTA line"
+      ],
+      "negative_cues": [
+        "Minimal design can also reflect premium style rather than mobile optimization alone."
+      ],
+      "example_application": "A fictional fintech ad shows one bold claim on screen beside a single app screenshot, supporting the idea that the creative is optimized for fast reading.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT005",
+      "title": "Vertical Mobile Framing Signal",
+      "category": "ad_format",
+      "funnel_stage": "awareness",
+      "rule": "When framing is clearly vertical, with subjects stacked for phone viewing, the ad is likely designed for mobile-first consumption. This usually means the visual story is being optimized for scrolling environments rather than widescreen immersion.",
+      "qa_use": "Useful for questions about format choice, likely platform context, or why the composition feels phone-native.",
+      "visual_cues": [
+        "9:16 framing",
+        "tall composition",
+        "subject centered vertically",
+        "mobile UI-like spacing"
+      ],
+      "audio_cues": [
+        "quick hook line",
+        "short upbeat music sting"
+      ],
+      "negative_cues": [
+        "A vertical crop reused from horizontal video may not reflect an intentional mobile-first design."
+      ],
+      "example_application": "A fictional meal-delivery ad keeps ingredients and price text centered in a tall frame, suggesting a mobile-first video format.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use square and vertical video to engage mobile customers",
+      "source_url": "https://support.google.com/google-ads/answer/9128498?hl=en",
+      "source_notes": "Google recommends square and vertical video plus mobile-friendly framing when advertisers want stronger phone-screen engagement.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT006",
+      "title": "Square Safe-Zone Composition",
+      "category": "ad_format",
+      "funnel_stage": "general",
+      "rule": "Square video often keeps the main subject near the center so that important content remains legible across feeds and devices. Centralized composition is therefore a clue that the ad is optimizing portability across placements.",
+      "qa_use": "Useful for questions about composition choices and cross-platform video formatting.",
+      "visual_cues": [
+        "1:1 frame",
+        "central subject",
+        "text away from edges",
+        "balanced layout"
+      ],
+      "audio_cues": [
+        "short copy bursts",
+        "caption-style text"
+      ],
+      "negative_cues": [
+        "Centered layout can also come from generic studio shooting, not only feed optimization."
+      ],
+      "example_application": "A fictional pet-food ad uses a square frame with the bowl, pet face, and price badge all centered, matching a cross-feed safe-zone style.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use square and vertical video to engage mobile customers",
+      "source_url": "https://support.google.com/google-ads/answer/9128498?hl=en",
+      "source_notes": "Google recommends square and vertical video plus mobile-friendly framing when advertisers want stronger phone-screen engagement.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT007",
+      "title": "Demonstration Equals Visual Proof",
+      "category": "visual_rhetoric",
+      "funnel_stage": "consideration",
+      "rule": "A sequence that shows the product being used step by step usually functions as visual proof, not just decoration. Demonstration shots often signal that the advertiser wants the viewer to infer usability or effectiveness from what is shown.",
+      "qa_use": "Useful for questions about whether the ad is demonstrating a feature or merely displaying the product.",
+      "visual_cues": [
+        "hands-on demo",
+        "step sequence",
+        "before and after handling",
+        "function in action"
+      ],
+      "audio_cues": [
+        "instruction-like narration",
+        "feature labels"
+      ],
+      "negative_cues": [
+        "A demo montage without clear outcome may show variety rather than proof."
+      ],
+      "example_application": "A fictional stain remover ad shows spray, wipe, and clean fabric reveal, so the sequence supports a proof-oriented interpretation.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT008",
+      "title": "Pack Shot Memory Anchor",
+      "category": "brand_role",
+      "funnel_stage": "awareness",
+      "rule": "Repeated pack shots help anchor category memory by tying abstract scenes back to a concrete purchase object. When the product package keeps returning, the advertiser is usually trying to make the brand easy to recognize at shelf or in-app selection.",
+      "qa_use": "Useful for questions about why the package is shown multiple times or what object serves as the memory anchor.",
+      "visual_cues": [
+        "package front shown",
+        "label readable",
+        "product isolated on neutral background"
+      ],
+      "audio_cues": [
+        "brand name said over pack shot",
+        "closing mnemonic"
+      ],
+      "negative_cues": [
+        "A single end-card pack shot is weaker than multiple in-story reappearances."
+      ],
+      "example_application": "A fictional cereal ad alternates family breakfast scenes with clear box shots, indicating that the box is the recall anchor.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT009",
+      "title": "Split-Screen Comparison Cue",
+      "category": "comparison",
+      "funnel_stage": "consideration",
+      "rule": "Split-screen layouts often cue comparison by reducing the effort needed to judge two states side by side. In ad video reasoning, that format usually implies the viewer is being invited to contrast options, outcomes, or conditions.",
+      "qa_use": "Useful for questions about comparison visuals, contrasted scenarios, or what two halves of the screen are meant to communicate.",
+      "visual_cues": [
+        "split screen",
+        "left-right contrast",
+        "two users side by side",
+        "simultaneous outcomes"
+      ],
+      "audio_cues": [
+        "contrastive words like before or after",
+        "paired voiceover phrases"
+      ],
+      "negative_cues": [
+        "A split screen can also show simultaneity rather than superiority if no evaluative cue appears."
+      ],
+      "example_application": "A fictional broadband ad shows buffering on one side and smooth streaming on the other, supporting a direct-comparison interpretation.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT010",
+      "title": "Before-After Transformation Metaphor",
+      "category": "metaphor",
+      "funnel_stage": "consideration",
+      "rule": "When the ad moves from a messy, dull, or difficult state to a clean, bright, or easy state, the visual change often works as a metaphor for benefit delivery. Transformation is a common shorthand for improvement.",
+      "qa_use": "Useful for questions about symbolic meaning in before-and-after sequences.",
+      "visual_cues": [
+        "messy to clean",
+        "dark to bright",
+        "slow to smooth",
+        "tense to relaxed scene"
+      ],
+      "audio_cues": [
+        "problem then solution wording",
+        "relief-oriented line"
+      ],
+      "negative_cues": [
+        "The change may represent time passing rather than product effect if no product link is shown."
+      ],
+      "example_application": "A fictional closet-organizer ad turns a cluttered room into a calm tidy space, suggesting the product stands for restored order.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT011",
+      "title": "Light Reveal Means Discovery",
+      "category": "metaphor",
+      "funnel_stage": "awareness",
+      "rule": "Reveal shots using beams of light, curtains opening, or hidden objects becoming visible often signal discovery, clarity, or a breakthrough. Such imagery usually points to a meaning beyond literal illumination.",
+      "qa_use": "Useful for questions about symbolic visuals or what a reveal sequence implies conceptually.",
+      "visual_cues": [
+        "glow appears",
+        "hidden item revealed",
+        "curtain opens",
+        "beam on product"
+      ],
+      "audio_cues": [
+        "words like discover or unveil",
+        "music swell on reveal"
+      ],
+      "negative_cues": [
+        "Light can be purely aesthetic if it is not attached to any claim or change in understanding."
+      ],
+      "example_application": "A fictional note-taking app ad shows a dim messy desk becoming brightly organized when the app opens, implying clarity and discovery.",
+      "source_type": "external_public_kb",
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT012",
+      "title": "Shield Imagery Implies Protection",
+      "category": "metaphor",
+      "funnel_stage": "general",
+      "rule": "Visuals such as shields, locks, barriers, or protective bubbles often stand for safety, reliability, or defense from harm. In ad QA, these symbols usually indicate the promised role of the product rather than literal equipment.",
+      "qa_use": "Useful for questions about symbolic objects and what abstract benefit they represent.",
+      "visual_cues": [
+        "shield icon",
+        "lock overlay",
+        "protective barrier",
+        "safe enclosure"
+      ],
+      "audio_cues": [
+        "words like protect or secure",
+        "reassuring tone"
+      ],
+      "negative_cues": [
+        "Some categories literally sell security products, so the symbol may be functional rather than metaphorical."
+      ],
+      "example_application": "A fictional family insurance ad places a translucent dome over a home during a storm, suggesting protection rather than a literal object.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT013",
+      "title": "Journey Visual Means Progress",
+      "category": "metaphor",
+      "funnel_stage": "awareness",
+      "rule": "Roads, paths, stairways, and forward motion often symbolize progress, advancement, or a life transition. When these visuals frame the product story, the ad is often attaching the brand to personal growth or momentum.",
+      "qa_use": "Useful for questions about recurring travel imagery or what movement signifies beyond travel itself.",
+      "visual_cues": [
+        "road ahead",
+        "stairs upward",
+        "walking forward",
+        "moving horizon"
+      ],
+      "audio_cues": [
+        "future-oriented line",
+        "uplifting build in music"
+      ],
+      "negative_cues": [
+        "Travel categories may use roads literally, so surrounding cues matter."
+      ],
+      "example_application": "A fictional career-learning platform ad follows a young worker climbing subway stairs into daylight, implying progress and advancement.",
+      "source_type": "external_public_kb",
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT014",
+      "title": "Color Palette Sets Mood Fast",
+      "category": "sensory_appeal",
+      "funnel_stage": "awareness",
+      "rule": "Color often establishes mood before the message is fully understood. Warm palettes can feel intimate or energetic, while cool palettes can feel calm, clean, or technical depending on the surrounding cues.",
+      "qa_use": "Useful for questions about atmosphere, mood, or why the ad feels warm, calm, premium, or clinical.",
+      "visual_cues": [
+        "warm orange lighting",
+        "cool blue palette",
+        "muted tones",
+        "high-saturation scenes"
+      ],
+      "audio_cues": [
+        "music mood matches palette",
+        "voice tone aligns with color mood"
+      ],
+      "negative_cues": [
+        "Color meaning changes by category and culture, so palette alone should not decide the full message."
+      ],
+      "example_application": "A fictional wellness tea ad uses amber and cream tones with soft steam shots, supporting a comforting and gentle atmosphere.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT015",
+      "title": "Fast-Cut Montage Means Energy",
+      "category": "storytelling_device",
+      "funnel_stage": "awareness",
+      "rule": "Rapid cuts across multiple scenes often suggest pace, variety, and high energy rather than detailed explanation. In video QA, a fast montage usually means the ad wants the viewer to feel momentum more than inspect a single feature deeply.",
+      "qa_use": "Useful for questions about editing pace, energetic atmosphere, or why many scenes appear quickly.",
+      "visual_cues": [
+        "rapid edits",
+        "multiple short scenes",
+        "kinetic transitions",
+        "quick reframing"
+      ],
+      "audio_cues": [
+        "up-tempo soundtrack",
+        "short punchy copy"
+      ],
+      "negative_cues": [
+        "Fast edits can also be used to compress information in tutorials, so cue overlap matters."
+      ],
+      "example_application": "A fictional sneaker ad flashes through city, gym, and street scenes in seconds, suggesting energy and lifestyle breadth rather than technical explanation.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT016",
+      "title": "Safe-Area Legibility Matters",
+      "category": "ad_format",
+      "funnel_stage": "general",
+      "rule": "If text, logos, and buttons stay large and central with clear margins, the creative is probably respecting format constraints and safe areas. This is a cue that the ad is designed to remain legible across placements, crops, and device interfaces.",
+      "qa_use": "Useful for questions about layout discipline, mobile legibility, or why elements avoid the edges of frame.",
+      "visual_cues": [
+        "large centered text",
+        "edge padding",
+        "logo not cropped",
+        "CTA in clear zone"
+      ],
+      "audio_cues": [
+        "short synchronized copy",
+        "simple closing line"
+      ],
+      "negative_cues": [
+        "Minimal layouts can come from brand style, not only placement constraints."
+      ],
+      "example_application": "A fictional banking app ad keeps every headline and button prompt away from the screen edges, indicating safe-area conscious design.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Google Ads specs: ad formats, sizes, and best practices",
+      "source_url": "https://support.google.com/google-ads/answer/13676244?hl=en",
+      "source_notes": "Google’s specs page supports rules about aspect ratio, safe framing, legibility, and asset-format constraints.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT017",
+      "title": "Warm Social Scenes Cue Belonging",
+      "category": "emotional_mechanism",
+      "funnel_stage": "awareness",
+      "rule": "Scenes of shared meals, hugs, teamwork, or family routines often aim to evoke belonging and social comfort. In advertising, this emotional route can make the brand feel personally relevant even when product information is light.",
+      "qa_use": "Useful for questions about what emotion the ad is trying to evoke and why people are shown together.",
+      "visual_cues": [
+        "family table",
+        "friends laughing",
+        "supportive touch",
+        "group ritual"
+      ],
+      "audio_cues": [
+        "warm music",
+        "inclusive wording like together or share"
+      ],
+      "negative_cues": [
+        "Group scenes can show usage context without strongly targeting belonging if emotion is muted."
+      ],
+      "example_application": "A fictional home internet ad shows a family video-calling grandparents during dinner, suggesting the emotional target is connection and belonging.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT018",
+      "title": "Surprise Breaks Through Clutter",
+      "category": "emotional_mechanism",
+      "funnel_stage": "awareness",
+      "rule": "Unexpected visual twists, abrupt reveals, or unusual scene changes often function to break attention inertia. Surprise is especially useful when the ad must win attention quickly in crowded viewing environments.",
+      "qa_use": "Useful for questions about why the ad uses an odd opening, abrupt reveal, or incongruous image.",
+      "visual_cues": [
+        "unexpected object",
+        "sudden reveal",
+        "visual mismatch",
+        "scene reversal"
+      ],
+      "audio_cues": [
+        "record-scratch or abrupt sound cue",
+        "surprised voice line"
+      ],
+      "negative_cues": [
+        "Shock alone does not prove persuasion if the brand or message never reconnects to the surprise."
+      ],
+      "example_application": "A fictional insurance ad opens with an office chair floating in a pool before revealing a flood-protection message, using surprise to force attention.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT019",
+      "title": "Humor Lowers Resistance",
+      "category": "humor",
+      "funnel_stage": "awareness",
+      "rule": "Humor can make a sales message feel less like a hard push and more like entertainment, which lowers resistance to the ad. The effect is stronger when the joke clearly connects back to the product or brand point.",
+      "qa_use": "Useful for questions about whether humor is being used as a persuasion or emotional device.",
+      "visual_cues": [
+        "comic timing",
+        "visual gag",
+        "character mishap",
+        "exaggerated reaction"
+      ],
+      "audio_cues": [
+        "laugh cue in dialogue",
+        "playful punchline"
+      ],
+      "negative_cues": [
+        "A funny scene that never links back to the brand may create entertainment without strong selling impact."
+      ],
+      "example_application": "A fictional dish-soap ad turns a mountain of plates into an absurd tower that topples, making the cleaning promise feel lighter and more approachable.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT020",
+      "title": "Relief Marks Solution Arrival",
+      "category": "emotional_mechanism",
+      "funnel_stage": "consideration",
+      "rule": "If the ad first shows frustration, stress, or inconvenience and then shifts to calm or ease, the emotional pivot usually marks the moment when the product is positioned as the solution. Relief is a common signal of problem resolution.",
+      "qa_use": "Useful for questions about emotional change over time or what feeling the product is meant to resolve.",
+      "visual_cues": [
+        "stress face then relaxed face",
+        "chaos then order",
+        "deep breath after use"
+      ],
+      "audio_cues": [
+        "sigh of relief",
+        "music softens after solution"
+      ],
+      "negative_cues": [
+        "Mood improvement may come from scene change alone if the product is not causally linked."
+      ],
+      "example_application": "A fictional tax-app ad shows a confused user surrounded by paperwork before switching to calm relief once the app auto-fills forms.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT021",
+      "title": "Aspirational Lifestyle Appeal",
+      "category": "emotional_mechanism",
+      "funnel_stage": "awareness",
+      "rule": "Polished lifestyle scenes often aim to trigger aspiration by showing the viewer who they could be, not just what they could buy. This emotional route attaches the brand to identity and self-image.",
+      "qa_use": "Useful for questions about aspirational tone, idealized settings, or lifestyle-based emotional appeal.",
+      "visual_cues": [
+        "stylized home or city life",
+        "confident protagonist",
+        "desirable routine",
+        "elevated environment"
+      ],
+      "audio_cues": [
+        "uplifting voiceover",
+        "future-facing or identity language"
+      ],
+      "negative_cues": [
+        "Premium visuals can also reflect category norms rather than a strong aspirational strategy."
+      ],
+      "example_application": "A fictional travel-card ad follows a composed young professional moving smoothly through airports and rooftop dinners, suggesting aspiration and self-enhancement.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT022",
+      "title": "Calm Tone Builds Trust",
+      "category": "emotional_mechanism",
+      "funnel_stage": "general",
+      "rule": "Slow pacing, stable shots, and calm music often support feelings of trust, reassurance, and care. This is especially common in categories where the advertiser wants to reduce anxiety or signal reliability.",
+      "qa_use": "Useful for questions about why an ad feels reassuring, trustworthy, or emotionally gentle.",
+      "visual_cues": [
+        "steady camera",
+        "slow transitions",
+        "soft lighting",
+        "composed faces"
+      ],
+      "audio_cues": [
+        "low-tempo music",
+        "calm narrator"
+      ],
+      "negative_cues": [
+        "Calm execution can also signal premium luxury rather than trust alone."
+      ],
+      "example_application": "A fictional healthcare booking ad uses slow, stable scenes and a gentle voice to make the service feel dependable and safe.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT023",
+      "title": "Upbeat Tempo Signals Excitement",
+      "category": "sensory_appeal",
+      "funnel_stage": "awareness",
+      "rule": "Fast music, quick rhythmic edits, and bright movement often prime excitement before the viewer processes all the copy. Sensory energy can therefore be a deliberate emotional mechanism rather than mere style.",
+      "qa_use": "Useful for questions about energetic mood, excitement, or why the ad feels lively and youthful.",
+      "visual_cues": [
+        "quick edits",
+        "bright flashes",
+        "dancing or jumping",
+        "kinetic camera"
+      ],
+      "audio_cues": [
+        "up-tempo beat",
+        "chant-like hook"
+      ],
+      "negative_cues": [
+        "A high-tempo soundtrack can clash with a serious message, so alignment matters."
+      ],
+      "example_application": "A fictional gaming phone ad pairs neon visuals with rapid percussion, making the emotional target feel exhilaration rather than calm evaluation.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT024",
+      "title": "Sensory Closeups Increase Vividness",
+      "category": "sensory_appeal",
+      "funnel_stage": "general",
+      "rule": "Close shots of texture, steam, sparkle, or physical interaction can make the experience feel more vivid, almost like a simulated trial. This often strengthens emotional immediacy even when the viewer cannot actually touch or taste the product.",
+      "qa_use": "Useful for questions about why texture, sound, or tactile detail is emphasized.",
+      "visual_cues": [
+        "texture macro shot",
+        "steam or splash",
+        "slow-motion material movement",
+        "hand contact"
+      ],
+      "audio_cues": [
+        "crisp product sound",
+        "descriptive sensory words"
+      ],
+      "negative_cues": [
+        "Sensory detail can also be decorative if it never connects to a clear benefit."
+      ],
+      "example_application": "A fictional chocolate ad lingers on the snap and melt of the bar, making the experience feel vivid and indulgent.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT025",
+      "title": "Voice Tone Changes Meaning",
+      "category": "emotional_mechanism",
+      "funnel_stage": "general",
+      "rule": "The same visual sequence can feel playful, urgent, or sincere depending on the voiceover tone. In ad-video reasoning, vocal delivery is often a key clue for emotional framing when visuals are ambiguous.",
+      "qa_use": "Useful for questions about how audio changes the interpretation of the same imagery.",
+      "visual_cues": [
+        "neutral visuals",
+        "speaker dominates interpretation",
+        "reaction shown after line"
+      ],
+      "audio_cues": [
+        "playful narrator",
+        "urgent voice",
+        "gentle reassurance"
+      ],
+      "negative_cues": [
+        "Music and on-screen text can override voice tone if they strongly conflict."
+      ],
+      "example_application": "A fictional home-security ad shows an ordinary front door, but a calm authoritative narration makes the scene feel reassuring instead of plain.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT026",
+      "title": "Celebration Signals Shared Joy",
+      "category": "emotional_mechanism",
+      "funnel_stage": "awareness",
+      "rule": "Crowd applause, cheering, and group celebration often cue shared joy and social validation. This emotional device suggests that the product or brand belongs in moments of public success or communal happiness.",
+      "qa_use": "Useful for questions about celebratory emotion or why groups are shown reacting together.",
+      "visual_cues": [
+        "crowd cheering",
+        "high-fives",
+        "party scene",
+        "shared win"
+      ],
+      "audio_cues": [
+        "applause sound",
+        "cheerful chant"
+      ],
+      "negative_cues": [
+        "Crowds can also indicate popularity rather than pure joy if proof claims are foregrounded."
+      ],
+      "example_application": "A fictional beverage ad ends with a neighborhood block party clinking cans, signaling shared joy and togetherness.",
+      "source_type": "external_public_kb",
+      "source_name": "Nielsen — Advertising emotions increase sales",
+      "source_url": "https://www.nielsen.com/insights/2022/advertising-emotions-increase-sales/",
+      "source_notes": "Nielsen argues that ad-evoked emotion is an important driver of connection and sales response, especially in cluttered media environments.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT027",
+      "title": "Quiet Soundscape Cues Sincerity",
+      "category": "sensory_appeal",
+      "funnel_stage": "general",
+      "rule": "When music drops back and room tone or small sounds become noticeable, the ad often signals sincerity, honesty, or emotional intimacy. A quieter soundscape can make the moment feel more personal and less performative.",
+      "qa_use": "Useful for questions about intimate emotional tone or why the ad suddenly becomes quieter.",
+      "visual_cues": [
+        "few visual distractions",
+        "closer personal framing",
+        "still environment"
+      ],
+      "audio_cues": [
+        "soft room tone",
+        "small natural sounds",
+        "minimal music"
+      ],
+      "negative_cues": [
+        "Silence can also build suspense rather than sincerity if the scene is tense."
+      ],
+      "example_application": "A fictional donation ad quiets the soundtrack while a parent speaks to camera, making the message feel intimate and sincere.",
+      "source_type": "external_public_kb",
+      "source_name": "IPA EffWorks — The Power of Emotion",
+      "source_url": "https://ipa.co.uk/initiatives/effworks/effworks-ft-reports/the-power-of-emotion/",
+      "source_notes": "IPA/EffWorks summarizes evidence that emotion is a major mechanism behind campaign effectiveness and long-term impact.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT028",
+      "title": "Nostalgia Evokes Comfort",
+      "category": "emotional_mechanism",
+      "funnel_stage": "loyalty",
+      "rule": "Retro props, childhood settings, or familiar rituals often trigger nostalgia, which can create comfort and affection toward the brand. Nostalgia works by linking the ad to a remembered emotional world rather than a purely rational claim.",
+      "qa_use": "Useful for questions about retro styling, memory-based emotion, or why the ad uses old-fashioned cues.",
+      "visual_cues": [
+        "retro packaging",
+        "childhood object",
+        "old photos",
+        "throwback setting"
+      ],
+      "audio_cues": [
+        "nostalgic melody",
+        "memory-focused line"
+      ],
+      "negative_cues": [
+        "Vintage styling may sometimes be used only as fashion rather than true nostalgia."
+      ],
+      "example_application": "A fictional biscuit ad shows siblings recreating a childhood snack ritual at an adult family reunion, suggesting nostalgia and comfort.",
+      "source_type": "external_public_kb",
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT029",
+      "title": "Tension Then Release Intensifies Payoff",
+      "category": "storytelling_device",
+      "funnel_stage": "general",
+      "rule": "Ads often amplify feeling by first creating tension and then resolving it. The emotional payoff usually feels stronger because the viewer has been led through a mini-arc rather than shown a flat positive scene throughout.",
+      "qa_use": "Useful for questions about emotional progression or why the ad begins with friction before a positive ending.",
+      "visual_cues": [
+        "problem setup",
+        "worried face",
+        "resolution beat",
+        "clear emotional shift"
+      ],
+      "audio_cues": [
+        "music builds then resolves",
+        "voiceover changes from tense to calm"
+      ],
+      "negative_cues": [
+        "The release may come from narrative coincidence rather than the product if the link is weak."
+      ],
+      "example_application": "A fictional delivery-service ad begins with a party gone wrong and ends in relief when the order arrives, using tension-release to heighten emotion.",
+      "source_type": "external_public_kb",
+      "source_name": "IPA EffWorks — The Power of Emotion",
+      "source_url": "https://ipa.co.uk/initiatives/effworks/effworks-ft-reports/the-power-of-emotion/",
+      "source_notes": "IPA/EffWorks summarizes evidence that emotion is a major mechanism behind campaign effectiveness and long-term impact.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT030",
+      "title": "Reaction Shots Create Empathy",
+      "category": "emotional_mechanism",
+      "funnel_stage": "general",
+      "rule": "Close reaction shots of people noticing, tasting, or benefiting from something help viewers simulate that feeling themselves. Empathy is often built through visible human response rather than verbal explanation.",
+      "qa_use": "Useful for questions about why reactions are emphasized or how the ad tries to make viewers feel alongside characters.",
+      "visual_cues": [
+        "smile after use",
+        "surprised eyes",
+        "relaxed expression",
+        "tearful or touched reaction"
+      ],
+      "audio_cues": [
+        "soft exclamation",
+        "emotion-laden pause"
+      ],
+      "negative_cues": [
+        "Reaction shots without cause can feel generic and less persuasive."
+      ],
+      "example_application": "A fictional coffee ad shows a commuter’s face relax after the first sip, cueing viewers to imagine the same relief.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT031",
+      "title": "Authority Reduces Fear",
+      "category": "emotional_mechanism",
+      "funnel_stage": "consideration",
+      "rule": "In higher-stakes categories, authoritative figures, uniforms, or expert settings often help lower fear and uncertainty. The emotional mechanism is reassurance: viewers feel safer acting when competence is visible.",
+      "qa_use": "Useful for questions about why experts appear or why the ad feels trustworthy in a serious category.",
+      "visual_cues": [
+        "expert clothing",
+        "professional setting",
+        "measured gestures",
+        "demonstration with authority"
+      ],
+      "audio_cues": [
+        "calm explanation",
+        "confident factual tone"
+      ],
+      "negative_cues": [
+        "Authority cues can feel staged if no clear expertise or relevance is shown."
+      ],
+      "example_application": "A fictional water-filter ad includes a lab-coated technician explaining the filter test, using authority to reduce uncertainty.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT032",
+      "title": "Humor Must Link Back to Brand",
+      "category": "humor",
+      "funnel_stage": "general",
+      "rule": "Humor helps most when the joke naturally reinforces the product idea or brand role. If the laugh is memorable but the brand point is not, the ad risks entertainment without durable persuasion.",
+      "qa_use": "Useful for questions about whether humor supports or distracts from the ad’s commercial message.",
+      "visual_cues": [
+        "funny situation tied to product use",
+        "brand shown at punchline",
+        "recurring comic device"
+      ],
+      "audio_cues": [
+        "punchline repeats benefit",
+        "playful brand line"
+      ],
+      "negative_cues": [
+        "A very funny cold open may overshadow the brand if branding arrives too late."
+      ],
+      "example_application": "A fictional password manager ad turns forgotten passwords into a comic courtroom scene, but the joke resolves only when the brand promise is revealed.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT033",
+      "title": "Single Message Discipline",
+      "category": "copy_signal",
+      "funnel_stage": "general",
+      "rule": "If one phrase, image cluster, or benefit keeps recurring while competing claims are absent, the ad is probably organized around one main takeaway. Repetition is a practical clue for extracting the core message.",
+      "qa_use": "Useful for questions asking for the ad’s main message or central takeaway.",
+      "visual_cues": [
+        "same claim repeated",
+        "one dominant benefit",
+        "few side claims",
+        "visual consistency"
+      ],
+      "audio_cues": [
+        "repeated line",
+        "same words in VO and text"
+      ],
+      "negative_cues": [
+        "Some minimal ads are ambiguous on purpose, so repetition matters more than simplicity alone."
+      ],
+      "example_application": "A fictional cloud-storage ad keeps repeating “all your files, anywhere,” so the rule supports that portability is the core message.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT034",
+      "title": "Benefit-Led Headline Reveals Message",
+      "category": "copy_signal",
+      "funnel_stage": "consideration",
+      "rule": "When the first major text line states a result or user benefit, that headline usually reveals the intended message more directly than surrounding scene details. Benefit-led copy is a strong summary cue.",
+      "qa_use": "Useful for questions about headline meaning, key promise, or the ad’s intended takeaway.",
+      "visual_cues": [
+        "headline on first frame",
+        "benefit phrase",
+        "large promise text"
+      ],
+      "audio_cues": [
+        "voiceover restates benefit",
+        "supporting slogan"
+      ],
+      "negative_cues": [
+        "A flashy line may be only a hook if later scenes clearly replace it with another claim."
+      ],
+      "example_application": "A fictional bookkeeping app ad opens with “Close your books in minutes,” indicating speed and simplification as the main message.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT035",
+      "title": "Tagline Signals Positioning",
+      "category": "copy_signal",
+      "funnel_stage": "awareness",
+      "rule": "A memorable tagline often compresses the brand’s desired position into a short verbal cue. When it is repeated or given special emphasis, it can be treated as a direct hint to the intended brand meaning.",
+      "qa_use": "Useful for questions about slogans, brand claims, or what the advertiser wants the brand to stand for.",
+      "visual_cues": [
+        "tagline on end card",
+        "same phrase across scenes",
+        "logo plus slogan"
+      ],
+      "audio_cues": [
+        "tagline read aloud",
+        "mnemonic ending"
+      ],
+      "negative_cues": [
+        "Some slogans are generic and need visual context before they can be interpreted reliably."
+      ],
+      "example_application": "A fictional laundry brand ends with “Fresh that follows you,” pointing toward freshness as its positioning theme.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT036",
+      "title": "Early Brand Plus Benefit Signals Awareness Goal",
+      "category": "campaign_objective",
+      "funnel_stage": "awareness",
+      "rule": "If the ad introduces the brand quickly and ties it to one easy-to-grasp benefit, the likely aim is broad awareness rather than deep explanation. Early brand-plus-benefit pairing is often optimized for memory under short viewing time.",
+      "qa_use": "Useful for questions about likely objective, especially when the ad feels broad and easy to remember.",
+      "visual_cues": [
+        "brand appears in first moments",
+        "single easy benefit",
+        "simple repeated scene"
+      ],
+      "audio_cues": [
+        "short memorable line",
+        "brand mentioned early"
+      ],
+      "negative_cues": [
+        "A direct-response ad can also brand early, so urgency and offer cues must be checked separately."
+      ],
+      "example_application": "A fictional stain remover ad opens with the bottle and the phrase “Out fast,” suggesting an awareness-focused setup built for recall.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT037",
+      "title": "Problem-to-Solution Story Reveals Message",
+      "category": "storytelling_device",
+      "funnel_stage": "consideration",
+      "rule": "A mini-story that begins with a recognizable problem and ends in a better state usually implies that the product’s core message is problem resolution. The solved state often tells you what the advertiser thinks matters most.",
+      "qa_use": "Useful for questions about narrative meaning, solution message, or story-based theme extraction.",
+      "visual_cues": [
+        "problem scene",
+        "product introduced mid-story",
+        "resolved ending"
+      ],
+      "audio_cues": [
+        "problem wording then solution wording",
+        "narration explains switch"
+      ],
+      "negative_cues": [
+        "Some stories are image-building and use problems only loosely, so causal linkage matters."
+      ],
+      "example_application": "A fictional vacuum ad starts with pet hair frustration and ends with a clean sofa, indicating that easy cleanup is the central message.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT038",
+      "title": "Repeated Use-Case Cues Show Core Purpose",
+      "category": "value_proposition",
+      "funnel_stage": "consideration",
+      "rule": "When the same use case appears across multiple scenes, the advertiser is often trying to make one practical purpose unmistakable. Repetition of context is therefore a clue to the product’s core job-to-be-done.",
+      "qa_use": "Useful for questions about intended use case, practical function, or product purpose.",
+      "visual_cues": [
+        "same task repeated",
+        "similar scenario variations",
+        "consistent usage moment"
+      ],
+      "audio_cues": [
+        "same problem phrase across scenes",
+        "feature callouts tied to one task"
+      ],
+      "negative_cues": [
+        "Multiple scenarios can instead indicate broad versatility if the benefit is abstract."
+      ],
+      "example_application": "A fictional note app ad repeatedly shows study sessions, lecture capture, and exam review, suggesting that organized studying is the central use case.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT039",
+      "title": "Distinctive Brand Codes Build Memory",
+      "category": "brand_awareness",
+      "funnel_stage": "awareness",
+      "rule": "Consistent use of brand colors, shapes, mascots, or sonic signatures suggests the ad is investing in distinctive memory structures, not just short-term information transfer. These codes often signal long-term brand building.",
+      "qa_use": "Useful for questions about why certain branded colors or symbols keep appearing and what strategic role they play.",
+      "visual_cues": [
+        "distinctive brand color",
+        "signature pack shape",
+        "recurring mascot",
+        "consistent design code"
+      ],
+      "audio_cues": [
+        "sonic logo",
+        "repeated mnemonic"
+      ],
+      "negative_cues": [
+        "Some category conventions resemble brand codes, so uniqueness should be considered."
+      ],
+      "example_application": "A fictional telecom brand uses the same bright violet arc motif in every scene, implying a deliberate memory-building strategy.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT040",
+      "title": "Atmosphere-Heavy Ads Sell Meaning",
+      "category": "brand_awareness",
+      "funnel_stage": "awareness",
+      "rule": "If the ad spends more time creating mood, identity, or symbolic atmosphere than listing features, the central message is often about brand meaning rather than product detail. This is common when the brand wants to stand for a feeling or worldview.",
+      "qa_use": "Useful for questions about image-building themes or why the ad feels more atmospheric than informational.",
+      "visual_cues": [
+        "stylized mood scenes",
+        "few product details",
+        "symbolic imagery",
+        "slow reveal of brand"
+      ],
+      "audio_cues": [
+        "sparse poetic narration",
+        "music-led storytelling"
+      ],
+      "negative_cues": [
+        "Luxury and fashion categories often use atmosphere by default, so category context matters."
+      ],
+      "example_application": "A fictional fragrance ad shows moonlit city scenes and quiet glances with almost no feature explanation, implying the message is identity and allure.",
+      "source_type": "external_public_kb",
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT041",
+      "title": "Feature Labels Point to Practical Message",
+      "category": "consideration",
+      "funnel_stage": "consideration",
+      "rule": "On-screen labels, callouts, and explicit feature naming usually indicate a practical explanatory message rather than pure image-building. Clear labeling is often a sign the advertiser expects viewers to compare or evaluate.",
+      "qa_use": "Useful for questions about whether the ad is educational, feature-focused, or meant to help product evaluation.",
+      "visual_cues": [
+        "feature callout labels",
+        "arrows or UI labels",
+        "annotated product shots"
+      ],
+      "audio_cues": [
+        "narrator explains features",
+        "benefit linked to each label"
+      ],
+      "negative_cues": [
+        "Labels can also be decorative in tech categories if no benefit is attached."
+      ],
+      "example_application": "A fictional blender ad highlights “ice crush,” “self-clean,” and “quiet mode,” showing that practical evaluation is the message focus.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT042",
+      "title": "Offer Cluster Signals Transactional Message",
+      "category": "conversion",
+      "funnel_stage": "conversion",
+      "rule": "When price, promotion, limited-time language, and a direct action prompt appear together, the ad’s main message is usually transactional rather than purely expressive. The ad is trying to move the viewer toward action now.",
+      "qa_use": "Useful for questions about whether the ad is sales-driven or conversion-focused.",
+      "visual_cues": [
+        "discount badge",
+        "price text",
+        "promo code",
+        "button-style CTA"
+      ],
+      "audio_cues": [
+        "shop now",
+        "limited time",
+        "save today"
+      ],
+      "negative_cues": [
+        "Some awareness ads mention price lightly, but dense offer clustering is stronger evidence of conversion focus."
+      ],
+      "example_application": "A fictional mattress ad shows a percentage-off banner, financing note, and “Order tonight” CTA, indicating a transaction-first message.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT043",
+      "title": "Repeated Promise Defines Takeaway",
+      "category": "copy_signal",
+      "funnel_stage": "general",
+      "rule": "If both the narration and the text keep reinforcing the same promise, that promise is probably the intended takeaway even if the visual story varies. Cross-channel repetition is a strong message extraction cue.",
+      "qa_use": "Useful for questions about the core promise when visuals show several different situations.",
+      "visual_cues": [
+        "different scenes but same promise text",
+        "headline repeated on end card"
+      ],
+      "audio_cues": [
+        "voiceover repeats exact phrase",
+        "chorus-like slogan"
+      ],
+      "negative_cues": [
+        "If narration and text conflict, the ad may be intentionally ambiguous or poorly aligned."
+      ],
+      "example_application": "A fictional VPN ad shows travel, work, and café scenes while repeating “secure everywhere,” making security the most defensible main takeaway.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT044",
+      "title": "Brand as Life Enabler",
+      "category": "brand_role",
+      "funnel_stage": "general",
+      "rule": "When the product appears inside a broader life moment instead of dominating the frame alone, the brand is often being positioned as an enabler of a desired lifestyle or emotion. The message is about what the brand helps make possible.",
+      "qa_use": "Useful for questions about the brand’s role in the story and what the product symbolizes in context.",
+      "visual_cues": [
+        "product embedded in life scene",
+        "people-focused scenes",
+        "brand supports event"
+      ],
+      "audio_cues": [
+        "light-touch brand mention",
+        "emotion-forward narration"
+      ],
+      "negative_cues": [
+        "Some low-branding ads may simply under-show the product rather than intentionally cast it as an enabler."
+      ],
+      "example_application": "A fictional ride-share ad focuses on friends reaching a concert together, with the app shown mainly as the facilitator of the night out.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT045",
+      "title": "Educational Tone Signals Research Stage",
+      "category": "consideration",
+      "funnel_stage": "consideration",
+      "rule": "A teaching or explanatory tone often indicates that the advertiser expects viewers to be gathering information, not just recognizing the brand. Educational framing is therefore a clue to consideration-stage messaging.",
+      "qa_use": "Useful for questions about funnel stage, explanatory tone, or why the ad includes guidance and detail.",
+      "visual_cues": [
+        "how-it-works sequence",
+        "feature explanations",
+        "step-by-step visuals"
+      ],
+      "audio_cues": [
+        "explanatory narrator",
+        "phrases like learn how or here is how"
+      ],
+      "negative_cues": [
+        "Educational tone can also support onboarding for existing users, so broader context matters."
+      ],
+      "example_application": "A fictional solar-panel ad spends most of its time explaining installation and savings mechanics, signaling a research-stage message.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT046",
+      "title": "Community Language Signals Loyalty",
+      "category": "campaign_objective",
+      "funnel_stage": "loyalty",
+      "rule": "Words like join, subscribe, member, or stay with us often suggest the advertiser is building an ongoing relationship rather than pushing a one-time purchase alone. This language is a clue that loyalty or community is part of the message.",
+      "qa_use": "Useful for questions about whether the ad seeks recurring engagement, membership, or long-term brand relationship.",
+      "visual_cues": [
+        "membership badge",
+        "creator or community scenes",
+        "app notification follow-up"
+      ],
+      "audio_cues": [
+        "join us",
+        "subscribe",
+        "stay connected"
+      ],
+      "negative_cues": [
+        "Some acquisition ads borrow community language without meaning true loyalty-building."
+      ],
+      "example_application": "A fictional fitness app ad ends with “Join the challenge every week,” indicating that recurring participation is central to the message.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT047",
+      "title": "One Promise Across Many Scenes",
+      "category": "value_proposition",
+      "funnel_stage": "general",
+      "rule": "If many different scenes all resolve into the same promised benefit, the ad is often trying to show that one value proposition travels across contexts. Breadth of scenario can therefore reinforce, not dilute, a single theme.",
+      "qa_use": "Useful for questions about why diverse scenes still point to one main idea.",
+      "visual_cues": [
+        "different contexts same product",
+        "same payoff across scenes",
+        "repeated visual motif"
+      ],
+      "audio_cues": [
+        "same benefit phrase in each scene",
+        "refrain-like tagline"
+      ],
+      "negative_cues": [
+        "Multiple scenes can also imply multiple audiences, so the repeated promise must be clear."
+      ],
+      "example_application": "A fictional battery brand shows remote controls, flashlights, and toys all ending on “lasts longer,” making durability the unifying promise.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT048",
+      "title": "Symbolic Imagery Often Means Image-Building",
+      "category": "brand_awareness",
+      "funnel_stage": "awareness",
+      "rule": "Abstract symbolic scenes with sparse literal explanation often indicate image-building rather than detailed selling. In such cases, the theme is usually inferred from mood, metaphor, and brand association rather than feature detail.",
+      "qa_use": "Useful for questions about abstract ads, symbolic storytelling, or why the message seems indirect.",
+      "visual_cues": [
+        "symbolic object",
+        "few literal product shots",
+        "poetic transitions",
+        "mood-heavy staging"
+      ],
+      "audio_cues": [
+        "minimal dialogue",
+        "music carries meaning"
+      ],
+      "negative_cues": [
+        "Some symbolic ads still contain a direct CTA at the end, so the broader structure should be checked."
+      ],
+      "example_application": "A fictional electric-car ad shows migrating birds and open skies before the car appears, suggesting freedom and future-facing image-building.",
+      "source_type": "external_public_kb",
+      "source_name": "WARC — The power of storytelling in building brand value",
+      "source_url": "https://www.warc.com/en/article/the-power-of-storytelling-in-building-brand-value-462079dbae9247a6badb213f934d6f0d",
+      "source_notes": "WARC highlights how stories, symbols, and meaning-laden narratives can build brand value beyond literal product claims.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT049",
+      "title": "Problem-Solution Persuasion Pattern",
+      "category": "storytelling_device",
+      "funnel_stage": "consideration",
+      "rule": "A common persuasion structure is to surface a familiar pain point and then resolve it with the product. This pattern works by making the need salient before presenting the answer.",
+      "qa_use": "Useful for questions about persuasion strategy, especially whether the ad uses pain-point framing.",
+      "visual_cues": [
+        "annoying problem scene",
+        "product enters after frustration",
+        "clear solved outcome"
+      ],
+      "audio_cues": [
+        "problem statement then solution line",
+        "relief cue"
+      ],
+      "negative_cues": [
+        "A problem scene can sometimes be comic setup rather than serious persuasion if the solution is vague."
+      ],
+      "example_application": "A fictional meal-kit ad shows a rushed parent facing dinner stress before revealing pre-portioned ingredients as the solution.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT050",
+      "title": "Side-by-Side Contrast Simplifies Choice",
+      "category": "comparison",
+      "funnel_stage": "consideration",
+      "rule": "Persuasion often becomes easier when the ad lets viewers compare two states at the same time. A side-by-side setup lowers mental effort and makes improvement easier to judge quickly.",
+      "qa_use": "Useful for questions about comparison strategy, contrast framing, or why simultaneous visuals are used.",
+      "visual_cues": [
+        "two panels",
+        "old versus new",
+        "competitor-like contrast",
+        "parallel tasks"
+      ],
+      "audio_cues": [
+        "phrases like more than or less than",
+        "paired narration"
+      ],
+      "negative_cues": [
+        "Not every two-panel layout implies superiority; some show two use cases instead."
+      ],
+      "example_application": "A fictional budgeting app ad places manual spreadsheets beside the app dashboard to make convenience feel immediate through contrast.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT051",
+      "title": "Social Proof Reduces Risk",
+      "category": "social_proof",
+      "funnel_stage": "consideration",
+      "rule": "Ratings, testimonials, visible crowds, or “people like you” evidence work as social proof because they reduce uncertainty about trying the product. The persuasive logic is borrowed trust from other users.",
+      "qa_use": "Useful for questions about whether the ad uses testimonials, reviews, or popularity as persuasion.",
+      "visual_cues": [
+        "review stars",
+        "testimonial face to camera",
+        "many users shown",
+        "approval badge"
+      ],
+      "audio_cues": [
+        "customer quote",
+        "many people trust us",
+        "rated highly"
+      ],
+      "negative_cues": [
+        "Crowds can also be used for mood or excitement without explicit proof intent."
+      ],
+      "example_application": "A fictional meal-subscription ad shows quick clips of real customers saying they reordered, making the persuasion strategy social proof.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT052",
+      "title": "Authority Cue Strengthens Credibility",
+      "category": "social_proof",
+      "funnel_stage": "consideration",
+      "rule": "Experts, professionals, or institutional settings can strengthen persuasion by signaling competence and reliability. This is especially useful when the claim is technical, health-related, or otherwise high-stakes.",
+      "qa_use": "Useful for questions about expert endorsement, authority-based persuasion, or why uniforms and professional settings appear.",
+      "visual_cues": [
+        "expert on screen",
+        "lab or clinic setting",
+        "uniformed spokesperson"
+      ],
+      "audio_cues": [
+        "expert explanation",
+        "measured factual language"
+      ],
+      "negative_cues": [
+        "An authority figure who seems irrelevant to the claim can weaken rather than strengthen persuasion."
+      ],
+      "example_application": "A fictional water purifier ad features a municipal engineer testing samples, using authority to make the claim feel more credible.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT053",
+      "title": "Concrete Proof Beats Vague Superlatives",
+      "category": "copy_signal",
+      "funnel_stage": "consideration",
+      "rule": "Specific numbers, demonstrations, or concrete evidence usually persuade better than empty superlatives because they give the viewer something more evaluable. Clear proof cues often signal a deliberate rational persuasion route.",
+      "qa_use": "Useful for questions about why the ad uses figures, measurements, or concrete comparisons.",
+      "visual_cues": [
+        "numbered benefit",
+        "measurable result",
+        "labeled test or proof shot"
+      ],
+      "audio_cues": [
+        "specific quantity",
+        "time saved claim",
+        "countable result"
+      ],
+      "negative_cues": [
+        "Precise-looking numbers can still be weak if the ad gives no source or visual support."
+      ],
+      "example_application": "A fictional laundry ad claims “dries in 20 minutes” while showing a timer, using concrete proof rather than vague claims.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT054",
+      "title": "Demo Functions as Proof",
+      "category": "consideration",
+      "funnel_stage": "consideration",
+      "rule": "Showing the product work in context often persuades more effectively than merely saying it works. In ad interpretation, demonstration is a clue that proof-by-performance is part of the strategy.",
+      "qa_use": "Useful for questions about whether the ad persuades through demonstration or through assertion alone.",
+      "visual_cues": [
+        "live product use",
+        "clear outcome on screen",
+        "feature seen working"
+      ],
+      "audio_cues": [
+        "simple explanatory narration",
+        "proof-oriented wording"
+      ],
+      "negative_cues": [
+        "A fast demo montage can look like lifestyle footage if the result is not clearly visible."
+      ],
+      "example_application": "A fictional floor cleaner ad shows mud disappearing in one pass, indicating proof-through-performance rather than claim-only persuasion.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT055",
+      "title": "Direct CTA Clarifies Next Step",
+      "category": "cta_signal",
+      "funnel_stage": "conversion",
+      "rule": "A strong ad often tells viewers exactly what to do next instead of leaving the response implicit. Imperative CTA language is therefore a key clue that the persuasion strategy is trying to convert attention into action.",
+      "qa_use": "Useful for questions about calls to action, conversion intent, or response-oriented persuasion.",
+      "visual_cues": [
+        "button-like prompt",
+        "arrow or tap cue",
+        "final action screen"
+      ],
+      "audio_cues": [
+        "shop now",
+        "sign up",
+        "book today"
+      ],
+      "negative_cues": [
+        "A brand slogan can sound imperative without truly being a CTA if no response path is shown."
+      ],
+      "example_application": "A fictional insurance quote ad ends with a clear “Get your quote today” screen, marking the next step explicitly.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT056",
+      "title": "Visual Plus Verbal CTA Is Stronger",
+      "category": "cta_signal",
+      "funnel_stage": "conversion",
+      "rule": "When a CTA is both shown on screen and spoken aloud, the response path becomes harder to miss. Dual-modality direction is often a deliberate strategy in short or distracting viewing contexts.",
+      "qa_use": "Useful for questions about how strongly the ad pushes an action or why the CTA is repeated in multiple forms.",
+      "visual_cues": [
+        "on-screen button cue",
+        "end card with action text",
+        "spoken CTA timed to final frame"
+      ],
+      "audio_cues": [
+        "spoken call to act",
+        "matching action phrase"
+      ],
+      "negative_cues": [
+        "Repeated CTA can feel pushy if it arrives before the value proposition is clear."
+      ],
+      "example_application": "A fictional food-ordering ad shows “Order in the app” on screen while the narrator repeats the same line, making the response path explicit.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT057",
+      "title": "Soft CTA Fits Mid-Funnel Persuasion",
+      "category": "cta_signal",
+      "funnel_stage": "consideration",
+      "rule": "Calls such as learn more, watch more, or explore are softer than buy now and usually fit persuasion aimed at continuing interest rather than immediate purchase. The ad is often trying to keep the viewer moving rather than closing the deal instantly.",
+      "qa_use": "Useful for questions about whether the CTA suggests consideration rather than direct conversion.",
+      "visual_cues": [
+        "learn more button",
+        "watch next cue",
+        "website tease"
+      ],
+      "audio_cues": [
+        "discover more",
+        "see how it works"
+      ],
+      "negative_cues": [
+        "A soft CTA can appear in awareness ads too, especially when attribution is hard."
+      ],
+      "example_application": "A fictional home solar ad ends with “See your savings estimate,” indicating a mid-funnel next step instead of an instant purchase ask.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT058",
+      "title": "Urgency Pushes Direct Response",
+      "category": "cta_signal",
+      "funnel_stage": "conversion",
+      "rule": "Limited-time phrases, countdown-like cues, and seasonal offer windows are classic urgency signals. When they cluster around the CTA, the ad is usually trying to compress decision time and increase immediate response.",
+      "qa_use": "Useful for questions about urgency, deadline pressure, or why the ad feels sales-activated.",
+      "visual_cues": [
+        "deadline badge",
+        "sale ends soon",
+        "holiday window",
+        "countdown styling"
+      ],
+      "audio_cues": [
+        "ends tonight",
+        "limited time",
+        "today only"
+      ],
+      "negative_cues": [
+        "Seasonal timing alone does not always imply urgency unless the action window is emphasized."
+      ],
+      "example_application": "A fictional luggage ad overlays “Weekend sale ends Sunday” beside a bright booking prompt, signaling urgency-based persuasion.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT059",
+      "title": "Repeat the Ask Near the End",
+      "category": "cta_signal",
+      "funnel_stage": "conversion",
+      "rule": "In short video, repeating the ask close to the end helps capture viewers who stayed long enough to be interested. The repeated final prompt usually indicates that closing clarity matters more than subtlety.",
+      "qa_use": "Useful for questions about why the ad repeats its CTA or why the end card resembles the earlier prompt.",
+      "visual_cues": [
+        "same CTA returns on end card",
+        "closing offer screen",
+        "final button prompt"
+      ],
+      "audio_cues": [
+        "CTA repeated in closing VO",
+        "music resolves under action line"
+      ],
+      "negative_cues": [
+        "If the repeated prompt is only a tagline, it may support memory rather than action."
+      ],
+      "example_application": "A fictional streaming promo says “Start your free month” mid-video and repeats it over the final subscription screen, showing a close-the-loop strategy.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT060",
+      "title": "Use the Old State as a Foil",
+      "category": "comparison",
+      "funnel_stage": "consideration",
+      "rule": "Persuasion often gets stronger when the ad contrasts the product with an older, slower, messier, or more frustrating state. The previous state acts as a foil that makes the benefit feel larger.",
+      "qa_use": "Useful for questions about contrast strategy or why the ad spends time on a bad old method.",
+      "visual_cues": [
+        "old method shown first",
+        "frustration before switch",
+        "slower version contrasted"
+      ],
+      "audio_cues": [
+        "phrases like no more or instead of",
+        "complaint then fix"
+      ],
+      "negative_cues": [
+        "If the old state is exaggerated too heavily, the contrast may be humorous more than literal."
+      ],
+      "example_application": "A fictional online-banking ad first shows a long line at a branch and then a quick phone transfer, using the old method as a foil.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT061",
+      "title": "Sensory Detail Can Stand In for Trial",
+      "category": "sensory_appeal",
+      "funnel_stage": "consideration",
+      "rule": "Because viewers cannot physically try the product, ads often use texture, sound, and reaction shots as a proxy for trial experience. Sensory proof can therefore function as persuasion, not just decoration.",
+      "qa_use": "Useful for questions about why texture, sound, or tactile detail is central to the ad’s selling strategy.",
+      "visual_cues": [
+        "texture emphasis",
+        "sound sync to use",
+        "close tactile interaction"
+      ],
+      "audio_cues": [
+        "crunch, snap, fizz, or glide sound",
+        "sensory descriptors"
+      ],
+      "negative_cues": [
+        "Sensory detail is less persuasive if the category value is mainly abstract or financial."
+      ],
+      "example_application": "A fictional sparkling-water ad highlights the crack-open fizz and condensation beads to approximate a trial experience.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — The art of proof: how creative quality drives profit",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/the-art-of-proof-how-creative-quality-drives-profit",
+      "source_notes": "Kantar links creative quality and clarity of proof to stronger business results, supporting rules about concrete evidence and branded creativity.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT062",
+      "title": "Urgency Visuals Signal Action Focus",
+      "category": "conversion",
+      "funnel_stage": "conversion",
+      "rule": "Countdown styling, flashing offer cards, checkout-style end cards, and prominent price framing usually mean the ad is optimized for direct response. The creative is signaling that immediate action matters more than long reflection.",
+      "qa_use": "Useful for questions about whether the persuasion strategy is conversion-oriented or sales-activated.",
+      "visual_cues": [
+        "checkout-style frame",
+        "offer card",
+        "price dominant visual",
+        "timer motif"
+      ],
+      "audio_cues": [
+        "buy now",
+        "save today",
+        "order before midnight"
+      ],
+      "negative_cues": [
+        "An awareness ad can mention a product launch date without truly being direct response."
+      ],
+      "example_application": "A fictional electronics ad ends on a large price tile with a bright “Buy today” prompt, indicating action-focused persuasion.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Tips for optimizing your Video campaign",
+      "source_url": "https://support.google.com/google-ads/answer/3013684?hl=en",
+      "source_notes": "Google connects creative choices, targeting, testing, and calls to action with stronger video-campaign performance.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT063",
+      "title": "Brand-Linked Surprise Persuades Better Than Random Gimmicks",
+      "category": "humor",
+      "funnel_stage": "general",
+      "rule": "Surprise, humor, or novelty work better when they make the brand idea more memorable instead of floating separately as a gimmick. Persuasion improves when the creative twist naturally resolves into the selling point.",
+      "qa_use": "Useful for questions about whether the ad’s surprise device meaningfully serves persuasion.",
+      "visual_cues": [
+        "twist resolves to product use",
+        "brand shown at reveal",
+        "unexpected setup tied to benefit"
+      ],
+      "audio_cues": [
+        "punchline echoes benefit",
+        "surprise line connects to brand"
+      ],
+      "negative_cues": [
+        "Pure spectacle may win attention but fail to support message retention."
+      ],
+      "example_application": "A fictional stain-removal ad uses a white couch at a color festival as a surprising setup, but the twist only works because it leads directly to the cleaning proof.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About the ABCDs of effective video ads",
+      "source_url": "https://support.google.com/google-ads/answer/14783551?hl=en",
+      "source_notes": "Google’s ABCD framework stresses early attention, visible branding, emotional connection, and clear direction in video advertising.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT064",
+      "title": "View Metrics Reveal Creative Resonance",
+      "category": "campaign_objective",
+      "funnel_stage": "general",
+      "rule": "When an advertiser studies views, watch time, engagement, or post-view actions, those signals can help infer whether the persuasion strategy is mainly trying to win attention, hold interest, or drive a downstream response. Metrics framing often reflects what success looks like for the creative.",
+      "qa_use": "Useful for questions about what kind of persuasive outcome the ad seems optimized for.",
+      "visual_cues": [
+        "retention-style pacing",
+        "attention hook",
+        "response end card"
+      ],
+      "audio_cues": [
+        "watch-focused language",
+        "engagement prompt",
+        "response prompt"
+      ],
+      "negative_cues": [
+        "Creative alone cannot prove which metric was used internally, so this rule supports inference rather than certainty."
+      ],
+      "example_application": "A fictional tutorial-style skincare video builds slowly but ends with a gentle site prompt, suggesting it values sustained watch interest before action.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About YouTube ads and view metrics",
+      "source_url": "https://support.google.com/google-ads/answer/2375499?hl=en",
+      "source_notes": "Google describes view, watch, engagement, and conversion-adjacent metrics that help interpret how video creative is performing.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT065",
+      "title": "Lifestyle Props Reveal Affinity Audience",
+      "category": "target_audience",
+      "funnel_stage": "awareness",
+      "rule": "Props, hobbies, and repeated lifestyle markers often suggest an affinity-style audience defined by enduring interests rather than one immediate purchase task. The ad is signaling who naturally identifies with the scene.",
+      "qa_use": "Useful for questions about likely target audience or what long-term interests the ad assumes.",
+      "visual_cues": [
+        "camping gear",
+        "gym routine",
+        "gaming setup",
+        "cooking hobby"
+      ],
+      "audio_cues": [
+        "interest-themed language",
+        "identity wording"
+      ],
+      "negative_cues": [
+        "Some props are generic scene fillers, so repeated lifestyle patterns are stronger evidence."
+      ],
+      "example_application": "A fictional outdoor-jacket ad keeps showing trails, tents, and campfire rituals, suggesting a hobby-driven audience with outdoor affinity.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About affinity segments",
+      "source_url": "https://support.google.com/google-ads/answer/13151406?hl=en",
+      "source_notes": "Google describes affinity segments as durable interest and lifestyle groupings useful for awareness and consideration.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT066",
+      "title": "Search-Like Language Suggests In-Market Intent",
+      "category": "target_audience",
+      "funnel_stage": "consideration",
+      "rule": "When the copy sounds like a problem someone is actively trying to solve, the ad often targets in-market or high-intent viewers. Task-focused wording is a clue that the audience may already be evaluating options.",
+      "qa_use": "Useful for questions about audience readiness or whether the ad targets active shoppers rather than broad awareness.",
+      "visual_cues": [
+        "problem-specific headline",
+        "practical task visual",
+        "comparison context"
+      ],
+      "audio_cues": [
+        "phrases resembling search intent",
+        "solution-oriented wording"
+      ],
+      "negative_cues": [
+        "Some broad campaigns borrow search-like wording to look relevant without strict high intent."
+      ],
+      "example_application": "A fictional accounting-software ad says “Need to invoice faster?” which suggests it targets people already considering a solution.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use the Audience builder when creating a campaign",
+      "source_url": "https://support.google.com/google-ads/answer/13323469?hl=en",
+      "source_notes": "Google explains that audience builder combines demographics, first-party lists, interests, search-term cues, and AI-based signals.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT067",
+      "title": "Household Routine Implies Family Decision-Maker",
+      "category": "target_audience",
+      "funnel_stage": "general",
+      "rule": "Ads built around family logistics, home routines, or care responsibilities often imply an audience involved in household decisions. The target is less about age alone and more about role in daily coordination.",
+      "qa_use": "Useful for questions about likely household role or family-oriented target audience.",
+      "visual_cues": [
+        "kitchen routine",
+        "childcare moment",
+        "shopping list scene",
+        "shared home task"
+      ],
+      "audio_cues": [
+        "family-oriented wording",
+        "care or convenience phrases"
+      ],
+      "negative_cues": [
+        "Not every family scene targets parents specifically; some may aim at broad warmth and belonging."
+      ],
+      "example_application": "A fictional grocery-delivery ad follows a parent balancing homework, meals, and errands, suggesting a household organizer audience.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT068",
+      "title": "Use-Case Context Reveals Segment",
+      "category": "target_audience",
+      "funnel_stage": "consideration",
+      "rule": "Commuting, studying, traveling, gym sessions, and similar contexts often act as audience segmentation cues because they show the moments in which the product matters. Repeated context can therefore identify the intended user group.",
+      "qa_use": "Useful for questions about what type of person or daily situation the ad is built around.",
+      "visual_cues": [
+        "commute scene",
+        "campus scene",
+        "airport scene",
+        "gym locker room"
+      ],
+      "audio_cues": [
+        "situation-specific phrases",
+        "moment-of-use wording"
+      ],
+      "negative_cues": [
+        "A single context shot may be illustrative rather than audience-defining if other cues point elsewhere."
+      ],
+      "example_application": "A fictional portable charger ad keeps returning to train platforms and airport gates, implying travelers and commuters as the main segment.",
+      "source_type": "external_public_kb",
+      "source_name": "Kantar — Creative consumer connections: how to reach your consumers",
+      "source_url": "https://www.kantar.com/inspiration/advertising-media/creative-consumer-connections-how-to-reach-your-consumers",
+      "source_notes": "Kantar emphasizes consumer resonance, context, and relevance when matching creative to audience motivations and situations.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT069",
+      "title": "Premium Cues Suggest Status Audience",
+      "category": "target_audience",
+      "funnel_stage": "awareness",
+      "rule": "Polished cinematography, scarce clutter, upscale settings, and restrained pricing emphasis often suggest a status- or identity-oriented audience. The ad assumes the viewer cares about symbolic value as well as function.",
+      "qa_use": "Useful for questions about whether the target audience is premium, status-seeking, or image-conscious.",
+      "visual_cues": [
+        "luxury interior",
+        "slow elegant shots",
+        "premium styling",
+        "minimal discount cues"
+      ],
+      "audio_cues": [
+        "refined voiceover",
+        "status or craftsmanship language"
+      ],
+      "negative_cues": [
+        "Premium aesthetics can appear in mid-market categories as aspiration rather than actual high-end targeting."
+      ],
+      "example_application": "A fictional watch ad uses tailored clothing, quiet lighting, and almost no price mention, suggesting a status-conscious audience.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT070",
+      "title": "Savings Emphasis Suggests Value Audience",
+      "category": "target_audience",
+      "funnel_stage": "conversion",
+      "rule": "When an ad foregrounds price cuts, bundles, or money-saving outcomes, it often targets a value-sensitive audience segment. The creative assumes economic utility is central to the viewer’s decision.",
+      "qa_use": "Useful for questions about budget-conscious audiences or why the ad highlights savings so aggressively.",
+      "visual_cues": [
+        "discount labels",
+        "bundle card",
+        "before and after price",
+        "coupon-style design"
+      ],
+      "audio_cues": [
+        "save more",
+        "lower cost",
+        "deal language"
+      ],
+      "negative_cues": [
+        "Even premium brands may spotlight a sale temporarily, so repeated value cues matter more than a single discount."
+      ],
+      "example_application": "A fictional utility provider ad repeatedly compares monthly bills before showing a lower-cost plan, implying a price-sensitive audience.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT071",
+      "title": "Tutorial Tone Fits Information-Seeking Viewers",
+      "category": "target_audience",
+      "funnel_stage": "consideration",
+      "rule": "If the ad explains usage step by step, it likely assumes the audience needs orientation or reassurance before acting. Tutorial framing often points to information-seeking or novice viewers rather than fully convinced loyalists.",
+      "qa_use": "Useful for questions about whether the audience is new to the category or still learning.",
+      "visual_cues": [
+        "step-by-step demo",
+        "UI walkthrough",
+        "instructional sequence"
+      ],
+      "audio_cues": [
+        "how-to narration",
+        "explanatory voice"
+      ],
+      "negative_cues": [
+        "Some onboarding ads are for existing customers, so other audience cues should be checked."
+      ],
+      "example_application": "A fictional budgeting app ad walks through account setup and first goals, suggesting an audience still learning how the product works.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT072",
+      "title": "Vertical Punchy Creative Fits Scroll Audiences",
+      "category": "ad_format",
+      "funnel_stage": "awareness",
+      "rule": "Short, punchy, vertically framed creative is often designed for viewers who encounter the ad while scrolling on phones. The audience assumption is limited attention and a feed-native viewing posture.",
+      "qa_use": "Useful for questions about likely platform behavior or why the ad is structured for fast mobile engagement.",
+      "visual_cues": [
+        "vertical shots",
+        "big center text",
+        "rapid hook",
+        "thumb-stopping opening"
+      ],
+      "audio_cues": [
+        "quick opening phrase",
+        "short music stab"
+      ],
+      "negative_cues": [
+        "Some vertical videos are repurposed from stories or shorts without a strong targeting implication."
+      ],
+      "example_application": "A fictional cosmetics ad opens with a one-second hook in vertical format and oversized text, suggesting a feed-scrolling mobile audience.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use square and vertical video to engage mobile customers",
+      "source_url": "https://support.google.com/google-ads/answer/9128498?hl=en",
+      "source_notes": "Google recommends square and vertical video plus mobile-friendly framing when advertisers want stronger phone-screen engagement.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT073",
+      "title": "Broad Storytelling Often Signals Reach Objective",
+      "category": "campaign_objective",
+      "funnel_stage": "awareness",
+      "rule": "When an ad uses broad emotional storytelling and avoids niche technical detail, it often points to a wide-reach awareness objective rather than narrow specialist targeting. The audience is likely larger and more heterogeneous.",
+      "qa_use": "Useful for questions about whether the ad is trying to reach a broad public or a niche expert group.",
+      "visual_cues": [
+        "broad life scenes",
+        "little technical detail",
+        "universal emotions",
+        "simple benefit"
+      ],
+      "audio_cues": [
+        "inclusive wording",
+        "light explanatory burden"
+      ],
+      "negative_cues": [
+        "Some mass-market categories still use technical proof later in the ad, so the full structure matters."
+      ],
+      "example_application": "A fictional public transit card ad uses universal commuting scenes and warm music, suggesting a broad reach objective aimed at a large general audience.",
+      "source_type": "external_public_kb",
+      "source_name": "IPA — The Long and the Short of It",
+      "source_url": "https://ipa.co.uk/knowledge/publications-reports/the-long-and-the-short-of-it-balancing-short-and-long-term-marketing-strategies",
+      "source_notes": "IPA distinguishes between short-term sales activation and long-term brand building, useful for inferring likely funnel intent.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT074",
+      "title": "Audience Signals Are Hints, Not Hard Walls",
+      "category": "target_audience",
+      "funnel_stage": "general",
+      "rule": "Platform audience selections can function as signals rather than fixed boundaries in AI-optimized systems. For video understanding, that means the creative may be designed for a likely audience seed while still needing to make sense to adjacent viewers.",
+      "qa_use": "Useful for questions about why an ad looks somewhat broad even when its targeting sounds specific.",
+      "visual_cues": [
+        "broad-friendly creative",
+        "specific seed hints but general framing",
+        "flexible use cases"
+      ],
+      "audio_cues": [
+        "language broad enough for expansion",
+        "not overly niche jargon"
+      ],
+      "negative_cues": [
+        "Creative breadth alone does not prove AI-based expansion; it is only a compatible clue."
+      ],
+      "example_application": "A fictional meal-subscription ad mentions healthy routines but keeps the scenes broad enough to fit many households, consistent with signal-based expansion logic.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use the Audience builder when creating a campaign",
+      "source_url": "https://support.google.com/google-ads/answer/13323469?hl=en",
+      "source_notes": "Google explains that audience builder combines demographics, first-party lists, interests, search-term cues, and AI-based signals.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT075",
+      "title": "Affinity Themes Suggest Long-Term Interest",
+      "category": "target_audience",
+      "funnel_stage": "awareness",
+      "rule": "If the ad leans heavily on hobbies, passions, and identity-laden themes, it is often speaking to long-term interests rather than immediate purchase urgency. This is a clue toward awareness or early consideration audiences.",
+      "qa_use": "Useful for questions about whether the audience is defined by lifestyle identity rather than active buying intent.",
+      "visual_cues": [
+        "hobby montage",
+        "identity symbolism",
+        "passion scenes",
+        "community rituals"
+      ],
+      "audio_cues": [
+        "interest-affirming lines",
+        "belonging language"
+      ],
+      "negative_cues": [
+        "Some hobby-themed ads still chase conversion if strong offers are also present."
+      ],
+      "example_application": "A fictional cycling-accessory ad shows early morning rides and rider rituals, implying a lifestyle-interest audience more than a one-time impulse buyer.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — About affinity segments",
+      "source_url": "https://support.google.com/google-ads/answer/13151406?hl=en",
+      "source_notes": "Google describes affinity segments as durable interest and lifestyle groupings useful for awareness and consideration.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT076",
+      "title": "Welcome-Back Language Suggests Retention Audience",
+      "category": "target_audience",
+      "funnel_stage": "loyalty",
+      "rule": "When the ad assumes prior familiarity, using cues like welcome back, upgrade, reorder, or member benefits, it often targets existing customers or lapsed users rather than first-time prospects. The intended audience already knows the brand.",
+      "qa_use": "Useful for questions about retention, loyalty, or whether the viewer is presumed to be an existing user.",
+      "visual_cues": [
+        "member dashboard",
+        "returning user scene",
+        "upgrade card",
+        "repeat order context"
+      ],
+      "audio_cues": [
+        "welcome back",
+        "upgrade now",
+        "members save"
+      ],
+      "negative_cues": [
+        "A generic app reminder can resemble retention messaging without true customer targeting."
+      ],
+      "example_application": "A fictional grocery app ad says “Reorder your weekly staples in one tap,” indicating an audience with prior purchase history.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT077",
+      "title": "Many People, One Promise Means Scalable Relevance",
+      "category": "target_audience",
+      "funnel_stage": "general",
+      "rule": "If the ad shows different ages, roles, or settings all tied to the same benefit, the brand is probably widening its target while keeping one shared promise. Diversity of context can therefore signal audience breadth, not message confusion.",
+      "qa_use": "Useful for questions about whether the ad targets multiple people or one broad segment with a shared need.",
+      "visual_cues": [
+        "different users same product",
+        "multiple contexts same outcome",
+        "varied demographics"
+      ],
+      "audio_cues": [
+        "same promise repeated",
+        "inclusive wording"
+      ],
+      "negative_cues": [
+        "Casting diversity alone is not enough; the same benefit must clearly unite the scenes."
+      ],
+      "example_application": "A fictional cloud-backup ad shows students, parents, and freelancers all protecting files, suggesting broad relevance built around one core need.",
+      "source_type": "external_public_kb",
+      "source_name": "McGraw Hill — Advertising and Promotion (Belch) public textbook page",
+      "source_url": "https://www.mheducation.com/highered/product/advertising-and-promotion-13e-belch.html",
+      "source_notes": "The public textbook summary points to standard integrated marketing communication principles for branding, persuasion, targeting, and response.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT078",
+      "title": "Platform-Native CTA Reveals Audience Context",
+      "category": "cta_signal",
+      "funnel_stage": "consideration",
+      "rule": "Calls such as subscribe, follow, watch next, or learn more often reflect the norms of the platform and the expected audience behavior there. The CTA can therefore reveal the kind of viewing context the advertiser assumes.",
+      "qa_use": "Useful for questions about likely platform environment or why the action requested is not immediate purchase.",
+      "visual_cues": [
+        "creator-style end card",
+        "follow prompt",
+        "watch-next tile"
+      ],
+      "audio_cues": [
+        "subscribe",
+        "watch more",
+        "follow for updates"
+      ],
+      "negative_cues": [
+        "Some ecommerce brands borrow creator-style language without living mainly in creator ecosystems."
+      ],
+      "example_application": "A fictional cooking-channel sponsor ad ends with “Watch the full recipe,” suggesting a platform context where continued viewing matters more than instant checkout.",
+      "source_type": "external_public_kb",
+      "source_name": "YouTube Help — Tips for creating effective video ads",
+      "source_url": "https://support.google.com/youtube/answer/2375498?hl=en",
+      "source_notes": "YouTube guidance highlights storytelling, curiosity-driven hooks, contextual relevance, and platform-appropriate viewer actions.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT079",
+      "title": "Signal-Based Delivery Requires Broadly Readable Branding",
+      "category": "brand_awareness",
+      "funnel_stage": "awareness",
+      "rule": "When delivery systems may expand beyond the seed audience, broadly readable branding becomes even more important because not every viewer shares the same prior context. Clear brand assets help adjacent audiences understand who is speaking quickly.",
+      "qa_use": "Useful for questions about why branding is extra explicit in otherwise broad audience-targeted creative.",
+      "visual_cues": [
+        "clear logo early",
+        "brand colors repeated",
+        "simple branded mnemonic"
+      ],
+      "audio_cues": [
+        "brand name spoken early",
+        "brief brand line"
+      ],
+      "negative_cues": [
+        "Strong branding can also simply reflect category competition, not audience expansion logic alone."
+      ],
+      "example_application": "A fictional home-cleaning brand uses strong logo repetition in a broadly targeted family ad so that viewers outside the seed segment can still identify the brand quickly.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use the Audience builder when creating a campaign",
+      "source_url": "https://support.google.com/google-ads/answer/13323469?hl=en",
+      "source_notes": "Google explains that audience builder combines demographics, first-party lists, interests, search-term cues, and AI-based signals.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    },
+    {
+      "knowledge_id": "EXT080",
+      "title": "Segment Names Suggest Motivational Clusters",
+      "category": "target_audience",
+      "funnel_stage": "general",
+      "rule": "Audience tools that group people by durable interests, routines, or intent cues imply that good ad creative should speak to motivational clusters, not only demographics. In video QA, this helps infer audience from behavior and context cues rather than age or gender alone.",
+      "qa_use": "Useful for questions about inferred audience motivation, likely lifestyle cluster, or why an ad emphasizes interests over demographics.",
+      "visual_cues": [
+        "interest-coded scenes",
+        "repeated routines",
+        "motivation-rich contexts"
+      ],
+      "audio_cues": [
+        "language about habits, passions, or goals"
+      ],
+      "negative_cues": [
+        "Demographic casting alone is weaker evidence than repeated motivational cues."
+      ],
+      "example_application": "A fictional running-app ad shows early alarms, route tracking, and finish-line routines, suggesting a motivation-based segment built around committed fitness habits.",
+      "source_type": "external_public_kb",
+      "source_name": "Google Ads Help — Use the Audience builder when creating a campaign",
+      "source_url": "https://support.google.com/google-ads/answer/13323469?hl=en",
+      "source_notes": "Google explains that audience builder combines demographics, first-party lists, interests, search-term cues, and AI-based signals.",
+      "leakage_check": "No AdsQA/data-derived content used"
+    }
+  ],
+  "coverage_self_check": {
+    "category_counts": {
+      "campaign_objective": 4,
+      "brand_awareness": 4,
+      "consideration": 3,
+      "conversion": 2,
+      "target_audience": 12,
+      "value_proposition": 2,
+      "visual_rhetoric": 4,
+      "storytelling_device": 4,
+      "emotional_mechanism": 10,
+      "sensory_appeal": 5,
+      "social_proof": 2,
+      "humor": 3,
+      "metaphor": 4,
+      "comparison": 3,
+      "cta_signal": 6,
+      "brand_role": 3,
+      "ad_format": 4,
+      "copy_signal": 5
+    },
+    "question_type_counts": {
+      "Visual Concept Understanding": 16,
+      "Emotion Recognition": 16,
+      "Theme and Message Extraction": 16,
+      "Persuasion Strategy Mining": 16,
+      "Potential Audience Modeling": 16
+    },
+    "funnel_stage_counts": {
+      "awareness": 25,
+      "general": 22,
+      "consideration": 23,
+      "loyalty": 3,
+      "conversion": 7
+    },
+    "lower_confidence_excluded": []
+  }
+}
