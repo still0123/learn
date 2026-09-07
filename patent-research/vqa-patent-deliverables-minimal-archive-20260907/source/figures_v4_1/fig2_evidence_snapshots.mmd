@@ -1,0 +1,22 @@
+%% 图2：初始、增量及扩展视频证据集的构成示意图
+flowchart LR
+    subgraph V[视频数据]
+        direction LR
+        V201[201：视频时间轴]
+        V202[202：已覆盖片段]
+        V203[203：未覆盖片段]
+        V201 --- V202
+        V201 --- V203
+    end
+    V202 --> E204[204：初始证据集E0<br/>帧、OCR、ASR及时间戳]
+    E204 --> A205[205：初始答案A0<br/>及原子声明]
+    A205 --> G206[206：声明支持缺口定位]
+    G206 --> V203
+    V203 --> E207[207：增量证据ΔE<br/>与声明相关的帧、区域或语音段]
+    E204 --> E208[208：扩展证据集E+＝E0∪ΔE]
+    E207 --> E208
+    E208 --> A209[209：同E+下核验A0和独立生成A2]
+
+    classDef mono fill:#ffffff,stroke:#000000,color:#000000,stroke-width:1.5px;
+    class V201,V202,V203,E204,A205,G206,E207,E208,A209 mono;
+    linkStyle default stroke:#000000,stroke-width:1.2px;

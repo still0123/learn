@@ -1,0 +1,19 @@
+%% 图4：声明闭包的安全状态转移图
+flowchart TD
+    S401[401：获取A0支持状态] --> S402{402：是否存在必填槽<br/>无声明或非支持状态？}
+    S402 -- 是 --> S403[403：获取ΔE并冻结E+]
+    S403 --> S404[404：生成A2并在同一E+下<br/>配对核验A0/A2]
+    S404 --> S405[405：建立迁移记录及闭包]
+    S405 --> S406{406：闭包接受条件<br/>是否全部满足？}
+    S406 -- 是 --> S407[407：原子提交闭包]
+    S406 -- 否 --> S408[408：执行E+下安全状态转移]
+    S402 -- 否 --> S409[409：无补证时保留受支持A0]
+    S407 --> S410[410：受限重组并输出或拒答]
+    S408 --> S410
+    S409 --> S410
+
+    classDef mono fill:#ffffff,stroke:#000000,color:#000000,stroke-width:1.5px;
+    classDef decision fill:#ffffff,stroke:#000000,color:#000000,stroke-width:1.5px;
+    class S401,S403,S404,S405,S407,S408,S409,S410 mono;
+    class S402,S406 decision;
+    linkStyle default stroke:#000000,stroke-width:1.2px;

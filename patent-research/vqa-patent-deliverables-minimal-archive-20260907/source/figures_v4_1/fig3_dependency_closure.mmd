@@ -1,0 +1,20 @@
+%% 图3：声明依赖图中的下游事务闭包和上游证明上下文示意图
+flowchart LR
+    subgraph P307[307：上游只读证明上下文]
+        U301[301：商品身份前提]
+        U303[303：促销时间前提]
+    end
+    subgraph T308[308：下游事务写入闭包]
+        C302[302：实质变化声明<br/>价格槽] --> D304[304：下游声明<br/>优惠条件]
+        D304 --> D305[305：下游声明<br/>最终结论]
+    end
+    U301 --> C302
+    U303 --> C302
+    W306[306：迁移记录<br/>事实槽—必要差异槽—ΔE见证ID—目标状态]
+    W306 -. 见证约束 .-> C302
+    W306 -. 见证约束 .-> D305
+
+    classDef mono fill:#ffffff,stroke:#000000,color:#000000,stroke-width:1.5px;
+    classDef boundary fill:#ffffff,stroke:#000000,color:#000000,stroke-width:2px,stroke-dasharray: 5 3;
+    class U301,U303,C302,D304,D305,W306 mono;
+    linkStyle default stroke:#000000,stroke-width:1.2px;
