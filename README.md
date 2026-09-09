@@ -18,6 +18,7 @@
 | DSH 生态调研 | [`dsh-ecosystem-research/`](dsh-ecosystem-research/) |
 | DSH 面试笔记 | [`dsh-interview-notes.md`](dsh-interview-notes.md) |
 | MemoryForge 面试笔记 | [`MemoryForge-Interview-Notes.md`](MemoryForge-Interview-Notes.md) |
+| AgentLoop 实现详解 | [`AgentLoop-实现详解.md`](AgentLoop-实现详解.md) |
 | Claude Code 学习笔记 | [`learn-claude-code-学习笔记.md`](learn-claude-code-学习笔记.md) |
 | 唯一本地恢复归档 | [`recovery-archives/`](recovery-archives/) |
 
